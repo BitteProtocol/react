@@ -20,8 +20,7 @@ import type {
 import type { WalletSelectorModal } from '@near-wallet-selector/modal-ui';
 
 import { mbjs } from '@mintbase-js/sdk';
-import { setupBitteWallet } from '@mintbase-js/wallet';
-import { ConnectionTimeoutError } from './wallet';
+import { setupBitteWallet } from '@bitte-ai/wallet';
 
 import { setupMeteorWallet } from '@near-wallet-selector/meteor-wallet';
 import { setupHereWallet } from '@near-wallet-selector/here-wallet';
@@ -43,6 +42,10 @@ export const SUPPORTED_NEAR_WALLETS: Array<WalletModuleFactory> =[
 export type WalletSelectorComponents = {
   selector: WalletSelector;
   modal: WalletSelectorModal;
+}
+
+ interface ConnectionTimeoutError extends Error {
+  message: string
 }
 
 const walletUrls = {

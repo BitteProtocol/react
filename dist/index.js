@@ -3234,42 +3234,42 @@ var require_errorMessages = __commonJS({
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.ERROR_MESSAGES = void 0;
     var DEFAULT_SUPPORT = "- read more on: https://docs.mintbase.io/dev/mintbase-sdk-ref/sdk , further help available on our telegram channel: https://t.me/mintdev";
-    var SUPPORT3 = "- further help available on our telegram channel: https://t.me/mintdev";
+    var SUPPORT2 = "- further help available on our telegram channel: https://t.me/mintdev";
     exports2.ERROR_MESSAGES = {
       CONTRACT_ADDRESS: `You must provide a contractAddress, define contractAddress on mbjs.config,or a CONTRACT_ADDRESS enviroment variable to default to ${DEFAULT_SUPPORT}`,
-      FT_CONTRACT_ADDRESS: `You must provide a ftContractAddress ${SUPPORT3}`,
-      INVALID_ROYALTY_PERCENTAGE: `Invalid royalty percentage, it must be between 0 and 0.5 ${SUPPORT3}`,
-      ROYALTIES_PERCENTAGE: `Splits percentages must add up 10000 in the contract call ${SUPPORT3}`,
-      INVALID_AMOUNT: `It is not possible to mint more than 99 or less than 0 copies of this token using this method ${SUPPORT3}`,
-      MIN_SPLITS: `There must be at least 2 accounts in splits ${SUPPORT3}`,
-      MIN_ROYALTIES: `There must be at least 1 account in royalties ${SUPPORT3}`,
-      MAX_ROYALTIES: `There must not be more than 50 royalty holder accounts ${SUPPORT3}`,
-      MAX_ROYALTIES_SPLITS: `Royalties and splits cannot have more than combined 50 entries ${SUPPORT3}`,
-      BURN_TOKEN_IDS: `Burn contract call should not have an empty array of tokens ids ${SUPPORT3}`,
-      TOKEN_NOT_ARRAY: `tokenIds must be an array ${SUPPORT3}`,
-      TOKEN_LENGTH: `tokenIds must have more than one element ${SUPPORT3}`,
-      TRANSFER: `You must transfer at least one token ${SUPPORT3}`,
-      NO_MINTERS: `There are no minters being provided to the batchChangeMinters method to be changed, try adding account Ids to at least one of the minter fields ${SUPPORT3}`,
-      NO_REFERENCE: `You must provide a reference when minting or explicitly opt out ${SUPPORT3}`,
-      NO_MEDIA: `You must provide media when minting or explicitly opt out ${SUPPORT3}`,
-      ROYALTY_PERCENTAGE_WITHOUT_RECIPIENTS: `Cannot specifiy royalty percentage without splits or royalties ${SUPPORT3}`,
-      ROYALTY_RECIPIENTS_WITHOUT_PERCENTAGE: `Cannot specify royalties without royalty percentage ${SUPPORT3}`,
-      NEGATIVE_ROYALTIES: `Royalties cant be negative or 0 ${SUPPORT3}`,
-      EMPTY_TOKEN_IDS: `Empty array passed into tokenIdsToMint field. If trying to specify this, add values to the array, otherwise remove the optional argument ${SUPPORT3}`,
-      MUTUAL_EXCLUSIVE_AMOUNT: `When defining tokenIdsToMint the amount of tokens is given by the length of the provided array. amount and tokenIdsToMint are mutually exclusive ${SUPPORT3}`,
-      UNSUPPORTED_FT: `You are trying to use a Fungible Token that is not yet supported by Mintbase ${SUPPORT3}`,
-      TOKEN_ID_SPECIFICATION: `You are trying to mint with specified token IDs on a smart contract that does not support it ${SUPPORT3}`,
-      TOKEN_ID_NOT_INT: `Specified token IDs need to be integer strings ${SUPPORT3}`,
-      METADATA_ID_NOT_INT: `Specified metadata IDs need to be integer strings ${SUPPORT3}`,
-      SET_SPLITS_NO_TOKEN_IDS: `Cannot set splits without specifying at least one token ID ${SUPPORT3}`,
-      SPLITS_NOT_HUNDERT_PERCENT: `Your specified splits do not add up to 100% ${SUPPORT3}`,
+      FT_CONTRACT_ADDRESS: `You must provide a ftContractAddress ${SUPPORT2}`,
+      INVALID_ROYALTY_PERCENTAGE: `Invalid royalty percentage, it must be between 0 and 0.5 ${SUPPORT2}`,
+      ROYALTIES_PERCENTAGE: `Splits percentages must add up 10000 in the contract call ${SUPPORT2}`,
+      INVALID_AMOUNT: `It is not possible to mint more than 99 or less than 0 copies of this token using this method ${SUPPORT2}`,
+      MIN_SPLITS: `There must be at least 2 accounts in splits ${SUPPORT2}`,
+      MIN_ROYALTIES: `There must be at least 1 account in royalties ${SUPPORT2}`,
+      MAX_ROYALTIES: `There must not be more than 50 royalty holder accounts ${SUPPORT2}`,
+      MAX_ROYALTIES_SPLITS: `Royalties and splits cannot have more than combined 50 entries ${SUPPORT2}`,
+      BURN_TOKEN_IDS: `Burn contract call should not have an empty array of tokens ids ${SUPPORT2}`,
+      TOKEN_NOT_ARRAY: `tokenIds must be an array ${SUPPORT2}`,
+      TOKEN_LENGTH: `tokenIds must have more than one element ${SUPPORT2}`,
+      TRANSFER: `You must transfer at least one token ${SUPPORT2}`,
+      NO_MINTERS: `There are no minters being provided to the batchChangeMinters method to be changed, try adding account Ids to at least one of the minter fields ${SUPPORT2}`,
+      NO_REFERENCE: `You must provide a reference when minting or explicitly opt out ${SUPPORT2}`,
+      NO_MEDIA: `You must provide media when minting or explicitly opt out ${SUPPORT2}`,
+      ROYALTY_PERCENTAGE_WITHOUT_RECIPIENTS: `Cannot specifiy royalty percentage without splits or royalties ${SUPPORT2}`,
+      ROYALTY_RECIPIENTS_WITHOUT_PERCENTAGE: `Cannot specify royalties without royalty percentage ${SUPPORT2}`,
+      NEGATIVE_ROYALTIES: `Royalties cant be negative or 0 ${SUPPORT2}`,
+      EMPTY_TOKEN_IDS: `Empty array passed into tokenIdsToMint field. If trying to specify this, add values to the array, otherwise remove the optional argument ${SUPPORT2}`,
+      MUTUAL_EXCLUSIVE_AMOUNT: `When defining tokenIdsToMint the amount of tokens is given by the length of the provided array. amount and tokenIdsToMint are mutually exclusive ${SUPPORT2}`,
+      UNSUPPORTED_FT: `You are trying to use a Fungible Token that is not yet supported by Mintbase ${SUPPORT2}`,
+      TOKEN_ID_SPECIFICATION: `You are trying to mint with specified token IDs on a smart contract that does not support it ${SUPPORT2}`,
+      TOKEN_ID_NOT_INT: `Specified token IDs need to be integer strings ${SUPPORT2}`,
+      METADATA_ID_NOT_INT: `Specified metadata IDs need to be integer strings ${SUPPORT2}`,
+      SET_SPLITS_NO_TOKEN_IDS: `Cannot set splits without specifying at least one token ID ${SUPPORT2}`,
+      SPLITS_NOT_HUNDERT_PERCENT: `Your specified splits do not add up to 100% ${SUPPORT2}`,
       // TODO: update with method name
-      ONLY_V1: `This method is only compatible with Mintbase v1 smart contracts ${SUPPORT3}`,
-      ONLY_V2: `This method is only compatible with Mintbase v2 smart contracts ${SUPPORT3}`,
-      BATCH_CHANGE_MINTERS_NO_CHANGE: `There are no minters provided to the batchChangeMinters method to be changed, try adding account IDs to at least one of the fields ${SUPPORT3}`,
-      BATCH_CHANGE_CREATORS_NO_CHANGE: `There are no creators provided to the batchChangeCreators method to be changed, try adding account IDs to at least one of the fields ${SUPPORT3}`,
-      INVALID_FACTORY: `Your specified factory contract ID is not known to Mintbase ${SUPPORT3}`,
-      FT_ADDRESS_DECIMALS: `If you specify an ftAddress, you must also specify ftDecimals and vice versa ${SUPPORT3}`
+      ONLY_V1: `This method is only compatible with Mintbase v1 smart contracts ${SUPPORT2}`,
+      ONLY_V2: `This method is only compatible with Mintbase v2 smart contracts ${SUPPORT2}`,
+      BATCH_CHANGE_MINTERS_NO_CHANGE: `There are no minters provided to the batchChangeMinters method to be changed, try adding account IDs to at least one of the fields ${SUPPORT2}`,
+      BATCH_CHANGE_CREATORS_NO_CHANGE: `There are no creators provided to the batchChangeCreators method to be changed, try adding account IDs to at least one of the fields ${SUPPORT2}`,
+      INVALID_FACTORY: `Your specified factory contract ID is not known to Mintbase ${SUPPORT2}`,
+      FT_ADDRESS_DECIMALS: `If you specify an ftAddress, you must also specify ftDecimals and vice versa ${SUPPORT2}`
     };
   }
 });
@@ -4156,9 +4156,9 @@ var require_deployContract = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/crypto/lib/constants.js
+// node_modules/near-api-js/node_modules/@near-js/crypto/lib/constants.js
 var require_constants2 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/crypto/lib/constants.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/crypto/lib/constants.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.KeySize = exports2.KeyType = void 0;
@@ -4176,9 +4176,9 @@ var require_constants2 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/crypto/lib/key_pair_base.js
+// node_modules/near-api-js/node_modules/@near-js/crypto/lib/key_pair_base.js
 var require_key_pair_base = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/crypto/lib/key_pair_base.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/crypto/lib/key_pair_base.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.KeyPairBase = void 0;
@@ -4188,9 +4188,9 @@ var require_key_pair_base = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/constants.js
+// node_modules/near-api-js/node_modules/@near-js/utils/lib/constants.js
 var require_constants3 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/constants.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/utils/lib/constants.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.DEFAULT_FUNCTION_CALL_GAS = void 0;
@@ -4198,9 +4198,9 @@ var require_constants3 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/logger/console.logger.js
+// node_modules/near-api-js/node_modules/@near-js/utils/lib/logger/console.logger.js
 var require_console_logger = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/logger/console.logger.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/utils/lib/logger/console.logger.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.ConsoleLogger = void 0;
@@ -4260,9 +4260,9 @@ var require_console_logger = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/logger/logger.js
+// node_modules/near-api-js/node_modules/@near-js/utils/lib/logger/logger.js
 var require_logger = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/logger/logger.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/utils/lib/logger/logger.js"(exports2) {
     "use strict";
     var _a;
     Object.defineProperty(exports2, "__esModule", { value: true });
@@ -4324,9 +4324,9 @@ var require_logger = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/logger/index.js
+// node_modules/near-api-js/node_modules/@near-js/utils/lib/logger/index.js
 var require_logger2 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/logger/index.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/utils/lib/logger/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.Logger = void 0;
@@ -4337,9 +4337,9 @@ var require_logger2 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/errors/errors.js
+// node_modules/near-api-js/node_modules/@near-js/utils/lib/errors/errors.js
 var require_errors2 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/errors/errors.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/utils/lib/errors/errors.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.logWarning = void 0;
@@ -5067,9 +5067,9 @@ var require_bs58 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/format.js
+// node_modules/near-api-js/node_modules/@near-js/utils/lib/format.js
 var require_format = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/format.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/utils/lib/format.js"(exports2) {
     "use strict";
     var __importDefault = exports2 && exports2.__importDefault || function(mod) {
       return mod && mod.__esModule ? mod : { "default": mod };
@@ -5150,9 +5150,9 @@ var require_format = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/errors/error_messages.json
+// node_modules/near-api-js/node_modules/@near-js/utils/lib/errors/error_messages.json
 var require_error_messages = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/errors/error_messages.json"(exports2, module2) {
+  "node_modules/near-api-js/node_modules/@near-js/utils/lib/errors/error_messages.json"(exports2, module2) {
     module2.exports = {
       GasLimitExceeded: "Exceeded the maximum amount of gas allowed to burn per contract",
       MethodEmptyName: "Method name is empty",
@@ -5225,9 +5225,9 @@ var require_error_messages = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/errors/rpc_error_schema.json
+// node_modules/near-api-js/node_modules/@near-js/utils/lib/errors/rpc_error_schema.json
 var require_rpc_error_schema = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/errors/rpc_error_schema.json"(exports2, module2) {
+  "node_modules/near-api-js/node_modules/@near-js/utils/lib/errors/rpc_error_schema.json"(exports2, module2) {
     module2.exports = {
       schema: {
         AccessKeyNotFound: {
@@ -6176,9 +6176,9 @@ var require_rpc_error_schema = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/errors/rpc_errors.js
+// node_modules/near-api-js/node_modules/@near-js/utils/lib/errors/rpc_errors.js
 var require_rpc_errors = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/errors/rpc_errors.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/utils/lib/errors/rpc_errors.js"(exports2) {
     "use strict";
     var __importDefault = exports2 && exports2.__importDefault || function(mod) {
       return mod && mod.__esModule ? mod : { "default": mod };
@@ -6285,9 +6285,9 @@ var require_rpc_errors = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/errors/index.js
+// node_modules/near-api-js/node_modules/@near-js/utils/lib/errors/index.js
 var require_errors4 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/errors/index.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/utils/lib/errors/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.parseRpcError = exports2.parseResultError = exports2.getErrorTypeFromErrorMessage = exports2.formatError = exports2.ServerError = exports2.logWarning = void 0;
@@ -6314,9 +6314,9 @@ var require_errors4 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/logging.js
+// node_modules/near-api-js/node_modules/@near-js/utils/lib/logging.js
 var require_logging = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/logging.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/utils/lib/logging.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.printTxOutcomeLogs = exports2.printTxOutcomeLogsAndFailures = void 0;
@@ -6357,9 +6357,9 @@ var require_logging = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/provider.js
+// node_modules/near-api-js/node_modules/@near-js/utils/lib/provider.js
 var require_provider2 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/provider.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/utils/lib/provider.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.getTransactionLastResult = void 0;
@@ -6685,9 +6685,9 @@ var require_depd = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/utils.js
+// node_modules/near-api-js/node_modules/@near-js/utils/lib/utils.js
 var require_utils2 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/utils.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/utils/lib/utils.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.sortBigIntAsc = void 0;
@@ -6698,9 +6698,9 @@ var require_utils2 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/validators.js
+// node_modules/near-api-js/node_modules/@near-js/utils/lib/validators.js
 var require_validators = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/validators.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/utils/lib/validators.js"(exports2) {
     "use strict";
     var __importDefault = exports2 && exports2.__importDefault || function(mod) {
       return mod && mod.__esModule ? mod : { "default": mod };
@@ -6773,9 +6773,9 @@ var require_validators = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/index.js
+// node_modules/near-api-js/node_modules/@near-js/utils/lib/index.js
 var require_lib2 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/utils/lib/index.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/utils/lib/index.js"(exports2) {
     "use strict";
     var __createBinding = exports2 && exports2.__createBinding || (Object.create ? function(o, m, k, k2) {
       if (k2 === void 0) k2 = k;
@@ -18068,9 +18068,9 @@ var require_secp256k12 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/crypto/lib/public_key.js
+// node_modules/near-api-js/node_modules/@near-js/crypto/lib/public_key.js
 var require_public_key = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/crypto/lib/public_key.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/crypto/lib/public_key.js"(exports2) {
     "use strict";
     var __importDefault = exports2 && exports2.__importDefault || function(mod) {
       return mod && mod.__esModule ? mod : { "default": mod };
@@ -18201,9 +18201,9 @@ var require_public_key = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/crypto/lib/key_pair_ed25519.js
+// node_modules/near-api-js/node_modules/@near-js/crypto/lib/key_pair_ed25519.js
 var require_key_pair_ed25519 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/crypto/lib/key_pair_ed25519.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/crypto/lib/key_pair_ed25519.js"(exports2) {
     "use strict";
     var __importDefault = exports2 && exports2.__importDefault || function(mod) {
       return mod && mod.__esModule ? mod : { "default": mod };
@@ -18284,9 +18284,9 @@ var require_key_pair_ed25519 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/crypto/lib/key_pair_secp256k1.js
+// node_modules/near-api-js/node_modules/@near-js/crypto/lib/key_pair_secp256k1.js
 var require_key_pair_secp256k1 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/crypto/lib/key_pair_secp256k1.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/crypto/lib/key_pair_secp256k1.js"(exports2) {
     "use strict";
     var __importDefault = exports2 && exports2.__importDefault || function(mod) {
       return mod && mod.__esModule ? mod : { "default": mod };
@@ -18353,9 +18353,9 @@ var require_key_pair_secp256k1 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/crypto/lib/key_pair.js
+// node_modules/near-api-js/node_modules/@near-js/crypto/lib/key_pair.js
 var require_key_pair = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/crypto/lib/key_pair.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/crypto/lib/key_pair.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.KeyPair = void 0;
@@ -18402,9 +18402,9 @@ var require_key_pair = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/crypto/lib/index.js
+// node_modules/near-api-js/node_modules/@near-js/crypto/lib/index.js
 var require_lib4 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/crypto/lib/index.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/crypto/lib/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.PublicKey = exports2.KeyPairSecp256k1 = exports2.KeyPairEd25519 = exports2.KeyPair = exports2.KeyType = void 0;
@@ -18431,9 +18431,9 @@ var require_lib4 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/keystores/lib/keystore.js
+// node_modules/near-api-js/node_modules/@near-js/keystores/lib/keystore.js
 var require_keystore = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/keystores/lib/keystore.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/keystores/lib/keystore.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.KeyStore = void 0;
@@ -18443,9 +18443,9 @@ var require_keystore = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/keystores/lib/in_memory_key_store.js
+// node_modules/near-api-js/node_modules/@near-js/keystores/lib/in_memory_key_store.js
 var require_in_memory_key_store = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/keystores/lib/in_memory_key_store.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/keystores/lib/in_memory_key_store.js"(exports2) {
     "use strict";
     var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
       function adopt(value) {
@@ -18566,9 +18566,9 @@ var require_in_memory_key_store = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/keystores/lib/merge_key_store.js
+// node_modules/near-api-js/node_modules/@near-js/keystores/lib/merge_key_store.js
 var require_merge_key_store = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/keystores/lib/merge_key_store.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/keystores/lib/merge_key_store.js"(exports2) {
     "use strict";
     var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
       function adopt(value) {
@@ -18700,9 +18700,9 @@ var require_merge_key_store = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/keystores/lib/multi_contract_keystore.js
+// node_modules/near-api-js/node_modules/@near-js/keystores/lib/multi_contract_keystore.js
 var require_multi_contract_keystore = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/keystores/lib/multi_contract_keystore.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/keystores/lib/multi_contract_keystore.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.MultiContractKeyStore = void 0;
@@ -18712,9 +18712,9 @@ var require_multi_contract_keystore = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/keystores/lib/index.js
+// node_modules/near-api-js/node_modules/@near-js/keystores/lib/index.js
 var require_lib5 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/keystores/lib/index.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/keystores/lib/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.MultiContractKeyStore = exports2.MergeKeyStore = exports2.KeyStore = exports2.InMemoryKeyStore = void 0;
@@ -18737,9 +18737,9 @@ var require_lib5 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/key_stores/keystore.js
+// node_modules/near-api-js/lib/key_stores/keystore.js
 var require_keystore2 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/key_stores/keystore.js"(exports2) {
+  "node_modules/near-api-js/lib/key_stores/keystore.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.KeyStore = void 0;
@@ -18750,9 +18750,9 @@ var require_keystore2 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/key_stores/in_memory_key_store.js
+// node_modules/near-api-js/lib/key_stores/in_memory_key_store.js
 var require_in_memory_key_store2 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/key_stores/in_memory_key_store.js"(exports2) {
+  "node_modules/near-api-js/lib/key_stores/in_memory_key_store.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.InMemoryKeyStore = void 0;
@@ -18763,9 +18763,2305 @@ var require_in_memory_key_store2 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/keystores-browser/lib/browser_local_storage_key_store.js
+// node_modules/@near-js/keystores-browser/node_modules/@near-js/crypto/lib/constants.js
+var require_constants4 = __commonJS({
+  "node_modules/@near-js/keystores-browser/node_modules/@near-js/crypto/lib/constants.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.KeySize = exports2.KeyType = void 0;
+    var KeyType;
+    (function(KeyType2) {
+      KeyType2[KeyType2["ED25519"] = 0] = "ED25519";
+      KeyType2[KeyType2["SECP256K1"] = 1] = "SECP256K1";
+    })(KeyType = exports2.KeyType || (exports2.KeyType = {}));
+    var KeySize;
+    (function(KeySize2) {
+      KeySize2[KeySize2["SECRET_KEY"] = 32] = "SECRET_KEY";
+      KeySize2[KeySize2["ED25519_PUBLIC_KEY"] = 32] = "ED25519_PUBLIC_KEY";
+      KeySize2[KeySize2["SECP256k1_PUBLIC_KEY"] = 64] = "SECP256k1_PUBLIC_KEY";
+    })(KeySize = exports2.KeySize || (exports2.KeySize = {}));
+  }
+});
+
+// node_modules/@near-js/keystores-browser/node_modules/@near-js/crypto/lib/key_pair_base.js
+var require_key_pair_base2 = __commonJS({
+  "node_modules/@near-js/keystores-browser/node_modules/@near-js/crypto/lib/key_pair_base.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.KeyPairBase = void 0;
+    var KeyPairBase = class {
+    };
+    exports2.KeyPairBase = KeyPairBase;
+  }
+});
+
+// node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/constants.js
+var require_constants5 = __commonJS({
+  "node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/constants.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.DEFAULT_FUNCTION_CALL_GAS = void 0;
+    exports2.DEFAULT_FUNCTION_CALL_GAS = BigInt("30000000000000");
+  }
+});
+
+// node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/logger/console.logger.js
+var require_console_logger2 = __commonJS({
+  "node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/logger/console.logger.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.ConsoleLogger = void 0;
+    var ConsoleLogger = class {
+      constructor(logLevels) {
+        this.logLevels = logLevels;
+        this.isLevelEnabled = (level) => {
+          return this.logLevels.includes(level);
+        };
+      }
+      print(level, message2, ...optionalParams) {
+        switch (level) {
+          case "error":
+          case "fatal":
+            return console.error(message2, ...optionalParams);
+          case "warn":
+            return console.warn(message2, ...optionalParams);
+          case "log":
+            return console.log(message2, ...optionalParams);
+          case "debug":
+          case "verbose":
+            return console.debug(message2, ...optionalParams);
+        }
+      }
+      verbose(message2, ...optionalParams) {
+        if (!this.isLevelEnabled("verbose"))
+          return;
+        this.print("verbose", message2, ...optionalParams);
+      }
+      debug(message2, ...optionalParams) {
+        if (!this.isLevelEnabled("debug"))
+          return;
+        this.print("debug", message2, ...optionalParams);
+      }
+      log(message2, ...optionalParams) {
+        if (!this.isLevelEnabled("log"))
+          return;
+        this.print("log", message2, ...optionalParams);
+      }
+      warn(message2, ...optionalParams) {
+        if (!this.isLevelEnabled("warn"))
+          return;
+        this.print("warn", message2, ...optionalParams);
+      }
+      error(message2, ...optionalParams) {
+        if (!this.isLevelEnabled("error"))
+          return;
+        this.print("error", message2, ...optionalParams);
+      }
+      fatal(message2, ...optionalParams) {
+        if (!this.isLevelEnabled("fatal"))
+          return;
+        this.print("fatal", message2, ...optionalParams);
+      }
+    };
+    exports2.ConsoleLogger = ConsoleLogger;
+  }
+});
+
+// node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/logger/logger.js
+var require_logger3 = __commonJS({
+  "node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/logger/logger.js"(exports2) {
+    "use strict";
+    var _a;
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.Logger = void 0;
+    var console_logger_1 = require_console_logger2();
+    var DEFAULT_LOG_LEVELS = [
+      "verbose",
+      "debug",
+      "log",
+      "warn",
+      "error",
+      "fatal"
+    ];
+    var DEFAULT_LOGGER = typeof process === "object" && process.env.NEAR_NO_LOGS ? void 0 : new console_logger_1.ConsoleLogger(DEFAULT_LOG_LEVELS);
+    var Logger = class {
+      static error(message2, ...optionalParams) {
+        var _b;
+        (_b = this.instanceRef) === null || _b === void 0 ? void 0 : _b.error(message2, ...optionalParams);
+      }
+      /**
+       * Write a 'log' level log.
+       */
+      static log(message2, ...optionalParams) {
+        var _b;
+        (_b = this.instanceRef) === null || _b === void 0 ? void 0 : _b.log(message2, ...optionalParams);
+      }
+      /**
+       * Write a 'warn' level log.
+       */
+      static warn(message2, ...optionalParams) {
+        var _b;
+        (_b = this.instanceRef) === null || _b === void 0 ? void 0 : _b.warn(message2, ...optionalParams);
+      }
+      /**
+       * Write a 'debug' level log.
+       */
+      static debug(message2, ...optionalParams) {
+        var _b, _c;
+        (_c = (_b = this.instanceRef) === null || _b === void 0 ? void 0 : _b.debug) === null || _c === void 0 ? void 0 : _c.call(_b, message2, ...optionalParams);
+      }
+      /**
+       * Write a 'verbose' level log.
+       */
+      static verbose(message2, ...optionalParams) {
+        var _b, _c;
+        (_c = (_b = this.instanceRef) === null || _b === void 0 ? void 0 : _b.verbose) === null || _c === void 0 ? void 0 : _c.call(_b, message2, ...optionalParams);
+      }
+      static fatal(message2, ...optionalParams) {
+        var _b, _c;
+        (_c = (_b = this.instanceRef) === null || _b === void 0 ? void 0 : _b.fatal) === null || _c === void 0 ? void 0 : _c.call(_b, message2, ...optionalParams);
+      }
+    };
+    exports2.Logger = Logger;
+    _a = Logger;
+    Logger.instanceRef = DEFAULT_LOGGER;
+    Logger.overrideLogger = (logger) => {
+      _a.instanceRef = logger;
+    };
+  }
+});
+
+// node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/logger/index.js
+var require_logger4 = __commonJS({
+  "node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/logger/index.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.Logger = void 0;
+    var logger_1 = require_logger3();
+    Object.defineProperty(exports2, "Logger", { enumerable: true, get: function() {
+      return logger_1.Logger;
+    } });
+  }
+});
+
+// node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/errors/errors.js
+var require_errors5 = __commonJS({
+  "node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/errors/errors.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.logWarning = void 0;
+    var logger_1 = require_logger4();
+    function logWarning(...args2) {
+      const [message2, ...optionalParams] = args2;
+      logger_1.Logger.warn(message2, ...optionalParams);
+    }
+    exports2.logWarning = logWarning;
+  }
+});
+
+// node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/format.js
+var require_format2 = __commonJS({
+  "node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/format.js"(exports2) {
+    "use strict";
+    var __importDefault = exports2 && exports2.__importDefault || function(mod) {
+      return mod && mod.__esModule ? mod : { "default": mod };
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.baseDecode = exports2.baseEncode = exports2.parseNearAmount = exports2.formatNearAmount = exports2.NEAR_NOMINATION = exports2.NEAR_NOMINATION_EXP = void 0;
+    var bs58_1 = __importDefault(require_bs58());
+    exports2.NEAR_NOMINATION_EXP = 24;
+    exports2.NEAR_NOMINATION = __pow(BigInt(10), BigInt(exports2.NEAR_NOMINATION_EXP));
+    var ROUNDING_OFFSETS = [];
+    var BN10 = BigInt(10);
+    for (let i = 0, offset = BigInt(5); i < exports2.NEAR_NOMINATION_EXP; i++, offset = offset * BN10) {
+      ROUNDING_OFFSETS[i] = offset;
+    }
+    function formatNearAmount(balance, fracDigits = exports2.NEAR_NOMINATION_EXP) {
+      let balanceBN = BigInt(balance);
+      if (fracDigits !== exports2.NEAR_NOMINATION_EXP) {
+        const roundingExp = exports2.NEAR_NOMINATION_EXP - fracDigits - 1;
+        if (roundingExp > 0) {
+          balanceBN += ROUNDING_OFFSETS[roundingExp];
+        }
+      }
+      balance = balanceBN.toString();
+      const wholeStr = balance.substring(0, balance.length - exports2.NEAR_NOMINATION_EXP) || "0";
+      const fractionStr = balance.substring(balance.length - exports2.NEAR_NOMINATION_EXP).padStart(exports2.NEAR_NOMINATION_EXP, "0").substring(0, fracDigits);
+      return trimTrailingZeroes(`${formatWithCommas(wholeStr)}.${fractionStr}`);
+    }
+    exports2.formatNearAmount = formatNearAmount;
+    function parseNearAmount(amt) {
+      if (!amt) {
+        return null;
+      }
+      amt = cleanupAmount(amt);
+      const split = amt.split(".");
+      const wholePart = split[0];
+      const fracPart = split[1] || "";
+      if (split.length > 2 || fracPart.length > exports2.NEAR_NOMINATION_EXP) {
+        throw new Error(`Cannot parse '${amt}' as NEAR amount`);
+      }
+      return trimLeadingZeroes(wholePart + fracPart.padEnd(exports2.NEAR_NOMINATION_EXP, "0"));
+    }
+    exports2.parseNearAmount = parseNearAmount;
+    function cleanupAmount(amount) {
+      return amount.replace(/,/g, "").trim();
+    }
+    function trimTrailingZeroes(value) {
+      return value.replace(/\.?0*$/, "");
+    }
+    function trimLeadingZeroes(value) {
+      value = value.replace(/^0+/, "");
+      if (value === "") {
+        return "0";
+      }
+      return value;
+    }
+    function formatWithCommas(value) {
+      const pattern = /(-?\d+)(\d{3})/;
+      while (pattern.test(value)) {
+        value = value.replace(pattern, "$1,$2");
+      }
+      return value;
+    }
+    function baseEncode(value) {
+      if (typeof value === "string") {
+        const bytes = [];
+        for (let c = 0; c < value.length; c++) {
+          bytes.push(value.charCodeAt(c));
+        }
+        value = new Uint8Array(bytes);
+      }
+      return bs58_1.default.encode(value);
+    }
+    exports2.baseEncode = baseEncode;
+    function baseDecode(value) {
+      return new Uint8Array(bs58_1.default.decode(value));
+    }
+    exports2.baseDecode = baseDecode;
+  }
+});
+
+// node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/errors/error_messages.json
+var require_error_messages2 = __commonJS({
+  "node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/errors/error_messages.json"(exports2, module2) {
+    module2.exports = {
+      GasLimitExceeded: "Exceeded the maximum amount of gas allowed to burn per contract",
+      MethodEmptyName: "Method name is empty",
+      WasmerCompileError: "Wasmer compilation error: {{msg}}",
+      GuestPanic: "Smart contract panicked: {{panic_msg}}",
+      Memory: "Error creating Wasm memory",
+      GasExceeded: "Exceeded the prepaid gas",
+      MethodUTF8Error: "Method name is not valid UTF8 string",
+      BadUTF16: "String encoding is bad UTF-16 sequence",
+      WasmTrap: "WebAssembly trap: {{msg}}",
+      GasInstrumentation: "Gas instrumentation failed or contract has denied instructions.",
+      InvalidPromiseIndex: "{{promise_idx}} does not correspond to existing promises",
+      InvalidPromiseResultIndex: "Accessed invalid promise result index: {{result_idx}}",
+      Deserialization: "Error happened while deserializing the module",
+      MethodNotFound: "Contract method is not found",
+      InvalidRegisterId: "Accessed invalid register id: {{register_id}}",
+      InvalidReceiptIndex: "VM Logic returned an invalid receipt index: {{receipt_index}}",
+      EmptyMethodName: "Method name is empty in contract call",
+      CannotReturnJointPromise: "Returning joint promise is currently prohibited",
+      StackHeightInstrumentation: "Stack instrumentation failed",
+      CodeDoesNotExist: "Cannot find contract code for account {{account_id}}",
+      MethodInvalidSignature: "Invalid method signature",
+      IntegerOverflow: "Integer overflow happened during contract execution",
+      MemoryAccessViolation: "MemoryAccessViolation",
+      InvalidIteratorIndex: "Iterator index {{iterator_index}} does not exist",
+      IteratorWasInvalidated: "Iterator {{iterator_index}} was invalidated after its creation by performing a mutable operation on trie",
+      InvalidAccountId: "VM Logic returned an invalid account id",
+      Serialization: "Error happened while serializing the module",
+      CannotAppendActionToJointPromise: "Actions can only be appended to non-joint promise.",
+      InternalMemoryDeclared: "Internal memory declaration has been found in the module",
+      Instantiate: "Error happened during instantiation",
+      ProhibitedInView: "{{method_name}} is not allowed in view calls",
+      InvalidMethodName: "VM Logic returned an invalid method name",
+      BadUTF8: "String encoding is bad UTF-8 sequence",
+      BalanceExceeded: "Exceeded the account balance",
+      LinkError: "Wasm contract link error: {{msg}}",
+      InvalidPublicKey: "VM Logic provided an invalid public key",
+      ActorNoPermission: "Actor {{actor_id}} doesn't have permission to account {{account_id}} to complete the action",
+      LackBalanceForState: "The account {{account_id}} wouldn't have enough balance to cover storage, required to have {{amount}} yoctoNEAR more",
+      ReceiverMismatch: "Wrong AccessKey used for transaction: transaction is sent to receiver_id={{tx_receiver}}, but is signed with function call access key that restricted to only use with receiver_id={{ak_receiver}}. Either change receiver_id in your transaction or switch to use a FullAccessKey.",
+      CostOverflow: "Transaction gas or balance cost is too high",
+      InvalidSignature: "Transaction is not signed with the given public key",
+      AccessKeyNotFound: `Signer "{{account_id}}" doesn't have access key with the given public_key {{public_key}}`,
+      NotEnoughBalance: "Sender {{signer_id}} does not have enough balance {{#formatNear}}{{balance}}{{/formatNear}} for operation costing {{#formatNear}}{{cost}}{{/formatNear}}",
+      NotEnoughAllowance: "Access Key {account_id}:{public_key} does not have enough balance {{#formatNear}}{{allowance}}{{/formatNear}} for transaction costing {{#formatNear}}{{cost}}{{/formatNear}}",
+      Expired: "Transaction has expired",
+      DeleteAccountStaking: "Account {{account_id}} is staking and can not be deleted",
+      SignerDoesNotExist: "Signer {{signer_id}} does not exist",
+      TriesToStake: "Account {{account_id}} tried to stake {{#formatNear}}{{stake}}{{/formatNear}}, but has staked {{#formatNear}}{{locked}}{{/formatNear}} and only has {{#formatNear}}{{balance}}{{/formatNear}}",
+      AddKeyAlreadyExists: "The public key {{public_key}} is already used for an existing access key",
+      InvalidSigner: "Invalid signer account ID {{signer_id}} according to requirements",
+      CreateAccountNotAllowed: "The new account_id {{account_id}} can't be created by {{predecessor_id}}",
+      RequiresFullAccess: "The transaction contains more then one action, but it was signed with an access key which allows transaction to apply only one specific action. To apply more then one actions TX must be signed with a full access key",
+      TriesToUnstake: "Account {{account_id}} is not yet staked, but tried to unstake",
+      InvalidNonce: "Transaction nonce {{tx_nonce}} must be larger than nonce of the used access key {{ak_nonce}}",
+      AccountAlreadyExists: "Can't create a new account {{account_id}}, because it already exists",
+      InvalidChain: "Transaction parent block hash doesn't belong to the current chain",
+      AccountDoesNotExist: "Can't complete the action because account {{account_id}} doesn't exist",
+      AccessKeyDoesNotExist: "Can't complete the action because access key {{public_key}} doesn't exist",
+      MethodNameMismatch: "Transaction method name {{method_name}} isn't allowed by the access key",
+      DeleteAccountHasRent: "Account {{account_id}} can't be deleted. It has {{#formatNear}}{{balance}}{{/formatNear}}, which is enough to cover the rent",
+      DeleteAccountHasEnoughBalance: "Account {{account_id}} can't be deleted. It has {{#formatNear}}{{balance}}{{/formatNear}}, which is enough to cover it's storage",
+      InvalidReceiver: "Invalid receiver account ID {{receiver_id}} according to requirements",
+      DeleteKeyDoesNotExist: "Account {{account_id}} tries to remove an access key that doesn't exist",
+      Timeout: "Timeout exceeded",
+      Closed: "Connection closed",
+      ShardCongested: "Shard {{shard_id}} rejected the transaction due to congestion level {{congestion_level}}, try again later",
+      ShardStuck: "Shard {{shard_id}} rejected the transaction because it missed {{missed_chunks}} chunks and needs to recover before accepting new transactions, try again later"
+    };
+  }
+});
+
+// node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/errors/rpc_error_schema.json
+var require_rpc_error_schema2 = __commonJS({
+  "node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/errors/rpc_error_schema.json"(exports2, module2) {
+    module2.exports = {
+      schema: {
+        AccessKeyNotFound: {
+          name: "AccessKeyNotFound",
+          subtypes: [],
+          props: {
+            account_id: "",
+            public_key: ""
+          }
+        },
+        AccountAlreadyExists: {
+          name: "AccountAlreadyExists",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        AccountDoesNotExist: {
+          name: "AccountDoesNotExist",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        ActionError: {
+          name: "ActionError",
+          subtypes: [
+            "AccountAlreadyExists",
+            "AccountDoesNotExist",
+            "CreateAccountOnlyByRegistrar",
+            "CreateAccountNotAllowed",
+            "ActorNoPermission",
+            "DeleteKeyDoesNotExist",
+            "AddKeyAlreadyExists",
+            "DeleteAccountStaking",
+            "LackBalanceForState",
+            "TriesToUnstake",
+            "TriesToStake",
+            "InsufficientStake",
+            "FunctionCallError",
+            "NewReceiptValidationError",
+            "OnlyImplicitAccountCreationAllowed",
+            "DeleteAccountWithLargeState",
+            "DelegateActionInvalidSignature",
+            "DelegateActionSenderDoesNotMatchTxReceiver",
+            "DelegateActionExpired",
+            "DelegateActionAccessKeyError",
+            "DelegateActionInvalidNonce",
+            "DelegateActionNonceTooLarge"
+          ],
+          props: {
+            index: ""
+          }
+        },
+        ActionsValidationError: {
+          name: "ActionsValidationError",
+          subtypes: [
+            "DeleteActionMustBeFinal",
+            "TotalPrepaidGasExceeded",
+            "TotalNumberOfActionsExceeded",
+            "AddKeyMethodNamesNumberOfBytesExceeded",
+            "AddKeyMethodNameLengthExceeded",
+            "IntegerOverflow",
+            "InvalidAccountId",
+            "ContractSizeExceeded",
+            "FunctionCallMethodNameLengthExceeded",
+            "FunctionCallArgumentsLengthExceeded",
+            "UnsuitableStakingKey",
+            "FunctionCallZeroAttachedGas",
+            "DelegateActionMustBeOnlyOne",
+            "UnsupportedProtocolFeature"
+          ],
+          props: {}
+        },
+        ActorNoPermission: {
+          name: "ActorNoPermission",
+          subtypes: [],
+          props: {
+            account_id: "",
+            actor_id: ""
+          }
+        },
+        AddKeyAlreadyExists: {
+          name: "AddKeyAlreadyExists",
+          subtypes: [],
+          props: {
+            account_id: "",
+            public_key: ""
+          }
+        },
+        AddKeyMethodNameLengthExceeded: {
+          name: "AddKeyMethodNameLengthExceeded",
+          subtypes: [],
+          props: {
+            length: "",
+            limit: ""
+          }
+        },
+        AddKeyMethodNamesNumberOfBytesExceeded: {
+          name: "AddKeyMethodNamesNumberOfBytesExceeded",
+          subtypes: [],
+          props: {
+            limit: "",
+            total_number_of_bytes: ""
+          }
+        },
+        AltBn128InvalidInput: {
+          name: "AltBn128InvalidInput",
+          subtypes: [],
+          props: {
+            msg: ""
+          }
+        },
+        BadUTF16: {
+          name: "BadUTF16",
+          subtypes: [],
+          props: {}
+        },
+        BadUTF8: {
+          name: "BadUTF8",
+          subtypes: [],
+          props: {}
+        },
+        BalanceExceeded: {
+          name: "BalanceExceeded",
+          subtypes: [],
+          props: {}
+        },
+        BalanceMismatchError: {
+          name: "BalanceMismatchError",
+          subtypes: [],
+          props: {
+            final_accounts_balance: "",
+            final_postponed_receipts_balance: "",
+            forwarded_buffered_receipts_balance: "",
+            incoming_receipts_balance: "",
+            incoming_validator_rewards: "",
+            initial_accounts_balance: "",
+            initial_postponed_receipts_balance: "",
+            new_buffered_receipts_balance: "",
+            new_delayed_receipts_balance: "",
+            other_burnt_amount: "",
+            outgoing_receipts_balance: "",
+            processed_delayed_receipts_balance: "",
+            slashed_burnt_amount: "",
+            tx_burnt_amount: ""
+          }
+        },
+        CallIndirectOOB: {
+          name: "CallIndirectOOB",
+          subtypes: [],
+          props: {}
+        },
+        CannotAppendActionToJointPromise: {
+          name: "CannotAppendActionToJointPromise",
+          subtypes: [],
+          props: {}
+        },
+        CannotReturnJointPromise: {
+          name: "CannotReturnJointPromise",
+          subtypes: [],
+          props: {}
+        },
+        CodeDoesNotExist: {
+          name: "CodeDoesNotExist",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        CompilationError: {
+          name: "CompilationError",
+          subtypes: [
+            "CodeDoesNotExist",
+            "PrepareError",
+            "WasmerCompileError"
+          ],
+          props: {}
+        },
+        ContractSizeExceeded: {
+          name: "ContractSizeExceeded",
+          subtypes: [],
+          props: {
+            limit: "",
+            size: ""
+          }
+        },
+        CostOverflow: {
+          name: "CostOverflow",
+          subtypes: [],
+          props: {}
+        },
+        CreateAccountNotAllowed: {
+          name: "CreateAccountNotAllowed",
+          subtypes: [],
+          props: {
+            account_id: "",
+            predecessor_id: ""
+          }
+        },
+        CreateAccountOnlyByRegistrar: {
+          name: "CreateAccountOnlyByRegistrar",
+          subtypes: [],
+          props: {
+            account_id: "",
+            predecessor_id: "",
+            registrar_account_id: ""
+          }
+        },
+        DelegateActionExpired: {
+          name: "DelegateActionExpired",
+          subtypes: [],
+          props: {}
+        },
+        DelegateActionInvalidNonce: {
+          name: "DelegateActionInvalidNonce",
+          subtypes: [],
+          props: {
+            ak_nonce: "",
+            delegate_nonce: ""
+          }
+        },
+        DelegateActionInvalidSignature: {
+          name: "DelegateActionInvalidSignature",
+          subtypes: [],
+          props: {}
+        },
+        DelegateActionMustBeOnlyOne: {
+          name: "DelegateActionMustBeOnlyOne",
+          subtypes: [],
+          props: {}
+        },
+        DelegateActionNonceTooLarge: {
+          name: "DelegateActionNonceTooLarge",
+          subtypes: [],
+          props: {
+            delegate_nonce: "",
+            upper_bound: ""
+          }
+        },
+        DelegateActionSenderDoesNotMatchTxReceiver: {
+          name: "DelegateActionSenderDoesNotMatchTxReceiver",
+          subtypes: [],
+          props: {
+            receiver_id: "",
+            sender_id: ""
+          }
+        },
+        DeleteAccountStaking: {
+          name: "DeleteAccountStaking",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        DeleteAccountWithLargeState: {
+          name: "DeleteAccountWithLargeState",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        DeleteActionMustBeFinal: {
+          name: "DeleteActionMustBeFinal",
+          subtypes: [],
+          props: {}
+        },
+        DeleteKeyDoesNotExist: {
+          name: "DeleteKeyDoesNotExist",
+          subtypes: [],
+          props: {
+            account_id: "",
+            public_key: ""
+          }
+        },
+        DepositWithFunctionCall: {
+          name: "DepositWithFunctionCall",
+          subtypes: [],
+          props: {}
+        },
+        Deprecated: {
+          name: "Deprecated",
+          subtypes: [],
+          props: {
+            method_name: ""
+          }
+        },
+        Deserialization: {
+          name: "Deserialization",
+          subtypes: [],
+          props: {}
+        },
+        ECRecoverError: {
+          name: "ECRecoverError",
+          subtypes: [],
+          props: {
+            msg: ""
+          }
+        },
+        Ed25519VerifyInvalidInput: {
+          name: "Ed25519VerifyInvalidInput",
+          subtypes: [],
+          props: {
+            msg: ""
+          }
+        },
+        EmptyMethodName: {
+          name: "EmptyMethodName",
+          subtypes: [],
+          props: {}
+        },
+        Expired: {
+          name: "Expired",
+          subtypes: [],
+          props: {}
+        },
+        FunctionCallArgumentsLengthExceeded: {
+          name: "FunctionCallArgumentsLengthExceeded",
+          subtypes: [],
+          props: {
+            length: "",
+            limit: ""
+          }
+        },
+        FunctionCallMethodNameLengthExceeded: {
+          name: "FunctionCallMethodNameLengthExceeded",
+          subtypes: [],
+          props: {
+            length: "",
+            limit: ""
+          }
+        },
+        FunctionCallZeroAttachedGas: {
+          name: "FunctionCallZeroAttachedGas",
+          subtypes: [],
+          props: {}
+        },
+        GasExceeded: {
+          name: "GasExceeded",
+          subtypes: [],
+          props: {}
+        },
+        GasInstrumentation: {
+          name: "GasInstrumentation",
+          subtypes: [],
+          props: {}
+        },
+        GasLimitExceeded: {
+          name: "GasLimitExceeded",
+          subtypes: [],
+          props: {}
+        },
+        GenericTrap: {
+          name: "GenericTrap",
+          subtypes: [],
+          props: {}
+        },
+        GuestPanic: {
+          name: "GuestPanic",
+          subtypes: [],
+          props: {
+            panic_msg: ""
+          }
+        },
+        HostError: {
+          name: "HostError",
+          subtypes: [
+            "BadUTF16",
+            "BadUTF8",
+            "GasExceeded",
+            "GasLimitExceeded",
+            "BalanceExceeded",
+            "EmptyMethodName",
+            "GuestPanic",
+            "IntegerOverflow",
+            "InvalidPromiseIndex",
+            "CannotAppendActionToJointPromise",
+            "CannotReturnJointPromise",
+            "InvalidPromiseResultIndex",
+            "InvalidRegisterId",
+            "IteratorWasInvalidated",
+            "MemoryAccessViolation",
+            "InvalidReceiptIndex",
+            "InvalidIteratorIndex",
+            "InvalidAccountId",
+            "InvalidMethodName",
+            "InvalidPublicKey",
+            "ProhibitedInView",
+            "NumberOfLogsExceeded",
+            "KeyLengthExceeded",
+            "ValueLengthExceeded",
+            "TotalLogLengthExceeded",
+            "NumberPromisesExceeded",
+            "NumberInputDataDependenciesExceeded",
+            "ReturnedValueLengthExceeded",
+            "ContractSizeExceeded",
+            "Deprecated",
+            "ECRecoverError",
+            "AltBn128InvalidInput",
+            "Ed25519VerifyInvalidInput"
+          ],
+          props: {}
+        },
+        IllegalArithmetic: {
+          name: "IllegalArithmetic",
+          subtypes: [],
+          props: {}
+        },
+        IncorrectCallIndirectSignature: {
+          name: "IncorrectCallIndirectSignature",
+          subtypes: [],
+          props: {}
+        },
+        IndirectCallToNull: {
+          name: "IndirectCallToNull",
+          subtypes: [],
+          props: {}
+        },
+        Instantiate: {
+          name: "Instantiate",
+          subtypes: [],
+          props: {}
+        },
+        InsufficientStake: {
+          name: "InsufficientStake",
+          subtypes: [],
+          props: {
+            account_id: "",
+            minimum_stake: "",
+            stake: ""
+          }
+        },
+        IntegerOverflow: {
+          name: "IntegerOverflow",
+          subtypes: [],
+          props: {}
+        },
+        InternalMemoryDeclared: {
+          name: "InternalMemoryDeclared",
+          subtypes: [],
+          props: {}
+        },
+        InvalidAccessKeyError: {
+          name: "InvalidAccessKeyError",
+          subtypes: [
+            "AccessKeyNotFound",
+            "ReceiverMismatch",
+            "MethodNameMismatch",
+            "RequiresFullAccess",
+            "NotEnoughAllowance",
+            "DepositWithFunctionCall"
+          ],
+          props: {}
+        },
+        InvalidAccountId: {
+          name: "InvalidAccountId",
+          subtypes: [],
+          props: {}
+        },
+        InvalidChain: {
+          name: "InvalidChain",
+          subtypes: [],
+          props: {}
+        },
+        InvalidDataReceiverId: {
+          name: "InvalidDataReceiverId",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        InvalidIteratorIndex: {
+          name: "InvalidIteratorIndex",
+          subtypes: [],
+          props: {
+            iterator_index: ""
+          }
+        },
+        InvalidMethodName: {
+          name: "InvalidMethodName",
+          subtypes: [],
+          props: {}
+        },
+        InvalidNonce: {
+          name: "InvalidNonce",
+          subtypes: [],
+          props: {
+            ak_nonce: "",
+            tx_nonce: ""
+          }
+        },
+        InvalidPredecessorId: {
+          name: "InvalidPredecessorId",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        InvalidPromiseIndex: {
+          name: "InvalidPromiseIndex",
+          subtypes: [],
+          props: {
+            promise_idx: ""
+          }
+        },
+        InvalidPromiseResultIndex: {
+          name: "InvalidPromiseResultIndex",
+          subtypes: [],
+          props: {
+            result_idx: ""
+          }
+        },
+        InvalidPublicKey: {
+          name: "InvalidPublicKey",
+          subtypes: [],
+          props: {}
+        },
+        InvalidReceiptIndex: {
+          name: "InvalidReceiptIndex",
+          subtypes: [],
+          props: {
+            receipt_index: ""
+          }
+        },
+        InvalidReceiverId: {
+          name: "InvalidReceiverId",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        InvalidRegisterId: {
+          name: "InvalidRegisterId",
+          subtypes: [],
+          props: {
+            register_id: ""
+          }
+        },
+        InvalidSignature: {
+          name: "InvalidSignature",
+          subtypes: [],
+          props: {}
+        },
+        InvalidSignerId: {
+          name: "InvalidSignerId",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        InvalidTxError: {
+          name: "InvalidTxError",
+          subtypes: [
+            "InvalidAccessKeyError",
+            "InvalidSignerId",
+            "SignerDoesNotExist",
+            "InvalidNonce",
+            "NonceTooLarge",
+            "InvalidReceiverId",
+            "InvalidSignature",
+            "NotEnoughBalance",
+            "LackBalanceForState",
+            "CostOverflow",
+            "InvalidChain",
+            "Expired",
+            "ActionsValidation",
+            "TransactionSizeExceeded",
+            "StorageError",
+            "ShardCongested",
+            "ShardStuck"
+          ],
+          props: {}
+        },
+        IteratorWasInvalidated: {
+          name: "IteratorWasInvalidated",
+          subtypes: [],
+          props: {
+            iterator_index: ""
+          }
+        },
+        KeyLengthExceeded: {
+          name: "KeyLengthExceeded",
+          subtypes: [],
+          props: {
+            length: "",
+            limit: ""
+          }
+        },
+        LackBalanceForState: {
+          name: "LackBalanceForState",
+          subtypes: [],
+          props: {
+            account_id: "",
+            amount: ""
+          }
+        },
+        Memory: {
+          name: "Memory",
+          subtypes: [],
+          props: {}
+        },
+        MemoryAccessViolation: {
+          name: "MemoryAccessViolation",
+          subtypes: [],
+          props: {}
+        },
+        MemoryOutOfBounds: {
+          name: "MemoryOutOfBounds",
+          subtypes: [],
+          props: {}
+        },
+        MethodEmptyName: {
+          name: "MethodEmptyName",
+          subtypes: [],
+          props: {}
+        },
+        MethodInvalidSignature: {
+          name: "MethodInvalidSignature",
+          subtypes: [],
+          props: {}
+        },
+        MethodNameMismatch: {
+          name: "MethodNameMismatch",
+          subtypes: [],
+          props: {
+            method_name: ""
+          }
+        },
+        MethodNotFound: {
+          name: "MethodNotFound",
+          subtypes: [],
+          props: {}
+        },
+        MethodResolveError: {
+          name: "MethodResolveError",
+          subtypes: [
+            "MethodEmptyName",
+            "MethodNotFound",
+            "MethodInvalidSignature"
+          ],
+          props: {}
+        },
+        MisalignedAtomicAccess: {
+          name: "MisalignedAtomicAccess",
+          subtypes: [],
+          props: {}
+        },
+        NonceTooLarge: {
+          name: "NonceTooLarge",
+          subtypes: [],
+          props: {
+            tx_nonce: "",
+            upper_bound: ""
+          }
+        },
+        NotEnoughAllowance: {
+          name: "NotEnoughAllowance",
+          subtypes: [],
+          props: {
+            account_id: "",
+            allowance: "",
+            cost: "",
+            public_key: ""
+          }
+        },
+        NotEnoughBalance: {
+          name: "NotEnoughBalance",
+          subtypes: [],
+          props: {
+            balance: "",
+            cost: "",
+            signer_id: ""
+          }
+        },
+        NumberInputDataDependenciesExceeded: {
+          name: "NumberInputDataDependenciesExceeded",
+          subtypes: [],
+          props: {
+            limit: "",
+            number_of_input_data_dependencies: ""
+          }
+        },
+        NumberOfLogsExceeded: {
+          name: "NumberOfLogsExceeded",
+          subtypes: [],
+          props: {
+            limit: ""
+          }
+        },
+        NumberPromisesExceeded: {
+          name: "NumberPromisesExceeded",
+          subtypes: [],
+          props: {
+            limit: "",
+            number_of_promises: ""
+          }
+        },
+        OnlyImplicitAccountCreationAllowed: {
+          name: "OnlyImplicitAccountCreationAllowed",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        PrepareError: {
+          name: "PrepareError",
+          subtypes: [
+            "Serialization",
+            "Deserialization",
+            "InternalMemoryDeclared",
+            "GasInstrumentation",
+            "StackHeightInstrumentation",
+            "Instantiate",
+            "Memory",
+            "TooManyFunctions",
+            "TooManyLocals"
+          ],
+          props: {}
+        },
+        ProhibitedInView: {
+          name: "ProhibitedInView",
+          subtypes: [],
+          props: {
+            method_name: ""
+          }
+        },
+        ReceiptSizeExceeded: {
+          name: "ReceiptSizeExceeded",
+          subtypes: [],
+          props: {
+            limit: "",
+            size: ""
+          }
+        },
+        ReceiptValidationError: {
+          name: "ReceiptValidationError",
+          subtypes: [
+            "InvalidPredecessorId",
+            "InvalidReceiverId",
+            "InvalidSignerId",
+            "InvalidDataReceiverId",
+            "ReturnedValueLengthExceeded",
+            "NumberInputDataDependenciesExceeded",
+            "ActionsValidation",
+            "ReceiptSizeExceeded"
+          ],
+          props: {}
+        },
+        ReceiverMismatch: {
+          name: "ReceiverMismatch",
+          subtypes: [],
+          props: {
+            ak_receiver: "",
+            tx_receiver: ""
+          }
+        },
+        RequiresFullAccess: {
+          name: "RequiresFullAccess",
+          subtypes: [],
+          props: {}
+        },
+        ReturnedValueLengthExceeded: {
+          name: "ReturnedValueLengthExceeded",
+          subtypes: [],
+          props: {
+            length: "",
+            limit: ""
+          }
+        },
+        Serialization: {
+          name: "Serialization",
+          subtypes: [],
+          props: {}
+        },
+        ShardCongested: {
+          name: "ShardCongested",
+          subtypes: [],
+          props: {
+            congestion_level: "",
+            shard_id: ""
+          }
+        },
+        ShardStuck: {
+          name: "ShardStuck",
+          subtypes: [],
+          props: {
+            missed_chunks: "",
+            shard_id: ""
+          }
+        },
+        SignerDoesNotExist: {
+          name: "SignerDoesNotExist",
+          subtypes: [],
+          props: {
+            signer_id: ""
+          }
+        },
+        StackHeightInstrumentation: {
+          name: "StackHeightInstrumentation",
+          subtypes: [],
+          props: {}
+        },
+        StackOverflow: {
+          name: "StackOverflow",
+          subtypes: [],
+          props: {}
+        },
+        TooManyFunctions: {
+          name: "TooManyFunctions",
+          subtypes: [],
+          props: {}
+        },
+        TooManyLocals: {
+          name: "TooManyLocals",
+          subtypes: [],
+          props: {}
+        },
+        TotalLogLengthExceeded: {
+          name: "TotalLogLengthExceeded",
+          subtypes: [],
+          props: {
+            length: "",
+            limit: ""
+          }
+        },
+        TotalNumberOfActionsExceeded: {
+          name: "TotalNumberOfActionsExceeded",
+          subtypes: [],
+          props: {
+            limit: "",
+            total_number_of_actions: ""
+          }
+        },
+        TotalPrepaidGasExceeded: {
+          name: "TotalPrepaidGasExceeded",
+          subtypes: [],
+          props: {
+            limit: "",
+            total_prepaid_gas: ""
+          }
+        },
+        TransactionSizeExceeded: {
+          name: "TransactionSizeExceeded",
+          subtypes: [],
+          props: {
+            limit: "",
+            size: ""
+          }
+        },
+        TriesToStake: {
+          name: "TriesToStake",
+          subtypes: [],
+          props: {
+            account_id: "",
+            balance: "",
+            locked: "",
+            stake: ""
+          }
+        },
+        TriesToUnstake: {
+          name: "TriesToUnstake",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        TxExecutionError: {
+          name: "TxExecutionError",
+          subtypes: [
+            "ActionError",
+            "InvalidTxError"
+          ],
+          props: {}
+        },
+        Unreachable: {
+          name: "Unreachable",
+          subtypes: [],
+          props: {}
+        },
+        UnsuitableStakingKey: {
+          name: "UnsuitableStakingKey",
+          subtypes: [],
+          props: {
+            public_key: ""
+          }
+        },
+        UnsupportedProtocolFeature: {
+          name: "UnsupportedProtocolFeature",
+          subtypes: [],
+          props: {
+            protocol_feature: "",
+            version: ""
+          }
+        },
+        ValueLengthExceeded: {
+          name: "ValueLengthExceeded",
+          subtypes: [],
+          props: {
+            length: "",
+            limit: ""
+          }
+        },
+        WasmTrap: {
+          name: "WasmTrap",
+          subtypes: [
+            "Unreachable",
+            "IncorrectCallIndirectSignature",
+            "MemoryOutOfBounds",
+            "CallIndirectOOB",
+            "IllegalArithmetic",
+            "MisalignedAtomicAccess",
+            "IndirectCallToNull",
+            "StackOverflow",
+            "GenericTrap"
+          ],
+          props: {}
+        },
+        WasmerCompileError: {
+          name: "WasmerCompileError",
+          subtypes: [],
+          props: {
+            msg: ""
+          }
+        },
+        Closed: {
+          name: "Closed",
+          subtypes: [],
+          props: {}
+        },
+        ServerError: {
+          name: "ServerError",
+          subtypes: [
+            "TxExecutionError",
+            "Timeout",
+            "Closed"
+          ],
+          props: {}
+        },
+        Timeout: {
+          name: "Timeout",
+          subtypes: [],
+          props: {}
+        }
+      }
+    };
+  }
+});
+
+// node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/errors/rpc_errors.js
+var require_rpc_errors2 = __commonJS({
+  "node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/errors/rpc_errors.js"(exports2) {
+    "use strict";
+    var __importDefault = exports2 && exports2.__importDefault || function(mod) {
+      return mod && mod.__esModule ? mod : { "default": mod };
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.getErrorTypeFromErrorMessage = exports2.formatError = exports2.parseResultError = exports2.parseRpcError = exports2.ServerError = void 0;
+    var types_1 = require_lib();
+    var mustache_1 = __importDefault(require_mustache());
+    var format_1 = require_format2();
+    var error_messages_json_1 = __importDefault(require_error_messages2());
+    var rpc_error_schema_json_1 = __importDefault(require_rpc_error_schema2());
+    var mustacheHelpers = {
+      formatNear: () => (n, render) => (0, format_1.formatNearAmount)(render(n))
+    };
+    var ServerError = class extends types_1.TypedError {
+    };
+    exports2.ServerError = ServerError;
+    var ServerTransactionError = class extends ServerError {
+    };
+    function parseRpcError(errorObj) {
+      const result = {};
+      const errorClassName = walkSubtype(errorObj, rpc_error_schema_json_1.default.schema, result, "");
+      const error = new ServerError(formatError(errorClassName, result), errorClassName);
+      Object.assign(error, result);
+      return error;
+    }
+    exports2.parseRpcError = parseRpcError;
+    function parseResultError(result) {
+      const server_error = parseRpcError(result.status.Failure);
+      const server_tx_error = new ServerTransactionError();
+      Object.assign(server_tx_error, server_error);
+      server_tx_error.type = server_error.type;
+      server_tx_error.message = server_error.message;
+      server_tx_error.transaction_outcome = result.transaction_outcome;
+      return server_tx_error;
+    }
+    exports2.parseResultError = parseResultError;
+    function formatError(errorClassName, errorData) {
+      if (typeof error_messages_json_1.default[errorClassName] === "string") {
+        return mustache_1.default.render(error_messages_json_1.default[errorClassName], Object.assign(Object.assign({}, errorData), mustacheHelpers));
+      }
+      return JSON.stringify(errorData);
+    }
+    exports2.formatError = formatError;
+    function walkSubtype(errorObj, schema, result, typeName) {
+      let error;
+      let type;
+      let errorTypeName;
+      for (const errorName in schema) {
+        if (isString(errorObj[errorName])) {
+          return errorObj[errorName];
+        }
+        if (isObject(errorObj[errorName])) {
+          error = errorObj[errorName];
+          type = schema[errorName];
+          errorTypeName = errorName;
+        } else if (isObject(errorObj.kind) && isObject(errorObj.kind[errorName])) {
+          error = errorObj.kind[errorName];
+          type = schema[errorName];
+          errorTypeName = errorName;
+        } else {
+          continue;
+        }
+      }
+      if (error && type) {
+        for (const prop of Object.keys(type.props)) {
+          result[prop] = error[prop];
+        }
+        return walkSubtype(error, schema, result, errorTypeName);
+      } else {
+        result.kind = errorObj;
+        return typeName;
+      }
+    }
+    function getErrorTypeFromErrorMessage(errorMessage, errorType) {
+      switch (true) {
+        case /^account .*? does not exist while viewing$/.test(errorMessage):
+          return "AccountDoesNotExist";
+        case /^Account .*? doesn't exist$/.test(errorMessage):
+          return "AccountDoesNotExist";
+        case /^access key .*? does not exist while viewing$/.test(errorMessage):
+          return "AccessKeyDoesNotExist";
+        case /wasm execution failed with error: FunctionCallError\(CompilationError\(CodeDoesNotExist/.test(errorMessage):
+          return "CodeDoesNotExist";
+        case /wasm execution failed with error: CompilationError\(CodeDoesNotExist/.test(errorMessage):
+          return "CodeDoesNotExist";
+        case /wasm execution failed with error: FunctionCallError\(MethodResolveError\(MethodNotFound/.test(errorMessage):
+          return "MethodNotFound";
+        case /wasm execution failed with error: MethodResolveError\(MethodNotFound/.test(errorMessage):
+          return "MethodNotFound";
+        case /Transaction nonce \d+ must be larger than nonce of the used access key \d+/.test(errorMessage):
+          return "InvalidNonce";
+        default:
+          return errorType;
+      }
+    }
+    exports2.getErrorTypeFromErrorMessage = getErrorTypeFromErrorMessage;
+    function isObject(n) {
+      return Object.prototype.toString.call(n) === "[object Object]";
+    }
+    function isString(n) {
+      return Object.prototype.toString.call(n) === "[object String]";
+    }
+  }
+});
+
+// node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/errors/index.js
+var require_errors6 = __commonJS({
+  "node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/errors/index.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.parseRpcError = exports2.parseResultError = exports2.getErrorTypeFromErrorMessage = exports2.formatError = exports2.ServerError = exports2.logWarning = void 0;
+    var errors_1 = require_errors5();
+    Object.defineProperty(exports2, "logWarning", { enumerable: true, get: function() {
+      return errors_1.logWarning;
+    } });
+    var rpc_errors_1 = require_rpc_errors2();
+    Object.defineProperty(exports2, "ServerError", { enumerable: true, get: function() {
+      return rpc_errors_1.ServerError;
+    } });
+    Object.defineProperty(exports2, "formatError", { enumerable: true, get: function() {
+      return rpc_errors_1.formatError;
+    } });
+    Object.defineProperty(exports2, "getErrorTypeFromErrorMessage", { enumerable: true, get: function() {
+      return rpc_errors_1.getErrorTypeFromErrorMessage;
+    } });
+    Object.defineProperty(exports2, "parseResultError", { enumerable: true, get: function() {
+      return rpc_errors_1.parseResultError;
+    } });
+    Object.defineProperty(exports2, "parseRpcError", { enumerable: true, get: function() {
+      return rpc_errors_1.parseRpcError;
+    } });
+  }
+});
+
+// node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/logging.js
+var require_logging2 = __commonJS({
+  "node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/logging.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.printTxOutcomeLogs = exports2.printTxOutcomeLogsAndFailures = void 0;
+    var errors_1 = require_errors6();
+    var logger_1 = require_logger4();
+    function printTxOutcomeLogsAndFailures({ contractId, outcome }) {
+      const flatLogs = [outcome.transaction_outcome, ...outcome.receipts_outcome].reduce((acc, it) => {
+        const isFailure = typeof it.outcome.status === "object" && typeof it.outcome.status.Failure === "object";
+        if (it.outcome.logs.length || isFailure) {
+          return acc.concat({
+            receiptIds: it.outcome.receipt_ids,
+            logs: it.outcome.logs,
+            failure: typeof it.outcome.status === "object" && it.outcome.status.Failure !== void 0 ? (0, errors_1.parseRpcError)(it.outcome.status.Failure) : null
+          });
+        } else {
+          return acc;
+        }
+      }, []);
+      for (const result of flatLogs) {
+        logger_1.Logger.log(`Receipt${result.receiptIds.length > 1 ? "s" : ""}: ${result.receiptIds.join(", ")}`);
+        printTxOutcomeLogs({
+          contractId,
+          logs: result.logs,
+          prefix: "	"
+        });
+        if (result.failure) {
+          logger_1.Logger.warn(`	Failure [${contractId}]: ${result.failure}`);
+        }
+      }
+    }
+    exports2.printTxOutcomeLogsAndFailures = printTxOutcomeLogsAndFailures;
+    function printTxOutcomeLogs({ contractId, logs, prefix = "" }) {
+      for (const log2 of logs) {
+        logger_1.Logger.log(`${prefix}Log [${contractId}]: ${log2}`);
+      }
+    }
+    exports2.printTxOutcomeLogs = printTxOutcomeLogs;
+  }
+});
+
+// node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/provider.js
+var require_provider3 = __commonJS({
+  "node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/provider.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.getTransactionLastResult = void 0;
+    function getTransactionLastResult(txResult) {
+      if (typeof txResult.status === "object" && typeof txResult.status.SuccessValue === "string") {
+        const value = Buffer.from(txResult.status.SuccessValue, "base64").toString();
+        try {
+          return JSON.parse(value);
+        } catch (e) {
+          return value;
+        }
+      }
+      return null;
+    }
+    exports2.getTransactionLastResult = getTransactionLastResult;
+  }
+});
+
+// node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/utils.js
+var require_utils8 = __commonJS({
+  "node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/utils.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.sortBigIntAsc = void 0;
+    function sortBigIntAsc(a, b) {
+      return a < b ? -1 : a > b ? 1 : 0;
+    }
+    exports2.sortBigIntAsc = sortBigIntAsc;
+  }
+});
+
+// node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/validators.js
+var require_validators2 = __commonJS({
+  "node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/validators.js"(exports2) {
+    "use strict";
+    var __importDefault = exports2 && exports2.__importDefault || function(mod) {
+      return mod && mod.__esModule ? mod : { "default": mod };
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.diffEpochValidators = exports2.findSeatPrice = void 0;
+    var depd_1 = __importDefault(require_depd());
+    var utils_1 = require_utils8();
+    function findSeatPrice(validators, maxNumberOfSeats, minimumStakeRatio, protocolVersion) {
+      if (protocolVersion && protocolVersion < 49) {
+        return findSeatPriceForProtocolBefore49(validators, maxNumberOfSeats);
+      }
+      if (!minimumStakeRatio) {
+        const deprecate2 = (0, depd_1.default)("findSeatPrice(validators, maxNumberOfSeats)");
+        deprecate2("`use `findSeatPrice(validators, maxNumberOfSeats, minimumStakeRatio)` instead");
+        minimumStakeRatio = [1, 6250];
+      }
+      return findSeatPriceForProtocolAfter49(validators, maxNumberOfSeats, minimumStakeRatio);
+    }
+    exports2.findSeatPrice = findSeatPrice;
+    function findSeatPriceForProtocolBefore49(validators, numSeats) {
+      const stakes = validators.map((v) => BigInt(v.stake)).sort(utils_1.sortBigIntAsc);
+      const num = BigInt(numSeats);
+      const stakesSum = stakes.reduce((a, b) => a + b);
+      if (stakesSum < num) {
+        throw new Error("Stakes are below seats");
+      }
+      let left = BigInt(1), right = stakesSum + BigInt(1);
+      while (left !== right - BigInt(1)) {
+        const mid = (left + right) / BigInt(2);
+        let found = false;
+        let currentSum = BigInt(0);
+        for (let i = 0; i < stakes.length; ++i) {
+          currentSum = currentSum + stakes[i] / mid;
+          if (currentSum >= num) {
+            left = mid;
+            found = true;
+            break;
+          }
+        }
+        if (!found) {
+          right = mid;
+        }
+      }
+      return left;
+    }
+    function findSeatPriceForProtocolAfter49(validators, maxNumberOfSeats, minimumStakeRatio) {
+      if (minimumStakeRatio.length != 2) {
+        throw Error("minimumStakeRatio should have 2 elements");
+      }
+      const stakes = validators.map((v) => BigInt(v.stake)).sort(utils_1.sortBigIntAsc);
+      const stakesSum = stakes.reduce((a, b) => a + b);
+      if (validators.length < maxNumberOfSeats) {
+        return stakesSum * BigInt(minimumStakeRatio[0]) / BigInt(minimumStakeRatio[1]);
+      } else {
+        return stakes[0] + BigInt(1);
+      }
+    }
+    function diffEpochValidators(currentValidators, nextValidators) {
+      const validatorsMap = /* @__PURE__ */ new Map();
+      currentValidators.forEach((v) => validatorsMap.set(v.account_id, v));
+      const nextValidatorsSet = new Set(nextValidators.map((v) => v.account_id));
+      return {
+        newValidators: nextValidators.filter((v) => !validatorsMap.has(v.account_id)),
+        removedValidators: currentValidators.filter((v) => !nextValidatorsSet.has(v.account_id)),
+        changedValidators: nextValidators.filter((v) => validatorsMap.has(v.account_id) && validatorsMap.get(v.account_id).stake != v.stake).map((v) => ({ current: validatorsMap.get(v.account_id), next: v }))
+      };
+    }
+    exports2.diffEpochValidators = diffEpochValidators;
+  }
+});
+
+// node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/index.js
+var require_lib6 = __commonJS({
+  "node_modules/@near-js/keystores-browser/node_modules/@near-js/utils/lib/index.js"(exports2) {
+    "use strict";
+    var __createBinding = exports2 && exports2.__createBinding || (Object.create ? function(o, m, k, k2) {
+      if (k2 === void 0) k2 = k;
+      var desc = Object.getOwnPropertyDescriptor(m, k);
+      if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+        desc = { enumerable: true, get: function() {
+          return m[k];
+        } };
+      }
+      Object.defineProperty(o, k2, desc);
+    } : function(o, m, k, k2) {
+      if (k2 === void 0) k2 = k;
+      o[k2] = m[k];
+    });
+    var __exportStar = exports2 && exports2.__exportStar || function(m, exports3) {
+      for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports3, p)) __createBinding(exports3, m, p);
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    __exportStar(require_constants5(), exports2);
+    __exportStar(require_errors6(), exports2);
+    __exportStar(require_format2(), exports2);
+    __exportStar(require_logging2(), exports2);
+    __exportStar(require_provider3(), exports2);
+    __exportStar(require_validators2(), exports2);
+    __exportStar(require_logger4(), exports2);
+    __exportStar(require_utils8(), exports2);
+  }
+});
+
+// node_modules/@near-js/keystores-browser/node_modules/@near-js/crypto/lib/public_key.js
+var require_public_key2 = __commonJS({
+  "node_modules/@near-js/keystores-browser/node_modules/@near-js/crypto/lib/public_key.js"(exports2) {
+    "use strict";
+    var __importDefault = exports2 && exports2.__importDefault || function(mod) {
+      return mod && mod.__esModule ? mod : { "default": mod };
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.PublicKey = void 0;
+    var utils_1 = require_lib6();
+    var ed25519_1 = require_ed25519();
+    var secp256k1_1 = __importDefault(require_secp256k12());
+    var constants_1 = require_constants4();
+    var types_1 = require_lib();
+    function key_type_to_str(keyType) {
+      switch (keyType) {
+        case constants_1.KeyType.ED25519:
+          return "ed25519";
+        case constants_1.KeyType.SECP256K1:
+          return "secp256k1";
+        default:
+          throw new Error(`Unknown key type ${keyType}`);
+      }
+    }
+    function str_to_key_type(keyType) {
+      switch (keyType.toLowerCase()) {
+        case "ed25519":
+          return constants_1.KeyType.ED25519;
+        case "secp256k1":
+          return constants_1.KeyType.SECP256K1;
+        default:
+          throw new Error(`Unknown key type ${keyType}`);
+      }
+    }
+    var ED25519PublicKey = class extends types_1.Assignable {
+      constructor() {
+        super(...arguments);
+        this.keyType = constants_1.KeyType.ED25519;
+      }
+    };
+    var SECP256K1PublicKey = class extends types_1.Assignable {
+      constructor() {
+        super(...arguments);
+        this.keyType = constants_1.KeyType.SECP256K1;
+      }
+    };
+    var PublicKey = class _PublicKey extends types_1.Assignable {
+      constructor({ keyType, data }) {
+        super({});
+        if (keyType === constants_1.KeyType.ED25519) {
+          this.ed25519Key = { keyType, data };
+        } else if (keyType === constants_1.KeyType.SECP256K1) {
+          this.secp256k1Key = { keyType, data };
+        }
+      }
+      /**
+       * Creates a PublicKey instance from a string or an existing PublicKey instance.
+       * @param value The string or PublicKey instance to create a PublicKey from.
+       * @returns {PublicKey} The PublicKey instance.
+       */
+      static from(value) {
+        if (typeof value === "string") {
+          return _PublicKey.fromString(value);
+        }
+        return value;
+      }
+      /**
+       * Creates a PublicKey instance from an encoded key string.
+       * @param encodedKey The encoded key string.
+       * @returns {PublicKey} The PublicKey instance created from the encoded key string.
+       */
+      static fromString(encodedKey) {
+        const parts = encodedKey.split(":");
+        let publicKey;
+        let keyType;
+        if (parts.length === 1) {
+          publicKey = parts[0];
+        } else if (parts.length === 2) {
+          publicKey = parts[1];
+          keyType = str_to_key_type(parts[0]);
+        } else {
+          throw new Error("Invalid encoded key format, must be <curve>:<encoded key>");
+        }
+        const decodedPublicKey = (0, utils_1.baseDecode)(publicKey);
+        if (!keyType) {
+          keyType = decodedPublicKey.length === constants_1.KeySize.SECP256k1_PUBLIC_KEY ? constants_1.KeyType.SECP256K1 : constants_1.KeyType.ED25519;
+        }
+        const keySize = keyType === constants_1.KeyType.ED25519 ? constants_1.KeySize.ED25519_PUBLIC_KEY : constants_1.KeySize.SECP256k1_PUBLIC_KEY;
+        if (decodedPublicKey.length !== keySize) {
+          throw new Error(`Invalid public key size (${decodedPublicKey.length}), must be ${keySize}`);
+        }
+        return new _PublicKey({ keyType, data: decodedPublicKey });
+      }
+      /**
+       * Returns a string representation of the public key.
+       * @returns {string} The string representation of the public key.
+       */
+      toString() {
+        const encodedKey = (0, utils_1.baseEncode)(this.data);
+        return `${key_type_to_str(this.keyType)}:${encodedKey}`;
+      }
+      /**
+       * Verifies a message signature using the public key.
+       * @param message The message to be verified.
+       * @param signature The signature to be verified.
+       * @returns {boolean} `true` if the signature is valid, otherwise `false`.
+       */
+      verify(message2, signature) {
+        const keyType = this.keyType;
+        const data = this.data;
+        switch (keyType) {
+          case constants_1.KeyType.ED25519:
+            return ed25519_1.ed25519.verify(signature, message2, data);
+          case constants_1.KeyType.SECP256K1:
+            return secp256k1_1.default.ecdsaVerify(signature.subarray(0, 64), message2, new Uint8Array([4, ...data]));
+          default:
+            throw new Error(`Unknown key type: ${keyType}`);
+        }
+      }
+      get keyPair() {
+        return this.ed25519Key || this.secp256k1Key;
+      }
+      get keyType() {
+        return this.keyPair.keyType;
+      }
+      get data() {
+        return this.keyPair.data;
+      }
+    };
+    exports2.PublicKey = PublicKey;
+  }
+});
+
+// node_modules/@near-js/keystores-browser/node_modules/@near-js/crypto/lib/key_pair_ed25519.js
+var require_key_pair_ed255192 = __commonJS({
+  "node_modules/@near-js/keystores-browser/node_modules/@near-js/crypto/lib/key_pair_ed25519.js"(exports2) {
+    "use strict";
+    var __importDefault = exports2 && exports2.__importDefault || function(mod) {
+      return mod && mod.__esModule ? mod : { "default": mod };
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.KeyPairEd25519 = void 0;
+    var utils_1 = require_lib6();
+    var ed25519_1 = require_ed25519();
+    var randombytes_1 = __importDefault(require_randombytes());
+    var constants_1 = require_constants4();
+    var key_pair_base_1 = require_key_pair_base2();
+    var public_key_1 = require_public_key2();
+    var KeyPairEd25519 = class _KeyPairEd25519 extends key_pair_base_1.KeyPairBase {
+      /**
+       * Construct an instance of key pair given a secret key.
+       * It's generally assumed that these are encoded in base58.
+       * @param extendedSecretKey
+       */
+      constructor(extendedSecretKey) {
+        super();
+        const decoded = (0, utils_1.baseDecode)(extendedSecretKey);
+        const secretKey = new Uint8Array(decoded.slice(0, constants_1.KeySize.SECRET_KEY));
+        const publicKey = ed25519_1.ed25519.getPublicKey(new Uint8Array(secretKey));
+        this.publicKey = new public_key_1.PublicKey({ keyType: constants_1.KeyType.ED25519, data: publicKey });
+        this.secretKey = (0, utils_1.baseEncode)(secretKey);
+        this.extendedSecretKey = extendedSecretKey;
+      }
+      /**
+       * Generate a new random keypair.
+       * @example
+       * const keyRandom = KeyPair.fromRandom();
+       * keyRandom.publicKey
+       * // returns [PUBLIC_KEY]
+       *
+       * keyRandom.secretKey
+       * // returns [SECRET_KEY]
+       */
+      static fromRandom() {
+        const secretKey = (0, randombytes_1.default)(constants_1.KeySize.SECRET_KEY);
+        const publicKey = ed25519_1.ed25519.getPublicKey(new Uint8Array(secretKey));
+        const extendedSecretKey = new Uint8Array([...secretKey, ...publicKey]);
+        return new _KeyPairEd25519((0, utils_1.baseEncode)(extendedSecretKey));
+      }
+      /**
+       * Signs a message using the key pair's secret key.
+       * @param message The message to be signed.
+       * @returns {Signature} The signature object containing the signature and the public key.
+       */
+      sign(message2) {
+        const signature = ed25519_1.ed25519.sign(message2, (0, utils_1.baseDecode)(this.secretKey));
+        return { signature, publicKey: this.publicKey };
+      }
+      /**
+       * Verifies the signature of a message using the key pair's public key.
+       * @param message The message to be verified.
+       * @param signature The signature to be verified.
+       * @returns {boolean} `true` if the signature is valid, otherwise `false`.
+       */
+      verify(message2, signature) {
+        return this.publicKey.verify(message2, signature);
+      }
+      /**
+       * Returns a string representation of the key pair in the format 'ed25519:[extendedSecretKey]'.
+       * @returns {string} The string representation of the key pair.
+       */
+      toString() {
+        return `ed25519:${this.extendedSecretKey}`;
+      }
+      /**
+       * Retrieves the public key associated with the key pair.
+       * @returns {PublicKey} The public key.
+       */
+      getPublicKey() {
+        return this.publicKey;
+      }
+    };
+    exports2.KeyPairEd25519 = KeyPairEd25519;
+  }
+});
+
+// node_modules/@near-js/keystores-browser/node_modules/@near-js/crypto/lib/key_pair_secp256k1.js
+var require_key_pair_secp256k12 = __commonJS({
+  "node_modules/@near-js/keystores-browser/node_modules/@near-js/crypto/lib/key_pair_secp256k1.js"(exports2) {
+    "use strict";
+    var __importDefault = exports2 && exports2.__importDefault || function(mod) {
+      return mod && mod.__esModule ? mod : { "default": mod };
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.KeyPairSecp256k1 = void 0;
+    var constants_1 = require_constants4();
+    var key_pair_base_1 = require_key_pair_base2();
+    var public_key_1 = require_public_key2();
+    var secp256k1_1 = __importDefault(require_secp256k12());
+    var randombytes_1 = __importDefault(require_randombytes());
+    var utils_1 = require_lib6();
+    var KeyPairSecp256k1 = class _KeyPairSecp256k1 extends key_pair_base_1.KeyPairBase {
+      /**
+       * Construct an instance of key pair given a secret key.
+       * It's generally assumed that these are encoded in base58.
+       * @param {string} extendedSecretKey
+       */
+      constructor(extendedSecretKey) {
+        super();
+        const decoded = (0, utils_1.baseDecode)(extendedSecretKey);
+        const secretKey = new Uint8Array(decoded.slice(0, constants_1.KeySize.SECRET_KEY));
+        const withHeader = secp256k1_1.default.publicKeyCreate(new Uint8Array(secretKey), false);
+        const data = withHeader.subarray(1, withHeader.length);
+        this.publicKey = new public_key_1.PublicKey({
+          keyType: constants_1.KeyType.SECP256K1,
+          data
+        });
+        this.secretKey = (0, utils_1.baseEncode)(secretKey);
+        this.extendedSecretKey = extendedSecretKey;
+      }
+      /**
+       * Generate a new random keypair.
+       * @example
+       * const keyRandom = KeyPair.fromRandom();
+       * keyRandom.publicKey
+       * // returns [PUBLIC_KEY]
+       *
+       * keyRandom.secretKey
+       * // returns [SECRET_KEY]
+       */
+      static fromRandom() {
+        const secretKey = (0, randombytes_1.default)(constants_1.KeySize.SECRET_KEY);
+        const withHeader = secp256k1_1.default.publicKeyCreate(new Uint8Array(secretKey), false);
+        const publicKey = withHeader.subarray(1, withHeader.length);
+        const extendedSecretKey = new Uint8Array([...secretKey, ...publicKey]);
+        return new _KeyPairSecp256k1((0, utils_1.baseEncode)(extendedSecretKey));
+      }
+      sign(message2) {
+        const { signature, recid } = secp256k1_1.default.ecdsaSign(message2, (0, utils_1.baseDecode)(this.secretKey));
+        return { signature: new Uint8Array([...signature, recid]), publicKey: this.publicKey };
+      }
+      verify(message2, signature) {
+        return this.publicKey.verify(message2, signature);
+      }
+      toString() {
+        return `secp256k1:${this.extendedSecretKey}`;
+      }
+      getPublicKey() {
+        return this.publicKey;
+      }
+    };
+    exports2.KeyPairSecp256k1 = KeyPairSecp256k1;
+  }
+});
+
+// node_modules/@near-js/keystores-browser/node_modules/@near-js/crypto/lib/key_pair.js
+var require_key_pair2 = __commonJS({
+  "node_modules/@near-js/keystores-browser/node_modules/@near-js/crypto/lib/key_pair.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.KeyPair = void 0;
+    var key_pair_base_1 = require_key_pair_base2();
+    var key_pair_ed25519_1 = require_key_pair_ed255192();
+    var key_pair_secp256k1_1 = require_key_pair_secp256k12();
+    var KeyPair = class extends key_pair_base_1.KeyPairBase {
+      /**
+       * @param curve Name of elliptical curve, case-insensitive
+       * @returns Random KeyPair based on the curve
+       */
+      static fromRandom(curve) {
+        switch (curve.toUpperCase()) {
+          case "ED25519":
+            return key_pair_ed25519_1.KeyPairEd25519.fromRandom();
+          case "SECP256K1":
+            return key_pair_secp256k1_1.KeyPairSecp256k1.fromRandom();
+          default:
+            throw new Error(`Unknown curve ${curve}`);
+        }
+      }
+      /**
+       * Creates a key pair from an encoded key string.
+       * @param encodedKey The encoded key string.
+       * @returns {KeyPair} The key pair created from the encoded key string.
+       */
+      static fromString(encodedKey) {
+        const parts = encodedKey.split(":");
+        if (parts.length === 2) {
+          switch (parts[0].toUpperCase()) {
+            case "ED25519":
+              return new key_pair_ed25519_1.KeyPairEd25519(parts[1]);
+            case "SECP256K1":
+              return new key_pair_secp256k1_1.KeyPairSecp256k1(parts[1]);
+            default:
+              throw new Error(`Unknown curve: ${parts[0]}`);
+          }
+        } else {
+          throw new Error("Invalid encoded key format, must be <curve>:<encoded key>");
+        }
+      }
+    };
+    exports2.KeyPair = KeyPair;
+  }
+});
+
+// node_modules/@near-js/keystores-browser/node_modules/@near-js/crypto/lib/index.js
+var require_lib7 = __commonJS({
+  "node_modules/@near-js/keystores-browser/node_modules/@near-js/crypto/lib/index.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.PublicKey = exports2.KeyPairSecp256k1 = exports2.KeyPairEd25519 = exports2.KeyPair = exports2.KeyType = void 0;
+    var constants_1 = require_constants4();
+    Object.defineProperty(exports2, "KeyType", { enumerable: true, get: function() {
+      return constants_1.KeyType;
+    } });
+    var key_pair_1 = require_key_pair2();
+    Object.defineProperty(exports2, "KeyPair", { enumerable: true, get: function() {
+      return key_pair_1.KeyPair;
+    } });
+    var key_pair_ed25519_1 = require_key_pair_ed255192();
+    Object.defineProperty(exports2, "KeyPairEd25519", { enumerable: true, get: function() {
+      return key_pair_ed25519_1.KeyPairEd25519;
+    } });
+    var key_pair_secp256k1_1 = require_key_pair_secp256k12();
+    Object.defineProperty(exports2, "KeyPairSecp256k1", { enumerable: true, get: function() {
+      return key_pair_secp256k1_1.KeyPairSecp256k1;
+    } });
+    var public_key_1 = require_public_key2();
+    Object.defineProperty(exports2, "PublicKey", { enumerable: true, get: function() {
+      return public_key_1.PublicKey;
+    } });
+  }
+});
+
+// node_modules/@near-js/keystores-browser/node_modules/@near-js/keystores/lib/keystore.js
+var require_keystore3 = __commonJS({
+  "node_modules/@near-js/keystores-browser/node_modules/@near-js/keystores/lib/keystore.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.KeyStore = void 0;
+    var KeyStore = class {
+    };
+    exports2.KeyStore = KeyStore;
+  }
+});
+
+// node_modules/@near-js/keystores-browser/node_modules/@near-js/keystores/lib/in_memory_key_store.js
+var require_in_memory_key_store3 = __commonJS({
+  "node_modules/@near-js/keystores-browser/node_modules/@near-js/keystores/lib/in_memory_key_store.js"(exports2) {
+    "use strict";
+    var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.InMemoryKeyStore = void 0;
+    var crypto_1 = require_lib7();
+    var keystore_1 = require_keystore3();
+    var InMemoryKeyStore = class extends keystore_1.KeyStore {
+      constructor() {
+        super();
+        this.keys = {};
+      }
+      /**
+       * Stores a {@link KeyPair} in in-memory storage item
+       * @param networkId The targeted network. (ex. default, betanet, etc…)
+       * @param accountId The NEAR account tied to the key pair
+       * @param keyPair The key pair to store in local storage
+       */
+      setKey(networkId, accountId, keyPair) {
+        return __awaiter(this, void 0, void 0, function* () {
+          this.keys[`${accountId}:${networkId}`] = keyPair.toString();
+        });
+      }
+      /**
+       * Gets a {@link KeyPair} from in-memory storage
+       * @param networkId The targeted network. (ex. default, betanet, etc…)
+       * @param accountId The NEAR account tied to the key pair
+       * @returns {Promise<KeyPair>}
+       */
+      getKey(networkId, accountId) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const value = this.keys[`${accountId}:${networkId}`];
+          if (!value) {
+            return null;
+          }
+          return crypto_1.KeyPair.fromString(value);
+        });
+      }
+      /**
+       * Removes a {@link KeyPair} from in-memory storage
+       * @param networkId The targeted network. (ex. default, betanet, etc…)
+       * @param accountId The NEAR account tied to the key pair
+       */
+      removeKey(networkId, accountId) {
+        return __awaiter(this, void 0, void 0, function* () {
+          delete this.keys[`${accountId}:${networkId}`];
+        });
+      }
+      /**
+       * Removes all {@link KeyPair} from in-memory storage
+       */
+      clear() {
+        return __awaiter(this, void 0, void 0, function* () {
+          this.keys = {};
+        });
+      }
+      /**
+       * Get the network(s) from in-memory storage
+       * @returns {Promise<string[]>}
+       */
+      getNetworks() {
+        return __awaiter(this, void 0, void 0, function* () {
+          const result = /* @__PURE__ */ new Set();
+          Object.keys(this.keys).forEach((key) => {
+            const parts = key.split(":");
+            result.add(parts[1]);
+          });
+          return Array.from(result.values());
+        });
+      }
+      /**
+       * Gets the account(s) from in-memory storage
+       * @param networkId The targeted network. (ex. default, betanet, etc…)
+       */
+      getAccounts(networkId) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const result = new Array();
+          Object.keys(this.keys).forEach((key) => {
+            const parts = key.split(":");
+            if (parts[parts.length - 1] === networkId) {
+              result.push(parts.slice(0, parts.length - 1).join(":"));
+            }
+          });
+          return result;
+        });
+      }
+      /** @hidden */
+      toString() {
+        return "InMemoryKeyStore";
+      }
+    };
+    exports2.InMemoryKeyStore = InMemoryKeyStore;
+  }
+});
+
+// node_modules/@near-js/keystores-browser/node_modules/@near-js/keystores/lib/merge_key_store.js
+var require_merge_key_store2 = __commonJS({
+  "node_modules/@near-js/keystores-browser/node_modules/@near-js/keystores/lib/merge_key_store.js"(exports2) {
+    "use strict";
+    var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.MergeKeyStore = void 0;
+    var keystore_1 = require_keystore3();
+    var MergeKeyStore = class extends keystore_1.KeyStore {
+      /**
+       * @param keyStores read calls are attempted from start to end of array
+       * @param options KeyStore options
+       * @param options.writeKeyStoreIndex the keystore index that will receive all write calls
+       */
+      constructor(keyStores, options = { writeKeyStoreIndex: 0 }) {
+        super();
+        this.options = options;
+        this.keyStores = keyStores;
+      }
+      /**
+       * Store a {@link KeyPair} to the first index of a key store array
+       * @param networkId The targeted network. (ex. default, betanet, etc…)
+       * @param accountId The NEAR account tied to the key pair
+       * @param keyPair The key pair to store in local storage
+       */
+      setKey(networkId, accountId, keyPair) {
+        return __awaiter(this, void 0, void 0, function* () {
+          yield this.keyStores[this.options.writeKeyStoreIndex].setKey(networkId, accountId, keyPair);
+        });
+      }
+      /**
+       * Gets a {@link KeyPair} from the array of key stores
+       * @param networkId The targeted network. (ex. default, betanet, etc…)
+       * @param accountId The NEAR account tied to the key pair
+       * @returns {Promise<KeyPair>}
+       */
+      getKey(networkId, accountId) {
+        return __awaiter(this, void 0, void 0, function* () {
+          for (const keyStore of this.keyStores) {
+            const keyPair = yield keyStore.getKey(networkId, accountId);
+            if (keyPair) {
+              return keyPair;
+            }
+          }
+          return null;
+        });
+      }
+      /**
+       * Removes a {@link KeyPair} from the array of key stores
+       * @param networkId The targeted network. (ex. default, betanet, etc…)
+       * @param accountId The NEAR account tied to the key pair
+       */
+      removeKey(networkId, accountId) {
+        return __awaiter(this, void 0, void 0, function* () {
+          for (const keyStore of this.keyStores) {
+            yield keyStore.removeKey(networkId, accountId);
+          }
+        });
+      }
+      /**
+       * Removes all items from each key store
+       */
+      clear() {
+        return __awaiter(this, void 0, void 0, function* () {
+          for (const keyStore of this.keyStores) {
+            yield keyStore.clear();
+          }
+        });
+      }
+      /**
+       * Get the network(s) from the array of key stores
+       * @returns {Promise<string[]>}
+       */
+      getNetworks() {
+        return __awaiter(this, void 0, void 0, function* () {
+          const result = /* @__PURE__ */ new Set();
+          for (const keyStore of this.keyStores) {
+            for (const network of yield keyStore.getNetworks()) {
+              result.add(network);
+            }
+          }
+          return Array.from(result);
+        });
+      }
+      /**
+       * Gets the account(s) from the array of key stores
+       * @param networkId The targeted network. (ex. default, betanet, etc…)
+       */
+      getAccounts(networkId) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const result = /* @__PURE__ */ new Set();
+          for (const keyStore of this.keyStores) {
+            for (const account of yield keyStore.getAccounts(networkId)) {
+              result.add(account);
+            }
+          }
+          return Array.from(result);
+        });
+      }
+      /** @hidden */
+      toString() {
+        return `MergeKeyStore(${this.keyStores.join(", ")})`;
+      }
+    };
+    exports2.MergeKeyStore = MergeKeyStore;
+  }
+});
+
+// node_modules/@near-js/keystores-browser/node_modules/@near-js/keystores/lib/multi_contract_keystore.js
+var require_multi_contract_keystore2 = __commonJS({
+  "node_modules/@near-js/keystores-browser/node_modules/@near-js/keystores/lib/multi_contract_keystore.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.MultiContractKeyStore = void 0;
+    var MultiContractKeyStore = class {
+    };
+    exports2.MultiContractKeyStore = MultiContractKeyStore;
+  }
+});
+
+// node_modules/@near-js/keystores-browser/node_modules/@near-js/keystores/lib/index.js
+var require_lib8 = __commonJS({
+  "node_modules/@near-js/keystores-browser/node_modules/@near-js/keystores/lib/index.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.MultiContractKeyStore = exports2.MergeKeyStore = exports2.KeyStore = exports2.InMemoryKeyStore = void 0;
+    var in_memory_key_store_1 = require_in_memory_key_store3();
+    Object.defineProperty(exports2, "InMemoryKeyStore", { enumerable: true, get: function() {
+      return in_memory_key_store_1.InMemoryKeyStore;
+    } });
+    var keystore_1 = require_keystore3();
+    Object.defineProperty(exports2, "KeyStore", { enumerable: true, get: function() {
+      return keystore_1.KeyStore;
+    } });
+    var merge_key_store_1 = require_merge_key_store2();
+    Object.defineProperty(exports2, "MergeKeyStore", { enumerable: true, get: function() {
+      return merge_key_store_1.MergeKeyStore;
+    } });
+    var multi_contract_keystore_1 = require_multi_contract_keystore2();
+    Object.defineProperty(exports2, "MultiContractKeyStore", { enumerable: true, get: function() {
+      return multi_contract_keystore_1.MultiContractKeyStore;
+    } });
+  }
+});
+
+// node_modules/@near-js/keystores-browser/lib/browser_local_storage_key_store.js
 var require_browser_local_storage_key_store = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/keystores-browser/lib/browser_local_storage_key_store.js"(exports2) {
+  "node_modules/@near-js/keystores-browser/lib/browser_local_storage_key_store.js"(exports2) {
     "use strict";
     var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
       function adopt(value) {
@@ -18796,8 +21092,8 @@ var require_browser_local_storage_key_store = __commonJS({
     };
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.BrowserLocalStorageKeyStore = void 0;
-    var crypto_1 = require_lib4();
-    var keystores_1 = require_lib5();
+    var crypto_1 = require_lib7();
+    var keystores_1 = require_lib8();
     var LOCAL_STORAGE_KEY_PREFIX = "near-api-js:keystore:";
     var BrowserLocalStorageKeyStore = class extends keystores_1.KeyStore {
       /**
@@ -18912,9 +21208,9 @@ var require_browser_local_storage_key_store = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/keystores-browser/lib/multi_contract_browser_local_storage_key_store.js
+// node_modules/@near-js/keystores-browser/lib/multi_contract_browser_local_storage_key_store.js
 var require_multi_contract_browser_local_storage_key_store = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/keystores-browser/lib/multi_contract_browser_local_storage_key_store.js"(exports2) {
+  "node_modules/@near-js/keystores-browser/lib/multi_contract_browser_local_storage_key_store.js"(exports2) {
     "use strict";
     var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
       function adopt(value) {
@@ -18945,8 +21241,8 @@ var require_multi_contract_browser_local_storage_key_store = __commonJS({
     };
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.MultiContractBrowserLocalStorageKeyStore = void 0;
-    var crypto_1 = require_lib4();
-    var keystores_1 = require_lib5();
+    var crypto_1 = require_lib7();
+    var keystores_1 = require_lib8();
     var LOCAL_STORAGE_KEY_PREFIX = "near-api-js:keystore:";
     var MultiContractBrowserLocalStorageKeyStore = class extends keystores_1.MultiContractKeyStore {
       /**
@@ -19084,9 +21380,9 @@ var require_multi_contract_browser_local_storage_key_store = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/keystores-browser/lib/index.js
-var require_lib6 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/keystores-browser/lib/index.js"(exports2) {
+// node_modules/@near-js/keystores-browser/lib/index.js
+var require_lib9 = __commonJS({
+  "node_modules/@near-js/keystores-browser/lib/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.MultiContractBrowserLocalStorageKeyStore = exports2.BrowserLocalStorageKeyStore = void 0;
@@ -19101,22 +21397,2318 @@ var require_lib6 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/key_stores/browser_local_storage_key_store.js
+// node_modules/near-api-js/lib/key_stores/browser_local_storage_key_store.js
 var require_browser_local_storage_key_store2 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/key_stores/browser_local_storage_key_store.js"(exports2) {
+  "node_modules/near-api-js/lib/key_stores/browser_local_storage_key_store.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.BrowserLocalStorageKeyStore = void 0;
-    var keystores_browser_1 = require_lib6();
+    var keystores_browser_1 = require_lib9();
     Object.defineProperty(exports2, "BrowserLocalStorageKeyStore", { enumerable: true, get: function() {
       return keystores_browser_1.BrowserLocalStorageKeyStore;
     } });
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/keystores-node/lib/unencrypted_file_system_keystore.js
+// node_modules/@near-js/keystores-node/node_modules/@near-js/crypto/lib/constants.js
+var require_constants6 = __commonJS({
+  "node_modules/@near-js/keystores-node/node_modules/@near-js/crypto/lib/constants.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.KeySize = exports2.KeyType = void 0;
+    var KeyType;
+    (function(KeyType2) {
+      KeyType2[KeyType2["ED25519"] = 0] = "ED25519";
+      KeyType2[KeyType2["SECP256K1"] = 1] = "SECP256K1";
+    })(KeyType = exports2.KeyType || (exports2.KeyType = {}));
+    var KeySize;
+    (function(KeySize2) {
+      KeySize2[KeySize2["SECRET_KEY"] = 32] = "SECRET_KEY";
+      KeySize2[KeySize2["ED25519_PUBLIC_KEY"] = 32] = "ED25519_PUBLIC_KEY";
+      KeySize2[KeySize2["SECP256k1_PUBLIC_KEY"] = 64] = "SECP256k1_PUBLIC_KEY";
+    })(KeySize = exports2.KeySize || (exports2.KeySize = {}));
+  }
+});
+
+// node_modules/@near-js/keystores-node/node_modules/@near-js/crypto/lib/key_pair_base.js
+var require_key_pair_base3 = __commonJS({
+  "node_modules/@near-js/keystores-node/node_modules/@near-js/crypto/lib/key_pair_base.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.KeyPairBase = void 0;
+    var KeyPairBase = class {
+    };
+    exports2.KeyPairBase = KeyPairBase;
+  }
+});
+
+// node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/constants.js
+var require_constants7 = __commonJS({
+  "node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/constants.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.DEFAULT_FUNCTION_CALL_GAS = void 0;
+    exports2.DEFAULT_FUNCTION_CALL_GAS = BigInt("30000000000000");
+  }
+});
+
+// node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/logger/console.logger.js
+var require_console_logger3 = __commonJS({
+  "node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/logger/console.logger.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.ConsoleLogger = void 0;
+    var ConsoleLogger = class {
+      constructor(logLevels) {
+        this.logLevels = logLevels;
+        this.isLevelEnabled = (level) => {
+          return this.logLevels.includes(level);
+        };
+      }
+      print(level, message2, ...optionalParams) {
+        switch (level) {
+          case "error":
+          case "fatal":
+            return console.error(message2, ...optionalParams);
+          case "warn":
+            return console.warn(message2, ...optionalParams);
+          case "log":
+            return console.log(message2, ...optionalParams);
+          case "debug":
+          case "verbose":
+            return console.debug(message2, ...optionalParams);
+        }
+      }
+      verbose(message2, ...optionalParams) {
+        if (!this.isLevelEnabled("verbose"))
+          return;
+        this.print("verbose", message2, ...optionalParams);
+      }
+      debug(message2, ...optionalParams) {
+        if (!this.isLevelEnabled("debug"))
+          return;
+        this.print("debug", message2, ...optionalParams);
+      }
+      log(message2, ...optionalParams) {
+        if (!this.isLevelEnabled("log"))
+          return;
+        this.print("log", message2, ...optionalParams);
+      }
+      warn(message2, ...optionalParams) {
+        if (!this.isLevelEnabled("warn"))
+          return;
+        this.print("warn", message2, ...optionalParams);
+      }
+      error(message2, ...optionalParams) {
+        if (!this.isLevelEnabled("error"))
+          return;
+        this.print("error", message2, ...optionalParams);
+      }
+      fatal(message2, ...optionalParams) {
+        if (!this.isLevelEnabled("fatal"))
+          return;
+        this.print("fatal", message2, ...optionalParams);
+      }
+    };
+    exports2.ConsoleLogger = ConsoleLogger;
+  }
+});
+
+// node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/logger/logger.js
+var require_logger5 = __commonJS({
+  "node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/logger/logger.js"(exports2) {
+    "use strict";
+    var _a;
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.Logger = void 0;
+    var console_logger_1 = require_console_logger3();
+    var DEFAULT_LOG_LEVELS = [
+      "verbose",
+      "debug",
+      "log",
+      "warn",
+      "error",
+      "fatal"
+    ];
+    var DEFAULT_LOGGER = typeof process === "object" && process.env.NEAR_NO_LOGS ? void 0 : new console_logger_1.ConsoleLogger(DEFAULT_LOG_LEVELS);
+    var Logger = class {
+      static error(message2, ...optionalParams) {
+        var _b;
+        (_b = this.instanceRef) === null || _b === void 0 ? void 0 : _b.error(message2, ...optionalParams);
+      }
+      /**
+       * Write a 'log' level log.
+       */
+      static log(message2, ...optionalParams) {
+        var _b;
+        (_b = this.instanceRef) === null || _b === void 0 ? void 0 : _b.log(message2, ...optionalParams);
+      }
+      /**
+       * Write a 'warn' level log.
+       */
+      static warn(message2, ...optionalParams) {
+        var _b;
+        (_b = this.instanceRef) === null || _b === void 0 ? void 0 : _b.warn(message2, ...optionalParams);
+      }
+      /**
+       * Write a 'debug' level log.
+       */
+      static debug(message2, ...optionalParams) {
+        var _b, _c;
+        (_c = (_b = this.instanceRef) === null || _b === void 0 ? void 0 : _b.debug) === null || _c === void 0 ? void 0 : _c.call(_b, message2, ...optionalParams);
+      }
+      /**
+       * Write a 'verbose' level log.
+       */
+      static verbose(message2, ...optionalParams) {
+        var _b, _c;
+        (_c = (_b = this.instanceRef) === null || _b === void 0 ? void 0 : _b.verbose) === null || _c === void 0 ? void 0 : _c.call(_b, message2, ...optionalParams);
+      }
+      static fatal(message2, ...optionalParams) {
+        var _b, _c;
+        (_c = (_b = this.instanceRef) === null || _b === void 0 ? void 0 : _b.fatal) === null || _c === void 0 ? void 0 : _c.call(_b, message2, ...optionalParams);
+      }
+    };
+    exports2.Logger = Logger;
+    _a = Logger;
+    Logger.instanceRef = DEFAULT_LOGGER;
+    Logger.overrideLogger = (logger) => {
+      _a.instanceRef = logger;
+    };
+  }
+});
+
+// node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/logger/index.js
+var require_logger6 = __commonJS({
+  "node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/logger/index.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.Logger = void 0;
+    var logger_1 = require_logger5();
+    Object.defineProperty(exports2, "Logger", { enumerable: true, get: function() {
+      return logger_1.Logger;
+    } });
+  }
+});
+
+// node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/errors/errors.js
+var require_errors7 = __commonJS({
+  "node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/errors/errors.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.logWarning = void 0;
+    var logger_1 = require_logger6();
+    function logWarning(...args2) {
+      const [message2, ...optionalParams] = args2;
+      logger_1.Logger.warn(message2, ...optionalParams);
+    }
+    exports2.logWarning = logWarning;
+  }
+});
+
+// node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/format.js
+var require_format3 = __commonJS({
+  "node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/format.js"(exports2) {
+    "use strict";
+    var __importDefault = exports2 && exports2.__importDefault || function(mod) {
+      return mod && mod.__esModule ? mod : { "default": mod };
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.baseDecode = exports2.baseEncode = exports2.parseNearAmount = exports2.formatNearAmount = exports2.NEAR_NOMINATION = exports2.NEAR_NOMINATION_EXP = void 0;
+    var bs58_1 = __importDefault(require_bs58());
+    exports2.NEAR_NOMINATION_EXP = 24;
+    exports2.NEAR_NOMINATION = __pow(BigInt(10), BigInt(exports2.NEAR_NOMINATION_EXP));
+    var ROUNDING_OFFSETS = [];
+    var BN10 = BigInt(10);
+    for (let i = 0, offset = BigInt(5); i < exports2.NEAR_NOMINATION_EXP; i++, offset = offset * BN10) {
+      ROUNDING_OFFSETS[i] = offset;
+    }
+    function formatNearAmount(balance, fracDigits = exports2.NEAR_NOMINATION_EXP) {
+      let balanceBN = BigInt(balance);
+      if (fracDigits !== exports2.NEAR_NOMINATION_EXP) {
+        const roundingExp = exports2.NEAR_NOMINATION_EXP - fracDigits - 1;
+        if (roundingExp > 0) {
+          balanceBN += ROUNDING_OFFSETS[roundingExp];
+        }
+      }
+      balance = balanceBN.toString();
+      const wholeStr = balance.substring(0, balance.length - exports2.NEAR_NOMINATION_EXP) || "0";
+      const fractionStr = balance.substring(balance.length - exports2.NEAR_NOMINATION_EXP).padStart(exports2.NEAR_NOMINATION_EXP, "0").substring(0, fracDigits);
+      return trimTrailingZeroes(`${formatWithCommas(wholeStr)}.${fractionStr}`);
+    }
+    exports2.formatNearAmount = formatNearAmount;
+    function parseNearAmount(amt) {
+      if (!amt) {
+        return null;
+      }
+      amt = cleanupAmount(amt);
+      const split = amt.split(".");
+      const wholePart = split[0];
+      const fracPart = split[1] || "";
+      if (split.length > 2 || fracPart.length > exports2.NEAR_NOMINATION_EXP) {
+        throw new Error(`Cannot parse '${amt}' as NEAR amount`);
+      }
+      return trimLeadingZeroes(wholePart + fracPart.padEnd(exports2.NEAR_NOMINATION_EXP, "0"));
+    }
+    exports2.parseNearAmount = parseNearAmount;
+    function cleanupAmount(amount) {
+      return amount.replace(/,/g, "").trim();
+    }
+    function trimTrailingZeroes(value) {
+      return value.replace(/\.?0*$/, "");
+    }
+    function trimLeadingZeroes(value) {
+      value = value.replace(/^0+/, "");
+      if (value === "") {
+        return "0";
+      }
+      return value;
+    }
+    function formatWithCommas(value) {
+      const pattern = /(-?\d+)(\d{3})/;
+      while (pattern.test(value)) {
+        value = value.replace(pattern, "$1,$2");
+      }
+      return value;
+    }
+    function baseEncode(value) {
+      if (typeof value === "string") {
+        const bytes = [];
+        for (let c = 0; c < value.length; c++) {
+          bytes.push(value.charCodeAt(c));
+        }
+        value = new Uint8Array(bytes);
+      }
+      return bs58_1.default.encode(value);
+    }
+    exports2.baseEncode = baseEncode;
+    function baseDecode(value) {
+      return new Uint8Array(bs58_1.default.decode(value));
+    }
+    exports2.baseDecode = baseDecode;
+  }
+});
+
+// node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/errors/error_messages.json
+var require_error_messages3 = __commonJS({
+  "node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/errors/error_messages.json"(exports2, module2) {
+    module2.exports = {
+      GasLimitExceeded: "Exceeded the maximum amount of gas allowed to burn per contract",
+      MethodEmptyName: "Method name is empty",
+      WasmerCompileError: "Wasmer compilation error: {{msg}}",
+      GuestPanic: "Smart contract panicked: {{panic_msg}}",
+      Memory: "Error creating Wasm memory",
+      GasExceeded: "Exceeded the prepaid gas",
+      MethodUTF8Error: "Method name is not valid UTF8 string",
+      BadUTF16: "String encoding is bad UTF-16 sequence",
+      WasmTrap: "WebAssembly trap: {{msg}}",
+      GasInstrumentation: "Gas instrumentation failed or contract has denied instructions.",
+      InvalidPromiseIndex: "{{promise_idx}} does not correspond to existing promises",
+      InvalidPromiseResultIndex: "Accessed invalid promise result index: {{result_idx}}",
+      Deserialization: "Error happened while deserializing the module",
+      MethodNotFound: "Contract method is not found",
+      InvalidRegisterId: "Accessed invalid register id: {{register_id}}",
+      InvalidReceiptIndex: "VM Logic returned an invalid receipt index: {{receipt_index}}",
+      EmptyMethodName: "Method name is empty in contract call",
+      CannotReturnJointPromise: "Returning joint promise is currently prohibited",
+      StackHeightInstrumentation: "Stack instrumentation failed",
+      CodeDoesNotExist: "Cannot find contract code for account {{account_id}}",
+      MethodInvalidSignature: "Invalid method signature",
+      IntegerOverflow: "Integer overflow happened during contract execution",
+      MemoryAccessViolation: "MemoryAccessViolation",
+      InvalidIteratorIndex: "Iterator index {{iterator_index}} does not exist",
+      IteratorWasInvalidated: "Iterator {{iterator_index}} was invalidated after its creation by performing a mutable operation on trie",
+      InvalidAccountId: "VM Logic returned an invalid account id",
+      Serialization: "Error happened while serializing the module",
+      CannotAppendActionToJointPromise: "Actions can only be appended to non-joint promise.",
+      InternalMemoryDeclared: "Internal memory declaration has been found in the module",
+      Instantiate: "Error happened during instantiation",
+      ProhibitedInView: "{{method_name}} is not allowed in view calls",
+      InvalidMethodName: "VM Logic returned an invalid method name",
+      BadUTF8: "String encoding is bad UTF-8 sequence",
+      BalanceExceeded: "Exceeded the account balance",
+      LinkError: "Wasm contract link error: {{msg}}",
+      InvalidPublicKey: "VM Logic provided an invalid public key",
+      ActorNoPermission: "Actor {{actor_id}} doesn't have permission to account {{account_id}} to complete the action",
+      LackBalanceForState: "The account {{account_id}} wouldn't have enough balance to cover storage, required to have {{amount}} yoctoNEAR more",
+      ReceiverMismatch: "Wrong AccessKey used for transaction: transaction is sent to receiver_id={{tx_receiver}}, but is signed with function call access key that restricted to only use with receiver_id={{ak_receiver}}. Either change receiver_id in your transaction or switch to use a FullAccessKey.",
+      CostOverflow: "Transaction gas or balance cost is too high",
+      InvalidSignature: "Transaction is not signed with the given public key",
+      AccessKeyNotFound: `Signer "{{account_id}}" doesn't have access key with the given public_key {{public_key}}`,
+      NotEnoughBalance: "Sender {{signer_id}} does not have enough balance {{#formatNear}}{{balance}}{{/formatNear}} for operation costing {{#formatNear}}{{cost}}{{/formatNear}}",
+      NotEnoughAllowance: "Access Key {account_id}:{public_key} does not have enough balance {{#formatNear}}{{allowance}}{{/formatNear}} for transaction costing {{#formatNear}}{{cost}}{{/formatNear}}",
+      Expired: "Transaction has expired",
+      DeleteAccountStaking: "Account {{account_id}} is staking and can not be deleted",
+      SignerDoesNotExist: "Signer {{signer_id}} does not exist",
+      TriesToStake: "Account {{account_id}} tried to stake {{#formatNear}}{{stake}}{{/formatNear}}, but has staked {{#formatNear}}{{locked}}{{/formatNear}} and only has {{#formatNear}}{{balance}}{{/formatNear}}",
+      AddKeyAlreadyExists: "The public key {{public_key}} is already used for an existing access key",
+      InvalidSigner: "Invalid signer account ID {{signer_id}} according to requirements",
+      CreateAccountNotAllowed: "The new account_id {{account_id}} can't be created by {{predecessor_id}}",
+      RequiresFullAccess: "The transaction contains more then one action, but it was signed with an access key which allows transaction to apply only one specific action. To apply more then one actions TX must be signed with a full access key",
+      TriesToUnstake: "Account {{account_id}} is not yet staked, but tried to unstake",
+      InvalidNonce: "Transaction nonce {{tx_nonce}} must be larger than nonce of the used access key {{ak_nonce}}",
+      AccountAlreadyExists: "Can't create a new account {{account_id}}, because it already exists",
+      InvalidChain: "Transaction parent block hash doesn't belong to the current chain",
+      AccountDoesNotExist: "Can't complete the action because account {{account_id}} doesn't exist",
+      AccessKeyDoesNotExist: "Can't complete the action because access key {{public_key}} doesn't exist",
+      MethodNameMismatch: "Transaction method name {{method_name}} isn't allowed by the access key",
+      DeleteAccountHasRent: "Account {{account_id}} can't be deleted. It has {{#formatNear}}{{balance}}{{/formatNear}}, which is enough to cover the rent",
+      DeleteAccountHasEnoughBalance: "Account {{account_id}} can't be deleted. It has {{#formatNear}}{{balance}}{{/formatNear}}, which is enough to cover it's storage",
+      InvalidReceiver: "Invalid receiver account ID {{receiver_id}} according to requirements",
+      DeleteKeyDoesNotExist: "Account {{account_id}} tries to remove an access key that doesn't exist",
+      Timeout: "Timeout exceeded",
+      Closed: "Connection closed",
+      ShardCongested: "Shard {{shard_id}} rejected the transaction due to congestion level {{congestion_level}}, try again later",
+      ShardStuck: "Shard {{shard_id}} rejected the transaction because it missed {{missed_chunks}} chunks and needs to recover before accepting new transactions, try again later"
+    };
+  }
+});
+
+// node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/errors/rpc_error_schema.json
+var require_rpc_error_schema3 = __commonJS({
+  "node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/errors/rpc_error_schema.json"(exports2, module2) {
+    module2.exports = {
+      schema: {
+        AccessKeyNotFound: {
+          name: "AccessKeyNotFound",
+          subtypes: [],
+          props: {
+            account_id: "",
+            public_key: ""
+          }
+        },
+        AccountAlreadyExists: {
+          name: "AccountAlreadyExists",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        AccountDoesNotExist: {
+          name: "AccountDoesNotExist",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        ActionError: {
+          name: "ActionError",
+          subtypes: [
+            "AccountAlreadyExists",
+            "AccountDoesNotExist",
+            "CreateAccountOnlyByRegistrar",
+            "CreateAccountNotAllowed",
+            "ActorNoPermission",
+            "DeleteKeyDoesNotExist",
+            "AddKeyAlreadyExists",
+            "DeleteAccountStaking",
+            "LackBalanceForState",
+            "TriesToUnstake",
+            "TriesToStake",
+            "InsufficientStake",
+            "FunctionCallError",
+            "NewReceiptValidationError",
+            "OnlyImplicitAccountCreationAllowed",
+            "DeleteAccountWithLargeState",
+            "DelegateActionInvalidSignature",
+            "DelegateActionSenderDoesNotMatchTxReceiver",
+            "DelegateActionExpired",
+            "DelegateActionAccessKeyError",
+            "DelegateActionInvalidNonce",
+            "DelegateActionNonceTooLarge"
+          ],
+          props: {
+            index: ""
+          }
+        },
+        ActionsValidationError: {
+          name: "ActionsValidationError",
+          subtypes: [
+            "DeleteActionMustBeFinal",
+            "TotalPrepaidGasExceeded",
+            "TotalNumberOfActionsExceeded",
+            "AddKeyMethodNamesNumberOfBytesExceeded",
+            "AddKeyMethodNameLengthExceeded",
+            "IntegerOverflow",
+            "InvalidAccountId",
+            "ContractSizeExceeded",
+            "FunctionCallMethodNameLengthExceeded",
+            "FunctionCallArgumentsLengthExceeded",
+            "UnsuitableStakingKey",
+            "FunctionCallZeroAttachedGas",
+            "DelegateActionMustBeOnlyOne",
+            "UnsupportedProtocolFeature"
+          ],
+          props: {}
+        },
+        ActorNoPermission: {
+          name: "ActorNoPermission",
+          subtypes: [],
+          props: {
+            account_id: "",
+            actor_id: ""
+          }
+        },
+        AddKeyAlreadyExists: {
+          name: "AddKeyAlreadyExists",
+          subtypes: [],
+          props: {
+            account_id: "",
+            public_key: ""
+          }
+        },
+        AddKeyMethodNameLengthExceeded: {
+          name: "AddKeyMethodNameLengthExceeded",
+          subtypes: [],
+          props: {
+            length: "",
+            limit: ""
+          }
+        },
+        AddKeyMethodNamesNumberOfBytesExceeded: {
+          name: "AddKeyMethodNamesNumberOfBytesExceeded",
+          subtypes: [],
+          props: {
+            limit: "",
+            total_number_of_bytes: ""
+          }
+        },
+        AltBn128InvalidInput: {
+          name: "AltBn128InvalidInput",
+          subtypes: [],
+          props: {
+            msg: ""
+          }
+        },
+        BadUTF16: {
+          name: "BadUTF16",
+          subtypes: [],
+          props: {}
+        },
+        BadUTF8: {
+          name: "BadUTF8",
+          subtypes: [],
+          props: {}
+        },
+        BalanceExceeded: {
+          name: "BalanceExceeded",
+          subtypes: [],
+          props: {}
+        },
+        BalanceMismatchError: {
+          name: "BalanceMismatchError",
+          subtypes: [],
+          props: {
+            final_accounts_balance: "",
+            final_postponed_receipts_balance: "",
+            forwarded_buffered_receipts_balance: "",
+            incoming_receipts_balance: "",
+            incoming_validator_rewards: "",
+            initial_accounts_balance: "",
+            initial_postponed_receipts_balance: "",
+            new_buffered_receipts_balance: "",
+            new_delayed_receipts_balance: "",
+            other_burnt_amount: "",
+            outgoing_receipts_balance: "",
+            processed_delayed_receipts_balance: "",
+            slashed_burnt_amount: "",
+            tx_burnt_amount: ""
+          }
+        },
+        CallIndirectOOB: {
+          name: "CallIndirectOOB",
+          subtypes: [],
+          props: {}
+        },
+        CannotAppendActionToJointPromise: {
+          name: "CannotAppendActionToJointPromise",
+          subtypes: [],
+          props: {}
+        },
+        CannotReturnJointPromise: {
+          name: "CannotReturnJointPromise",
+          subtypes: [],
+          props: {}
+        },
+        CodeDoesNotExist: {
+          name: "CodeDoesNotExist",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        CompilationError: {
+          name: "CompilationError",
+          subtypes: [
+            "CodeDoesNotExist",
+            "PrepareError",
+            "WasmerCompileError"
+          ],
+          props: {}
+        },
+        ContractSizeExceeded: {
+          name: "ContractSizeExceeded",
+          subtypes: [],
+          props: {
+            limit: "",
+            size: ""
+          }
+        },
+        CostOverflow: {
+          name: "CostOverflow",
+          subtypes: [],
+          props: {}
+        },
+        CreateAccountNotAllowed: {
+          name: "CreateAccountNotAllowed",
+          subtypes: [],
+          props: {
+            account_id: "",
+            predecessor_id: ""
+          }
+        },
+        CreateAccountOnlyByRegistrar: {
+          name: "CreateAccountOnlyByRegistrar",
+          subtypes: [],
+          props: {
+            account_id: "",
+            predecessor_id: "",
+            registrar_account_id: ""
+          }
+        },
+        DelegateActionExpired: {
+          name: "DelegateActionExpired",
+          subtypes: [],
+          props: {}
+        },
+        DelegateActionInvalidNonce: {
+          name: "DelegateActionInvalidNonce",
+          subtypes: [],
+          props: {
+            ak_nonce: "",
+            delegate_nonce: ""
+          }
+        },
+        DelegateActionInvalidSignature: {
+          name: "DelegateActionInvalidSignature",
+          subtypes: [],
+          props: {}
+        },
+        DelegateActionMustBeOnlyOne: {
+          name: "DelegateActionMustBeOnlyOne",
+          subtypes: [],
+          props: {}
+        },
+        DelegateActionNonceTooLarge: {
+          name: "DelegateActionNonceTooLarge",
+          subtypes: [],
+          props: {
+            delegate_nonce: "",
+            upper_bound: ""
+          }
+        },
+        DelegateActionSenderDoesNotMatchTxReceiver: {
+          name: "DelegateActionSenderDoesNotMatchTxReceiver",
+          subtypes: [],
+          props: {
+            receiver_id: "",
+            sender_id: ""
+          }
+        },
+        DeleteAccountStaking: {
+          name: "DeleteAccountStaking",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        DeleteAccountWithLargeState: {
+          name: "DeleteAccountWithLargeState",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        DeleteActionMustBeFinal: {
+          name: "DeleteActionMustBeFinal",
+          subtypes: [],
+          props: {}
+        },
+        DeleteKeyDoesNotExist: {
+          name: "DeleteKeyDoesNotExist",
+          subtypes: [],
+          props: {
+            account_id: "",
+            public_key: ""
+          }
+        },
+        DepositWithFunctionCall: {
+          name: "DepositWithFunctionCall",
+          subtypes: [],
+          props: {}
+        },
+        Deprecated: {
+          name: "Deprecated",
+          subtypes: [],
+          props: {
+            method_name: ""
+          }
+        },
+        Deserialization: {
+          name: "Deserialization",
+          subtypes: [],
+          props: {}
+        },
+        ECRecoverError: {
+          name: "ECRecoverError",
+          subtypes: [],
+          props: {
+            msg: ""
+          }
+        },
+        Ed25519VerifyInvalidInput: {
+          name: "Ed25519VerifyInvalidInput",
+          subtypes: [],
+          props: {
+            msg: ""
+          }
+        },
+        EmptyMethodName: {
+          name: "EmptyMethodName",
+          subtypes: [],
+          props: {}
+        },
+        Expired: {
+          name: "Expired",
+          subtypes: [],
+          props: {}
+        },
+        FunctionCallArgumentsLengthExceeded: {
+          name: "FunctionCallArgumentsLengthExceeded",
+          subtypes: [],
+          props: {
+            length: "",
+            limit: ""
+          }
+        },
+        FunctionCallMethodNameLengthExceeded: {
+          name: "FunctionCallMethodNameLengthExceeded",
+          subtypes: [],
+          props: {
+            length: "",
+            limit: ""
+          }
+        },
+        FunctionCallZeroAttachedGas: {
+          name: "FunctionCallZeroAttachedGas",
+          subtypes: [],
+          props: {}
+        },
+        GasExceeded: {
+          name: "GasExceeded",
+          subtypes: [],
+          props: {}
+        },
+        GasInstrumentation: {
+          name: "GasInstrumentation",
+          subtypes: [],
+          props: {}
+        },
+        GasLimitExceeded: {
+          name: "GasLimitExceeded",
+          subtypes: [],
+          props: {}
+        },
+        GenericTrap: {
+          name: "GenericTrap",
+          subtypes: [],
+          props: {}
+        },
+        GuestPanic: {
+          name: "GuestPanic",
+          subtypes: [],
+          props: {
+            panic_msg: ""
+          }
+        },
+        HostError: {
+          name: "HostError",
+          subtypes: [
+            "BadUTF16",
+            "BadUTF8",
+            "GasExceeded",
+            "GasLimitExceeded",
+            "BalanceExceeded",
+            "EmptyMethodName",
+            "GuestPanic",
+            "IntegerOverflow",
+            "InvalidPromiseIndex",
+            "CannotAppendActionToJointPromise",
+            "CannotReturnJointPromise",
+            "InvalidPromiseResultIndex",
+            "InvalidRegisterId",
+            "IteratorWasInvalidated",
+            "MemoryAccessViolation",
+            "InvalidReceiptIndex",
+            "InvalidIteratorIndex",
+            "InvalidAccountId",
+            "InvalidMethodName",
+            "InvalidPublicKey",
+            "ProhibitedInView",
+            "NumberOfLogsExceeded",
+            "KeyLengthExceeded",
+            "ValueLengthExceeded",
+            "TotalLogLengthExceeded",
+            "NumberPromisesExceeded",
+            "NumberInputDataDependenciesExceeded",
+            "ReturnedValueLengthExceeded",
+            "ContractSizeExceeded",
+            "Deprecated",
+            "ECRecoverError",
+            "AltBn128InvalidInput",
+            "Ed25519VerifyInvalidInput"
+          ],
+          props: {}
+        },
+        IllegalArithmetic: {
+          name: "IllegalArithmetic",
+          subtypes: [],
+          props: {}
+        },
+        IncorrectCallIndirectSignature: {
+          name: "IncorrectCallIndirectSignature",
+          subtypes: [],
+          props: {}
+        },
+        IndirectCallToNull: {
+          name: "IndirectCallToNull",
+          subtypes: [],
+          props: {}
+        },
+        Instantiate: {
+          name: "Instantiate",
+          subtypes: [],
+          props: {}
+        },
+        InsufficientStake: {
+          name: "InsufficientStake",
+          subtypes: [],
+          props: {
+            account_id: "",
+            minimum_stake: "",
+            stake: ""
+          }
+        },
+        IntegerOverflow: {
+          name: "IntegerOverflow",
+          subtypes: [],
+          props: {}
+        },
+        InternalMemoryDeclared: {
+          name: "InternalMemoryDeclared",
+          subtypes: [],
+          props: {}
+        },
+        InvalidAccessKeyError: {
+          name: "InvalidAccessKeyError",
+          subtypes: [
+            "AccessKeyNotFound",
+            "ReceiverMismatch",
+            "MethodNameMismatch",
+            "RequiresFullAccess",
+            "NotEnoughAllowance",
+            "DepositWithFunctionCall"
+          ],
+          props: {}
+        },
+        InvalidAccountId: {
+          name: "InvalidAccountId",
+          subtypes: [],
+          props: {}
+        },
+        InvalidChain: {
+          name: "InvalidChain",
+          subtypes: [],
+          props: {}
+        },
+        InvalidDataReceiverId: {
+          name: "InvalidDataReceiverId",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        InvalidIteratorIndex: {
+          name: "InvalidIteratorIndex",
+          subtypes: [],
+          props: {
+            iterator_index: ""
+          }
+        },
+        InvalidMethodName: {
+          name: "InvalidMethodName",
+          subtypes: [],
+          props: {}
+        },
+        InvalidNonce: {
+          name: "InvalidNonce",
+          subtypes: [],
+          props: {
+            ak_nonce: "",
+            tx_nonce: ""
+          }
+        },
+        InvalidPredecessorId: {
+          name: "InvalidPredecessorId",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        InvalidPromiseIndex: {
+          name: "InvalidPromiseIndex",
+          subtypes: [],
+          props: {
+            promise_idx: ""
+          }
+        },
+        InvalidPromiseResultIndex: {
+          name: "InvalidPromiseResultIndex",
+          subtypes: [],
+          props: {
+            result_idx: ""
+          }
+        },
+        InvalidPublicKey: {
+          name: "InvalidPublicKey",
+          subtypes: [],
+          props: {}
+        },
+        InvalidReceiptIndex: {
+          name: "InvalidReceiptIndex",
+          subtypes: [],
+          props: {
+            receipt_index: ""
+          }
+        },
+        InvalidReceiverId: {
+          name: "InvalidReceiverId",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        InvalidRegisterId: {
+          name: "InvalidRegisterId",
+          subtypes: [],
+          props: {
+            register_id: ""
+          }
+        },
+        InvalidSignature: {
+          name: "InvalidSignature",
+          subtypes: [],
+          props: {}
+        },
+        InvalidSignerId: {
+          name: "InvalidSignerId",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        InvalidTxError: {
+          name: "InvalidTxError",
+          subtypes: [
+            "InvalidAccessKeyError",
+            "InvalidSignerId",
+            "SignerDoesNotExist",
+            "InvalidNonce",
+            "NonceTooLarge",
+            "InvalidReceiverId",
+            "InvalidSignature",
+            "NotEnoughBalance",
+            "LackBalanceForState",
+            "CostOverflow",
+            "InvalidChain",
+            "Expired",
+            "ActionsValidation",
+            "TransactionSizeExceeded",
+            "StorageError",
+            "ShardCongested",
+            "ShardStuck"
+          ],
+          props: {}
+        },
+        IteratorWasInvalidated: {
+          name: "IteratorWasInvalidated",
+          subtypes: [],
+          props: {
+            iterator_index: ""
+          }
+        },
+        KeyLengthExceeded: {
+          name: "KeyLengthExceeded",
+          subtypes: [],
+          props: {
+            length: "",
+            limit: ""
+          }
+        },
+        LackBalanceForState: {
+          name: "LackBalanceForState",
+          subtypes: [],
+          props: {
+            account_id: "",
+            amount: ""
+          }
+        },
+        Memory: {
+          name: "Memory",
+          subtypes: [],
+          props: {}
+        },
+        MemoryAccessViolation: {
+          name: "MemoryAccessViolation",
+          subtypes: [],
+          props: {}
+        },
+        MemoryOutOfBounds: {
+          name: "MemoryOutOfBounds",
+          subtypes: [],
+          props: {}
+        },
+        MethodEmptyName: {
+          name: "MethodEmptyName",
+          subtypes: [],
+          props: {}
+        },
+        MethodInvalidSignature: {
+          name: "MethodInvalidSignature",
+          subtypes: [],
+          props: {}
+        },
+        MethodNameMismatch: {
+          name: "MethodNameMismatch",
+          subtypes: [],
+          props: {
+            method_name: ""
+          }
+        },
+        MethodNotFound: {
+          name: "MethodNotFound",
+          subtypes: [],
+          props: {}
+        },
+        MethodResolveError: {
+          name: "MethodResolveError",
+          subtypes: [
+            "MethodEmptyName",
+            "MethodNotFound",
+            "MethodInvalidSignature"
+          ],
+          props: {}
+        },
+        MisalignedAtomicAccess: {
+          name: "MisalignedAtomicAccess",
+          subtypes: [],
+          props: {}
+        },
+        NonceTooLarge: {
+          name: "NonceTooLarge",
+          subtypes: [],
+          props: {
+            tx_nonce: "",
+            upper_bound: ""
+          }
+        },
+        NotEnoughAllowance: {
+          name: "NotEnoughAllowance",
+          subtypes: [],
+          props: {
+            account_id: "",
+            allowance: "",
+            cost: "",
+            public_key: ""
+          }
+        },
+        NotEnoughBalance: {
+          name: "NotEnoughBalance",
+          subtypes: [],
+          props: {
+            balance: "",
+            cost: "",
+            signer_id: ""
+          }
+        },
+        NumberInputDataDependenciesExceeded: {
+          name: "NumberInputDataDependenciesExceeded",
+          subtypes: [],
+          props: {
+            limit: "",
+            number_of_input_data_dependencies: ""
+          }
+        },
+        NumberOfLogsExceeded: {
+          name: "NumberOfLogsExceeded",
+          subtypes: [],
+          props: {
+            limit: ""
+          }
+        },
+        NumberPromisesExceeded: {
+          name: "NumberPromisesExceeded",
+          subtypes: [],
+          props: {
+            limit: "",
+            number_of_promises: ""
+          }
+        },
+        OnlyImplicitAccountCreationAllowed: {
+          name: "OnlyImplicitAccountCreationAllowed",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        PrepareError: {
+          name: "PrepareError",
+          subtypes: [
+            "Serialization",
+            "Deserialization",
+            "InternalMemoryDeclared",
+            "GasInstrumentation",
+            "StackHeightInstrumentation",
+            "Instantiate",
+            "Memory",
+            "TooManyFunctions",
+            "TooManyLocals"
+          ],
+          props: {}
+        },
+        ProhibitedInView: {
+          name: "ProhibitedInView",
+          subtypes: [],
+          props: {
+            method_name: ""
+          }
+        },
+        ReceiptSizeExceeded: {
+          name: "ReceiptSizeExceeded",
+          subtypes: [],
+          props: {
+            limit: "",
+            size: ""
+          }
+        },
+        ReceiptValidationError: {
+          name: "ReceiptValidationError",
+          subtypes: [
+            "InvalidPredecessorId",
+            "InvalidReceiverId",
+            "InvalidSignerId",
+            "InvalidDataReceiverId",
+            "ReturnedValueLengthExceeded",
+            "NumberInputDataDependenciesExceeded",
+            "ActionsValidation",
+            "ReceiptSizeExceeded"
+          ],
+          props: {}
+        },
+        ReceiverMismatch: {
+          name: "ReceiverMismatch",
+          subtypes: [],
+          props: {
+            ak_receiver: "",
+            tx_receiver: ""
+          }
+        },
+        RequiresFullAccess: {
+          name: "RequiresFullAccess",
+          subtypes: [],
+          props: {}
+        },
+        ReturnedValueLengthExceeded: {
+          name: "ReturnedValueLengthExceeded",
+          subtypes: [],
+          props: {
+            length: "",
+            limit: ""
+          }
+        },
+        Serialization: {
+          name: "Serialization",
+          subtypes: [],
+          props: {}
+        },
+        ShardCongested: {
+          name: "ShardCongested",
+          subtypes: [],
+          props: {
+            congestion_level: "",
+            shard_id: ""
+          }
+        },
+        ShardStuck: {
+          name: "ShardStuck",
+          subtypes: [],
+          props: {
+            missed_chunks: "",
+            shard_id: ""
+          }
+        },
+        SignerDoesNotExist: {
+          name: "SignerDoesNotExist",
+          subtypes: [],
+          props: {
+            signer_id: ""
+          }
+        },
+        StackHeightInstrumentation: {
+          name: "StackHeightInstrumentation",
+          subtypes: [],
+          props: {}
+        },
+        StackOverflow: {
+          name: "StackOverflow",
+          subtypes: [],
+          props: {}
+        },
+        TooManyFunctions: {
+          name: "TooManyFunctions",
+          subtypes: [],
+          props: {}
+        },
+        TooManyLocals: {
+          name: "TooManyLocals",
+          subtypes: [],
+          props: {}
+        },
+        TotalLogLengthExceeded: {
+          name: "TotalLogLengthExceeded",
+          subtypes: [],
+          props: {
+            length: "",
+            limit: ""
+          }
+        },
+        TotalNumberOfActionsExceeded: {
+          name: "TotalNumberOfActionsExceeded",
+          subtypes: [],
+          props: {
+            limit: "",
+            total_number_of_actions: ""
+          }
+        },
+        TotalPrepaidGasExceeded: {
+          name: "TotalPrepaidGasExceeded",
+          subtypes: [],
+          props: {
+            limit: "",
+            total_prepaid_gas: ""
+          }
+        },
+        TransactionSizeExceeded: {
+          name: "TransactionSizeExceeded",
+          subtypes: [],
+          props: {
+            limit: "",
+            size: ""
+          }
+        },
+        TriesToStake: {
+          name: "TriesToStake",
+          subtypes: [],
+          props: {
+            account_id: "",
+            balance: "",
+            locked: "",
+            stake: ""
+          }
+        },
+        TriesToUnstake: {
+          name: "TriesToUnstake",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        TxExecutionError: {
+          name: "TxExecutionError",
+          subtypes: [
+            "ActionError",
+            "InvalidTxError"
+          ],
+          props: {}
+        },
+        Unreachable: {
+          name: "Unreachable",
+          subtypes: [],
+          props: {}
+        },
+        UnsuitableStakingKey: {
+          name: "UnsuitableStakingKey",
+          subtypes: [],
+          props: {
+            public_key: ""
+          }
+        },
+        UnsupportedProtocolFeature: {
+          name: "UnsupportedProtocolFeature",
+          subtypes: [],
+          props: {
+            protocol_feature: "",
+            version: ""
+          }
+        },
+        ValueLengthExceeded: {
+          name: "ValueLengthExceeded",
+          subtypes: [],
+          props: {
+            length: "",
+            limit: ""
+          }
+        },
+        WasmTrap: {
+          name: "WasmTrap",
+          subtypes: [
+            "Unreachable",
+            "IncorrectCallIndirectSignature",
+            "MemoryOutOfBounds",
+            "CallIndirectOOB",
+            "IllegalArithmetic",
+            "MisalignedAtomicAccess",
+            "IndirectCallToNull",
+            "StackOverflow",
+            "GenericTrap"
+          ],
+          props: {}
+        },
+        WasmerCompileError: {
+          name: "WasmerCompileError",
+          subtypes: [],
+          props: {
+            msg: ""
+          }
+        },
+        Closed: {
+          name: "Closed",
+          subtypes: [],
+          props: {}
+        },
+        ServerError: {
+          name: "ServerError",
+          subtypes: [
+            "TxExecutionError",
+            "Timeout",
+            "Closed"
+          ],
+          props: {}
+        },
+        Timeout: {
+          name: "Timeout",
+          subtypes: [],
+          props: {}
+        }
+      }
+    };
+  }
+});
+
+// node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/errors/rpc_errors.js
+var require_rpc_errors3 = __commonJS({
+  "node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/errors/rpc_errors.js"(exports2) {
+    "use strict";
+    var __importDefault = exports2 && exports2.__importDefault || function(mod) {
+      return mod && mod.__esModule ? mod : { "default": mod };
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.getErrorTypeFromErrorMessage = exports2.formatError = exports2.parseResultError = exports2.parseRpcError = exports2.ServerError = void 0;
+    var types_1 = require_lib();
+    var mustache_1 = __importDefault(require_mustache());
+    var format_1 = require_format3();
+    var error_messages_json_1 = __importDefault(require_error_messages3());
+    var rpc_error_schema_json_1 = __importDefault(require_rpc_error_schema3());
+    var mustacheHelpers = {
+      formatNear: () => (n, render) => (0, format_1.formatNearAmount)(render(n))
+    };
+    var ServerError = class extends types_1.TypedError {
+    };
+    exports2.ServerError = ServerError;
+    var ServerTransactionError = class extends ServerError {
+    };
+    function parseRpcError(errorObj) {
+      const result = {};
+      const errorClassName = walkSubtype(errorObj, rpc_error_schema_json_1.default.schema, result, "");
+      const error = new ServerError(formatError(errorClassName, result), errorClassName);
+      Object.assign(error, result);
+      return error;
+    }
+    exports2.parseRpcError = parseRpcError;
+    function parseResultError(result) {
+      const server_error = parseRpcError(result.status.Failure);
+      const server_tx_error = new ServerTransactionError();
+      Object.assign(server_tx_error, server_error);
+      server_tx_error.type = server_error.type;
+      server_tx_error.message = server_error.message;
+      server_tx_error.transaction_outcome = result.transaction_outcome;
+      return server_tx_error;
+    }
+    exports2.parseResultError = parseResultError;
+    function formatError(errorClassName, errorData) {
+      if (typeof error_messages_json_1.default[errorClassName] === "string") {
+        return mustache_1.default.render(error_messages_json_1.default[errorClassName], Object.assign(Object.assign({}, errorData), mustacheHelpers));
+      }
+      return JSON.stringify(errorData);
+    }
+    exports2.formatError = formatError;
+    function walkSubtype(errorObj, schema, result, typeName) {
+      let error;
+      let type;
+      let errorTypeName;
+      for (const errorName in schema) {
+        if (isString(errorObj[errorName])) {
+          return errorObj[errorName];
+        }
+        if (isObject(errorObj[errorName])) {
+          error = errorObj[errorName];
+          type = schema[errorName];
+          errorTypeName = errorName;
+        } else if (isObject(errorObj.kind) && isObject(errorObj.kind[errorName])) {
+          error = errorObj.kind[errorName];
+          type = schema[errorName];
+          errorTypeName = errorName;
+        } else {
+          continue;
+        }
+      }
+      if (error && type) {
+        for (const prop of Object.keys(type.props)) {
+          result[prop] = error[prop];
+        }
+        return walkSubtype(error, schema, result, errorTypeName);
+      } else {
+        result.kind = errorObj;
+        return typeName;
+      }
+    }
+    function getErrorTypeFromErrorMessage(errorMessage, errorType) {
+      switch (true) {
+        case /^account .*? does not exist while viewing$/.test(errorMessage):
+          return "AccountDoesNotExist";
+        case /^Account .*? doesn't exist$/.test(errorMessage):
+          return "AccountDoesNotExist";
+        case /^access key .*? does not exist while viewing$/.test(errorMessage):
+          return "AccessKeyDoesNotExist";
+        case /wasm execution failed with error: FunctionCallError\(CompilationError\(CodeDoesNotExist/.test(errorMessage):
+          return "CodeDoesNotExist";
+        case /wasm execution failed with error: CompilationError\(CodeDoesNotExist/.test(errorMessage):
+          return "CodeDoesNotExist";
+        case /wasm execution failed with error: FunctionCallError\(MethodResolveError\(MethodNotFound/.test(errorMessage):
+          return "MethodNotFound";
+        case /wasm execution failed with error: MethodResolveError\(MethodNotFound/.test(errorMessage):
+          return "MethodNotFound";
+        case /Transaction nonce \d+ must be larger than nonce of the used access key \d+/.test(errorMessage):
+          return "InvalidNonce";
+        default:
+          return errorType;
+      }
+    }
+    exports2.getErrorTypeFromErrorMessage = getErrorTypeFromErrorMessage;
+    function isObject(n) {
+      return Object.prototype.toString.call(n) === "[object Object]";
+    }
+    function isString(n) {
+      return Object.prototype.toString.call(n) === "[object String]";
+    }
+  }
+});
+
+// node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/errors/index.js
+var require_errors8 = __commonJS({
+  "node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/errors/index.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.parseRpcError = exports2.parseResultError = exports2.getErrorTypeFromErrorMessage = exports2.formatError = exports2.ServerError = exports2.logWarning = void 0;
+    var errors_1 = require_errors7();
+    Object.defineProperty(exports2, "logWarning", { enumerable: true, get: function() {
+      return errors_1.logWarning;
+    } });
+    var rpc_errors_1 = require_rpc_errors3();
+    Object.defineProperty(exports2, "ServerError", { enumerable: true, get: function() {
+      return rpc_errors_1.ServerError;
+    } });
+    Object.defineProperty(exports2, "formatError", { enumerable: true, get: function() {
+      return rpc_errors_1.formatError;
+    } });
+    Object.defineProperty(exports2, "getErrorTypeFromErrorMessage", { enumerable: true, get: function() {
+      return rpc_errors_1.getErrorTypeFromErrorMessage;
+    } });
+    Object.defineProperty(exports2, "parseResultError", { enumerable: true, get: function() {
+      return rpc_errors_1.parseResultError;
+    } });
+    Object.defineProperty(exports2, "parseRpcError", { enumerable: true, get: function() {
+      return rpc_errors_1.parseRpcError;
+    } });
+  }
+});
+
+// node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/logging.js
+var require_logging3 = __commonJS({
+  "node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/logging.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.printTxOutcomeLogs = exports2.printTxOutcomeLogsAndFailures = void 0;
+    var errors_1 = require_errors8();
+    var logger_1 = require_logger6();
+    function printTxOutcomeLogsAndFailures({ contractId, outcome }) {
+      const flatLogs = [outcome.transaction_outcome, ...outcome.receipts_outcome].reduce((acc, it) => {
+        const isFailure = typeof it.outcome.status === "object" && typeof it.outcome.status.Failure === "object";
+        if (it.outcome.logs.length || isFailure) {
+          return acc.concat({
+            receiptIds: it.outcome.receipt_ids,
+            logs: it.outcome.logs,
+            failure: typeof it.outcome.status === "object" && it.outcome.status.Failure !== void 0 ? (0, errors_1.parseRpcError)(it.outcome.status.Failure) : null
+          });
+        } else {
+          return acc;
+        }
+      }, []);
+      for (const result of flatLogs) {
+        logger_1.Logger.log(`Receipt${result.receiptIds.length > 1 ? "s" : ""}: ${result.receiptIds.join(", ")}`);
+        printTxOutcomeLogs({
+          contractId,
+          logs: result.logs,
+          prefix: "	"
+        });
+        if (result.failure) {
+          logger_1.Logger.warn(`	Failure [${contractId}]: ${result.failure}`);
+        }
+      }
+    }
+    exports2.printTxOutcomeLogsAndFailures = printTxOutcomeLogsAndFailures;
+    function printTxOutcomeLogs({ contractId, logs, prefix = "" }) {
+      for (const log2 of logs) {
+        logger_1.Logger.log(`${prefix}Log [${contractId}]: ${log2}`);
+      }
+    }
+    exports2.printTxOutcomeLogs = printTxOutcomeLogs;
+  }
+});
+
+// node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/provider.js
+var require_provider4 = __commonJS({
+  "node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/provider.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.getTransactionLastResult = void 0;
+    function getTransactionLastResult(txResult) {
+      if (typeof txResult.status === "object" && typeof txResult.status.SuccessValue === "string") {
+        const value = Buffer.from(txResult.status.SuccessValue, "base64").toString();
+        try {
+          return JSON.parse(value);
+        } catch (e) {
+          return value;
+        }
+      }
+      return null;
+    }
+    exports2.getTransactionLastResult = getTransactionLastResult;
+  }
+});
+
+// node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/utils.js
+var require_utils9 = __commonJS({
+  "node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/utils.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.sortBigIntAsc = void 0;
+    function sortBigIntAsc(a, b) {
+      return a < b ? -1 : a > b ? 1 : 0;
+    }
+    exports2.sortBigIntAsc = sortBigIntAsc;
+  }
+});
+
+// node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/validators.js
+var require_validators3 = __commonJS({
+  "node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/validators.js"(exports2) {
+    "use strict";
+    var __importDefault = exports2 && exports2.__importDefault || function(mod) {
+      return mod && mod.__esModule ? mod : { "default": mod };
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.diffEpochValidators = exports2.findSeatPrice = void 0;
+    var depd_1 = __importDefault(require_depd());
+    var utils_1 = require_utils9();
+    function findSeatPrice(validators, maxNumberOfSeats, minimumStakeRatio, protocolVersion) {
+      if (protocolVersion && protocolVersion < 49) {
+        return findSeatPriceForProtocolBefore49(validators, maxNumberOfSeats);
+      }
+      if (!minimumStakeRatio) {
+        const deprecate2 = (0, depd_1.default)("findSeatPrice(validators, maxNumberOfSeats)");
+        deprecate2("`use `findSeatPrice(validators, maxNumberOfSeats, minimumStakeRatio)` instead");
+        minimumStakeRatio = [1, 6250];
+      }
+      return findSeatPriceForProtocolAfter49(validators, maxNumberOfSeats, minimumStakeRatio);
+    }
+    exports2.findSeatPrice = findSeatPrice;
+    function findSeatPriceForProtocolBefore49(validators, numSeats) {
+      const stakes = validators.map((v) => BigInt(v.stake)).sort(utils_1.sortBigIntAsc);
+      const num = BigInt(numSeats);
+      const stakesSum = stakes.reduce((a, b) => a + b);
+      if (stakesSum < num) {
+        throw new Error("Stakes are below seats");
+      }
+      let left = BigInt(1), right = stakesSum + BigInt(1);
+      while (left !== right - BigInt(1)) {
+        const mid = (left + right) / BigInt(2);
+        let found = false;
+        let currentSum = BigInt(0);
+        for (let i = 0; i < stakes.length; ++i) {
+          currentSum = currentSum + stakes[i] / mid;
+          if (currentSum >= num) {
+            left = mid;
+            found = true;
+            break;
+          }
+        }
+        if (!found) {
+          right = mid;
+        }
+      }
+      return left;
+    }
+    function findSeatPriceForProtocolAfter49(validators, maxNumberOfSeats, minimumStakeRatio) {
+      if (minimumStakeRatio.length != 2) {
+        throw Error("minimumStakeRatio should have 2 elements");
+      }
+      const stakes = validators.map((v) => BigInt(v.stake)).sort(utils_1.sortBigIntAsc);
+      const stakesSum = stakes.reduce((a, b) => a + b);
+      if (validators.length < maxNumberOfSeats) {
+        return stakesSum * BigInt(minimumStakeRatio[0]) / BigInt(minimumStakeRatio[1]);
+      } else {
+        return stakes[0] + BigInt(1);
+      }
+    }
+    function diffEpochValidators(currentValidators, nextValidators) {
+      const validatorsMap = /* @__PURE__ */ new Map();
+      currentValidators.forEach((v) => validatorsMap.set(v.account_id, v));
+      const nextValidatorsSet = new Set(nextValidators.map((v) => v.account_id));
+      return {
+        newValidators: nextValidators.filter((v) => !validatorsMap.has(v.account_id)),
+        removedValidators: currentValidators.filter((v) => !nextValidatorsSet.has(v.account_id)),
+        changedValidators: nextValidators.filter((v) => validatorsMap.has(v.account_id) && validatorsMap.get(v.account_id).stake != v.stake).map((v) => ({ current: validatorsMap.get(v.account_id), next: v }))
+      };
+    }
+    exports2.diffEpochValidators = diffEpochValidators;
+  }
+});
+
+// node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/index.js
+var require_lib10 = __commonJS({
+  "node_modules/@near-js/keystores-node/node_modules/@near-js/utils/lib/index.js"(exports2) {
+    "use strict";
+    var __createBinding = exports2 && exports2.__createBinding || (Object.create ? function(o, m, k, k2) {
+      if (k2 === void 0) k2 = k;
+      var desc = Object.getOwnPropertyDescriptor(m, k);
+      if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+        desc = { enumerable: true, get: function() {
+          return m[k];
+        } };
+      }
+      Object.defineProperty(o, k2, desc);
+    } : function(o, m, k, k2) {
+      if (k2 === void 0) k2 = k;
+      o[k2] = m[k];
+    });
+    var __exportStar = exports2 && exports2.__exportStar || function(m, exports3) {
+      for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports3, p)) __createBinding(exports3, m, p);
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    __exportStar(require_constants7(), exports2);
+    __exportStar(require_errors8(), exports2);
+    __exportStar(require_format3(), exports2);
+    __exportStar(require_logging3(), exports2);
+    __exportStar(require_provider4(), exports2);
+    __exportStar(require_validators3(), exports2);
+    __exportStar(require_logger6(), exports2);
+    __exportStar(require_utils9(), exports2);
+  }
+});
+
+// node_modules/@near-js/keystores-node/node_modules/@near-js/crypto/lib/public_key.js
+var require_public_key3 = __commonJS({
+  "node_modules/@near-js/keystores-node/node_modules/@near-js/crypto/lib/public_key.js"(exports2) {
+    "use strict";
+    var __importDefault = exports2 && exports2.__importDefault || function(mod) {
+      return mod && mod.__esModule ? mod : { "default": mod };
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.PublicKey = void 0;
+    var utils_1 = require_lib10();
+    var ed25519_1 = require_ed25519();
+    var secp256k1_1 = __importDefault(require_secp256k12());
+    var constants_1 = require_constants6();
+    var types_1 = require_lib();
+    function key_type_to_str(keyType) {
+      switch (keyType) {
+        case constants_1.KeyType.ED25519:
+          return "ed25519";
+        case constants_1.KeyType.SECP256K1:
+          return "secp256k1";
+        default:
+          throw new Error(`Unknown key type ${keyType}`);
+      }
+    }
+    function str_to_key_type(keyType) {
+      switch (keyType.toLowerCase()) {
+        case "ed25519":
+          return constants_1.KeyType.ED25519;
+        case "secp256k1":
+          return constants_1.KeyType.SECP256K1;
+        default:
+          throw new Error(`Unknown key type ${keyType}`);
+      }
+    }
+    var ED25519PublicKey = class extends types_1.Assignable {
+      constructor() {
+        super(...arguments);
+        this.keyType = constants_1.KeyType.ED25519;
+      }
+    };
+    var SECP256K1PublicKey = class extends types_1.Assignable {
+      constructor() {
+        super(...arguments);
+        this.keyType = constants_1.KeyType.SECP256K1;
+      }
+    };
+    var PublicKey = class _PublicKey extends types_1.Assignable {
+      constructor({ keyType, data }) {
+        super({});
+        if (keyType === constants_1.KeyType.ED25519) {
+          this.ed25519Key = { keyType, data };
+        } else if (keyType === constants_1.KeyType.SECP256K1) {
+          this.secp256k1Key = { keyType, data };
+        }
+      }
+      /**
+       * Creates a PublicKey instance from a string or an existing PublicKey instance.
+       * @param value The string or PublicKey instance to create a PublicKey from.
+       * @returns {PublicKey} The PublicKey instance.
+       */
+      static from(value) {
+        if (typeof value === "string") {
+          return _PublicKey.fromString(value);
+        }
+        return value;
+      }
+      /**
+       * Creates a PublicKey instance from an encoded key string.
+       * @param encodedKey The encoded key string.
+       * @returns {PublicKey} The PublicKey instance created from the encoded key string.
+       */
+      static fromString(encodedKey) {
+        const parts = encodedKey.split(":");
+        let publicKey;
+        let keyType;
+        if (parts.length === 1) {
+          publicKey = parts[0];
+        } else if (parts.length === 2) {
+          publicKey = parts[1];
+          keyType = str_to_key_type(parts[0]);
+        } else {
+          throw new Error("Invalid encoded key format, must be <curve>:<encoded key>");
+        }
+        const decodedPublicKey = (0, utils_1.baseDecode)(publicKey);
+        if (!keyType) {
+          keyType = decodedPublicKey.length === constants_1.KeySize.SECP256k1_PUBLIC_KEY ? constants_1.KeyType.SECP256K1 : constants_1.KeyType.ED25519;
+        }
+        const keySize = keyType === constants_1.KeyType.ED25519 ? constants_1.KeySize.ED25519_PUBLIC_KEY : constants_1.KeySize.SECP256k1_PUBLIC_KEY;
+        if (decodedPublicKey.length !== keySize) {
+          throw new Error(`Invalid public key size (${decodedPublicKey.length}), must be ${keySize}`);
+        }
+        return new _PublicKey({ keyType, data: decodedPublicKey });
+      }
+      /**
+       * Returns a string representation of the public key.
+       * @returns {string} The string representation of the public key.
+       */
+      toString() {
+        const encodedKey = (0, utils_1.baseEncode)(this.data);
+        return `${key_type_to_str(this.keyType)}:${encodedKey}`;
+      }
+      /**
+       * Verifies a message signature using the public key.
+       * @param message The message to be verified.
+       * @param signature The signature to be verified.
+       * @returns {boolean} `true` if the signature is valid, otherwise `false`.
+       */
+      verify(message2, signature) {
+        const keyType = this.keyType;
+        const data = this.data;
+        switch (keyType) {
+          case constants_1.KeyType.ED25519:
+            return ed25519_1.ed25519.verify(signature, message2, data);
+          case constants_1.KeyType.SECP256K1:
+            return secp256k1_1.default.ecdsaVerify(signature.subarray(0, 64), message2, new Uint8Array([4, ...data]));
+          default:
+            throw new Error(`Unknown key type: ${keyType}`);
+        }
+      }
+      get keyPair() {
+        return this.ed25519Key || this.secp256k1Key;
+      }
+      get keyType() {
+        return this.keyPair.keyType;
+      }
+      get data() {
+        return this.keyPair.data;
+      }
+    };
+    exports2.PublicKey = PublicKey;
+  }
+});
+
+// node_modules/@near-js/keystores-node/node_modules/@near-js/crypto/lib/key_pair_ed25519.js
+var require_key_pair_ed255193 = __commonJS({
+  "node_modules/@near-js/keystores-node/node_modules/@near-js/crypto/lib/key_pair_ed25519.js"(exports2) {
+    "use strict";
+    var __importDefault = exports2 && exports2.__importDefault || function(mod) {
+      return mod && mod.__esModule ? mod : { "default": mod };
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.KeyPairEd25519 = void 0;
+    var utils_1 = require_lib10();
+    var ed25519_1 = require_ed25519();
+    var randombytes_1 = __importDefault(require_randombytes());
+    var constants_1 = require_constants6();
+    var key_pair_base_1 = require_key_pair_base3();
+    var public_key_1 = require_public_key3();
+    var KeyPairEd25519 = class _KeyPairEd25519 extends key_pair_base_1.KeyPairBase {
+      /**
+       * Construct an instance of key pair given a secret key.
+       * It's generally assumed that these are encoded in base58.
+       * @param extendedSecretKey
+       */
+      constructor(extendedSecretKey) {
+        super();
+        const decoded = (0, utils_1.baseDecode)(extendedSecretKey);
+        const secretKey = new Uint8Array(decoded.slice(0, constants_1.KeySize.SECRET_KEY));
+        const publicKey = ed25519_1.ed25519.getPublicKey(new Uint8Array(secretKey));
+        this.publicKey = new public_key_1.PublicKey({ keyType: constants_1.KeyType.ED25519, data: publicKey });
+        this.secretKey = (0, utils_1.baseEncode)(secretKey);
+        this.extendedSecretKey = extendedSecretKey;
+      }
+      /**
+       * Generate a new random keypair.
+       * @example
+       * const keyRandom = KeyPair.fromRandom();
+       * keyRandom.publicKey
+       * // returns [PUBLIC_KEY]
+       *
+       * keyRandom.secretKey
+       * // returns [SECRET_KEY]
+       */
+      static fromRandom() {
+        const secretKey = (0, randombytes_1.default)(constants_1.KeySize.SECRET_KEY);
+        const publicKey = ed25519_1.ed25519.getPublicKey(new Uint8Array(secretKey));
+        const extendedSecretKey = new Uint8Array([...secretKey, ...publicKey]);
+        return new _KeyPairEd25519((0, utils_1.baseEncode)(extendedSecretKey));
+      }
+      /**
+       * Signs a message using the key pair's secret key.
+       * @param message The message to be signed.
+       * @returns {Signature} The signature object containing the signature and the public key.
+       */
+      sign(message2) {
+        const signature = ed25519_1.ed25519.sign(message2, (0, utils_1.baseDecode)(this.secretKey));
+        return { signature, publicKey: this.publicKey };
+      }
+      /**
+       * Verifies the signature of a message using the key pair's public key.
+       * @param message The message to be verified.
+       * @param signature The signature to be verified.
+       * @returns {boolean} `true` if the signature is valid, otherwise `false`.
+       */
+      verify(message2, signature) {
+        return this.publicKey.verify(message2, signature);
+      }
+      /**
+       * Returns a string representation of the key pair in the format 'ed25519:[extendedSecretKey]'.
+       * @returns {string} The string representation of the key pair.
+       */
+      toString() {
+        return `ed25519:${this.extendedSecretKey}`;
+      }
+      /**
+       * Retrieves the public key associated with the key pair.
+       * @returns {PublicKey} The public key.
+       */
+      getPublicKey() {
+        return this.publicKey;
+      }
+    };
+    exports2.KeyPairEd25519 = KeyPairEd25519;
+  }
+});
+
+// node_modules/@near-js/keystores-node/node_modules/@near-js/crypto/lib/key_pair_secp256k1.js
+var require_key_pair_secp256k13 = __commonJS({
+  "node_modules/@near-js/keystores-node/node_modules/@near-js/crypto/lib/key_pair_secp256k1.js"(exports2) {
+    "use strict";
+    var __importDefault = exports2 && exports2.__importDefault || function(mod) {
+      return mod && mod.__esModule ? mod : { "default": mod };
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.KeyPairSecp256k1 = void 0;
+    var constants_1 = require_constants6();
+    var key_pair_base_1 = require_key_pair_base3();
+    var public_key_1 = require_public_key3();
+    var secp256k1_1 = __importDefault(require_secp256k12());
+    var randombytes_1 = __importDefault(require_randombytes());
+    var utils_1 = require_lib10();
+    var KeyPairSecp256k1 = class _KeyPairSecp256k1 extends key_pair_base_1.KeyPairBase {
+      /**
+       * Construct an instance of key pair given a secret key.
+       * It's generally assumed that these are encoded in base58.
+       * @param {string} extendedSecretKey
+       */
+      constructor(extendedSecretKey) {
+        super();
+        const decoded = (0, utils_1.baseDecode)(extendedSecretKey);
+        const secretKey = new Uint8Array(decoded.slice(0, constants_1.KeySize.SECRET_KEY));
+        const withHeader = secp256k1_1.default.publicKeyCreate(new Uint8Array(secretKey), false);
+        const data = withHeader.subarray(1, withHeader.length);
+        this.publicKey = new public_key_1.PublicKey({
+          keyType: constants_1.KeyType.SECP256K1,
+          data
+        });
+        this.secretKey = (0, utils_1.baseEncode)(secretKey);
+        this.extendedSecretKey = extendedSecretKey;
+      }
+      /**
+       * Generate a new random keypair.
+       * @example
+       * const keyRandom = KeyPair.fromRandom();
+       * keyRandom.publicKey
+       * // returns [PUBLIC_KEY]
+       *
+       * keyRandom.secretKey
+       * // returns [SECRET_KEY]
+       */
+      static fromRandom() {
+        const secretKey = (0, randombytes_1.default)(constants_1.KeySize.SECRET_KEY);
+        const withHeader = secp256k1_1.default.publicKeyCreate(new Uint8Array(secretKey), false);
+        const publicKey = withHeader.subarray(1, withHeader.length);
+        const extendedSecretKey = new Uint8Array([...secretKey, ...publicKey]);
+        return new _KeyPairSecp256k1((0, utils_1.baseEncode)(extendedSecretKey));
+      }
+      sign(message2) {
+        const { signature, recid } = secp256k1_1.default.ecdsaSign(message2, (0, utils_1.baseDecode)(this.secretKey));
+        return { signature: new Uint8Array([...signature, recid]), publicKey: this.publicKey };
+      }
+      verify(message2, signature) {
+        return this.publicKey.verify(message2, signature);
+      }
+      toString() {
+        return `secp256k1:${this.extendedSecretKey}`;
+      }
+      getPublicKey() {
+        return this.publicKey;
+      }
+    };
+    exports2.KeyPairSecp256k1 = KeyPairSecp256k1;
+  }
+});
+
+// node_modules/@near-js/keystores-node/node_modules/@near-js/crypto/lib/key_pair.js
+var require_key_pair3 = __commonJS({
+  "node_modules/@near-js/keystores-node/node_modules/@near-js/crypto/lib/key_pair.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.KeyPair = void 0;
+    var key_pair_base_1 = require_key_pair_base3();
+    var key_pair_ed25519_1 = require_key_pair_ed255193();
+    var key_pair_secp256k1_1 = require_key_pair_secp256k13();
+    var KeyPair = class extends key_pair_base_1.KeyPairBase {
+      /**
+       * @param curve Name of elliptical curve, case-insensitive
+       * @returns Random KeyPair based on the curve
+       */
+      static fromRandom(curve) {
+        switch (curve.toUpperCase()) {
+          case "ED25519":
+            return key_pair_ed25519_1.KeyPairEd25519.fromRandom();
+          case "SECP256K1":
+            return key_pair_secp256k1_1.KeyPairSecp256k1.fromRandom();
+          default:
+            throw new Error(`Unknown curve ${curve}`);
+        }
+      }
+      /**
+       * Creates a key pair from an encoded key string.
+       * @param encodedKey The encoded key string.
+       * @returns {KeyPair} The key pair created from the encoded key string.
+       */
+      static fromString(encodedKey) {
+        const parts = encodedKey.split(":");
+        if (parts.length === 2) {
+          switch (parts[0].toUpperCase()) {
+            case "ED25519":
+              return new key_pair_ed25519_1.KeyPairEd25519(parts[1]);
+            case "SECP256K1":
+              return new key_pair_secp256k1_1.KeyPairSecp256k1(parts[1]);
+            default:
+              throw new Error(`Unknown curve: ${parts[0]}`);
+          }
+        } else {
+          throw new Error("Invalid encoded key format, must be <curve>:<encoded key>");
+        }
+      }
+    };
+    exports2.KeyPair = KeyPair;
+  }
+});
+
+// node_modules/@near-js/keystores-node/node_modules/@near-js/crypto/lib/index.js
+var require_lib11 = __commonJS({
+  "node_modules/@near-js/keystores-node/node_modules/@near-js/crypto/lib/index.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.PublicKey = exports2.KeyPairSecp256k1 = exports2.KeyPairEd25519 = exports2.KeyPair = exports2.KeyType = void 0;
+    var constants_1 = require_constants6();
+    Object.defineProperty(exports2, "KeyType", { enumerable: true, get: function() {
+      return constants_1.KeyType;
+    } });
+    var key_pair_1 = require_key_pair3();
+    Object.defineProperty(exports2, "KeyPair", { enumerable: true, get: function() {
+      return key_pair_1.KeyPair;
+    } });
+    var key_pair_ed25519_1 = require_key_pair_ed255193();
+    Object.defineProperty(exports2, "KeyPairEd25519", { enumerable: true, get: function() {
+      return key_pair_ed25519_1.KeyPairEd25519;
+    } });
+    var key_pair_secp256k1_1 = require_key_pair_secp256k13();
+    Object.defineProperty(exports2, "KeyPairSecp256k1", { enumerable: true, get: function() {
+      return key_pair_secp256k1_1.KeyPairSecp256k1;
+    } });
+    var public_key_1 = require_public_key3();
+    Object.defineProperty(exports2, "PublicKey", { enumerable: true, get: function() {
+      return public_key_1.PublicKey;
+    } });
+  }
+});
+
+// node_modules/@near-js/keystores-node/node_modules/@near-js/keystores/lib/keystore.js
+var require_keystore4 = __commonJS({
+  "node_modules/@near-js/keystores-node/node_modules/@near-js/keystores/lib/keystore.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.KeyStore = void 0;
+    var KeyStore = class {
+    };
+    exports2.KeyStore = KeyStore;
+  }
+});
+
+// node_modules/@near-js/keystores-node/node_modules/@near-js/keystores/lib/in_memory_key_store.js
+var require_in_memory_key_store4 = __commonJS({
+  "node_modules/@near-js/keystores-node/node_modules/@near-js/keystores/lib/in_memory_key_store.js"(exports2) {
+    "use strict";
+    var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.InMemoryKeyStore = void 0;
+    var crypto_1 = require_lib11();
+    var keystore_1 = require_keystore4();
+    var InMemoryKeyStore = class extends keystore_1.KeyStore {
+      constructor() {
+        super();
+        this.keys = {};
+      }
+      /**
+       * Stores a {@link KeyPair} in in-memory storage item
+       * @param networkId The targeted network. (ex. default, betanet, etc…)
+       * @param accountId The NEAR account tied to the key pair
+       * @param keyPair The key pair to store in local storage
+       */
+      setKey(networkId, accountId, keyPair) {
+        return __awaiter(this, void 0, void 0, function* () {
+          this.keys[`${accountId}:${networkId}`] = keyPair.toString();
+        });
+      }
+      /**
+       * Gets a {@link KeyPair} from in-memory storage
+       * @param networkId The targeted network. (ex. default, betanet, etc…)
+       * @param accountId The NEAR account tied to the key pair
+       * @returns {Promise<KeyPair>}
+       */
+      getKey(networkId, accountId) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const value = this.keys[`${accountId}:${networkId}`];
+          if (!value) {
+            return null;
+          }
+          return crypto_1.KeyPair.fromString(value);
+        });
+      }
+      /**
+       * Removes a {@link KeyPair} from in-memory storage
+       * @param networkId The targeted network. (ex. default, betanet, etc…)
+       * @param accountId The NEAR account tied to the key pair
+       */
+      removeKey(networkId, accountId) {
+        return __awaiter(this, void 0, void 0, function* () {
+          delete this.keys[`${accountId}:${networkId}`];
+        });
+      }
+      /**
+       * Removes all {@link KeyPair} from in-memory storage
+       */
+      clear() {
+        return __awaiter(this, void 0, void 0, function* () {
+          this.keys = {};
+        });
+      }
+      /**
+       * Get the network(s) from in-memory storage
+       * @returns {Promise<string[]>}
+       */
+      getNetworks() {
+        return __awaiter(this, void 0, void 0, function* () {
+          const result = /* @__PURE__ */ new Set();
+          Object.keys(this.keys).forEach((key) => {
+            const parts = key.split(":");
+            result.add(parts[1]);
+          });
+          return Array.from(result.values());
+        });
+      }
+      /**
+       * Gets the account(s) from in-memory storage
+       * @param networkId The targeted network. (ex. default, betanet, etc…)
+       */
+      getAccounts(networkId) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const result = new Array();
+          Object.keys(this.keys).forEach((key) => {
+            const parts = key.split(":");
+            if (parts[parts.length - 1] === networkId) {
+              result.push(parts.slice(0, parts.length - 1).join(":"));
+            }
+          });
+          return result;
+        });
+      }
+      /** @hidden */
+      toString() {
+        return "InMemoryKeyStore";
+      }
+    };
+    exports2.InMemoryKeyStore = InMemoryKeyStore;
+  }
+});
+
+// node_modules/@near-js/keystores-node/node_modules/@near-js/keystores/lib/merge_key_store.js
+var require_merge_key_store3 = __commonJS({
+  "node_modules/@near-js/keystores-node/node_modules/@near-js/keystores/lib/merge_key_store.js"(exports2) {
+    "use strict";
+    var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.MergeKeyStore = void 0;
+    var keystore_1 = require_keystore4();
+    var MergeKeyStore = class extends keystore_1.KeyStore {
+      /**
+       * @param keyStores read calls are attempted from start to end of array
+       * @param options KeyStore options
+       * @param options.writeKeyStoreIndex the keystore index that will receive all write calls
+       */
+      constructor(keyStores, options = { writeKeyStoreIndex: 0 }) {
+        super();
+        this.options = options;
+        this.keyStores = keyStores;
+      }
+      /**
+       * Store a {@link KeyPair} to the first index of a key store array
+       * @param networkId The targeted network. (ex. default, betanet, etc…)
+       * @param accountId The NEAR account tied to the key pair
+       * @param keyPair The key pair to store in local storage
+       */
+      setKey(networkId, accountId, keyPair) {
+        return __awaiter(this, void 0, void 0, function* () {
+          yield this.keyStores[this.options.writeKeyStoreIndex].setKey(networkId, accountId, keyPair);
+        });
+      }
+      /**
+       * Gets a {@link KeyPair} from the array of key stores
+       * @param networkId The targeted network. (ex. default, betanet, etc…)
+       * @param accountId The NEAR account tied to the key pair
+       * @returns {Promise<KeyPair>}
+       */
+      getKey(networkId, accountId) {
+        return __awaiter(this, void 0, void 0, function* () {
+          for (const keyStore of this.keyStores) {
+            const keyPair = yield keyStore.getKey(networkId, accountId);
+            if (keyPair) {
+              return keyPair;
+            }
+          }
+          return null;
+        });
+      }
+      /**
+       * Removes a {@link KeyPair} from the array of key stores
+       * @param networkId The targeted network. (ex. default, betanet, etc…)
+       * @param accountId The NEAR account tied to the key pair
+       */
+      removeKey(networkId, accountId) {
+        return __awaiter(this, void 0, void 0, function* () {
+          for (const keyStore of this.keyStores) {
+            yield keyStore.removeKey(networkId, accountId);
+          }
+        });
+      }
+      /**
+       * Removes all items from each key store
+       */
+      clear() {
+        return __awaiter(this, void 0, void 0, function* () {
+          for (const keyStore of this.keyStores) {
+            yield keyStore.clear();
+          }
+        });
+      }
+      /**
+       * Get the network(s) from the array of key stores
+       * @returns {Promise<string[]>}
+       */
+      getNetworks() {
+        return __awaiter(this, void 0, void 0, function* () {
+          const result = /* @__PURE__ */ new Set();
+          for (const keyStore of this.keyStores) {
+            for (const network of yield keyStore.getNetworks()) {
+              result.add(network);
+            }
+          }
+          return Array.from(result);
+        });
+      }
+      /**
+       * Gets the account(s) from the array of key stores
+       * @param networkId The targeted network. (ex. default, betanet, etc…)
+       */
+      getAccounts(networkId) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const result = /* @__PURE__ */ new Set();
+          for (const keyStore of this.keyStores) {
+            for (const account of yield keyStore.getAccounts(networkId)) {
+              result.add(account);
+            }
+          }
+          return Array.from(result);
+        });
+      }
+      /** @hidden */
+      toString() {
+        return `MergeKeyStore(${this.keyStores.join(", ")})`;
+      }
+    };
+    exports2.MergeKeyStore = MergeKeyStore;
+  }
+});
+
+// node_modules/@near-js/keystores-node/node_modules/@near-js/keystores/lib/multi_contract_keystore.js
+var require_multi_contract_keystore3 = __commonJS({
+  "node_modules/@near-js/keystores-node/node_modules/@near-js/keystores/lib/multi_contract_keystore.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.MultiContractKeyStore = void 0;
+    var MultiContractKeyStore = class {
+    };
+    exports2.MultiContractKeyStore = MultiContractKeyStore;
+  }
+});
+
+// node_modules/@near-js/keystores-node/node_modules/@near-js/keystores/lib/index.js
+var require_lib12 = __commonJS({
+  "node_modules/@near-js/keystores-node/node_modules/@near-js/keystores/lib/index.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.MultiContractKeyStore = exports2.MergeKeyStore = exports2.KeyStore = exports2.InMemoryKeyStore = void 0;
+    var in_memory_key_store_1 = require_in_memory_key_store4();
+    Object.defineProperty(exports2, "InMemoryKeyStore", { enumerable: true, get: function() {
+      return in_memory_key_store_1.InMemoryKeyStore;
+    } });
+    var keystore_1 = require_keystore4();
+    Object.defineProperty(exports2, "KeyStore", { enumerable: true, get: function() {
+      return keystore_1.KeyStore;
+    } });
+    var merge_key_store_1 = require_merge_key_store3();
+    Object.defineProperty(exports2, "MergeKeyStore", { enumerable: true, get: function() {
+      return merge_key_store_1.MergeKeyStore;
+    } });
+    var multi_contract_keystore_1 = require_multi_contract_keystore3();
+    Object.defineProperty(exports2, "MultiContractKeyStore", { enumerable: true, get: function() {
+      return multi_contract_keystore_1.MultiContractKeyStore;
+    } });
+  }
+});
+
+// node_modules/@near-js/keystores-node/lib/unencrypted_file_system_keystore.js
 var require_unencrypted_file_system_keystore = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/keystores-node/lib/unencrypted_file_system_keystore.js"(exports2) {
+  "node_modules/@near-js/keystores-node/lib/unencrypted_file_system_keystore.js"(exports2) {
     "use strict";
     var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
       function adopt(value) {
@@ -19150,8 +23742,8 @@ var require_unencrypted_file_system_keystore = __commonJS({
     };
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.UnencryptedFileSystemKeyStore = exports2.readKeyFile = void 0;
-    var crypto_1 = require_lib4();
-    var keystores_1 = require_lib5();
+    var crypto_1 = require_lib11();
+    var keystores_1 = require_lib12();
     var fs_1 = __importDefault(require("fs"));
     var path_1 = __importDefault(require("path"));
     var util_1 = require("util");
@@ -19297,9 +23889,9 @@ var require_unencrypted_file_system_keystore = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/keystores-node/lib/index.js
-var require_lib7 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/keystores-node/lib/index.js"(exports2) {
+// node_modules/@near-js/keystores-node/lib/index.js
+var require_lib13 = __commonJS({
+  "node_modules/@near-js/keystores-node/lib/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.UnencryptedFileSystemKeyStore = exports2.readKeyFile = void 0;
@@ -19313,13 +23905,13 @@ var require_lib7 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/key_stores/unencrypted_file_system_keystore.js
+// node_modules/near-api-js/lib/key_stores/unencrypted_file_system_keystore.js
 var require_unencrypted_file_system_keystore2 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/key_stores/unencrypted_file_system_keystore.js"(exports2) {
+  "node_modules/near-api-js/lib/key_stores/unencrypted_file_system_keystore.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.UnencryptedFileSystemKeyStore = exports2.readKeyFile = void 0;
-    var keystores_node_1 = require_lib7();
+    var keystores_node_1 = require_lib13();
     Object.defineProperty(exports2, "readKeyFile", { enumerable: true, get: function() {
       return keystores_node_1.readKeyFile;
     } });
@@ -19329,9 +23921,9 @@ var require_unencrypted_file_system_keystore2 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/key_stores/merge_key_store.js
-var require_merge_key_store2 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/key_stores/merge_key_store.js"(exports2) {
+// node_modules/near-api-js/lib/key_stores/merge_key_store.js
+var require_merge_key_store4 = __commonJS({
+  "node_modules/near-api-js/lib/key_stores/merge_key_store.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.MergeKeyStore = void 0;
@@ -19342,9 +23934,9 @@ var require_merge_key_store2 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/key_stores/index.js
+// node_modules/near-api-js/lib/key_stores/index.js
 var require_key_stores = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/key_stores/index.js"(exports2) {
+  "node_modules/near-api-js/lib/key_stores/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.MergeKeyStore = exports2.UnencryptedFileSystemKeyStore = exports2.BrowserLocalStorageKeyStore = exports2.InMemoryKeyStore = exports2.KeyStore = void 0;
@@ -19364,16 +23956,16 @@ var require_key_stores = __commonJS({
     Object.defineProperty(exports2, "UnencryptedFileSystemKeyStore", { enumerable: true, get: function() {
       return unencrypted_file_system_keystore_1.UnencryptedFileSystemKeyStore;
     } });
-    var merge_key_store_1 = require_merge_key_store2();
+    var merge_key_store_1 = require_merge_key_store4();
     Object.defineProperty(exports2, "MergeKeyStore", { enumerable: true, get: function() {
       return merge_key_store_1.MergeKeyStore;
     } });
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/providers/lib/exponential-backoff.js
+// node_modules/near-api-js/node_modules/@near-js/providers/lib/exponential-backoff.js
 var require_exponential_backoff = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/providers/lib/exponential-backoff.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/providers/lib/exponential-backoff.js"(exports2) {
     "use strict";
     var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
       function adopt(value) {
@@ -19425,9 +24017,9 @@ var require_exponential_backoff = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/transactions/lib/actions.js
+// node_modules/near-api-js/node_modules/@near-js/transactions/lib/actions.js
 var require_actions = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/transactions/lib/actions.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/transactions/lib/actions.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.Action = exports2.SignedDelegate = exports2.DeleteAccount = exports2.DeleteKey = exports2.AddKey = exports2.Stake = exports2.Transfer = exports2.FunctionCall = exports2.DeployContract = exports2.CreateAccount = exports2.IAction = exports2.AccessKey = exports2.AccessKeyPermission = exports2.FullAccessPermission = exports2.FunctionCallPermission = void 0;
@@ -19491,9 +24083,9 @@ var require_actions = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/transactions/lib/action_creators.js
+// node_modules/near-api-js/node_modules/@near-js/transactions/lib/action_creators.js
 var require_action_creators = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/transactions/lib/action_creators.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/transactions/lib/action_creators.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.actionCreators = exports2.stringifyJsonOrBytes = void 0;
@@ -19580,9 +24172,9 @@ var require_action_creators = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/borsh/lib/cjs/types.js
+// node_modules/near-api-js/node_modules/borsh/lib/cjs/types.js
 var require_types2 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/borsh/lib/cjs/types.js"(exports2) {
+  "node_modules/near-api-js/node_modules/borsh/lib/cjs/types.js"(exports2) {
     "use strict";
     exports2.__esModule = true;
     exports2.integers = void 0;
@@ -19590,9 +24182,9 @@ var require_types2 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/borsh/lib/cjs/buffer.js
+// node_modules/near-api-js/node_modules/borsh/lib/cjs/buffer.js
 var require_buffer = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/borsh/lib/cjs/buffer.js"(exports2) {
+  "node_modules/near-api-js/node_modules/borsh/lib/cjs/buffer.js"(exports2) {
     "use strict";
     exports2.__esModule = true;
     exports2.DecodeBuffer = exports2.EncodeBuffer = void 0;
@@ -19671,9 +24263,9 @@ var require_buffer = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/borsh/lib/cjs/utils.js
-var require_utils8 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/borsh/lib/cjs/utils.js"(exports2) {
+// node_modules/near-api-js/node_modules/borsh/lib/cjs/utils.js
+var require_utils10 = __commonJS({
+  "node_modules/near-api-js/node_modules/borsh/lib/cjs/utils.js"(exports2) {
     "use strict";
     var __extends2 = exports2 && exports2.__extends || /* @__PURE__ */ function() {
       var extendStatics2 = function(d, b) {
@@ -19808,9 +24400,9 @@ var require_utils8 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/borsh/lib/cjs/serialize.js
+// node_modules/near-api-js/node_modules/borsh/lib/cjs/serialize.js
 var require_serialize = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/borsh/lib/cjs/serialize.js"(exports2) {
+  "node_modules/near-api-js/node_modules/borsh/lib/cjs/serialize.js"(exports2) {
     "use strict";
     var __createBinding = exports2 && exports2.__createBinding || (Object.create ? function(o, m, k, k2) {
       if (k2 === void 0) k2 = k;
@@ -19843,7 +24435,7 @@ var require_serialize = __commonJS({
     exports2.BorshSerializer = void 0;
     var types_js_1 = require_types2();
     var buffer_js_1 = require_buffer();
-    var utils = __importStar(require_utils8());
+    var utils = __importStar(require_utils10());
     var BorshSerializer = (
       /** @class */
       function() {
@@ -19993,9 +24585,9 @@ var require_serialize = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/borsh/lib/cjs/deserialize.js
+// node_modules/near-api-js/node_modules/borsh/lib/cjs/deserialize.js
 var require_deserialize = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/borsh/lib/cjs/deserialize.js"(exports2) {
+  "node_modules/near-api-js/node_modules/borsh/lib/cjs/deserialize.js"(exports2) {
     "use strict";
     exports2.__esModule = true;
     exports2.BorshDeserializer = void 0;
@@ -20124,9 +24716,9 @@ var require_deserialize = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/borsh/lib/cjs/index.js
+// node_modules/near-api-js/node_modules/borsh/lib/cjs/index.js
 var require_cjs = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/borsh/lib/cjs/index.js"(exports2) {
+  "node_modules/near-api-js/node_modules/borsh/lib/cjs/index.js"(exports2) {
     "use strict";
     var __createBinding = exports2 && exports2.__createBinding || (Object.create ? function(o, m, k, k2) {
       if (k2 === void 0) k2 = k;
@@ -20159,7 +24751,7 @@ var require_cjs = __commonJS({
     exports2.deserialize = exports2.serialize = void 0;
     var serialize_js_1 = require_serialize();
     var deserialize_js_1 = require_deserialize();
-    var utils = __importStar(require_utils8());
+    var utils = __importStar(require_utils10());
     function serialize(schema, value, validate) {
       if (validate === void 0) {
         validate = true;
@@ -20183,9 +24775,9 @@ var require_cjs = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/transactions/lib/prefix.js
+// node_modules/near-api-js/node_modules/@near-js/transactions/lib/prefix.js
 var require_prefix = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/transactions/lib/prefix.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/transactions/lib/prefix.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.DelegateActionPrefix = void 0;
@@ -20211,9 +24803,9 @@ var require_prefix = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/transactions/lib/schema.js
+// node_modules/near-api-js/node_modules/@near-js/transactions/lib/schema.js
 var require_schema = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/transactions/lib/schema.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/transactions/lib/schema.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.SCHEMA = exports2.SignedTransaction = exports2.Transaction = exports2.decodeSignedTransaction = exports2.decodeTransaction = exports2.encodeTransaction = exports2.encodeSignedDelegate = exports2.encodeDelegateAction = void 0;
@@ -20428,9 +25020,9 @@ var require_schema = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/transactions/lib/create_transaction.js
+// node_modules/near-api-js/node_modules/@near-js/transactions/lib/create_transaction.js
 var require_create_transaction = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/transactions/lib/create_transaction.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/transactions/lib/create_transaction.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.createTransaction = void 0;
@@ -20450,9 +25042,9 @@ var require_create_transaction = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/transactions/lib/delegate.js
+// node_modules/near-api-js/node_modules/@near-js/transactions/lib/delegate.js
 var require_delegate = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/transactions/lib/delegate.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/transactions/lib/delegate.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.buildDelegateAction = exports2.DelegateAction = void 0;
@@ -20575,7 +25167,7 @@ var require_cryptoNode2 = __commonJS({
 });
 
 // node_modules/@noble/hashes/utils.js
-var require_utils9 = __commonJS({
+var require_utils11 = __commonJS({
   "node_modules/@noble/hashes/utils.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
@@ -20743,7 +25335,7 @@ var require_sha22 = __commonJS({
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.SHA2 = void 0;
     var _assert_js_1 = require_assert2();
-    var utils_js_1 = require_utils9();
+    var utils_js_1 = require_utils11();
     function setBigUint64(view, byteOffset, value, isLE) {
       if (typeof view.setBigUint64 === "function")
         return view.setBigUint64(byteOffset, value, isLE);
@@ -20853,7 +25445,7 @@ var require_sha256 = __commonJS({
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.sha224 = exports2.sha256 = void 0;
     var _sha2_js_1 = require_sha22();
-    var utils_js_1 = require_utils9();
+    var utils_js_1 = require_utils11();
     var Chi = (a, b, c) => a & b ^ ~a & c;
     var Maj = (a, b, c) => a & b ^ a & c ^ b & c;
     var SHA256_K = /* @__PURE__ */ new Uint32Array([
@@ -21022,9 +25614,9 @@ var require_sha256 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/transactions/lib/signature.js
+// node_modules/near-api-js/node_modules/@near-js/transactions/lib/signature.js
 var require_signature3 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/transactions/lib/signature.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/transactions/lib/signature.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.Signature = void 0;
@@ -21065,9 +25657,9 @@ var require_signature3 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/transactions/lib/sign.js
+// node_modules/near-api-js/node_modules/@near-js/transactions/lib/sign.js
 var require_sign = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/transactions/lib/sign.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/transactions/lib/sign.js"(exports2) {
     "use strict";
     var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
       function adopt(value) {
@@ -21153,9 +25745,9 @@ var require_sign = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/transactions/lib/index.js
-var require_lib8 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/transactions/lib/index.js"(exports2) {
+// node_modules/near-api-js/node_modules/@near-js/transactions/lib/index.js
+var require_lib14 = __commonJS({
+  "node_modules/near-api-js/node_modules/@near-js/transactions/lib/index.js"(exports2) {
     "use strict";
     var __createBinding = exports2 && exports2.__createBinding || (Object.create ? function(o, m, k, k2) {
       if (k2 === void 0) k2 = k;
@@ -21184,9 +25776,9 @@ var require_lib8 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/providers/lib/provider.js
-var require_provider3 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/providers/lib/provider.js"(exports2) {
+// node_modules/near-api-js/node_modules/@near-js/providers/lib/provider.js
+var require_provider5 = __commonJS({
+  "node_modules/near-api-js/node_modules/@near-js/providers/lib/provider.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.Provider = void 0;
@@ -21947,7 +26539,7 @@ var require_http_errors = __commonJS({
 });
 
 // node_modules/webidl-conversions/lib/index.js
-var require_lib9 = __commonJS({
+var require_lib15 = __commonJS({
   "node_modules/webidl-conversions/lib/index.js"(exports2, module2) {
     "use strict";
     var conversions = {};
@@ -22100,7 +26692,7 @@ var require_lib9 = __commonJS({
 });
 
 // node_modules/whatwg-url/lib/utils.js
-var require_utils10 = __commonJS({
+var require_utils12 = __commonJS({
   "node_modules/whatwg-url/lib/utils.js"(exports2, module2) {
     "use strict";
     module2.exports.mixin = function mixin(target, source) {
@@ -23521,8 +28113,8 @@ var require_URL_impl = __commonJS({
 var require_URL = __commonJS({
   "node_modules/whatwg-url/lib/URL.js"(exports2, module2) {
     "use strict";
-    var conversions = require_lib9();
-    var utils = require_utils10();
+    var conversions = require_lib15();
+    var utils = require_utils12();
     var Impl = require_URL_impl();
     var impl = utils.implSymbol;
     function URL3(url) {
@@ -27232,7 +31824,7 @@ var require_streams = __commonJS({
 });
 
 // ../../node_modules/encoding/node_modules/iconv-lite/lib/index.js
-var require_lib10 = __commonJS({
+var require_lib16 = __commonJS({
   "../../node_modules/encoding/node_modules/iconv-lite/lib/index.js"(exports2, module2) {
     "use strict";
     var Buffer2 = require_safer().Buffer;
@@ -27355,7 +31947,7 @@ var require_lib10 = __commonJS({
 var require_encoding = __commonJS({
   "../../node_modules/encoding/lib/encoding.js"(exports2, module2) {
     "use strict";
-    var iconvLite = require_lib10();
+    var iconvLite = require_lib16();
     module2.exports.convert = convert2;
     function convert2(str, to, from) {
       from = checkEncoding(from || "UTF-8");
@@ -28577,9 +33169,9 @@ var init_lib = __esm({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/providers/lib/fetch.js
+// node_modules/near-api-js/node_modules/@near-js/providers/lib/fetch.js
 var require_fetch = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/providers/lib/fetch.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/providers/lib/fetch.js"(exports2) {
     "use strict";
     var __importDefault = exports2 && exports2.__importDefault || function(mod) {
       return mod && mod.__esModule ? mod : { "default": mod };
@@ -28604,9 +33196,9 @@ var require_fetch = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/providers/lib/fetch_json.js
+// node_modules/near-api-js/node_modules/@near-js/providers/lib/fetch_json.js
 var require_fetch_json = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/providers/lib/fetch_json.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/providers/lib/fetch_json.js"(exports2) {
     "use strict";
     var __createBinding = exports2 && exports2.__createBinding || (Object.create ? function(o, m, k, k2) {
       if (k2 === void 0) k2 = k;
@@ -28719,9 +33311,9 @@ var require_fetch_json = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/providers/lib/json-rpc-provider.js
+// node_modules/near-api-js/node_modules/@near-js/providers/lib/json-rpc-provider.js
 var require_json_rpc_provider = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/providers/lib/json-rpc-provider.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/providers/lib/json-rpc-provider.js"(exports2) {
     "use strict";
     var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
       function adopt(value) {
@@ -28765,9 +33357,9 @@ var require_json_rpc_provider = __commonJS({
     exports2.JsonRpcProvider = void 0;
     var utils_1 = require_lib2();
     var types_1 = require_lib();
-    var transactions_1 = require_lib8();
+    var transactions_1 = require_lib14();
     var exponential_backoff_1 = require_exponential_backoff();
-    var provider_1 = require_provider3();
+    var provider_1 = require_provider5();
     var fetch_json_1 = require_fetch_json();
     var REQUEST_RETRY_NUMBER = 12;
     var REQUEST_RETRY_WAIT = 500;
@@ -29142,9 +33734,9 @@ ${JSON.stringify(result, null, 2)}`, (0, utils_1.getErrorTypeFromErrorMessage)(r
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/providers/lib/failover-rpc-provider.js
+// node_modules/near-api-js/node_modules/@near-js/providers/lib/failover-rpc-provider.js
 var require_failover_rpc_provider = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/providers/lib/failover-rpc-provider.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/providers/lib/failover-rpc-provider.js"(exports2) {
     "use strict";
     var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
       function adopt(value) {
@@ -29177,7 +33769,7 @@ var require_failover_rpc_provider = __commonJS({
     exports2.FailoverRpcProvider = void 0;
     var utils_1 = require_lib2();
     var types_1 = require_lib();
-    var provider_1 = require_provider3();
+    var provider_1 = require_provider5();
     var FailoverRpcProvider = class extends provider_1.Provider {
       /**
        * @param providers list of providers
@@ -29435,9 +34027,9 @@ var require_failover_rpc_provider = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/providers/lib/index.js
-var require_lib11 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/providers/lib/index.js"(exports2) {
+// node_modules/near-api-js/node_modules/@near-js/providers/lib/index.js
+var require_lib17 = __commonJS({
+  "node_modules/near-api-js/node_modules/@near-js/providers/lib/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.fetchJson = exports2.Provider = exports2.FailoverRpcProvider = exports2.JsonRpcProvider = exports2.exponentialBackoff = void 0;
@@ -29453,7 +34045,7 @@ var require_lib11 = __commonJS({
     Object.defineProperty(exports2, "FailoverRpcProvider", { enumerable: true, get: function() {
       return failover_rpc_provider_1.FailoverRpcProvider;
     } });
-    var provider_1 = require_provider3();
+    var provider_1 = require_provider5();
     Object.defineProperty(exports2, "Provider", { enumerable: true, get: function() {
       return provider_1.Provider;
     } });
@@ -29464,9 +34056,9 @@ var require_lib11 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/providers/provider.js
-var require_provider4 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/providers/provider.js"(exports2) {
+// node_modules/near-api-js/lib/providers/provider.js
+var require_provider6 = __commonJS({
+  "node_modules/near-api-js/lib/providers/provider.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.FinalExecutionStatusBasic = exports2.ExecutionStatusBasic = exports2.IdType = exports2.Provider = exports2.getTransactionLastResult = void 0;
@@ -29474,7 +34066,7 @@ var require_provider4 = __commonJS({
     Object.defineProperty(exports2, "getTransactionLastResult", { enumerable: true, get: function() {
       return utils_1.getTransactionLastResult;
     } });
-    var providers_1 = require_lib11();
+    var providers_1 = require_lib17();
     Object.defineProperty(exports2, "Provider", { enumerable: true, get: function() {
       return providers_1.Provider;
     } });
@@ -29491,9 +34083,9 @@ var require_provider4 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/providers/json-rpc-provider.js
+// node_modules/near-api-js/lib/providers/json-rpc-provider.js
 var require_json_rpc_provider2 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/providers/json-rpc-provider.js"(exports2) {
+  "node_modules/near-api-js/lib/providers/json-rpc-provider.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.JsonRpcProvider = exports2.TypedError = exports2.ErrorContext = void 0;
@@ -29504,33 +34096,33 @@ var require_json_rpc_provider2 = __commonJS({
     Object.defineProperty(exports2, "TypedError", { enumerable: true, get: function() {
       return types_1.TypedError;
     } });
-    var providers_1 = require_lib11();
+    var providers_1 = require_lib17();
     Object.defineProperty(exports2, "JsonRpcProvider", { enumerable: true, get: function() {
       return providers_1.JsonRpcProvider;
     } });
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/providers/failover-rpc-provider.js
+// node_modules/near-api-js/lib/providers/failover-rpc-provider.js
 var require_failover_rpc_provider2 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/providers/failover-rpc-provider.js"(exports2) {
+  "node_modules/near-api-js/lib/providers/failover-rpc-provider.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.FailoverRpcProvider = void 0;
-    var providers_1 = require_lib11();
+    var providers_1 = require_lib17();
     Object.defineProperty(exports2, "FailoverRpcProvider", { enumerable: true, get: function() {
       return providers_1.FailoverRpcProvider;
     } });
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/providers/index.js
+// node_modules/near-api-js/lib/providers/index.js
 var require_providers = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/providers/index.js"(exports2) {
+  "node_modules/near-api-js/lib/providers/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.ErrorContext = exports2.TypedError = exports2.getTransactionLastResult = exports2.FinalExecutionStatusBasic = exports2.FailoverRpcProvider = exports2.JsonRpcProvider = exports2.Provider = void 0;
-    var provider_1 = require_provider4();
+    var provider_1 = require_provider6();
     Object.defineProperty(exports2, "Provider", { enumerable: true, get: function() {
       return provider_1.Provider;
     } });
@@ -29557,9 +34149,9 @@ var require_providers = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/utils/key_pair.js
-var require_key_pair2 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/utils/key_pair.js"(exports2) {
+// node_modules/near-api-js/lib/utils/key_pair.js
+var require_key_pair4 = __commonJS({
+  "node_modules/near-api-js/lib/utils/key_pair.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.PublicKey = exports2.KeyType = exports2.KeyPairEd25519 = exports2.KeyPair = void 0;
@@ -29579,9 +34171,9 @@ var require_key_pair2 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/utils/serialize.js
+// node_modules/near-api-js/lib/utils/serialize.js
 var require_serialize2 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/utils/serialize.js"(exports2) {
+  "node_modules/near-api-js/lib/utils/serialize.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.base_decode = exports2.base_encode = exports2.deserialize = exports2.serialize = void 0;
@@ -29602,22 +34194,22 @@ var require_serialize2 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/utils/web.js
+// node_modules/near-api-js/lib/utils/web.js
 var require_web = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/utils/web.js"(exports2) {
+  "node_modules/near-api-js/lib/utils/web.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.fetchJson = void 0;
-    var providers_1 = require_lib11();
+    var providers_1 = require_lib17();
     Object.defineProperty(exports2, "fetchJson", { enumerable: true, get: function() {
       return providers_1.fetchJson;
     } });
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/utils/enums.js
+// node_modules/near-api-js/lib/utils/enums.js
 var require_enums = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/utils/enums.js"(exports2) {
+  "node_modules/near-api-js/lib/utils/enums.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.Enum = exports2.Assignable = void 0;
@@ -29640,9 +34232,9 @@ var require_enums = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/utils/format.js
-var require_format2 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/utils/format.js"(exports2) {
+// node_modules/near-api-js/lib/utils/format.js
+var require_format4 = __commonJS({
+  "node_modules/near-api-js/lib/utils/format.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.parseNearAmount = exports2.formatNearAmount = exports2.NEAR_NOMINATION_EXP = exports2.NEAR_NOMINATION = void 0;
@@ -29662,9 +34254,9 @@ var require_format2 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/utils/rpc_errors.js
-var require_rpc_errors2 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/utils/rpc_errors.js"(exports2) {
+// node_modules/near-api-js/lib/utils/rpc_errors.js
+var require_rpc_errors4 = __commonJS({
+  "node_modules/near-api-js/lib/utils/rpc_errors.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.ServerError = exports2.getErrorTypeFromErrorMessage = exports2.formatError = exports2.parseResultError = exports2.parseRpcError = void 0;
@@ -29687,9 +34279,9 @@ var require_rpc_errors2 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/accounts/lib/utils.js
-var require_utils11 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/accounts/lib/utils.js"(exports2) {
+// node_modules/near-api-js/node_modules/@near-js/accounts/lib/utils.js
+var require_utils13 = __commonJS({
+  "node_modules/near-api-js/node_modules/@near-js/accounts/lib/utils.js"(exports2) {
     "use strict";
     var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
       function adopt(value) {
@@ -29772,9 +34364,9 @@ var require_utils11 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/accounts/lib/account.js
+// node_modules/near-api-js/node_modules/@near-js/accounts/lib/account.js
 var require_account = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/accounts/lib/account.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/accounts/lib/account.js"(exports2) {
     "use strict";
     var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
       function adopt(value) {
@@ -29806,11 +34398,11 @@ var require_account = __commonJS({
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.Account = void 0;
     var crypto_1 = require_lib4();
-    var providers_1 = require_lib11();
-    var transactions_1 = require_lib8();
+    var providers_1 = require_lib17();
+    var transactions_1 = require_lib14();
     var types_1 = require_lib();
     var utils_1 = require_lib2();
-    var utils_2 = require_utils11();
+    var utils_2 = require_utils13();
     var { addKey, createAccount, deleteAccount, deleteKey, deployContract, fullAccessKey, functionCall, functionCallAccessKey, stake, transfer } = transactions_1.actionCreators;
     var TX_NONCE_RETRY_NUMBER = 12;
     var TX_NONCE_RETRY_WAIT = 500;
@@ -30282,9 +34874,9 @@ var require_account = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/accounts/lib/constants.js
-var require_constants4 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/accounts/lib/constants.js"(exports2) {
+// node_modules/near-api-js/node_modules/@near-js/accounts/lib/constants.js
+var require_constants8 = __commonJS({
+  "node_modules/near-api-js/node_modules/@near-js/accounts/lib/constants.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.MULTISIG_CONFIRM_METHODS = exports2.MULTISIG_CHANGE_METHODS = exports2.MULTISIG_DEPOSIT = exports2.MULTISIG_GAS = exports2.MULTISIG_ALLOWANCE = exports2.MULTISIG_STORAGE_KEY = void 0;
@@ -30298,9 +34890,9 @@ var require_constants4 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/accounts/lib/types.js
+// node_modules/near-api-js/node_modules/@near-js/accounts/lib/types.js
 var require_types3 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/accounts/lib/types.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/accounts/lib/types.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.MultisigStateStatus = exports2.MultisigDeleteRequestRejectionError = void 0;
@@ -30322,9 +34914,9 @@ var require_types3 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/accounts/lib/account_multisig.js
+// node_modules/near-api-js/node_modules/@near-js/accounts/lib/account_multisig.js
 var require_account_multisig = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/accounts/lib/account_multisig.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/accounts/lib/account_multisig.js"(exports2) {
     "use strict";
     var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
       function adopt(value) {
@@ -30355,10 +34947,10 @@ var require_account_multisig = __commonJS({
     };
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.AccountMultisig = void 0;
-    var transactions_1 = require_lib8();
+    var transactions_1 = require_lib14();
     var utils_1 = require_lib2();
     var account_1 = require_account();
-    var constants_1 = require_constants4();
+    var constants_1 = require_constants8();
     var types_1 = require_types3();
     var { deployContract, functionCall } = transactions_1.actionCreators;
     var MultisigCodeStatus;
@@ -30601,9 +35193,9 @@ var require_account_multisig = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/accounts/lib/account_2fa.js
+// node_modules/near-api-js/node_modules/@near-js/accounts/lib/account_2fa.js
 var require_account_2fa = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/accounts/lib/account_2fa.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/accounts/lib/account_2fa.js"(exports2) {
     "use strict";
     var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
       function adopt(value) {
@@ -30636,11 +35228,11 @@ var require_account_2fa = __commonJS({
     exports2.Account2FA = void 0;
     var crypto_1 = require_lib4();
     var types_1 = require_lib();
-    var providers_1 = require_lib11();
-    var transactions_1 = require_lib8();
+    var providers_1 = require_lib17();
+    var transactions_1 = require_lib14();
     var utils_1 = require_lib2();
     var account_multisig_1 = require_account_multisig();
-    var constants_1 = require_constants4();
+    var constants_1 = require_constants8();
     var types_2 = require_types3();
     var { addKey, deleteKey, deployContract, fullAccessKey, functionCall, functionCallAccessKey } = transactions_1.actionCreators;
     var Account2FA = class extends account_multisig_1.AccountMultisig {
@@ -30936,9 +35528,9 @@ var require_account_2fa = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/accounts/lib/account_creator.js
+// node_modules/near-api-js/node_modules/@near-js/accounts/lib/account_creator.js
 var require_account_creator = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/accounts/lib/account_creator.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/accounts/lib/account_creator.js"(exports2) {
     "use strict";
     var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
       function adopt(value) {
@@ -30969,7 +35561,7 @@ var require_account_creator = __commonJS({
     };
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.UrlAccountCreator = exports2.LocalAccountCreator = exports2.AccountCreator = void 0;
-    var providers_1 = require_lib11();
+    var providers_1 = require_lib17();
     var AccountCreator = class {
     };
     exports2.AccountCreator = AccountCreator;
@@ -31015,9 +35607,9 @@ var require_account_creator = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/signers/lib/signer.js
+// node_modules/near-api-js/node_modules/@near-js/signers/lib/signer.js
 var require_signer = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/signers/lib/signer.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/signers/lib/signer.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.Signer = void 0;
@@ -31027,9 +35619,9 @@ var require_signer = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/signers/lib/in_memory_signer.js
+// node_modules/near-api-js/node_modules/@near-js/signers/lib/in_memory_signer.js
 var require_in_memory_signer = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/signers/lib/in_memory_signer.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/signers/lib/in_memory_signer.js"(exports2) {
     "use strict";
     var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
       function adopt(value) {
@@ -31140,9 +35732,9 @@ var require_in_memory_signer = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/signers/lib/index.js
-var require_lib12 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/signers/lib/index.js"(exports2) {
+// node_modules/near-api-js/node_modules/@near-js/signers/lib/index.js
+var require_lib18 = __commonJS({
+  "node_modules/near-api-js/node_modules/@near-js/signers/lib/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.Signer = exports2.InMemorySigner = void 0;
@@ -31157,14 +35749,14 @@ var require_lib12 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/accounts/lib/connection.js
+// node_modules/near-api-js/node_modules/@near-js/accounts/lib/connection.js
 var require_connection = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/accounts/lib/connection.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/accounts/lib/connection.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.Connection = void 0;
-    var signers_1 = require_lib12();
-    var providers_1 = require_lib11();
+    var signers_1 = require_lib18();
+    var providers_1 = require_lib17();
     function getProvider(config2) {
       switch (config2.type) {
         case void 0:
@@ -31327,9 +35919,9 @@ var require_lru = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/accounts/lib/local-view-execution/storage.js
+// node_modules/near-api-js/node_modules/@near-js/accounts/lib/local-view-execution/storage.js
 var require_storage = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/accounts/lib/local-view-execution/storage.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/accounts/lib/local-view-execution/storage.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.Storage = void 0;
@@ -31359,9 +35951,9 @@ var require_storage = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/accounts/lib/local-view-execution/runtime.js
+// node_modules/near-api-js/node_modules/@near-js/accounts/lib/local-view-execution/runtime.js
 var require_runtime = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/accounts/lib/local-view-execution/runtime.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/accounts/lib/local-view-execution/runtime.js"(exports2) {
     "use strict";
     var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
       function adopt(value) {
@@ -31724,9 +36316,9 @@ var require_runtime = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/accounts/lib/local-view-execution/index.js
+// node_modules/near-api-js/node_modules/@near-js/accounts/lib/local-view-execution/index.js
 var require_local_view_execution = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/accounts/lib/local-view-execution/index.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/accounts/lib/local-view-execution/index.js"(exports2) {
     "use strict";
     var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
       function adopt(value) {
@@ -31771,7 +36363,7 @@ var require_local_view_execution = __commonJS({
     var utils_1 = require_lib2();
     var storage_1 = require_storage();
     var runtime_1 = require_runtime();
-    var utils_2 = require_utils11();
+    var utils_2 = require_utils13();
     var LocalViewExecution = class {
       constructor(connection) {
         this.connection = connection.getConnection();
@@ -32748,7 +37340,7 @@ var require_is_my_json_valid = __commonJS({
 });
 
 // node_modules/near-abi/lib/index.js
-var require_lib13 = __commonJS({
+var require_lib19 = __commonJS({
   "node_modules/near-abi/lib/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
@@ -32773,9 +37365,9 @@ var require_lib13 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/accounts/lib/errors.js
-var require_errors5 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/accounts/lib/errors.js"(exports2) {
+// node_modules/near-api-js/node_modules/@near-js/accounts/lib/errors.js
+var require_errors9 = __commonJS({
+  "node_modules/near-api-js/node_modules/@near-js/accounts/lib/errors.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.ConflictingOptions = exports2.ArgumentSchemaError = exports2.UnknownArgumentError = exports2.UnsupportedSerializationError = void 0;
@@ -32806,9 +37398,9 @@ var require_errors5 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/accounts/lib/contract.js
+// node_modules/near-api-js/node_modules/@near-js/accounts/lib/contract.js
 var require_contract = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/accounts/lib/contract.js"(exports2) {
+  "node_modules/near-api-js/node_modules/@near-js/accounts/lib/contract.js"(exports2) {
     "use strict";
     var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
       function adopt(value) {
@@ -32847,10 +37439,10 @@ var require_contract = __commonJS({
     var local_view_execution_1 = require_local_view_execution();
     var is_my_json_valid_1 = __importDefault(require_is_my_json_valid());
     var depd_1 = __importDefault(require_depd());
-    var near_abi_1 = require_lib13();
+    var near_abi_1 = require_lib19();
     var account_1 = require_account();
-    var errors_1 = require_errors5();
-    var utils_2 = require_utils11();
+    var errors_1 = require_errors9();
+    var utils_2 = require_utils13();
     function nameFunction(name, body) {
       return {
         [name](...args2) {
@@ -33002,9 +37594,9 @@ var require_contract = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/accounts/lib/index.js
-var require_lib14 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/accounts/lib/index.js"(exports2) {
+// node_modules/near-api-js/node_modules/@near-js/accounts/lib/index.js
+var require_lib20 = __commonJS({
+  "node_modules/near-api-js/node_modules/@near-js/accounts/lib/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.MultisigStateStatus = exports2.MultisigDeleteRequestRejectionError = exports2.UnsupportedSerializationError = exports2.UnknownArgumentError = exports2.ConflictingOptions = exports2.ArgumentSchemaError = exports2.Contract = exports2.MULTISIG_CONFIRM_METHODS = exports2.MULTISIG_CHANGE_METHODS = exports2.MULTISIG_DEPOSIT = exports2.MULTISIG_GAS = exports2.MULTISIG_ALLOWANCE = exports2.MULTISIG_STORAGE_KEY = exports2.Connection = exports2.AccountMultisig = exports2.UrlAccountCreator = exports2.LocalAccountCreator = exports2.AccountCreator = exports2.Account2FA = exports2.Account = void 0;
@@ -33034,7 +37626,7 @@ var require_lib14 = __commonJS({
     Object.defineProperty(exports2, "Connection", { enumerable: true, get: function() {
       return connection_1.Connection;
     } });
-    var constants_1 = require_constants4();
+    var constants_1 = require_constants8();
     Object.defineProperty(exports2, "MULTISIG_STORAGE_KEY", { enumerable: true, get: function() {
       return constants_1.MULTISIG_STORAGE_KEY;
     } });
@@ -33057,7 +37649,7 @@ var require_lib14 = __commonJS({
     Object.defineProperty(exports2, "Contract", { enumerable: true, get: function() {
       return contract_1.Contract;
     } });
-    var errors_1 = require_errors5();
+    var errors_1 = require_errors9();
     Object.defineProperty(exports2, "ArgumentSchemaError", { enumerable: true, get: function() {
       return errors_1.ArgumentSchemaError;
     } });
@@ -33080,13 +37672,13 @@ var require_lib14 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/utils/errors.js
-var require_errors6 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/utils/errors.js"(exports2) {
+// node_modules/near-api-js/lib/utils/errors.js
+var require_errors10 = __commonJS({
+  "node_modules/near-api-js/lib/utils/errors.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.logWarning = exports2.TypedError = exports2.PositionalArgsError = exports2.ErrorContext = exports2.ArgumentTypeError = exports2.UnsupportedSerializationError = exports2.UnknownArgumentError = exports2.ConflictingOptions = exports2.ArgumentSchemaError = void 0;
-    var accounts_1 = require_lib14();
+    var accounts_1 = require_lib20();
     Object.defineProperty(exports2, "ArgumentSchemaError", { enumerable: true, get: function() {
       return accounts_1.ArgumentSchemaError;
     } });
@@ -33119,9 +37711,9 @@ var require_errors6 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/utils/logger.js
-var require_logger3 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/utils/logger.js"(exports2) {
+// node_modules/near-api-js/lib/utils/logger.js
+var require_logger7 = __commonJS({
+  "node_modules/near-api-js/lib/utils/logger.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.Logger = void 0;
@@ -33132,9 +37724,9 @@ var require_logger3 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/utils/index.js
-var require_utils12 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/utils/index.js"(exports2) {
+// node_modules/near-api-js/lib/utils/index.js
+var require_utils14 = __commonJS({
+  "node_modules/near-api-js/lib/utils/index.js"(exports2) {
     "use strict";
     var __createBinding = exports2 && exports2.__createBinding || (Object.create ? function(o, m, k, k2) {
       if (k2 === void 0) k2 = k;
@@ -33165,7 +37757,7 @@ var require_utils12 = __commonJS({
     };
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.Logger = exports2.logWarning = exports2.rpc_errors = exports2.KeyPairEd25519 = exports2.KeyPair = exports2.PublicKey = exports2.format = exports2.enums = exports2.web = exports2.serialize = exports2.key_pair = void 0;
-    var key_pair = __importStar(require_key_pair2());
+    var key_pair = __importStar(require_key_pair4());
     exports2.key_pair = key_pair;
     var serialize = __importStar(require_serialize2());
     exports2.serialize = serialize;
@@ -33173,11 +37765,11 @@ var require_utils12 = __commonJS({
     exports2.web = web;
     var enums = __importStar(require_enums());
     exports2.enums = enums;
-    var format = __importStar(require_format2());
+    var format = __importStar(require_format4());
     exports2.format = format;
-    var rpc_errors = __importStar(require_rpc_errors2());
+    var rpc_errors = __importStar(require_rpc_errors4());
     exports2.rpc_errors = rpc_errors;
-    var key_pair_1 = require_key_pair2();
+    var key_pair_1 = require_key_pair4();
     Object.defineProperty(exports2, "PublicKey", { enumerable: true, get: function() {
       return key_pair_1.PublicKey;
     } });
@@ -33187,24 +37779,24 @@ var require_utils12 = __commonJS({
     Object.defineProperty(exports2, "KeyPairEd25519", { enumerable: true, get: function() {
       return key_pair_1.KeyPairEd25519;
     } });
-    var errors_1 = require_errors6();
+    var errors_1 = require_errors10();
     Object.defineProperty(exports2, "logWarning", { enumerable: true, get: function() {
       return errors_1.logWarning;
     } });
-    var logger_1 = require_logger3();
+    var logger_1 = require_logger7();
     Object.defineProperty(exports2, "Logger", { enumerable: true, get: function() {
       return logger_1.Logger;
     } });
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/transaction.js
+// node_modules/near-api-js/lib/transaction.js
 var require_transaction = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/transaction.js"(exports2) {
+  "node_modules/near-api-js/lib/transaction.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.transfer = exports2.stake = exports2.functionCallAccessKey = exports2.functionCall = exports2.fullAccessKey = exports2.deployContract = exports2.deleteKey = exports2.deleteAccount = exports2.createAccount = exports2.addKey = exports2.encodeTransaction = exports2.encodeDelegateAction = exports2.encodeSignedDelegate = exports2.Transaction = exports2.SignedTransaction = exports2.Signature = exports2.signTransaction = exports2.createTransaction = exports2.SCHEMA = exports2.Transfer = exports2.Stake = exports2.FunctionCallPermission = exports2.FunctionCall = exports2.FullAccessPermission = exports2.DeployContract = exports2.DeleteKey = exports2.DeleteAccount = exports2.CreateAccount = exports2.AddKey = exports2.AccessKeyPermission = exports2.AccessKey = exports2.Action = exports2.stringifyJsonOrBytes = void 0;
-    var transactions_1 = require_lib8();
+    var transactions_1 = require_lib14();
     Object.defineProperty(exports2, "stringifyJsonOrBytes", { enumerable: true, get: function() {
       return transactions_1.stringifyJsonOrBytes;
     } });
@@ -33274,7 +37866,7 @@ var require_transaction = __commonJS({
     Object.defineProperty(exports2, "encodeTransaction", { enumerable: true, get: function() {
       return transactions_1.encodeTransaction;
     } });
-    var transactions_2 = require_lib8();
+    var transactions_2 = require_lib14();
     var addKey = (publicKey, accessKey) => transactions_2.actionCreators.addKey(publicKey, accessKey);
     exports2.addKey = addKey;
     var createAccount = () => transactions_2.actionCreators.createAccount();
@@ -33298,9 +37890,9 @@ var require_transaction = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/validators.js
-var require_validators2 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/validators.js"(exports2) {
+// node_modules/near-api-js/lib/validators.js
+var require_validators4 = __commonJS({
+  "node_modules/near-api-js/lib/validators.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.findSeatPrice = exports2.diffEpochValidators = void 0;
@@ -33314,26 +37906,26 @@ var require_validators2 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/account.js
+// node_modules/near-api-js/lib/account.js
 var require_account2 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/account.js"(exports2) {
+  "node_modules/near-api-js/lib/account.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.Account = void 0;
-    var accounts_1 = require_lib14();
+    var accounts_1 = require_lib20();
     Object.defineProperty(exports2, "Account", { enumerable: true, get: function() {
       return accounts_1.Account;
     } });
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/account_multisig.js
+// node_modules/near-api-js/lib/account_multisig.js
 var require_account_multisig2 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/account_multisig.js"(exports2) {
+  "node_modules/near-api-js/lib/account_multisig.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.MultisigStateStatus = exports2.MultisigDeleteRequestRejectionError = exports2.MULTISIG_CONFIRM_METHODS = exports2.MULTISIG_CHANGE_METHODS = exports2.MULTISIG_DEPOSIT = exports2.MULTISIG_GAS = exports2.MULTISIG_ALLOWANCE = exports2.MULTISIG_STORAGE_KEY = exports2.AccountMultisig = exports2.Account2FA = void 0;
-    var accounts_1 = require_lib14();
+    var accounts_1 = require_lib20();
     Object.defineProperty(exports2, "Account2FA", { enumerable: true, get: function() {
       return accounts_1.Account2FA;
     } });
@@ -33367,13 +37959,13 @@ var require_account_multisig2 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/account_creator.js
+// node_modules/near-api-js/lib/account_creator.js
 var require_account_creator2 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/account_creator.js"(exports2) {
+  "node_modules/near-api-js/lib/account_creator.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.UrlAccountCreator = exports2.LocalAccountCreator = exports2.AccountCreator = void 0;
-    var accounts_1 = require_lib14();
+    var accounts_1 = require_lib20();
     Object.defineProperty(exports2, "AccountCreator", { enumerable: true, get: function() {
       return accounts_1.AccountCreator;
     } });
@@ -33386,26 +37978,26 @@ var require_account_creator2 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/connection.js
+// node_modules/near-api-js/lib/connection.js
 var require_connection2 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/connection.js"(exports2) {
+  "node_modules/near-api-js/lib/connection.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.Connection = void 0;
-    var accounts_1 = require_lib14();
+    var accounts_1 = require_lib20();
     Object.defineProperty(exports2, "Connection", { enumerable: true, get: function() {
       return accounts_1.Connection;
     } });
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/signer.js
+// node_modules/near-api-js/lib/signer.js
 var require_signer2 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/signer.js"(exports2) {
+  "node_modules/near-api-js/lib/signer.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.Signer = exports2.InMemorySigner = void 0;
-    var signers_1 = require_lib12();
+    var signers_1 = require_lib18();
     Object.defineProperty(exports2, "InMemorySigner", { enumerable: true, get: function() {
       return signers_1.InMemorySigner;
     } });
@@ -33415,22 +38007,6867 @@ var require_signer2 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/contract.js
+// node_modules/near-api-js/lib/contract.js
 var require_contract2 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/contract.js"(exports2) {
+  "node_modules/near-api-js/lib/contract.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.Contract = void 0;
-    var accounts_1 = require_lib14();
+    var accounts_1 = require_lib20();
     Object.defineProperty(exports2, "Contract", { enumerable: true, get: function() {
       return accounts_1.Contract;
     } });
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/wallet-account/lib/near.js
+// node_modules/@near-js/wallet-account/node_modules/@near-js/crypto/lib/constants.js
+var require_constants9 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/crypto/lib/constants.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.KeySize = exports2.KeyType = void 0;
+    var KeyType;
+    (function(KeyType2) {
+      KeyType2[KeyType2["ED25519"] = 0] = "ED25519";
+      KeyType2[KeyType2["SECP256K1"] = 1] = "SECP256K1";
+    })(KeyType = exports2.KeyType || (exports2.KeyType = {}));
+    var KeySize;
+    (function(KeySize2) {
+      KeySize2[KeySize2["SECRET_KEY"] = 32] = "SECRET_KEY";
+      KeySize2[KeySize2["ED25519_PUBLIC_KEY"] = 32] = "ED25519_PUBLIC_KEY";
+      KeySize2[KeySize2["SECP256k1_PUBLIC_KEY"] = 64] = "SECP256k1_PUBLIC_KEY";
+    })(KeySize = exports2.KeySize || (exports2.KeySize = {}));
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/crypto/lib/key_pair_base.js
+var require_key_pair_base4 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/crypto/lib/key_pair_base.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.KeyPairBase = void 0;
+    var KeyPairBase = class {
+    };
+    exports2.KeyPairBase = KeyPairBase;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/constants.js
+var require_constants10 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/constants.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.DEFAULT_FUNCTION_CALL_GAS = void 0;
+    exports2.DEFAULT_FUNCTION_CALL_GAS = BigInt("30000000000000");
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/logger/console.logger.js
+var require_console_logger4 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/logger/console.logger.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.ConsoleLogger = void 0;
+    var ConsoleLogger = class {
+      constructor(logLevels) {
+        this.logLevels = logLevels;
+        this.isLevelEnabled = (level) => {
+          return this.logLevels.includes(level);
+        };
+      }
+      print(level, message2, ...optionalParams) {
+        switch (level) {
+          case "error":
+          case "fatal":
+            return console.error(message2, ...optionalParams);
+          case "warn":
+            return console.warn(message2, ...optionalParams);
+          case "log":
+            return console.log(message2, ...optionalParams);
+          case "debug":
+          case "verbose":
+            return console.debug(message2, ...optionalParams);
+        }
+      }
+      verbose(message2, ...optionalParams) {
+        if (!this.isLevelEnabled("verbose"))
+          return;
+        this.print("verbose", message2, ...optionalParams);
+      }
+      debug(message2, ...optionalParams) {
+        if (!this.isLevelEnabled("debug"))
+          return;
+        this.print("debug", message2, ...optionalParams);
+      }
+      log(message2, ...optionalParams) {
+        if (!this.isLevelEnabled("log"))
+          return;
+        this.print("log", message2, ...optionalParams);
+      }
+      warn(message2, ...optionalParams) {
+        if (!this.isLevelEnabled("warn"))
+          return;
+        this.print("warn", message2, ...optionalParams);
+      }
+      error(message2, ...optionalParams) {
+        if (!this.isLevelEnabled("error"))
+          return;
+        this.print("error", message2, ...optionalParams);
+      }
+      fatal(message2, ...optionalParams) {
+        if (!this.isLevelEnabled("fatal"))
+          return;
+        this.print("fatal", message2, ...optionalParams);
+      }
+    };
+    exports2.ConsoleLogger = ConsoleLogger;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/logger/logger.js
+var require_logger8 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/logger/logger.js"(exports2) {
+    "use strict";
+    var _a;
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.Logger = void 0;
+    var console_logger_1 = require_console_logger4();
+    var DEFAULT_LOG_LEVELS = [
+      "verbose",
+      "debug",
+      "log",
+      "warn",
+      "error",
+      "fatal"
+    ];
+    var DEFAULT_LOGGER = typeof process === "object" && process.env.NEAR_NO_LOGS ? void 0 : new console_logger_1.ConsoleLogger(DEFAULT_LOG_LEVELS);
+    var Logger = class {
+      static error(message2, ...optionalParams) {
+        var _b;
+        (_b = this.instanceRef) === null || _b === void 0 ? void 0 : _b.error(message2, ...optionalParams);
+      }
+      /**
+       * Write a 'log' level log.
+       */
+      static log(message2, ...optionalParams) {
+        var _b;
+        (_b = this.instanceRef) === null || _b === void 0 ? void 0 : _b.log(message2, ...optionalParams);
+      }
+      /**
+       * Write a 'warn' level log.
+       */
+      static warn(message2, ...optionalParams) {
+        var _b;
+        (_b = this.instanceRef) === null || _b === void 0 ? void 0 : _b.warn(message2, ...optionalParams);
+      }
+      /**
+       * Write a 'debug' level log.
+       */
+      static debug(message2, ...optionalParams) {
+        var _b, _c;
+        (_c = (_b = this.instanceRef) === null || _b === void 0 ? void 0 : _b.debug) === null || _c === void 0 ? void 0 : _c.call(_b, message2, ...optionalParams);
+      }
+      /**
+       * Write a 'verbose' level log.
+       */
+      static verbose(message2, ...optionalParams) {
+        var _b, _c;
+        (_c = (_b = this.instanceRef) === null || _b === void 0 ? void 0 : _b.verbose) === null || _c === void 0 ? void 0 : _c.call(_b, message2, ...optionalParams);
+      }
+      static fatal(message2, ...optionalParams) {
+        var _b, _c;
+        (_c = (_b = this.instanceRef) === null || _b === void 0 ? void 0 : _b.fatal) === null || _c === void 0 ? void 0 : _c.call(_b, message2, ...optionalParams);
+      }
+    };
+    exports2.Logger = Logger;
+    _a = Logger;
+    Logger.instanceRef = DEFAULT_LOGGER;
+    Logger.overrideLogger = (logger) => {
+      _a.instanceRef = logger;
+    };
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/logger/index.js
+var require_logger9 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/logger/index.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.Logger = void 0;
+    var logger_1 = require_logger8();
+    Object.defineProperty(exports2, "Logger", { enumerable: true, get: function() {
+      return logger_1.Logger;
+    } });
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/errors/errors.js
+var require_errors11 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/errors/errors.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.logWarning = void 0;
+    var logger_1 = require_logger9();
+    function logWarning(...args2) {
+      const [message2, ...optionalParams] = args2;
+      logger_1.Logger.warn(message2, ...optionalParams);
+    }
+    exports2.logWarning = logWarning;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/format.js
+var require_format5 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/format.js"(exports2) {
+    "use strict";
+    var __importDefault = exports2 && exports2.__importDefault || function(mod) {
+      return mod && mod.__esModule ? mod : { "default": mod };
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.baseDecode = exports2.baseEncode = exports2.parseNearAmount = exports2.formatNearAmount = exports2.NEAR_NOMINATION = exports2.NEAR_NOMINATION_EXP = void 0;
+    var bs58_1 = __importDefault(require_bs58());
+    exports2.NEAR_NOMINATION_EXP = 24;
+    exports2.NEAR_NOMINATION = __pow(BigInt(10), BigInt(exports2.NEAR_NOMINATION_EXP));
+    var ROUNDING_OFFSETS = [];
+    var BN10 = BigInt(10);
+    for (let i = 0, offset = BigInt(5); i < exports2.NEAR_NOMINATION_EXP; i++, offset = offset * BN10) {
+      ROUNDING_OFFSETS[i] = offset;
+    }
+    function formatNearAmount(balance, fracDigits = exports2.NEAR_NOMINATION_EXP) {
+      let balanceBN = BigInt(balance);
+      if (fracDigits !== exports2.NEAR_NOMINATION_EXP) {
+        const roundingExp = exports2.NEAR_NOMINATION_EXP - fracDigits - 1;
+        if (roundingExp > 0) {
+          balanceBN += ROUNDING_OFFSETS[roundingExp];
+        }
+      }
+      balance = balanceBN.toString();
+      const wholeStr = balance.substring(0, balance.length - exports2.NEAR_NOMINATION_EXP) || "0";
+      const fractionStr = balance.substring(balance.length - exports2.NEAR_NOMINATION_EXP).padStart(exports2.NEAR_NOMINATION_EXP, "0").substring(0, fracDigits);
+      return trimTrailingZeroes(`${formatWithCommas(wholeStr)}.${fractionStr}`);
+    }
+    exports2.formatNearAmount = formatNearAmount;
+    function parseNearAmount(amt) {
+      if (!amt) {
+        return null;
+      }
+      amt = cleanupAmount(amt);
+      const split = amt.split(".");
+      const wholePart = split[0];
+      const fracPart = split[1] || "";
+      if (split.length > 2 || fracPart.length > exports2.NEAR_NOMINATION_EXP) {
+        throw new Error(`Cannot parse '${amt}' as NEAR amount`);
+      }
+      return trimLeadingZeroes(wholePart + fracPart.padEnd(exports2.NEAR_NOMINATION_EXP, "0"));
+    }
+    exports2.parseNearAmount = parseNearAmount;
+    function cleanupAmount(amount) {
+      return amount.replace(/,/g, "").trim();
+    }
+    function trimTrailingZeroes(value) {
+      return value.replace(/\.?0*$/, "");
+    }
+    function trimLeadingZeroes(value) {
+      value = value.replace(/^0+/, "");
+      if (value === "") {
+        return "0";
+      }
+      return value;
+    }
+    function formatWithCommas(value) {
+      const pattern = /(-?\d+)(\d{3})/;
+      while (pattern.test(value)) {
+        value = value.replace(pattern, "$1,$2");
+      }
+      return value;
+    }
+    function baseEncode(value) {
+      if (typeof value === "string") {
+        const bytes = [];
+        for (let c = 0; c < value.length; c++) {
+          bytes.push(value.charCodeAt(c));
+        }
+        value = new Uint8Array(bytes);
+      }
+      return bs58_1.default.encode(value);
+    }
+    exports2.baseEncode = baseEncode;
+    function baseDecode(value) {
+      return new Uint8Array(bs58_1.default.decode(value));
+    }
+    exports2.baseDecode = baseDecode;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/errors/error_messages.json
+var require_error_messages4 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/errors/error_messages.json"(exports2, module2) {
+    module2.exports = {
+      GasLimitExceeded: "Exceeded the maximum amount of gas allowed to burn per contract",
+      MethodEmptyName: "Method name is empty",
+      WasmerCompileError: "Wasmer compilation error: {{msg}}",
+      GuestPanic: "Smart contract panicked: {{panic_msg}}",
+      Memory: "Error creating Wasm memory",
+      GasExceeded: "Exceeded the prepaid gas",
+      MethodUTF8Error: "Method name is not valid UTF8 string",
+      BadUTF16: "String encoding is bad UTF-16 sequence",
+      WasmTrap: "WebAssembly trap: {{msg}}",
+      GasInstrumentation: "Gas instrumentation failed or contract has denied instructions.",
+      InvalidPromiseIndex: "{{promise_idx}} does not correspond to existing promises",
+      InvalidPromiseResultIndex: "Accessed invalid promise result index: {{result_idx}}",
+      Deserialization: "Error happened while deserializing the module",
+      MethodNotFound: "Contract method is not found",
+      InvalidRegisterId: "Accessed invalid register id: {{register_id}}",
+      InvalidReceiptIndex: "VM Logic returned an invalid receipt index: {{receipt_index}}",
+      EmptyMethodName: "Method name is empty in contract call",
+      CannotReturnJointPromise: "Returning joint promise is currently prohibited",
+      StackHeightInstrumentation: "Stack instrumentation failed",
+      CodeDoesNotExist: "Cannot find contract code for account {{account_id}}",
+      MethodInvalidSignature: "Invalid method signature",
+      IntegerOverflow: "Integer overflow happened during contract execution",
+      MemoryAccessViolation: "MemoryAccessViolation",
+      InvalidIteratorIndex: "Iterator index {{iterator_index}} does not exist",
+      IteratorWasInvalidated: "Iterator {{iterator_index}} was invalidated after its creation by performing a mutable operation on trie",
+      InvalidAccountId: "VM Logic returned an invalid account id",
+      Serialization: "Error happened while serializing the module",
+      CannotAppendActionToJointPromise: "Actions can only be appended to non-joint promise.",
+      InternalMemoryDeclared: "Internal memory declaration has been found in the module",
+      Instantiate: "Error happened during instantiation",
+      ProhibitedInView: "{{method_name}} is not allowed in view calls",
+      InvalidMethodName: "VM Logic returned an invalid method name",
+      BadUTF8: "String encoding is bad UTF-8 sequence",
+      BalanceExceeded: "Exceeded the account balance",
+      LinkError: "Wasm contract link error: {{msg}}",
+      InvalidPublicKey: "VM Logic provided an invalid public key",
+      ActorNoPermission: "Actor {{actor_id}} doesn't have permission to account {{account_id}} to complete the action",
+      LackBalanceForState: "The account {{account_id}} wouldn't have enough balance to cover storage, required to have {{amount}} yoctoNEAR more",
+      ReceiverMismatch: "Wrong AccessKey used for transaction: transaction is sent to receiver_id={{tx_receiver}}, but is signed with function call access key that restricted to only use with receiver_id={{ak_receiver}}. Either change receiver_id in your transaction or switch to use a FullAccessKey.",
+      CostOverflow: "Transaction gas or balance cost is too high",
+      InvalidSignature: "Transaction is not signed with the given public key",
+      AccessKeyNotFound: `Signer "{{account_id}}" doesn't have access key with the given public_key {{public_key}}`,
+      NotEnoughBalance: "Sender {{signer_id}} does not have enough balance {{#formatNear}}{{balance}}{{/formatNear}} for operation costing {{#formatNear}}{{cost}}{{/formatNear}}",
+      NotEnoughAllowance: "Access Key {account_id}:{public_key} does not have enough balance {{#formatNear}}{{allowance}}{{/formatNear}} for transaction costing {{#formatNear}}{{cost}}{{/formatNear}}",
+      Expired: "Transaction has expired",
+      DeleteAccountStaking: "Account {{account_id}} is staking and can not be deleted",
+      SignerDoesNotExist: "Signer {{signer_id}} does not exist",
+      TriesToStake: "Account {{account_id}} tried to stake {{#formatNear}}{{stake}}{{/formatNear}}, but has staked {{#formatNear}}{{locked}}{{/formatNear}} and only has {{#formatNear}}{{balance}}{{/formatNear}}",
+      AddKeyAlreadyExists: "The public key {{public_key}} is already used for an existing access key",
+      InvalidSigner: "Invalid signer account ID {{signer_id}} according to requirements",
+      CreateAccountNotAllowed: "The new account_id {{account_id}} can't be created by {{predecessor_id}}",
+      RequiresFullAccess: "The transaction contains more then one action, but it was signed with an access key which allows transaction to apply only one specific action. To apply more then one actions TX must be signed with a full access key",
+      TriesToUnstake: "Account {{account_id}} is not yet staked, but tried to unstake",
+      InvalidNonce: "Transaction nonce {{tx_nonce}} must be larger than nonce of the used access key {{ak_nonce}}",
+      AccountAlreadyExists: "Can't create a new account {{account_id}}, because it already exists",
+      InvalidChain: "Transaction parent block hash doesn't belong to the current chain",
+      AccountDoesNotExist: "Can't complete the action because account {{account_id}} doesn't exist",
+      AccessKeyDoesNotExist: "Can't complete the action because access key {{public_key}} doesn't exist",
+      MethodNameMismatch: "Transaction method name {{method_name}} isn't allowed by the access key",
+      DeleteAccountHasRent: "Account {{account_id}} can't be deleted. It has {{#formatNear}}{{balance}}{{/formatNear}}, which is enough to cover the rent",
+      DeleteAccountHasEnoughBalance: "Account {{account_id}} can't be deleted. It has {{#formatNear}}{{balance}}{{/formatNear}}, which is enough to cover it's storage",
+      InvalidReceiver: "Invalid receiver account ID {{receiver_id}} according to requirements",
+      DeleteKeyDoesNotExist: "Account {{account_id}} tries to remove an access key that doesn't exist",
+      Timeout: "Timeout exceeded",
+      Closed: "Connection closed",
+      ShardCongested: "Shard {{shard_id}} rejected the transaction due to congestion level {{congestion_level}}, try again later",
+      ShardStuck: "Shard {{shard_id}} rejected the transaction because it missed {{missed_chunks}} chunks and needs to recover before accepting new transactions, try again later"
+    };
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/errors/rpc_error_schema.json
+var require_rpc_error_schema4 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/errors/rpc_error_schema.json"(exports2, module2) {
+    module2.exports = {
+      schema: {
+        AccessKeyNotFound: {
+          name: "AccessKeyNotFound",
+          subtypes: [],
+          props: {
+            account_id: "",
+            public_key: ""
+          }
+        },
+        AccountAlreadyExists: {
+          name: "AccountAlreadyExists",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        AccountDoesNotExist: {
+          name: "AccountDoesNotExist",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        ActionError: {
+          name: "ActionError",
+          subtypes: [
+            "AccountAlreadyExists",
+            "AccountDoesNotExist",
+            "CreateAccountOnlyByRegistrar",
+            "CreateAccountNotAllowed",
+            "ActorNoPermission",
+            "DeleteKeyDoesNotExist",
+            "AddKeyAlreadyExists",
+            "DeleteAccountStaking",
+            "LackBalanceForState",
+            "TriesToUnstake",
+            "TriesToStake",
+            "InsufficientStake",
+            "FunctionCallError",
+            "NewReceiptValidationError",
+            "OnlyImplicitAccountCreationAllowed",
+            "DeleteAccountWithLargeState",
+            "DelegateActionInvalidSignature",
+            "DelegateActionSenderDoesNotMatchTxReceiver",
+            "DelegateActionExpired",
+            "DelegateActionAccessKeyError",
+            "DelegateActionInvalidNonce",
+            "DelegateActionNonceTooLarge"
+          ],
+          props: {
+            index: ""
+          }
+        },
+        ActionsValidationError: {
+          name: "ActionsValidationError",
+          subtypes: [
+            "DeleteActionMustBeFinal",
+            "TotalPrepaidGasExceeded",
+            "TotalNumberOfActionsExceeded",
+            "AddKeyMethodNamesNumberOfBytesExceeded",
+            "AddKeyMethodNameLengthExceeded",
+            "IntegerOverflow",
+            "InvalidAccountId",
+            "ContractSizeExceeded",
+            "FunctionCallMethodNameLengthExceeded",
+            "FunctionCallArgumentsLengthExceeded",
+            "UnsuitableStakingKey",
+            "FunctionCallZeroAttachedGas",
+            "DelegateActionMustBeOnlyOne",
+            "UnsupportedProtocolFeature"
+          ],
+          props: {}
+        },
+        ActorNoPermission: {
+          name: "ActorNoPermission",
+          subtypes: [],
+          props: {
+            account_id: "",
+            actor_id: ""
+          }
+        },
+        AddKeyAlreadyExists: {
+          name: "AddKeyAlreadyExists",
+          subtypes: [],
+          props: {
+            account_id: "",
+            public_key: ""
+          }
+        },
+        AddKeyMethodNameLengthExceeded: {
+          name: "AddKeyMethodNameLengthExceeded",
+          subtypes: [],
+          props: {
+            length: "",
+            limit: ""
+          }
+        },
+        AddKeyMethodNamesNumberOfBytesExceeded: {
+          name: "AddKeyMethodNamesNumberOfBytesExceeded",
+          subtypes: [],
+          props: {
+            limit: "",
+            total_number_of_bytes: ""
+          }
+        },
+        AltBn128InvalidInput: {
+          name: "AltBn128InvalidInput",
+          subtypes: [],
+          props: {
+            msg: ""
+          }
+        },
+        BadUTF16: {
+          name: "BadUTF16",
+          subtypes: [],
+          props: {}
+        },
+        BadUTF8: {
+          name: "BadUTF8",
+          subtypes: [],
+          props: {}
+        },
+        BalanceExceeded: {
+          name: "BalanceExceeded",
+          subtypes: [],
+          props: {}
+        },
+        BalanceMismatchError: {
+          name: "BalanceMismatchError",
+          subtypes: [],
+          props: {
+            final_accounts_balance: "",
+            final_postponed_receipts_balance: "",
+            forwarded_buffered_receipts_balance: "",
+            incoming_receipts_balance: "",
+            incoming_validator_rewards: "",
+            initial_accounts_balance: "",
+            initial_postponed_receipts_balance: "",
+            new_buffered_receipts_balance: "",
+            new_delayed_receipts_balance: "",
+            other_burnt_amount: "",
+            outgoing_receipts_balance: "",
+            processed_delayed_receipts_balance: "",
+            slashed_burnt_amount: "",
+            tx_burnt_amount: ""
+          }
+        },
+        CallIndirectOOB: {
+          name: "CallIndirectOOB",
+          subtypes: [],
+          props: {}
+        },
+        CannotAppendActionToJointPromise: {
+          name: "CannotAppendActionToJointPromise",
+          subtypes: [],
+          props: {}
+        },
+        CannotReturnJointPromise: {
+          name: "CannotReturnJointPromise",
+          subtypes: [],
+          props: {}
+        },
+        CodeDoesNotExist: {
+          name: "CodeDoesNotExist",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        CompilationError: {
+          name: "CompilationError",
+          subtypes: [
+            "CodeDoesNotExist",
+            "PrepareError",
+            "WasmerCompileError"
+          ],
+          props: {}
+        },
+        ContractSizeExceeded: {
+          name: "ContractSizeExceeded",
+          subtypes: [],
+          props: {
+            limit: "",
+            size: ""
+          }
+        },
+        CostOverflow: {
+          name: "CostOverflow",
+          subtypes: [],
+          props: {}
+        },
+        CreateAccountNotAllowed: {
+          name: "CreateAccountNotAllowed",
+          subtypes: [],
+          props: {
+            account_id: "",
+            predecessor_id: ""
+          }
+        },
+        CreateAccountOnlyByRegistrar: {
+          name: "CreateAccountOnlyByRegistrar",
+          subtypes: [],
+          props: {
+            account_id: "",
+            predecessor_id: "",
+            registrar_account_id: ""
+          }
+        },
+        DelegateActionExpired: {
+          name: "DelegateActionExpired",
+          subtypes: [],
+          props: {}
+        },
+        DelegateActionInvalidNonce: {
+          name: "DelegateActionInvalidNonce",
+          subtypes: [],
+          props: {
+            ak_nonce: "",
+            delegate_nonce: ""
+          }
+        },
+        DelegateActionInvalidSignature: {
+          name: "DelegateActionInvalidSignature",
+          subtypes: [],
+          props: {}
+        },
+        DelegateActionMustBeOnlyOne: {
+          name: "DelegateActionMustBeOnlyOne",
+          subtypes: [],
+          props: {}
+        },
+        DelegateActionNonceTooLarge: {
+          name: "DelegateActionNonceTooLarge",
+          subtypes: [],
+          props: {
+            delegate_nonce: "",
+            upper_bound: ""
+          }
+        },
+        DelegateActionSenderDoesNotMatchTxReceiver: {
+          name: "DelegateActionSenderDoesNotMatchTxReceiver",
+          subtypes: [],
+          props: {
+            receiver_id: "",
+            sender_id: ""
+          }
+        },
+        DeleteAccountStaking: {
+          name: "DeleteAccountStaking",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        DeleteAccountWithLargeState: {
+          name: "DeleteAccountWithLargeState",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        DeleteActionMustBeFinal: {
+          name: "DeleteActionMustBeFinal",
+          subtypes: [],
+          props: {}
+        },
+        DeleteKeyDoesNotExist: {
+          name: "DeleteKeyDoesNotExist",
+          subtypes: [],
+          props: {
+            account_id: "",
+            public_key: ""
+          }
+        },
+        DepositWithFunctionCall: {
+          name: "DepositWithFunctionCall",
+          subtypes: [],
+          props: {}
+        },
+        Deprecated: {
+          name: "Deprecated",
+          subtypes: [],
+          props: {
+            method_name: ""
+          }
+        },
+        Deserialization: {
+          name: "Deserialization",
+          subtypes: [],
+          props: {}
+        },
+        ECRecoverError: {
+          name: "ECRecoverError",
+          subtypes: [],
+          props: {
+            msg: ""
+          }
+        },
+        Ed25519VerifyInvalidInput: {
+          name: "Ed25519VerifyInvalidInput",
+          subtypes: [],
+          props: {
+            msg: ""
+          }
+        },
+        EmptyMethodName: {
+          name: "EmptyMethodName",
+          subtypes: [],
+          props: {}
+        },
+        Expired: {
+          name: "Expired",
+          subtypes: [],
+          props: {}
+        },
+        FunctionCallArgumentsLengthExceeded: {
+          name: "FunctionCallArgumentsLengthExceeded",
+          subtypes: [],
+          props: {
+            length: "",
+            limit: ""
+          }
+        },
+        FunctionCallMethodNameLengthExceeded: {
+          name: "FunctionCallMethodNameLengthExceeded",
+          subtypes: [],
+          props: {
+            length: "",
+            limit: ""
+          }
+        },
+        FunctionCallZeroAttachedGas: {
+          name: "FunctionCallZeroAttachedGas",
+          subtypes: [],
+          props: {}
+        },
+        GasExceeded: {
+          name: "GasExceeded",
+          subtypes: [],
+          props: {}
+        },
+        GasInstrumentation: {
+          name: "GasInstrumentation",
+          subtypes: [],
+          props: {}
+        },
+        GasLimitExceeded: {
+          name: "GasLimitExceeded",
+          subtypes: [],
+          props: {}
+        },
+        GenericTrap: {
+          name: "GenericTrap",
+          subtypes: [],
+          props: {}
+        },
+        GuestPanic: {
+          name: "GuestPanic",
+          subtypes: [],
+          props: {
+            panic_msg: ""
+          }
+        },
+        HostError: {
+          name: "HostError",
+          subtypes: [
+            "BadUTF16",
+            "BadUTF8",
+            "GasExceeded",
+            "GasLimitExceeded",
+            "BalanceExceeded",
+            "EmptyMethodName",
+            "GuestPanic",
+            "IntegerOverflow",
+            "InvalidPromiseIndex",
+            "CannotAppendActionToJointPromise",
+            "CannotReturnJointPromise",
+            "InvalidPromiseResultIndex",
+            "InvalidRegisterId",
+            "IteratorWasInvalidated",
+            "MemoryAccessViolation",
+            "InvalidReceiptIndex",
+            "InvalidIteratorIndex",
+            "InvalidAccountId",
+            "InvalidMethodName",
+            "InvalidPublicKey",
+            "ProhibitedInView",
+            "NumberOfLogsExceeded",
+            "KeyLengthExceeded",
+            "ValueLengthExceeded",
+            "TotalLogLengthExceeded",
+            "NumberPromisesExceeded",
+            "NumberInputDataDependenciesExceeded",
+            "ReturnedValueLengthExceeded",
+            "ContractSizeExceeded",
+            "Deprecated",
+            "ECRecoverError",
+            "AltBn128InvalidInput",
+            "Ed25519VerifyInvalidInput"
+          ],
+          props: {}
+        },
+        IllegalArithmetic: {
+          name: "IllegalArithmetic",
+          subtypes: [],
+          props: {}
+        },
+        IncorrectCallIndirectSignature: {
+          name: "IncorrectCallIndirectSignature",
+          subtypes: [],
+          props: {}
+        },
+        IndirectCallToNull: {
+          name: "IndirectCallToNull",
+          subtypes: [],
+          props: {}
+        },
+        Instantiate: {
+          name: "Instantiate",
+          subtypes: [],
+          props: {}
+        },
+        InsufficientStake: {
+          name: "InsufficientStake",
+          subtypes: [],
+          props: {
+            account_id: "",
+            minimum_stake: "",
+            stake: ""
+          }
+        },
+        IntegerOverflow: {
+          name: "IntegerOverflow",
+          subtypes: [],
+          props: {}
+        },
+        InternalMemoryDeclared: {
+          name: "InternalMemoryDeclared",
+          subtypes: [],
+          props: {}
+        },
+        InvalidAccessKeyError: {
+          name: "InvalidAccessKeyError",
+          subtypes: [
+            "AccessKeyNotFound",
+            "ReceiverMismatch",
+            "MethodNameMismatch",
+            "RequiresFullAccess",
+            "NotEnoughAllowance",
+            "DepositWithFunctionCall"
+          ],
+          props: {}
+        },
+        InvalidAccountId: {
+          name: "InvalidAccountId",
+          subtypes: [],
+          props: {}
+        },
+        InvalidChain: {
+          name: "InvalidChain",
+          subtypes: [],
+          props: {}
+        },
+        InvalidDataReceiverId: {
+          name: "InvalidDataReceiverId",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        InvalidIteratorIndex: {
+          name: "InvalidIteratorIndex",
+          subtypes: [],
+          props: {
+            iterator_index: ""
+          }
+        },
+        InvalidMethodName: {
+          name: "InvalidMethodName",
+          subtypes: [],
+          props: {}
+        },
+        InvalidNonce: {
+          name: "InvalidNonce",
+          subtypes: [],
+          props: {
+            ak_nonce: "",
+            tx_nonce: ""
+          }
+        },
+        InvalidPredecessorId: {
+          name: "InvalidPredecessorId",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        InvalidPromiseIndex: {
+          name: "InvalidPromiseIndex",
+          subtypes: [],
+          props: {
+            promise_idx: ""
+          }
+        },
+        InvalidPromiseResultIndex: {
+          name: "InvalidPromiseResultIndex",
+          subtypes: [],
+          props: {
+            result_idx: ""
+          }
+        },
+        InvalidPublicKey: {
+          name: "InvalidPublicKey",
+          subtypes: [],
+          props: {}
+        },
+        InvalidReceiptIndex: {
+          name: "InvalidReceiptIndex",
+          subtypes: [],
+          props: {
+            receipt_index: ""
+          }
+        },
+        InvalidReceiverId: {
+          name: "InvalidReceiverId",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        InvalidRegisterId: {
+          name: "InvalidRegisterId",
+          subtypes: [],
+          props: {
+            register_id: ""
+          }
+        },
+        InvalidSignature: {
+          name: "InvalidSignature",
+          subtypes: [],
+          props: {}
+        },
+        InvalidSignerId: {
+          name: "InvalidSignerId",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        InvalidTxError: {
+          name: "InvalidTxError",
+          subtypes: [
+            "InvalidAccessKeyError",
+            "InvalidSignerId",
+            "SignerDoesNotExist",
+            "InvalidNonce",
+            "NonceTooLarge",
+            "InvalidReceiverId",
+            "InvalidSignature",
+            "NotEnoughBalance",
+            "LackBalanceForState",
+            "CostOverflow",
+            "InvalidChain",
+            "Expired",
+            "ActionsValidation",
+            "TransactionSizeExceeded",
+            "StorageError",
+            "ShardCongested",
+            "ShardStuck"
+          ],
+          props: {}
+        },
+        IteratorWasInvalidated: {
+          name: "IteratorWasInvalidated",
+          subtypes: [],
+          props: {
+            iterator_index: ""
+          }
+        },
+        KeyLengthExceeded: {
+          name: "KeyLengthExceeded",
+          subtypes: [],
+          props: {
+            length: "",
+            limit: ""
+          }
+        },
+        LackBalanceForState: {
+          name: "LackBalanceForState",
+          subtypes: [],
+          props: {
+            account_id: "",
+            amount: ""
+          }
+        },
+        Memory: {
+          name: "Memory",
+          subtypes: [],
+          props: {}
+        },
+        MemoryAccessViolation: {
+          name: "MemoryAccessViolation",
+          subtypes: [],
+          props: {}
+        },
+        MemoryOutOfBounds: {
+          name: "MemoryOutOfBounds",
+          subtypes: [],
+          props: {}
+        },
+        MethodEmptyName: {
+          name: "MethodEmptyName",
+          subtypes: [],
+          props: {}
+        },
+        MethodInvalidSignature: {
+          name: "MethodInvalidSignature",
+          subtypes: [],
+          props: {}
+        },
+        MethodNameMismatch: {
+          name: "MethodNameMismatch",
+          subtypes: [],
+          props: {
+            method_name: ""
+          }
+        },
+        MethodNotFound: {
+          name: "MethodNotFound",
+          subtypes: [],
+          props: {}
+        },
+        MethodResolveError: {
+          name: "MethodResolveError",
+          subtypes: [
+            "MethodEmptyName",
+            "MethodNotFound",
+            "MethodInvalidSignature"
+          ],
+          props: {}
+        },
+        MisalignedAtomicAccess: {
+          name: "MisalignedAtomicAccess",
+          subtypes: [],
+          props: {}
+        },
+        NonceTooLarge: {
+          name: "NonceTooLarge",
+          subtypes: [],
+          props: {
+            tx_nonce: "",
+            upper_bound: ""
+          }
+        },
+        NotEnoughAllowance: {
+          name: "NotEnoughAllowance",
+          subtypes: [],
+          props: {
+            account_id: "",
+            allowance: "",
+            cost: "",
+            public_key: ""
+          }
+        },
+        NotEnoughBalance: {
+          name: "NotEnoughBalance",
+          subtypes: [],
+          props: {
+            balance: "",
+            cost: "",
+            signer_id: ""
+          }
+        },
+        NumberInputDataDependenciesExceeded: {
+          name: "NumberInputDataDependenciesExceeded",
+          subtypes: [],
+          props: {
+            limit: "",
+            number_of_input_data_dependencies: ""
+          }
+        },
+        NumberOfLogsExceeded: {
+          name: "NumberOfLogsExceeded",
+          subtypes: [],
+          props: {
+            limit: ""
+          }
+        },
+        NumberPromisesExceeded: {
+          name: "NumberPromisesExceeded",
+          subtypes: [],
+          props: {
+            limit: "",
+            number_of_promises: ""
+          }
+        },
+        OnlyImplicitAccountCreationAllowed: {
+          name: "OnlyImplicitAccountCreationAllowed",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        PrepareError: {
+          name: "PrepareError",
+          subtypes: [
+            "Serialization",
+            "Deserialization",
+            "InternalMemoryDeclared",
+            "GasInstrumentation",
+            "StackHeightInstrumentation",
+            "Instantiate",
+            "Memory",
+            "TooManyFunctions",
+            "TooManyLocals"
+          ],
+          props: {}
+        },
+        ProhibitedInView: {
+          name: "ProhibitedInView",
+          subtypes: [],
+          props: {
+            method_name: ""
+          }
+        },
+        ReceiptSizeExceeded: {
+          name: "ReceiptSizeExceeded",
+          subtypes: [],
+          props: {
+            limit: "",
+            size: ""
+          }
+        },
+        ReceiptValidationError: {
+          name: "ReceiptValidationError",
+          subtypes: [
+            "InvalidPredecessorId",
+            "InvalidReceiverId",
+            "InvalidSignerId",
+            "InvalidDataReceiverId",
+            "ReturnedValueLengthExceeded",
+            "NumberInputDataDependenciesExceeded",
+            "ActionsValidation",
+            "ReceiptSizeExceeded"
+          ],
+          props: {}
+        },
+        ReceiverMismatch: {
+          name: "ReceiverMismatch",
+          subtypes: [],
+          props: {
+            ak_receiver: "",
+            tx_receiver: ""
+          }
+        },
+        RequiresFullAccess: {
+          name: "RequiresFullAccess",
+          subtypes: [],
+          props: {}
+        },
+        ReturnedValueLengthExceeded: {
+          name: "ReturnedValueLengthExceeded",
+          subtypes: [],
+          props: {
+            length: "",
+            limit: ""
+          }
+        },
+        Serialization: {
+          name: "Serialization",
+          subtypes: [],
+          props: {}
+        },
+        ShardCongested: {
+          name: "ShardCongested",
+          subtypes: [],
+          props: {
+            congestion_level: "",
+            shard_id: ""
+          }
+        },
+        ShardStuck: {
+          name: "ShardStuck",
+          subtypes: [],
+          props: {
+            missed_chunks: "",
+            shard_id: ""
+          }
+        },
+        SignerDoesNotExist: {
+          name: "SignerDoesNotExist",
+          subtypes: [],
+          props: {
+            signer_id: ""
+          }
+        },
+        StackHeightInstrumentation: {
+          name: "StackHeightInstrumentation",
+          subtypes: [],
+          props: {}
+        },
+        StackOverflow: {
+          name: "StackOverflow",
+          subtypes: [],
+          props: {}
+        },
+        TooManyFunctions: {
+          name: "TooManyFunctions",
+          subtypes: [],
+          props: {}
+        },
+        TooManyLocals: {
+          name: "TooManyLocals",
+          subtypes: [],
+          props: {}
+        },
+        TotalLogLengthExceeded: {
+          name: "TotalLogLengthExceeded",
+          subtypes: [],
+          props: {
+            length: "",
+            limit: ""
+          }
+        },
+        TotalNumberOfActionsExceeded: {
+          name: "TotalNumberOfActionsExceeded",
+          subtypes: [],
+          props: {
+            limit: "",
+            total_number_of_actions: ""
+          }
+        },
+        TotalPrepaidGasExceeded: {
+          name: "TotalPrepaidGasExceeded",
+          subtypes: [],
+          props: {
+            limit: "",
+            total_prepaid_gas: ""
+          }
+        },
+        TransactionSizeExceeded: {
+          name: "TransactionSizeExceeded",
+          subtypes: [],
+          props: {
+            limit: "",
+            size: ""
+          }
+        },
+        TriesToStake: {
+          name: "TriesToStake",
+          subtypes: [],
+          props: {
+            account_id: "",
+            balance: "",
+            locked: "",
+            stake: ""
+          }
+        },
+        TriesToUnstake: {
+          name: "TriesToUnstake",
+          subtypes: [],
+          props: {
+            account_id: ""
+          }
+        },
+        TxExecutionError: {
+          name: "TxExecutionError",
+          subtypes: [
+            "ActionError",
+            "InvalidTxError"
+          ],
+          props: {}
+        },
+        Unreachable: {
+          name: "Unreachable",
+          subtypes: [],
+          props: {}
+        },
+        UnsuitableStakingKey: {
+          name: "UnsuitableStakingKey",
+          subtypes: [],
+          props: {
+            public_key: ""
+          }
+        },
+        UnsupportedProtocolFeature: {
+          name: "UnsupportedProtocolFeature",
+          subtypes: [],
+          props: {
+            protocol_feature: "",
+            version: ""
+          }
+        },
+        ValueLengthExceeded: {
+          name: "ValueLengthExceeded",
+          subtypes: [],
+          props: {
+            length: "",
+            limit: ""
+          }
+        },
+        WasmTrap: {
+          name: "WasmTrap",
+          subtypes: [
+            "Unreachable",
+            "IncorrectCallIndirectSignature",
+            "MemoryOutOfBounds",
+            "CallIndirectOOB",
+            "IllegalArithmetic",
+            "MisalignedAtomicAccess",
+            "IndirectCallToNull",
+            "StackOverflow",
+            "GenericTrap"
+          ],
+          props: {}
+        },
+        WasmerCompileError: {
+          name: "WasmerCompileError",
+          subtypes: [],
+          props: {
+            msg: ""
+          }
+        },
+        Closed: {
+          name: "Closed",
+          subtypes: [],
+          props: {}
+        },
+        ServerError: {
+          name: "ServerError",
+          subtypes: [
+            "TxExecutionError",
+            "Timeout",
+            "Closed"
+          ],
+          props: {}
+        },
+        Timeout: {
+          name: "Timeout",
+          subtypes: [],
+          props: {}
+        }
+      }
+    };
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/errors/rpc_errors.js
+var require_rpc_errors5 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/errors/rpc_errors.js"(exports2) {
+    "use strict";
+    var __importDefault = exports2 && exports2.__importDefault || function(mod) {
+      return mod && mod.__esModule ? mod : { "default": mod };
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.getErrorTypeFromErrorMessage = exports2.formatError = exports2.parseResultError = exports2.parseRpcError = exports2.ServerError = void 0;
+    var types_1 = require_lib();
+    var mustache_1 = __importDefault(require_mustache());
+    var format_1 = require_format5();
+    var error_messages_json_1 = __importDefault(require_error_messages4());
+    var rpc_error_schema_json_1 = __importDefault(require_rpc_error_schema4());
+    var mustacheHelpers = {
+      formatNear: () => (n, render) => (0, format_1.formatNearAmount)(render(n))
+    };
+    var ServerError = class extends types_1.TypedError {
+    };
+    exports2.ServerError = ServerError;
+    var ServerTransactionError = class extends ServerError {
+    };
+    function parseRpcError(errorObj) {
+      const result = {};
+      const errorClassName = walkSubtype(errorObj, rpc_error_schema_json_1.default.schema, result, "");
+      const error = new ServerError(formatError(errorClassName, result), errorClassName);
+      Object.assign(error, result);
+      return error;
+    }
+    exports2.parseRpcError = parseRpcError;
+    function parseResultError(result) {
+      const server_error = parseRpcError(result.status.Failure);
+      const server_tx_error = new ServerTransactionError();
+      Object.assign(server_tx_error, server_error);
+      server_tx_error.type = server_error.type;
+      server_tx_error.message = server_error.message;
+      server_tx_error.transaction_outcome = result.transaction_outcome;
+      return server_tx_error;
+    }
+    exports2.parseResultError = parseResultError;
+    function formatError(errorClassName, errorData) {
+      if (typeof error_messages_json_1.default[errorClassName] === "string") {
+        return mustache_1.default.render(error_messages_json_1.default[errorClassName], Object.assign(Object.assign({}, errorData), mustacheHelpers));
+      }
+      return JSON.stringify(errorData);
+    }
+    exports2.formatError = formatError;
+    function walkSubtype(errorObj, schema, result, typeName) {
+      let error;
+      let type;
+      let errorTypeName;
+      for (const errorName in schema) {
+        if (isString(errorObj[errorName])) {
+          return errorObj[errorName];
+        }
+        if (isObject(errorObj[errorName])) {
+          error = errorObj[errorName];
+          type = schema[errorName];
+          errorTypeName = errorName;
+        } else if (isObject(errorObj.kind) && isObject(errorObj.kind[errorName])) {
+          error = errorObj.kind[errorName];
+          type = schema[errorName];
+          errorTypeName = errorName;
+        } else {
+          continue;
+        }
+      }
+      if (error && type) {
+        for (const prop of Object.keys(type.props)) {
+          result[prop] = error[prop];
+        }
+        return walkSubtype(error, schema, result, errorTypeName);
+      } else {
+        result.kind = errorObj;
+        return typeName;
+      }
+    }
+    function getErrorTypeFromErrorMessage(errorMessage, errorType) {
+      switch (true) {
+        case /^account .*? does not exist while viewing$/.test(errorMessage):
+          return "AccountDoesNotExist";
+        case /^Account .*? doesn't exist$/.test(errorMessage):
+          return "AccountDoesNotExist";
+        case /^access key .*? does not exist while viewing$/.test(errorMessage):
+          return "AccessKeyDoesNotExist";
+        case /wasm execution failed with error: FunctionCallError\(CompilationError\(CodeDoesNotExist/.test(errorMessage):
+          return "CodeDoesNotExist";
+        case /wasm execution failed with error: CompilationError\(CodeDoesNotExist/.test(errorMessage):
+          return "CodeDoesNotExist";
+        case /wasm execution failed with error: FunctionCallError\(MethodResolveError\(MethodNotFound/.test(errorMessage):
+          return "MethodNotFound";
+        case /wasm execution failed with error: MethodResolveError\(MethodNotFound/.test(errorMessage):
+          return "MethodNotFound";
+        case /Transaction nonce \d+ must be larger than nonce of the used access key \d+/.test(errorMessage):
+          return "InvalidNonce";
+        default:
+          return errorType;
+      }
+    }
+    exports2.getErrorTypeFromErrorMessage = getErrorTypeFromErrorMessage;
+    function isObject(n) {
+      return Object.prototype.toString.call(n) === "[object Object]";
+    }
+    function isString(n) {
+      return Object.prototype.toString.call(n) === "[object String]";
+    }
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/errors/index.js
+var require_errors12 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/errors/index.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.parseRpcError = exports2.parseResultError = exports2.getErrorTypeFromErrorMessage = exports2.formatError = exports2.ServerError = exports2.logWarning = void 0;
+    var errors_1 = require_errors11();
+    Object.defineProperty(exports2, "logWarning", { enumerable: true, get: function() {
+      return errors_1.logWarning;
+    } });
+    var rpc_errors_1 = require_rpc_errors5();
+    Object.defineProperty(exports2, "ServerError", { enumerable: true, get: function() {
+      return rpc_errors_1.ServerError;
+    } });
+    Object.defineProperty(exports2, "formatError", { enumerable: true, get: function() {
+      return rpc_errors_1.formatError;
+    } });
+    Object.defineProperty(exports2, "getErrorTypeFromErrorMessage", { enumerable: true, get: function() {
+      return rpc_errors_1.getErrorTypeFromErrorMessage;
+    } });
+    Object.defineProperty(exports2, "parseResultError", { enumerable: true, get: function() {
+      return rpc_errors_1.parseResultError;
+    } });
+    Object.defineProperty(exports2, "parseRpcError", { enumerable: true, get: function() {
+      return rpc_errors_1.parseRpcError;
+    } });
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/logging.js
+var require_logging4 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/logging.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.printTxOutcomeLogs = exports2.printTxOutcomeLogsAndFailures = void 0;
+    var errors_1 = require_errors12();
+    var logger_1 = require_logger9();
+    function printTxOutcomeLogsAndFailures({ contractId, outcome }) {
+      const flatLogs = [outcome.transaction_outcome, ...outcome.receipts_outcome].reduce((acc, it) => {
+        const isFailure = typeof it.outcome.status === "object" && typeof it.outcome.status.Failure === "object";
+        if (it.outcome.logs.length || isFailure) {
+          return acc.concat({
+            receiptIds: it.outcome.receipt_ids,
+            logs: it.outcome.logs,
+            failure: typeof it.outcome.status === "object" && it.outcome.status.Failure !== void 0 ? (0, errors_1.parseRpcError)(it.outcome.status.Failure) : null
+          });
+        } else {
+          return acc;
+        }
+      }, []);
+      for (const result of flatLogs) {
+        logger_1.Logger.log(`Receipt${result.receiptIds.length > 1 ? "s" : ""}: ${result.receiptIds.join(", ")}`);
+        printTxOutcomeLogs({
+          contractId,
+          logs: result.logs,
+          prefix: "	"
+        });
+        if (result.failure) {
+          logger_1.Logger.warn(`	Failure [${contractId}]: ${result.failure}`);
+        }
+      }
+    }
+    exports2.printTxOutcomeLogsAndFailures = printTxOutcomeLogsAndFailures;
+    function printTxOutcomeLogs({ contractId, logs, prefix = "" }) {
+      for (const log2 of logs) {
+        logger_1.Logger.log(`${prefix}Log [${contractId}]: ${log2}`);
+      }
+    }
+    exports2.printTxOutcomeLogs = printTxOutcomeLogs;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/provider.js
+var require_provider7 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/provider.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.getTransactionLastResult = void 0;
+    function getTransactionLastResult(txResult) {
+      if (typeof txResult.status === "object" && typeof txResult.status.SuccessValue === "string") {
+        const value = Buffer.from(txResult.status.SuccessValue, "base64").toString();
+        try {
+          return JSON.parse(value);
+        } catch (e) {
+          return value;
+        }
+      }
+      return null;
+    }
+    exports2.getTransactionLastResult = getTransactionLastResult;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/utils.js
+var require_utils15 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/utils.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.sortBigIntAsc = void 0;
+    function sortBigIntAsc(a, b) {
+      return a < b ? -1 : a > b ? 1 : 0;
+    }
+    exports2.sortBigIntAsc = sortBigIntAsc;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/validators.js
+var require_validators5 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/validators.js"(exports2) {
+    "use strict";
+    var __importDefault = exports2 && exports2.__importDefault || function(mod) {
+      return mod && mod.__esModule ? mod : { "default": mod };
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.diffEpochValidators = exports2.findSeatPrice = void 0;
+    var depd_1 = __importDefault(require_depd());
+    var utils_1 = require_utils15();
+    function findSeatPrice(validators, maxNumberOfSeats, minimumStakeRatio, protocolVersion) {
+      if (protocolVersion && protocolVersion < 49) {
+        return findSeatPriceForProtocolBefore49(validators, maxNumberOfSeats);
+      }
+      if (!minimumStakeRatio) {
+        const deprecate2 = (0, depd_1.default)("findSeatPrice(validators, maxNumberOfSeats)");
+        deprecate2("`use `findSeatPrice(validators, maxNumberOfSeats, minimumStakeRatio)` instead");
+        minimumStakeRatio = [1, 6250];
+      }
+      return findSeatPriceForProtocolAfter49(validators, maxNumberOfSeats, minimumStakeRatio);
+    }
+    exports2.findSeatPrice = findSeatPrice;
+    function findSeatPriceForProtocolBefore49(validators, numSeats) {
+      const stakes = validators.map((v) => BigInt(v.stake)).sort(utils_1.sortBigIntAsc);
+      const num = BigInt(numSeats);
+      const stakesSum = stakes.reduce((a, b) => a + b);
+      if (stakesSum < num) {
+        throw new Error("Stakes are below seats");
+      }
+      let left = BigInt(1), right = stakesSum + BigInt(1);
+      while (left !== right - BigInt(1)) {
+        const mid = (left + right) / BigInt(2);
+        let found = false;
+        let currentSum = BigInt(0);
+        for (let i = 0; i < stakes.length; ++i) {
+          currentSum = currentSum + stakes[i] / mid;
+          if (currentSum >= num) {
+            left = mid;
+            found = true;
+            break;
+          }
+        }
+        if (!found) {
+          right = mid;
+        }
+      }
+      return left;
+    }
+    function findSeatPriceForProtocolAfter49(validators, maxNumberOfSeats, minimumStakeRatio) {
+      if (minimumStakeRatio.length != 2) {
+        throw Error("minimumStakeRatio should have 2 elements");
+      }
+      const stakes = validators.map((v) => BigInt(v.stake)).sort(utils_1.sortBigIntAsc);
+      const stakesSum = stakes.reduce((a, b) => a + b);
+      if (validators.length < maxNumberOfSeats) {
+        return stakesSum * BigInt(minimumStakeRatio[0]) / BigInt(minimumStakeRatio[1]);
+      } else {
+        return stakes[0] + BigInt(1);
+      }
+    }
+    function diffEpochValidators(currentValidators, nextValidators) {
+      const validatorsMap = /* @__PURE__ */ new Map();
+      currentValidators.forEach((v) => validatorsMap.set(v.account_id, v));
+      const nextValidatorsSet = new Set(nextValidators.map((v) => v.account_id));
+      return {
+        newValidators: nextValidators.filter((v) => !validatorsMap.has(v.account_id)),
+        removedValidators: currentValidators.filter((v) => !nextValidatorsSet.has(v.account_id)),
+        changedValidators: nextValidators.filter((v) => validatorsMap.has(v.account_id) && validatorsMap.get(v.account_id).stake != v.stake).map((v) => ({ current: validatorsMap.get(v.account_id), next: v }))
+      };
+    }
+    exports2.diffEpochValidators = diffEpochValidators;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/index.js
+var require_lib21 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/utils/lib/index.js"(exports2) {
+    "use strict";
+    var __createBinding = exports2 && exports2.__createBinding || (Object.create ? function(o, m, k, k2) {
+      if (k2 === void 0) k2 = k;
+      var desc = Object.getOwnPropertyDescriptor(m, k);
+      if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+        desc = { enumerable: true, get: function() {
+          return m[k];
+        } };
+      }
+      Object.defineProperty(o, k2, desc);
+    } : function(o, m, k, k2) {
+      if (k2 === void 0) k2 = k;
+      o[k2] = m[k];
+    });
+    var __exportStar = exports2 && exports2.__exportStar || function(m, exports3) {
+      for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports3, p)) __createBinding(exports3, m, p);
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    __exportStar(require_constants10(), exports2);
+    __exportStar(require_errors12(), exports2);
+    __exportStar(require_format5(), exports2);
+    __exportStar(require_logging4(), exports2);
+    __exportStar(require_provider7(), exports2);
+    __exportStar(require_validators5(), exports2);
+    __exportStar(require_logger9(), exports2);
+    __exportStar(require_utils15(), exports2);
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/crypto/lib/public_key.js
+var require_public_key4 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/crypto/lib/public_key.js"(exports2) {
+    "use strict";
+    var __importDefault = exports2 && exports2.__importDefault || function(mod) {
+      return mod && mod.__esModule ? mod : { "default": mod };
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.PublicKey = void 0;
+    var utils_1 = require_lib21();
+    var ed25519_1 = require_ed25519();
+    var secp256k1_1 = __importDefault(require_secp256k12());
+    var constants_1 = require_constants9();
+    var types_1 = require_lib();
+    function key_type_to_str(keyType) {
+      switch (keyType) {
+        case constants_1.KeyType.ED25519:
+          return "ed25519";
+        case constants_1.KeyType.SECP256K1:
+          return "secp256k1";
+        default:
+          throw new Error(`Unknown key type ${keyType}`);
+      }
+    }
+    function str_to_key_type(keyType) {
+      switch (keyType.toLowerCase()) {
+        case "ed25519":
+          return constants_1.KeyType.ED25519;
+        case "secp256k1":
+          return constants_1.KeyType.SECP256K1;
+        default:
+          throw new Error(`Unknown key type ${keyType}`);
+      }
+    }
+    var ED25519PublicKey = class extends types_1.Assignable {
+      constructor() {
+        super(...arguments);
+        this.keyType = constants_1.KeyType.ED25519;
+      }
+    };
+    var SECP256K1PublicKey = class extends types_1.Assignable {
+      constructor() {
+        super(...arguments);
+        this.keyType = constants_1.KeyType.SECP256K1;
+      }
+    };
+    var PublicKey = class _PublicKey extends types_1.Assignable {
+      constructor({ keyType, data }) {
+        super({});
+        if (keyType === constants_1.KeyType.ED25519) {
+          this.ed25519Key = { keyType, data };
+        } else if (keyType === constants_1.KeyType.SECP256K1) {
+          this.secp256k1Key = { keyType, data };
+        }
+      }
+      /**
+       * Creates a PublicKey instance from a string or an existing PublicKey instance.
+       * @param value The string or PublicKey instance to create a PublicKey from.
+       * @returns {PublicKey} The PublicKey instance.
+       */
+      static from(value) {
+        if (typeof value === "string") {
+          return _PublicKey.fromString(value);
+        }
+        return value;
+      }
+      /**
+       * Creates a PublicKey instance from an encoded key string.
+       * @param encodedKey The encoded key string.
+       * @returns {PublicKey} The PublicKey instance created from the encoded key string.
+       */
+      static fromString(encodedKey) {
+        const parts = encodedKey.split(":");
+        let publicKey;
+        let keyType;
+        if (parts.length === 1) {
+          publicKey = parts[0];
+        } else if (parts.length === 2) {
+          publicKey = parts[1];
+          keyType = str_to_key_type(parts[0]);
+        } else {
+          throw new Error("Invalid encoded key format, must be <curve>:<encoded key>");
+        }
+        const decodedPublicKey = (0, utils_1.baseDecode)(publicKey);
+        if (!keyType) {
+          keyType = decodedPublicKey.length === constants_1.KeySize.SECP256k1_PUBLIC_KEY ? constants_1.KeyType.SECP256K1 : constants_1.KeyType.ED25519;
+        }
+        const keySize = keyType === constants_1.KeyType.ED25519 ? constants_1.KeySize.ED25519_PUBLIC_KEY : constants_1.KeySize.SECP256k1_PUBLIC_KEY;
+        if (decodedPublicKey.length !== keySize) {
+          throw new Error(`Invalid public key size (${decodedPublicKey.length}), must be ${keySize}`);
+        }
+        return new _PublicKey({ keyType, data: decodedPublicKey });
+      }
+      /**
+       * Returns a string representation of the public key.
+       * @returns {string} The string representation of the public key.
+       */
+      toString() {
+        const encodedKey = (0, utils_1.baseEncode)(this.data);
+        return `${key_type_to_str(this.keyType)}:${encodedKey}`;
+      }
+      /**
+       * Verifies a message signature using the public key.
+       * @param message The message to be verified.
+       * @param signature The signature to be verified.
+       * @returns {boolean} `true` if the signature is valid, otherwise `false`.
+       */
+      verify(message2, signature) {
+        const keyType = this.keyType;
+        const data = this.data;
+        switch (keyType) {
+          case constants_1.KeyType.ED25519:
+            return ed25519_1.ed25519.verify(signature, message2, data);
+          case constants_1.KeyType.SECP256K1:
+            return secp256k1_1.default.ecdsaVerify(signature.subarray(0, 64), message2, new Uint8Array([4, ...data]));
+          default:
+            throw new Error(`Unknown key type: ${keyType}`);
+        }
+      }
+      get keyPair() {
+        return this.ed25519Key || this.secp256k1Key;
+      }
+      get keyType() {
+        return this.keyPair.keyType;
+      }
+      get data() {
+        return this.keyPair.data;
+      }
+    };
+    exports2.PublicKey = PublicKey;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/crypto/lib/key_pair_ed25519.js
+var require_key_pair_ed255194 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/crypto/lib/key_pair_ed25519.js"(exports2) {
+    "use strict";
+    var __importDefault = exports2 && exports2.__importDefault || function(mod) {
+      return mod && mod.__esModule ? mod : { "default": mod };
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.KeyPairEd25519 = void 0;
+    var utils_1 = require_lib21();
+    var ed25519_1 = require_ed25519();
+    var randombytes_1 = __importDefault(require_randombytes());
+    var constants_1 = require_constants9();
+    var key_pair_base_1 = require_key_pair_base4();
+    var public_key_1 = require_public_key4();
+    var KeyPairEd25519 = class _KeyPairEd25519 extends key_pair_base_1.KeyPairBase {
+      /**
+       * Construct an instance of key pair given a secret key.
+       * It's generally assumed that these are encoded in base58.
+       * @param extendedSecretKey
+       */
+      constructor(extendedSecretKey) {
+        super();
+        const decoded = (0, utils_1.baseDecode)(extendedSecretKey);
+        const secretKey = new Uint8Array(decoded.slice(0, constants_1.KeySize.SECRET_KEY));
+        const publicKey = ed25519_1.ed25519.getPublicKey(new Uint8Array(secretKey));
+        this.publicKey = new public_key_1.PublicKey({ keyType: constants_1.KeyType.ED25519, data: publicKey });
+        this.secretKey = (0, utils_1.baseEncode)(secretKey);
+        this.extendedSecretKey = extendedSecretKey;
+      }
+      /**
+       * Generate a new random keypair.
+       * @example
+       * const keyRandom = KeyPair.fromRandom();
+       * keyRandom.publicKey
+       * // returns [PUBLIC_KEY]
+       *
+       * keyRandom.secretKey
+       * // returns [SECRET_KEY]
+       */
+      static fromRandom() {
+        const secretKey = (0, randombytes_1.default)(constants_1.KeySize.SECRET_KEY);
+        const publicKey = ed25519_1.ed25519.getPublicKey(new Uint8Array(secretKey));
+        const extendedSecretKey = new Uint8Array([...secretKey, ...publicKey]);
+        return new _KeyPairEd25519((0, utils_1.baseEncode)(extendedSecretKey));
+      }
+      /**
+       * Signs a message using the key pair's secret key.
+       * @param message The message to be signed.
+       * @returns {Signature} The signature object containing the signature and the public key.
+       */
+      sign(message2) {
+        const signature = ed25519_1.ed25519.sign(message2, (0, utils_1.baseDecode)(this.secretKey));
+        return { signature, publicKey: this.publicKey };
+      }
+      /**
+       * Verifies the signature of a message using the key pair's public key.
+       * @param message The message to be verified.
+       * @param signature The signature to be verified.
+       * @returns {boolean} `true` if the signature is valid, otherwise `false`.
+       */
+      verify(message2, signature) {
+        return this.publicKey.verify(message2, signature);
+      }
+      /**
+       * Returns a string representation of the key pair in the format 'ed25519:[extendedSecretKey]'.
+       * @returns {string} The string representation of the key pair.
+       */
+      toString() {
+        return `ed25519:${this.extendedSecretKey}`;
+      }
+      /**
+       * Retrieves the public key associated with the key pair.
+       * @returns {PublicKey} The public key.
+       */
+      getPublicKey() {
+        return this.publicKey;
+      }
+    };
+    exports2.KeyPairEd25519 = KeyPairEd25519;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/crypto/lib/key_pair_secp256k1.js
+var require_key_pair_secp256k14 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/crypto/lib/key_pair_secp256k1.js"(exports2) {
+    "use strict";
+    var __importDefault = exports2 && exports2.__importDefault || function(mod) {
+      return mod && mod.__esModule ? mod : { "default": mod };
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.KeyPairSecp256k1 = void 0;
+    var constants_1 = require_constants9();
+    var key_pair_base_1 = require_key_pair_base4();
+    var public_key_1 = require_public_key4();
+    var secp256k1_1 = __importDefault(require_secp256k12());
+    var randombytes_1 = __importDefault(require_randombytes());
+    var utils_1 = require_lib21();
+    var KeyPairSecp256k1 = class _KeyPairSecp256k1 extends key_pair_base_1.KeyPairBase {
+      /**
+       * Construct an instance of key pair given a secret key.
+       * It's generally assumed that these are encoded in base58.
+       * @param {string} extendedSecretKey
+       */
+      constructor(extendedSecretKey) {
+        super();
+        const decoded = (0, utils_1.baseDecode)(extendedSecretKey);
+        const secretKey = new Uint8Array(decoded.slice(0, constants_1.KeySize.SECRET_KEY));
+        const withHeader = secp256k1_1.default.publicKeyCreate(new Uint8Array(secretKey), false);
+        const data = withHeader.subarray(1, withHeader.length);
+        this.publicKey = new public_key_1.PublicKey({
+          keyType: constants_1.KeyType.SECP256K1,
+          data
+        });
+        this.secretKey = (0, utils_1.baseEncode)(secretKey);
+        this.extendedSecretKey = extendedSecretKey;
+      }
+      /**
+       * Generate a new random keypair.
+       * @example
+       * const keyRandom = KeyPair.fromRandom();
+       * keyRandom.publicKey
+       * // returns [PUBLIC_KEY]
+       *
+       * keyRandom.secretKey
+       * // returns [SECRET_KEY]
+       */
+      static fromRandom() {
+        const secretKey = (0, randombytes_1.default)(constants_1.KeySize.SECRET_KEY);
+        const withHeader = secp256k1_1.default.publicKeyCreate(new Uint8Array(secretKey), false);
+        const publicKey = withHeader.subarray(1, withHeader.length);
+        const extendedSecretKey = new Uint8Array([...secretKey, ...publicKey]);
+        return new _KeyPairSecp256k1((0, utils_1.baseEncode)(extendedSecretKey));
+      }
+      sign(message2) {
+        const { signature, recid } = secp256k1_1.default.ecdsaSign(message2, (0, utils_1.baseDecode)(this.secretKey));
+        return { signature: new Uint8Array([...signature, recid]), publicKey: this.publicKey };
+      }
+      verify(message2, signature) {
+        return this.publicKey.verify(message2, signature);
+      }
+      toString() {
+        return `secp256k1:${this.extendedSecretKey}`;
+      }
+      getPublicKey() {
+        return this.publicKey;
+      }
+    };
+    exports2.KeyPairSecp256k1 = KeyPairSecp256k1;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/crypto/lib/key_pair.js
+var require_key_pair5 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/crypto/lib/key_pair.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.KeyPair = void 0;
+    var key_pair_base_1 = require_key_pair_base4();
+    var key_pair_ed25519_1 = require_key_pair_ed255194();
+    var key_pair_secp256k1_1 = require_key_pair_secp256k14();
+    var KeyPair = class extends key_pair_base_1.KeyPairBase {
+      /**
+       * @param curve Name of elliptical curve, case-insensitive
+       * @returns Random KeyPair based on the curve
+       */
+      static fromRandom(curve) {
+        switch (curve.toUpperCase()) {
+          case "ED25519":
+            return key_pair_ed25519_1.KeyPairEd25519.fromRandom();
+          case "SECP256K1":
+            return key_pair_secp256k1_1.KeyPairSecp256k1.fromRandom();
+          default:
+            throw new Error(`Unknown curve ${curve}`);
+        }
+      }
+      /**
+       * Creates a key pair from an encoded key string.
+       * @param encodedKey The encoded key string.
+       * @returns {KeyPair} The key pair created from the encoded key string.
+       */
+      static fromString(encodedKey) {
+        const parts = encodedKey.split(":");
+        if (parts.length === 2) {
+          switch (parts[0].toUpperCase()) {
+            case "ED25519":
+              return new key_pair_ed25519_1.KeyPairEd25519(parts[1]);
+            case "SECP256K1":
+              return new key_pair_secp256k1_1.KeyPairSecp256k1(parts[1]);
+            default:
+              throw new Error(`Unknown curve: ${parts[0]}`);
+          }
+        } else {
+          throw new Error("Invalid encoded key format, must be <curve>:<encoded key>");
+        }
+      }
+    };
+    exports2.KeyPair = KeyPair;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/crypto/lib/index.js
+var require_lib22 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/crypto/lib/index.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.PublicKey = exports2.KeyPairSecp256k1 = exports2.KeyPairEd25519 = exports2.KeyPair = exports2.KeyType = void 0;
+    var constants_1 = require_constants9();
+    Object.defineProperty(exports2, "KeyType", { enumerable: true, get: function() {
+      return constants_1.KeyType;
+    } });
+    var key_pair_1 = require_key_pair5();
+    Object.defineProperty(exports2, "KeyPair", { enumerable: true, get: function() {
+      return key_pair_1.KeyPair;
+    } });
+    var key_pair_ed25519_1 = require_key_pair_ed255194();
+    Object.defineProperty(exports2, "KeyPairEd25519", { enumerable: true, get: function() {
+      return key_pair_ed25519_1.KeyPairEd25519;
+    } });
+    var key_pair_secp256k1_1 = require_key_pair_secp256k14();
+    Object.defineProperty(exports2, "KeyPairSecp256k1", { enumerable: true, get: function() {
+      return key_pair_secp256k1_1.KeyPairSecp256k1;
+    } });
+    var public_key_1 = require_public_key4();
+    Object.defineProperty(exports2, "PublicKey", { enumerable: true, get: function() {
+      return public_key_1.PublicKey;
+    } });
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/providers/lib/exponential-backoff.js
+var require_exponential_backoff2 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/providers/lib/exponential-backoff.js"(exports2) {
+    "use strict";
+    var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.exponentialBackoff = void 0;
+    function exponentialBackoff(startWaitTime, retryNumber, waitBackoff, getResult) {
+      return __awaiter(this, void 0, void 0, function* () {
+        let waitTime = startWaitTime;
+        for (let i = 0; i < retryNumber; i++) {
+          const result = yield getResult();
+          if (result) {
+            return result;
+          }
+          yield sleep(waitTime);
+          waitTime *= waitBackoff;
+        }
+        return null;
+      });
+    }
+    exports2.exponentialBackoff = exponentialBackoff;
+    function sleep(millis) {
+      return new Promise((resolve) => setTimeout(resolve, millis));
+    }
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/transactions/lib/actions.js
+var require_actions2 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/transactions/lib/actions.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.Action = exports2.SignedDelegate = exports2.DeleteAccount = exports2.DeleteKey = exports2.AddKey = exports2.Stake = exports2.Transfer = exports2.FunctionCall = exports2.DeployContract = exports2.CreateAccount = exports2.IAction = exports2.AccessKey = exports2.AccessKeyPermission = exports2.FullAccessPermission = exports2.FunctionCallPermission = void 0;
+    var types_1 = require_lib();
+    var Enum = class {
+      constructor(properties) {
+        if (Object.keys(properties).length !== 1) {
+          throw new Error("Enum can only take single value");
+        }
+        Object.keys(properties).map((key) => {
+          this[key] = properties[key];
+          this.enum = key;
+        });
+      }
+    };
+    var FunctionCallPermission = class extends types_1.Assignable {
+    };
+    exports2.FunctionCallPermission = FunctionCallPermission;
+    var FullAccessPermission = class extends types_1.Assignable {
+    };
+    exports2.FullAccessPermission = FullAccessPermission;
+    var AccessKeyPermission = class extends Enum {
+    };
+    exports2.AccessKeyPermission = AccessKeyPermission;
+    var AccessKey = class extends types_1.Assignable {
+    };
+    exports2.AccessKey = AccessKey;
+    var IAction = class extends types_1.Assignable {
+    };
+    exports2.IAction = IAction;
+    var CreateAccount = class extends IAction {
+    };
+    exports2.CreateAccount = CreateAccount;
+    var DeployContract = class extends IAction {
+    };
+    exports2.DeployContract = DeployContract;
+    var FunctionCall = class extends IAction {
+    };
+    exports2.FunctionCall = FunctionCall;
+    var Transfer = class extends IAction {
+    };
+    exports2.Transfer = Transfer;
+    var Stake = class extends IAction {
+    };
+    exports2.Stake = Stake;
+    var AddKey = class extends IAction {
+    };
+    exports2.AddKey = AddKey;
+    var DeleteKey = class extends IAction {
+    };
+    exports2.DeleteKey = DeleteKey;
+    var DeleteAccount = class extends IAction {
+    };
+    exports2.DeleteAccount = DeleteAccount;
+    var SignedDelegate = class extends IAction {
+    };
+    exports2.SignedDelegate = SignedDelegate;
+    var Action = class extends Enum {
+    };
+    exports2.Action = Action;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/transactions/lib/action_creators.js
+var require_action_creators2 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/transactions/lib/action_creators.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.actionCreators = exports2.stringifyJsonOrBytes = void 0;
+    var actions_1 = require_actions2();
+    function fullAccessKey() {
+      return new actions_1.AccessKey({
+        nonce: 0,
+        permission: new actions_1.AccessKeyPermission({
+          fullAccess: new actions_1.FullAccessPermission({})
+        })
+      });
+    }
+    function functionCallAccessKey(receiverId, methodNames, allowance) {
+      return new actions_1.AccessKey({
+        nonce: 0,
+        permission: new actions_1.AccessKeyPermission({
+          functionCall: new actions_1.FunctionCallPermission({
+            receiverId,
+            allowance,
+            methodNames
+          })
+        })
+      });
+    }
+    function createAccount() {
+      return new actions_1.Action({ createAccount: new actions_1.CreateAccount({}) });
+    }
+    function deployContract(code) {
+      return new actions_1.Action({ deployContract: new actions_1.DeployContract({ code }) });
+    }
+    function stringifyJsonOrBytes(args2) {
+      const isUint8Array = args2.byteLength !== void 0 && args2.byteLength === args2.length;
+      return isUint8Array ? args2 : Buffer.from(JSON.stringify(args2));
+    }
+    exports2.stringifyJsonOrBytes = stringifyJsonOrBytes;
+    function functionCall(methodName, args2, gas = BigInt(0), deposit = BigInt(0), stringify = stringifyJsonOrBytes, jsContract = false) {
+      if (jsContract) {
+        return new actions_1.Action({
+          functionCall: new actions_1.FunctionCall({ methodName, args: args2, gas, deposit })
+        });
+      }
+      return new actions_1.Action({
+        functionCall: new actions_1.FunctionCall({
+          methodName,
+          args: stringify(args2),
+          gas,
+          deposit
+        })
+      });
+    }
+    function transfer(deposit = BigInt(0)) {
+      return new actions_1.Action({ transfer: new actions_1.Transfer({ deposit }) });
+    }
+    function stake(stake2 = BigInt(0), publicKey) {
+      return new actions_1.Action({ stake: new actions_1.Stake({ stake: stake2, publicKey }) });
+    }
+    function addKey(publicKey, accessKey) {
+      return new actions_1.Action({ addKey: new actions_1.AddKey({ publicKey, accessKey }) });
+    }
+    function deleteKey(publicKey) {
+      return new actions_1.Action({ deleteKey: new actions_1.DeleteKey({ publicKey }) });
+    }
+    function deleteAccount(beneficiaryId) {
+      return new actions_1.Action({ deleteAccount: new actions_1.DeleteAccount({ beneficiaryId }) });
+    }
+    function signedDelegate({ delegateAction, signature }) {
+      return new actions_1.Action({
+        signedDelegate: new actions_1.SignedDelegate({ delegateAction, signature })
+      });
+    }
+    exports2.actionCreators = {
+      addKey,
+      createAccount,
+      deleteAccount,
+      deleteKey,
+      deployContract,
+      fullAccessKey,
+      functionCall,
+      functionCallAccessKey,
+      signedDelegate,
+      stake,
+      transfer
+    };
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/borsh/lib/cjs/types.js
+var require_types4 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/borsh/lib/cjs/types.js"(exports2) {
+    "use strict";
+    exports2.__esModule = true;
+    exports2.integers = void 0;
+    exports2.integers = ["u8", "u16", "u32", "u64", "u128", "i8", "i16", "i32", "i64", "i128", "f32", "f64"];
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/borsh/lib/cjs/buffer.js
+var require_buffer2 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/borsh/lib/cjs/buffer.js"(exports2) {
+    "use strict";
+    exports2.__esModule = true;
+    exports2.DecodeBuffer = exports2.EncodeBuffer = void 0;
+    var EncodeBuffer = (
+      /** @class */
+      function() {
+        function EncodeBuffer2() {
+          this.offset = 0;
+          this.buffer_size = 256;
+          this.buffer = new ArrayBuffer(this.buffer_size);
+          this.view = new DataView(this.buffer);
+        }
+        EncodeBuffer2.prototype.resize_if_necessary = function(needed_space) {
+          if (this.buffer_size - this.offset < needed_space) {
+            this.buffer_size = Math.max(this.buffer_size * 2, this.buffer_size + needed_space);
+            var new_buffer = new ArrayBuffer(this.buffer_size);
+            new Uint8Array(new_buffer).set(new Uint8Array(this.buffer));
+            this.buffer = new_buffer;
+            this.view = new DataView(new_buffer);
+          }
+        };
+        EncodeBuffer2.prototype.get_used_buffer = function() {
+          return new Uint8Array(this.buffer).slice(0, this.offset);
+        };
+        EncodeBuffer2.prototype.store_value = function(value, type) {
+          var bSize = type.substring(1);
+          var size = parseInt(bSize) / 8;
+          this.resize_if_necessary(size);
+          var toCall = type[0] === "f" ? "setFloat".concat(bSize) : type[0] === "i" ? "setInt".concat(bSize) : "setUint".concat(bSize);
+          this.view[toCall](this.offset, value, true);
+          this.offset += size;
+        };
+        EncodeBuffer2.prototype.store_bytes = function(from) {
+          this.resize_if_necessary(from.length);
+          new Uint8Array(this.buffer).set(new Uint8Array(from), this.offset);
+          this.offset += from.length;
+        };
+        return EncodeBuffer2;
+      }()
+    );
+    exports2.EncodeBuffer = EncodeBuffer;
+    var DecodeBuffer = (
+      /** @class */
+      function() {
+        function DecodeBuffer2(buf) {
+          this.offset = 0;
+          this.buffer_size = buf.length;
+          this.buffer = new ArrayBuffer(buf.length);
+          new Uint8Array(this.buffer).set(buf);
+          this.view = new DataView(this.buffer);
+        }
+        DecodeBuffer2.prototype.assert_enough_buffer = function(size) {
+          if (this.offset + size > this.buffer.byteLength) {
+            throw new Error("Error in schema, the buffer is smaller than expected");
+          }
+        };
+        DecodeBuffer2.prototype.consume_value = function(type) {
+          var bSize = type.substring(1);
+          var size = parseInt(bSize) / 8;
+          this.assert_enough_buffer(size);
+          var toCall = type[0] === "f" ? "getFloat".concat(bSize) : type[0] === "i" ? "getInt".concat(bSize) : "getUint".concat(bSize);
+          var ret = this.view[toCall](this.offset, true);
+          this.offset += size;
+          return ret;
+        };
+        DecodeBuffer2.prototype.consume_bytes = function(size) {
+          this.assert_enough_buffer(size);
+          var ret = this.buffer.slice(this.offset, this.offset + size);
+          this.offset += size;
+          return ret;
+        };
+        return DecodeBuffer2;
+      }()
+    );
+    exports2.DecodeBuffer = DecodeBuffer;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/borsh/lib/cjs/utils.js
+var require_utils16 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/borsh/lib/cjs/utils.js"(exports2) {
+    "use strict";
+    var __extends2 = exports2 && exports2.__extends || /* @__PURE__ */ function() {
+      var extendStatics2 = function(d, b) {
+        extendStatics2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
+          d2.__proto__ = b2;
+        } || function(d2, b2) {
+          for (var p in b2) if (Object.prototype.hasOwnProperty.call(b2, p)) d2[p] = b2[p];
+        };
+        return extendStatics2(d, b);
+      };
+      return function(d, b) {
+        if (typeof b !== "function" && b !== null)
+          throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics2(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    exports2.__esModule = true;
+    exports2.validate_schema = exports2.ErrorSchema = exports2.expect_enum = exports2.expect_same_size = exports2.expect_bigint = exports2.expect_type = exports2.isArrayLike = void 0;
+    var types_js_1 = require_types4();
+    function isArrayLike(value) {
+      return Array.isArray(value) || !!value && typeof value === "object" && "length" in value && typeof value.length === "number" && (value.length === 0 || value.length > 0 && value.length - 1 in value);
+    }
+    exports2.isArrayLike = isArrayLike;
+    function expect_type(value, type, fieldPath) {
+      if (typeof value !== type) {
+        throw new Error("Expected ".concat(type, " not ").concat(typeof value, "(").concat(value, ") at ").concat(fieldPath.join(".")));
+      }
+    }
+    exports2.expect_type = expect_type;
+    function expect_bigint(value, fieldPath) {
+      var basicType = ["number", "string", "bigint", "boolean"].includes(typeof value);
+      var strObject = typeof value === "object" && value !== null && "toString" in value;
+      if (!basicType && !strObject) {
+        throw new Error("Expected bigint, number, boolean or string not ".concat(typeof value, "(").concat(value, ") at ").concat(fieldPath.join(".")));
+      }
+    }
+    exports2.expect_bigint = expect_bigint;
+    function expect_same_size(length, expected, fieldPath) {
+      if (length !== expected) {
+        throw new Error("Array length ".concat(length, " does not match schema length ").concat(expected, " at ").concat(fieldPath.join(".")));
+      }
+    }
+    exports2.expect_same_size = expect_same_size;
+    function expect_enum(value, fieldPath) {
+      if (typeof value !== "object" || value === null) {
+        throw new Error("Expected object not ".concat(typeof value, "(").concat(value, ") at ").concat(fieldPath.join(".")));
+      }
+    }
+    exports2.expect_enum = expect_enum;
+    var VALID_STRING_TYPES = types_js_1.integers.concat(["bool", "string"]);
+    var VALID_OBJECT_KEYS = ["option", "enum", "array", "set", "map", "struct"];
+    var ErrorSchema = (
+      /** @class */
+      function(_super) {
+        __extends2(ErrorSchema2, _super);
+        function ErrorSchema2(schema, expected) {
+          var message2 = "Invalid schema: ".concat(JSON.stringify(schema), " expected ").concat(expected);
+          return _super.call(this, message2) || this;
+        }
+        return ErrorSchema2;
+      }(Error)
+    );
+    exports2.ErrorSchema = ErrorSchema;
+    function validate_schema(schema) {
+      if (typeof schema === "string" && VALID_STRING_TYPES.includes(schema)) {
+        return;
+      }
+      if (schema && typeof schema === "object") {
+        var keys = Object.keys(schema);
+        if (keys.length === 1 && VALID_OBJECT_KEYS.includes(keys[0])) {
+          var key = keys[0];
+          if (key === "option")
+            return validate_schema(schema[key]);
+          if (key === "enum")
+            return validate_enum_schema(schema[key]);
+          if (key === "array")
+            return validate_array_schema(schema[key]);
+          if (key === "set")
+            return validate_schema(schema[key]);
+          if (key === "map")
+            return validate_map_schema(schema[key]);
+          if (key === "struct")
+            return validate_struct_schema(schema[key]);
+        }
+      }
+      throw new ErrorSchema(schema, VALID_OBJECT_KEYS.join(", ") + " or " + VALID_STRING_TYPES.join(", "));
+    }
+    exports2.validate_schema = validate_schema;
+    function validate_enum_schema(schema) {
+      if (!Array.isArray(schema))
+        throw new ErrorSchema(schema, "Array");
+      for (var _i = 0, schema_1 = schema; _i < schema_1.length; _i++) {
+        var sch = schema_1[_i];
+        if (typeof sch !== "object" || !("struct" in sch)) {
+          throw new Error('Missing "struct" key in enum schema');
+        }
+        if (typeof sch.struct !== "object" || Object.keys(sch.struct).length !== 1) {
+          throw new Error('The "struct" in each enum must have a single key');
+        }
+        validate_schema({ struct: sch.struct });
+      }
+    }
+    function validate_array_schema(schema) {
+      if (typeof schema !== "object")
+        throw new ErrorSchema(schema, "{ type, len? }");
+      if (schema.len && typeof schema.len !== "number") {
+        throw new Error("Invalid schema: ".concat(schema));
+      }
+      if ("type" in schema)
+        return validate_schema(schema.type);
+      throw new ErrorSchema(schema, "{ type, len? }");
+    }
+    function validate_map_schema(schema) {
+      if (typeof schema === "object" && "key" in schema && "value" in schema) {
+        validate_schema(schema.key);
+        validate_schema(schema.value);
+      } else {
+        throw new ErrorSchema(schema, "{ key, value }");
+      }
+    }
+    function validate_struct_schema(schema) {
+      if (typeof schema !== "object")
+        throw new ErrorSchema(schema, "object");
+      for (var key in schema) {
+        validate_schema(schema[key]);
+      }
+    }
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/borsh/lib/cjs/serialize.js
+var require_serialize3 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/borsh/lib/cjs/serialize.js"(exports2) {
+    "use strict";
+    var __createBinding = exports2 && exports2.__createBinding || (Object.create ? function(o, m, k, k2) {
+      if (k2 === void 0) k2 = k;
+      var desc = Object.getOwnPropertyDescriptor(m, k);
+      if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+        desc = { enumerable: true, get: function() {
+          return m[k];
+        } };
+      }
+      Object.defineProperty(o, k2, desc);
+    } : function(o, m, k, k2) {
+      if (k2 === void 0) k2 = k;
+      o[k2] = m[k];
+    });
+    var __setModuleDefault = exports2 && exports2.__setModuleDefault || (Object.create ? function(o, v) {
+      Object.defineProperty(o, "default", { enumerable: true, value: v });
+    } : function(o, v) {
+      o["default"] = v;
+    });
+    var __importStar = exports2 && exports2.__importStar || function(mod) {
+      if (mod && mod.__esModule) return mod;
+      var result = {};
+      if (mod != null) {
+        for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+      }
+      __setModuleDefault(result, mod);
+      return result;
+    };
+    exports2.__esModule = true;
+    exports2.BorshSerializer = void 0;
+    var types_js_1 = require_types4();
+    var buffer_js_1 = require_buffer2();
+    var utils = __importStar(require_utils16());
+    var BorshSerializer = (
+      /** @class */
+      function() {
+        function BorshSerializer2(checkTypes) {
+          this.encoded = new buffer_js_1.EncodeBuffer();
+          this.fieldPath = ["value"];
+          this.checkTypes = checkTypes;
+        }
+        BorshSerializer2.prototype.encode = function(value, schema) {
+          this.encode_value(value, schema);
+          return this.encoded.get_used_buffer();
+        };
+        BorshSerializer2.prototype.encode_value = function(value, schema) {
+          if (typeof schema === "string") {
+            if (types_js_1.integers.includes(schema))
+              return this.encode_integer(value, schema);
+            if (schema === "string")
+              return this.encode_string(value);
+            if (schema === "bool")
+              return this.encode_boolean(value);
+          }
+          if (typeof schema === "object") {
+            if ("option" in schema)
+              return this.encode_option(value, schema);
+            if ("enum" in schema)
+              return this.encode_enum(value, schema);
+            if ("array" in schema)
+              return this.encode_array(value, schema);
+            if ("set" in schema)
+              return this.encode_set(value, schema);
+            if ("map" in schema)
+              return this.encode_map(value, schema);
+            if ("struct" in schema)
+              return this.encode_struct(value, schema);
+          }
+        };
+        BorshSerializer2.prototype.encode_integer = function(value, schema) {
+          var size = parseInt(schema.substring(1));
+          if (size <= 32 || schema == "f64") {
+            this.checkTypes && utils.expect_type(value, "number", this.fieldPath);
+            this.encoded.store_value(value, schema);
+          } else {
+            this.checkTypes && utils.expect_bigint(value, this.fieldPath);
+            this.encode_bigint(BigInt(value), size);
+          }
+        };
+        BorshSerializer2.prototype.encode_bigint = function(value, size) {
+          var buffer_len = size / 8;
+          var buffer = new Uint8Array(buffer_len);
+          for (var i = 0; i < buffer_len; i++) {
+            buffer[i] = Number(value & BigInt(255));
+            value = value >> BigInt(8);
+          }
+          this.encoded.store_bytes(new Uint8Array(buffer));
+        };
+        BorshSerializer2.prototype.encode_string = function(value) {
+          this.checkTypes && utils.expect_type(value, "string", this.fieldPath);
+          var _value = value;
+          this.encoded.store_value(_value.length, "u32");
+          for (var i = 0; i < _value.length; i++) {
+            this.encoded.store_value(_value.charCodeAt(i), "u8");
+          }
+        };
+        BorshSerializer2.prototype.encode_boolean = function(value) {
+          this.checkTypes && utils.expect_type(value, "boolean", this.fieldPath);
+          this.encoded.store_value(value ? 1 : 0, "u8");
+        };
+        BorshSerializer2.prototype.encode_option = function(value, schema) {
+          if (value === null || value === void 0) {
+            this.encoded.store_value(0, "u8");
+          } else {
+            this.encoded.store_value(1, "u8");
+            this.encode_value(value, schema.option);
+          }
+        };
+        BorshSerializer2.prototype.encode_enum = function(value, schema) {
+          this.checkTypes && utils.expect_enum(value, this.fieldPath);
+          var valueKey = Object.keys(value)[0];
+          for (var i = 0; i < schema["enum"].length; i++) {
+            var valueSchema = schema["enum"][i];
+            if (valueKey === Object.keys(valueSchema.struct)[0]) {
+              this.encoded.store_value(i, "u8");
+              return this.encode_struct(value, valueSchema);
+            }
+          }
+          throw new Error("Enum key (".concat(valueKey, ") not found in enum schema: ").concat(JSON.stringify(schema), " at ").concat(this.fieldPath.join(".")));
+        };
+        BorshSerializer2.prototype.encode_array = function(value, schema) {
+          if (utils.isArrayLike(value))
+            return this.encode_arraylike(value, schema);
+          if (value instanceof ArrayBuffer)
+            return this.encode_buffer(value, schema);
+          throw new Error("Expected Array-like not ".concat(typeof value, "(").concat(value, ") at ").concat(this.fieldPath.join(".")));
+        };
+        BorshSerializer2.prototype.encode_arraylike = function(value, schema) {
+          if (schema.array.len) {
+            utils.expect_same_size(value.length, schema.array.len, this.fieldPath);
+          } else {
+            this.encoded.store_value(value.length, "u32");
+          }
+          for (var i = 0; i < value.length; i++) {
+            this.encode_value(value[i], schema.array.type);
+          }
+        };
+        BorshSerializer2.prototype.encode_buffer = function(value, schema) {
+          if (schema.array.len) {
+            utils.expect_same_size(value.byteLength, schema.array.len, this.fieldPath);
+          } else {
+            this.encoded.store_value(value.byteLength, "u32");
+          }
+          this.encoded.store_bytes(new Uint8Array(value));
+        };
+        BorshSerializer2.prototype.encode_set = function(value, schema) {
+          this.checkTypes && utils.expect_type(value, "object", this.fieldPath);
+          var isSet = value instanceof Set;
+          var values = isSet ? Array.from(value.values()) : Object.values(value);
+          this.encoded.store_value(values.length, "u32");
+          for (var _i = 0, values_1 = values; _i < values_1.length; _i++) {
+            var value_1 = values_1[_i];
+            this.encode_value(value_1, schema.set);
+          }
+        };
+        BorshSerializer2.prototype.encode_map = function(value, schema) {
+          this.checkTypes && utils.expect_type(value, "object", this.fieldPath);
+          var isMap = value instanceof Map;
+          var keys = isMap ? Array.from(value.keys()) : Object.keys(value);
+          this.encoded.store_value(keys.length, "u32");
+          for (var _i = 0, keys_1 = keys; _i < keys_1.length; _i++) {
+            var key = keys_1[_i];
+            this.encode_value(key, schema.map.key);
+            this.encode_value(isMap ? value.get(key) : value[key], schema.map.value);
+          }
+        };
+        BorshSerializer2.prototype.encode_struct = function(value, schema) {
+          this.checkTypes && utils.expect_type(value, "object", this.fieldPath);
+          for (var _i = 0, _a = Object.keys(schema.struct); _i < _a.length; _i++) {
+            var key = _a[_i];
+            this.fieldPath.push(key);
+            this.encode_value(value[key], schema.struct[key]);
+            this.fieldPath.pop();
+          }
+        };
+        return BorshSerializer2;
+      }()
+    );
+    exports2.BorshSerializer = BorshSerializer;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/borsh/lib/cjs/deserialize.js
+var require_deserialize2 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/borsh/lib/cjs/deserialize.js"(exports2) {
+    "use strict";
+    exports2.__esModule = true;
+    exports2.BorshDeserializer = void 0;
+    var types_js_1 = require_types4();
+    var buffer_js_1 = require_buffer2();
+    var BorshDeserializer = (
+      /** @class */
+      function() {
+        function BorshDeserializer2(bufferArray) {
+          this.buffer = new buffer_js_1.DecodeBuffer(bufferArray);
+        }
+        BorshDeserializer2.prototype.decode = function(schema) {
+          return this.decode_value(schema);
+        };
+        BorshDeserializer2.prototype.decode_value = function(schema) {
+          if (typeof schema === "string") {
+            if (types_js_1.integers.includes(schema))
+              return this.decode_integer(schema);
+            if (schema === "string")
+              return this.decode_string();
+            if (schema === "bool")
+              return this.decode_boolean();
+          }
+          if (typeof schema === "object") {
+            if ("option" in schema)
+              return this.decode_option(schema);
+            if ("enum" in schema)
+              return this.decode_enum(schema);
+            if ("array" in schema)
+              return this.decode_array(schema);
+            if ("set" in schema)
+              return this.decode_set(schema);
+            if ("map" in schema)
+              return this.decode_map(schema);
+            if ("struct" in schema)
+              return this.decode_struct(schema);
+          }
+          throw new Error("Unsupported type: ".concat(schema));
+        };
+        BorshDeserializer2.prototype.decode_integer = function(schema) {
+          var size = parseInt(schema.substring(1));
+          if (size <= 32 || schema == "f64") {
+            return this.buffer.consume_value(schema);
+          }
+          return this.decode_bigint(size, schema.startsWith("i"));
+        };
+        BorshDeserializer2.prototype.decode_bigint = function(size, signed) {
+          if (signed === void 0) {
+            signed = false;
+          }
+          var buffer_len = size / 8;
+          var buffer = new Uint8Array(this.buffer.consume_bytes(buffer_len));
+          var bits = buffer.reduceRight(function(r, x) {
+            return r + x.toString(16).padStart(2, "0");
+          }, "");
+          if (signed && buffer[buffer_len - 1]) {
+            return BigInt.asIntN(size, BigInt("0x".concat(bits)));
+          }
+          return BigInt("0x".concat(bits));
+        };
+        BorshDeserializer2.prototype.decode_string = function() {
+          var len = this.decode_integer("u32");
+          var buffer = new Uint8Array(this.buffer.consume_bytes(len));
+          return String.fromCharCode.apply(null, buffer);
+        };
+        BorshDeserializer2.prototype.decode_boolean = function() {
+          return this.buffer.consume_value("u8") > 0;
+        };
+        BorshDeserializer2.prototype.decode_option = function(schema) {
+          var option = this.buffer.consume_value("u8");
+          if (option === 1) {
+            return this.decode_value(schema.option);
+          }
+          if (option !== 0) {
+            throw new Error("Invalid option ".concat(option));
+          }
+          return null;
+        };
+        BorshDeserializer2.prototype.decode_enum = function(schema) {
+          var _a;
+          var valueIndex = this.buffer.consume_value("u8");
+          if (valueIndex > schema["enum"].length) {
+            throw new Error("Enum option ".concat(valueIndex, " is not available"));
+          }
+          var struct = schema["enum"][valueIndex].struct;
+          var key = Object.keys(struct)[0];
+          return _a = {}, _a[key] = this.decode_value(struct[key]), _a;
+        };
+        BorshDeserializer2.prototype.decode_array = function(schema) {
+          var result = [];
+          var len = schema.array.len ? schema.array.len : this.decode_integer("u32");
+          for (var i = 0; i < len; ++i) {
+            result.push(this.decode_value(schema.array.type));
+          }
+          return result;
+        };
+        BorshDeserializer2.prototype.decode_set = function(schema) {
+          var len = this.decode_integer("u32");
+          var result = /* @__PURE__ */ new Set();
+          for (var i = 0; i < len; ++i) {
+            result.add(this.decode_value(schema.set));
+          }
+          return result;
+        };
+        BorshDeserializer2.prototype.decode_map = function(schema) {
+          var len = this.decode_integer("u32");
+          var result = /* @__PURE__ */ new Map();
+          for (var i = 0; i < len; ++i) {
+            var key = this.decode_value(schema.map.key);
+            var value = this.decode_value(schema.map.value);
+            result.set(key, value);
+          }
+          return result;
+        };
+        BorshDeserializer2.prototype.decode_struct = function(schema) {
+          var result = {};
+          for (var key in schema.struct) {
+            result[key] = this.decode_value(schema.struct[key]);
+          }
+          return result;
+        };
+        return BorshDeserializer2;
+      }()
+    );
+    exports2.BorshDeserializer = BorshDeserializer;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/borsh/lib/cjs/index.js
+var require_cjs2 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/borsh/lib/cjs/index.js"(exports2) {
+    "use strict";
+    var __createBinding = exports2 && exports2.__createBinding || (Object.create ? function(o, m, k, k2) {
+      if (k2 === void 0) k2 = k;
+      var desc = Object.getOwnPropertyDescriptor(m, k);
+      if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+        desc = { enumerable: true, get: function() {
+          return m[k];
+        } };
+      }
+      Object.defineProperty(o, k2, desc);
+    } : function(o, m, k, k2) {
+      if (k2 === void 0) k2 = k;
+      o[k2] = m[k];
+    });
+    var __setModuleDefault = exports2 && exports2.__setModuleDefault || (Object.create ? function(o, v) {
+      Object.defineProperty(o, "default", { enumerable: true, value: v });
+    } : function(o, v) {
+      o["default"] = v;
+    });
+    var __importStar = exports2 && exports2.__importStar || function(mod) {
+      if (mod && mod.__esModule) return mod;
+      var result = {};
+      if (mod != null) {
+        for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+      }
+      __setModuleDefault(result, mod);
+      return result;
+    };
+    exports2.__esModule = true;
+    exports2.deserialize = exports2.serialize = void 0;
+    var serialize_js_1 = require_serialize3();
+    var deserialize_js_1 = require_deserialize2();
+    var utils = __importStar(require_utils16());
+    function serialize(schema, value, validate) {
+      if (validate === void 0) {
+        validate = true;
+      }
+      if (validate)
+        utils.validate_schema(schema);
+      var serializer = new serialize_js_1.BorshSerializer(validate);
+      return serializer.encode(value, schema);
+    }
+    exports2.serialize = serialize;
+    function deserialize(schema, buffer, validate) {
+      if (validate === void 0) {
+        validate = true;
+      }
+      if (validate)
+        utils.validate_schema(schema);
+      var deserializer = new deserialize_js_1.BorshDeserializer(buffer);
+      return deserializer.decode(schema);
+    }
+    exports2.deserialize = deserialize;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/transactions/lib/prefix.js
+var require_prefix2 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/transactions/lib/prefix.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.DelegateActionPrefix = void 0;
+    var types_1 = require_lib();
+    var ACTIONABLE_MESSAGE_BASE = Math.pow(2, 30);
+    var NEP = {
+      MetaTransactions: 366
+    };
+    var NEPPrefix = class extends types_1.Assignable {
+    };
+    var ActionableMessagePrefix = class extends NEPPrefix {
+      /** Given the NEP number, set the prefix using 2^30 as the offset **/
+      constructor(prefix) {
+        super({ prefix: ACTIONABLE_MESSAGE_BASE + prefix });
+      }
+    };
+    var DelegateActionPrefix = class extends ActionableMessagePrefix {
+      constructor() {
+        super(NEP.MetaTransactions);
+      }
+    };
+    exports2.DelegateActionPrefix = DelegateActionPrefix;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/transactions/lib/schema.js
+var require_schema2 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/transactions/lib/schema.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.SCHEMA = exports2.SignedTransaction = exports2.Transaction = exports2.decodeSignedTransaction = exports2.decodeTransaction = exports2.encodeTransaction = exports2.encodeSignedDelegate = exports2.encodeDelegateAction = void 0;
+    var types_1 = require_lib();
+    var borsh_1 = require_cjs2();
+    var prefix_1 = require_prefix2();
+    function encodeDelegateAction(delegateAction) {
+      return new Uint8Array([
+        ...(0, borsh_1.serialize)(exports2.SCHEMA.DelegateActionPrefix, new prefix_1.DelegateActionPrefix()),
+        ...(0, borsh_1.serialize)(exports2.SCHEMA.DelegateAction, delegateAction)
+      ]);
+    }
+    exports2.encodeDelegateAction = encodeDelegateAction;
+    function encodeSignedDelegate(signedDelegate) {
+      return (0, borsh_1.serialize)(exports2.SCHEMA.SignedDelegate, signedDelegate);
+    }
+    exports2.encodeSignedDelegate = encodeSignedDelegate;
+    function encodeTransaction(transaction) {
+      const schema = transaction instanceof SignedTransaction ? exports2.SCHEMA.SignedTransaction : exports2.SCHEMA.Transaction;
+      return (0, borsh_1.serialize)(schema, transaction);
+    }
+    exports2.encodeTransaction = encodeTransaction;
+    function decodeTransaction(bytes) {
+      return new Transaction((0, borsh_1.deserialize)(exports2.SCHEMA.Transaction, bytes));
+    }
+    exports2.decodeTransaction = decodeTransaction;
+    function decodeSignedTransaction(bytes) {
+      return new SignedTransaction((0, borsh_1.deserialize)(exports2.SCHEMA.SignedTransaction, bytes));
+    }
+    exports2.decodeSignedTransaction = decodeSignedTransaction;
+    var Transaction = class extends types_1.Assignable {
+      encode() {
+        return encodeTransaction(this);
+      }
+      static decode(bytes) {
+        return decodeTransaction(bytes);
+      }
+    };
+    exports2.Transaction = Transaction;
+    var SignedTransaction = class extends types_1.Assignable {
+      encode() {
+        return encodeTransaction(this);
+      }
+      static decode(bytes) {
+        return decodeSignedTransaction(bytes);
+      }
+    };
+    exports2.SignedTransaction = SignedTransaction;
+    exports2.SCHEMA = new class BorshSchema {
+      constructor() {
+        this.Ed25519Signature = {
+          struct: {
+            data: { array: { type: "u8", len: 64 } }
+          }
+        };
+        this.Secp256k1Signature = {
+          struct: {
+            data: { array: { type: "u8", len: 65 } }
+          }
+        };
+        this.Signature = {
+          enum: [
+            { struct: { ed25519Signature: this.Ed25519Signature } },
+            { struct: { secp256k1Signature: this.Secp256k1Signature } }
+          ]
+        };
+        this.Ed25519Data = {
+          struct: {
+            data: { array: { type: "u8", len: 32 } }
+          }
+        };
+        this.Secp256k1Data = {
+          struct: {
+            data: { array: { type: "u8", len: 64 } }
+          }
+        };
+        this.PublicKey = {
+          enum: [
+            { struct: { ed25519Key: this.Ed25519Data } },
+            { struct: { secp256k1Key: this.Secp256k1Data } }
+          ]
+        };
+        this.FunctionCallPermission = {
+          struct: {
+            allowance: { option: "u128" },
+            receiverId: "string",
+            methodNames: { array: { type: "string" } }
+          }
+        };
+        this.FullAccessPermission = {
+          struct: {}
+        };
+        this.AccessKeyPermission = {
+          enum: [
+            { struct: { functionCall: this.FunctionCallPermission } },
+            { struct: { fullAccess: this.FullAccessPermission } }
+          ]
+        };
+        this.AccessKey = {
+          struct: {
+            nonce: "u64",
+            permission: this.AccessKeyPermission
+          }
+        };
+        this.CreateAccount = {
+          struct: {}
+        };
+        this.DeployContract = {
+          struct: {
+            code: { array: { type: "u8" } }
+          }
+        };
+        this.FunctionCall = {
+          struct: {
+            methodName: "string",
+            args: { array: { type: "u8" } },
+            gas: "u64",
+            deposit: "u128"
+          }
+        };
+        this.Transfer = {
+          struct: {
+            deposit: "u128"
+          }
+        };
+        this.Stake = {
+          struct: {
+            stake: "u128",
+            publicKey: this.PublicKey
+          }
+        };
+        this.AddKey = {
+          struct: {
+            publicKey: this.PublicKey,
+            accessKey: this.AccessKey
+          }
+        };
+        this.DeleteKey = {
+          struct: {
+            publicKey: this.PublicKey
+          }
+        };
+        this.DeleteAccount = {
+          struct: {
+            beneficiaryId: "string"
+          }
+        };
+        this.DelegateActionPrefix = {
+          struct: {
+            prefix: "u32"
+          }
+        };
+        this.ClassicActions = {
+          enum: [
+            { struct: { createAccount: this.CreateAccount } },
+            { struct: { deployContract: this.DeployContract } },
+            { struct: { functionCall: this.FunctionCall } },
+            { struct: { transfer: this.Transfer } },
+            { struct: { stake: this.Stake } },
+            { struct: { addKey: this.AddKey } },
+            { struct: { deleteKey: this.DeleteKey } },
+            { struct: { deleteAccount: this.DeleteAccount } }
+          ]
+        };
+        this.DelegateAction = {
+          struct: {
+            senderId: "string",
+            receiverId: "string",
+            actions: { array: { type: this.ClassicActions } },
+            nonce: "u64",
+            maxBlockHeight: "u64",
+            publicKey: this.PublicKey
+          }
+        };
+        this.SignedDelegate = {
+          struct: {
+            delegateAction: this.DelegateAction,
+            signature: this.Signature
+          }
+        };
+        this.Action = {
+          enum: [
+            { struct: { createAccount: this.CreateAccount } },
+            { struct: { deployContract: this.DeployContract } },
+            { struct: { functionCall: this.FunctionCall } },
+            { struct: { transfer: this.Transfer } },
+            { struct: { stake: this.Stake } },
+            { struct: { addKey: this.AddKey } },
+            { struct: { deleteKey: this.DeleteKey } },
+            { struct: { deleteAccount: this.DeleteAccount } },
+            { struct: { signedDelegate: this.SignedDelegate } }
+          ]
+        };
+        this.Transaction = {
+          struct: {
+            signerId: "string",
+            publicKey: this.PublicKey,
+            nonce: "u64",
+            receiverId: "string",
+            blockHash: { array: { type: "u8", len: 32 } },
+            actions: { array: { type: this.Action } }
+          }
+        };
+        this.SignedTransaction = {
+          struct: {
+            transaction: this.Transaction,
+            signature: this.Signature
+          }
+        };
+      }
+    }();
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/transactions/lib/create_transaction.js
+var require_create_transaction2 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/transactions/lib/create_transaction.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.createTransaction = void 0;
+    var schema_1 = require_schema2();
+    function createTransaction(signerId, publicKey, receiverId, nonce, actions, blockHash) {
+      const txNonce = typeof nonce === "bigint" ? nonce : BigInt(nonce);
+      return new schema_1.Transaction({
+        signerId,
+        publicKey,
+        nonce: txNonce,
+        receiverId,
+        actions,
+        blockHash
+      });
+    }
+    exports2.createTransaction = createTransaction;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/transactions/lib/delegate.js
+var require_delegate2 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/transactions/lib/delegate.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.buildDelegateAction = exports2.DelegateAction = void 0;
+    var types_1 = require_lib();
+    var action_creators_1 = require_action_creators2();
+    var { addKey, createAccount, deleteAccount, deleteKey, deployContract, functionCall, stake, transfer } = action_creators_1.actionCreators;
+    var DelegateAction = class extends types_1.Assignable {
+    };
+    exports2.DelegateAction = DelegateAction;
+    function buildDelegateAction({ actions, maxBlockHeight, nonce, publicKey, receiverId, senderId }) {
+      return new DelegateAction({
+        senderId,
+        receiverId,
+        actions: actions.map((a) => {
+          if (!a.type && !a.params) {
+            return a;
+          }
+          switch (a.type) {
+            case "AddKey": {
+              const { publicKey: publicKey2, accessKey } = a.params;
+              return addKey(publicKey2, accessKey);
+            }
+            case "CreateAccount": {
+              return createAccount(a.params.createAccount);
+            }
+            case "DeleteAccount": {
+              return deleteAccount(a.params.deleteAccount);
+            }
+            case "DeleteKey": {
+              return deleteKey(a.params.publicKey);
+            }
+            case "DeployContract": {
+              return deployContract(a.params.code);
+            }
+            case "FunctionCall": {
+              const { methodName, args: args2, gas, deposit } = a.params;
+              return functionCall(methodName, args2, gas, deposit);
+            }
+            case "Stake": {
+              return stake(a.params.stake, a.params.publicKey);
+            }
+            case "Transfer": {
+              const { deposit } = a.params;
+              return transfer(deposit);
+            }
+          }
+          throw new Error("Unrecognized action");
+        }),
+        nonce,
+        maxBlockHeight,
+        publicKey
+      });
+    }
+    exports2.buildDelegateAction = buildDelegateAction;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/transactions/lib/signature.js
+var require_signature4 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/transactions/lib/signature.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.Signature = void 0;
+    var crypto_1 = require_lib22();
+    var types_1 = require_lib();
+    var ED25519Signature = class extends types_1.Assignable {
+      constructor() {
+        super(...arguments);
+        this.keyType = crypto_1.KeyType.ED25519;
+      }
+    };
+    var SECP256K1Signature = class extends types_1.Assignable {
+      constructor() {
+        super(...arguments);
+        this.keyType = crypto_1.KeyType.SECP256K1;
+      }
+    };
+    var Signature = class extends types_1.Assignable {
+      constructor({ keyType, data }) {
+        super({});
+        if (keyType === crypto_1.KeyType.ED25519) {
+          this.ed25519Signature = { keyType, data };
+        } else if (keyType === crypto_1.KeyType.SECP256K1) {
+          this.secp256k1Signature = { keyType, data };
+        }
+      }
+      get signature() {
+        return this.ed25519Signature || this.secp256k1Signature;
+      }
+      get signatureType() {
+        return this.signature.keyType;
+      }
+      get data() {
+        return this.signature.data;
+      }
+    };
+    exports2.Signature = Signature;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/transactions/lib/sign.js
+var require_sign2 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/transactions/lib/sign.js"(exports2) {
+    "use strict";
+    var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.signDelegateAction = exports2.signTransaction = void 0;
+    var sha256_1 = require_sha256();
+    var actions_1 = require_actions2();
+    var create_transaction_1 = require_create_transaction2();
+    var schema_1 = require_schema2();
+    var signature_1 = require_signature4();
+    var crypto_1 = require_lib22();
+    function signTransactionObject(transaction, signer, accountId, networkId) {
+      return __awaiter(this, void 0, void 0, function* () {
+        const message2 = (0, schema_1.encodeTransaction)(transaction);
+        const hash = new Uint8Array((0, sha256_1.sha256)(message2));
+        const signature = yield signer.signMessage(message2, accountId, networkId);
+        const keyType = transaction.publicKey.ed25519Key ? crypto_1.KeyType.ED25519 : crypto_1.KeyType.SECP256K1;
+        const signedTx = new schema_1.SignedTransaction({
+          transaction,
+          signature: new signature_1.Signature({ keyType, data: signature.signature })
+        });
+        return [hash, signedTx];
+      });
+    }
+    function signTransaction(...args2) {
+      return __awaiter(this, void 0, void 0, function* () {
+        if (args2[0].constructor === schema_1.Transaction) {
+          const [transaction, signer, accountId, networkId] = args2;
+          return signTransactionObject(transaction, signer, accountId, networkId);
+        } else {
+          const [receiverId, nonce, actions, blockHash, signer, accountId, networkId] = args2;
+          const publicKey = yield signer.getPublicKey(accountId, networkId);
+          const transaction = (0, create_transaction_1.createTransaction)(accountId, publicKey, receiverId, nonce, actions, blockHash);
+          return signTransactionObject(transaction, signer, accountId, networkId);
+        }
+      });
+    }
+    exports2.signTransaction = signTransaction;
+    function signDelegateAction({ delegateAction, signer }) {
+      return __awaiter(this, void 0, void 0, function* () {
+        const message2 = (0, schema_1.encodeDelegateAction)(delegateAction);
+        const signature = yield signer.sign(message2);
+        const keyType = delegateAction.publicKey.ed25519Key ? crypto_1.KeyType.ED25519 : crypto_1.KeyType.SECP256K1;
+        const signedDelegateAction = new actions_1.SignedDelegate({
+          delegateAction,
+          signature: new signature_1.Signature({
+            keyType,
+            data: signature
+          })
+        });
+        return {
+          hash: new Uint8Array((0, sha256_1.sha256)(message2)),
+          signedDelegateAction
+        };
+      });
+    }
+    exports2.signDelegateAction = signDelegateAction;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/transactions/lib/index.js
+var require_lib23 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/transactions/lib/index.js"(exports2) {
+    "use strict";
+    var __createBinding = exports2 && exports2.__createBinding || (Object.create ? function(o, m, k, k2) {
+      if (k2 === void 0) k2 = k;
+      var desc = Object.getOwnPropertyDescriptor(m, k);
+      if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+        desc = { enumerable: true, get: function() {
+          return m[k];
+        } };
+      }
+      Object.defineProperty(o, k2, desc);
+    } : function(o, m, k, k2) {
+      if (k2 === void 0) k2 = k;
+      o[k2] = m[k];
+    });
+    var __exportStar = exports2 && exports2.__exportStar || function(m, exports3) {
+      for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports3, p)) __createBinding(exports3, m, p);
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    __exportStar(require_action_creators2(), exports2);
+    __exportStar(require_actions2(), exports2);
+    __exportStar(require_create_transaction2(), exports2);
+    __exportStar(require_delegate2(), exports2);
+    __exportStar(require_schema2(), exports2);
+    __exportStar(require_sign2(), exports2);
+    __exportStar(require_signature4(), exports2);
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/providers/lib/provider.js
+var require_provider8 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/providers/lib/provider.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.Provider = void 0;
+    var Provider = class {
+    };
+    exports2.Provider = Provider;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/providers/lib/fetch.js
+var require_fetch2 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/providers/lib/fetch.js"(exports2) {
+    "use strict";
+    var __importDefault = exports2 && exports2.__importDefault || function(mod) {
+      return mod && mod.__esModule ? mod : { "default": mod };
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    var node_fetch_1 = __importDefault((init_lib(), __toCommonJS(lib_exports)));
+    var http_1 = __importDefault(require("http"));
+    var https_1 = __importDefault(require("https"));
+    var httpAgent = new http_1.default.Agent({ keepAlive: true });
+    var httpsAgent = new https_1.default.Agent({ keepAlive: true });
+    function agent(_parsedURL) {
+      if (_parsedURL.protocol === "http:") {
+        return httpAgent;
+      } else {
+        return httpsAgent;
+      }
+    }
+    function default_1(resource, init) {
+      return (0, node_fetch_1.default)(resource, Object.assign({ agent: agent(new URL(resource.toString())) }, init));
+    }
+    exports2.default = default_1;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/providers/lib/fetch_json.js
+var require_fetch_json2 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/providers/lib/fetch_json.js"(exports2) {
+    "use strict";
+    var __createBinding = exports2 && exports2.__createBinding || (Object.create ? function(o, m, k, k2) {
+      if (k2 === void 0) k2 = k;
+      var desc = Object.getOwnPropertyDescriptor(m, k);
+      if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+        desc = { enumerable: true, get: function() {
+          return m[k];
+        } };
+      }
+      Object.defineProperty(o, k2, desc);
+    } : function(o, m, k, k2) {
+      if (k2 === void 0) k2 = k;
+      o[k2] = m[k];
+    });
+    var __setModuleDefault = exports2 && exports2.__setModuleDefault || (Object.create ? function(o, v) {
+      Object.defineProperty(o, "default", { enumerable: true, value: v });
+    } : function(o, v) {
+      o["default"] = v;
+    });
+    var __importStar = exports2 && exports2.__importStar || function(mod) {
+      if (mod && mod.__esModule) return mod;
+      var result = {};
+      if (mod != null) {
+        for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+      }
+      __setModuleDefault(result, mod);
+      return result;
+    };
+    var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __importDefault = exports2 && exports2.__importDefault || function(mod) {
+      return mod && mod.__esModule ? mod : { "default": mod };
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.fetchJson = void 0;
+    var types_1 = require_lib();
+    var utils_1 = require_lib21();
+    var http_errors_1 = __importDefault(require_http_errors());
+    var exponential_backoff_1 = require_exponential_backoff2();
+    var START_WAIT_TIME_MS = 1e3;
+    var BACKOFF_MULTIPLIER = 1.5;
+    var RETRY_NUMBER = 10;
+    function fetchJson(connectionInfoOrUrl, json) {
+      return __awaiter(this, void 0, void 0, function* () {
+        let connectionInfo = { url: null };
+        if (typeof connectionInfoOrUrl === "string") {
+          connectionInfo.url = connectionInfoOrUrl;
+        } else {
+          connectionInfo = connectionInfoOrUrl;
+        }
+        const response = yield (0, exponential_backoff_1.exponentialBackoff)(START_WAIT_TIME_MS, RETRY_NUMBER, BACKOFF_MULTIPLIER, () => __awaiter(this, void 0, void 0, function* () {
+          var _a;
+          try {
+            const response2 = yield ((_a = global.fetch) !== null && _a !== void 0 ? _a : (yield Promise.resolve().then(() => __importStar(require_fetch2()))).default)(connectionInfo.url, {
+              method: json ? "POST" : "GET",
+              body: json ? json : void 0,
+              headers: Object.assign(Object.assign({}, connectionInfo.headers), { "Content-Type": "application/json" })
+            });
+            if (!response2.ok) {
+              if (response2.status === 503) {
+                utils_1.Logger.warn(`Retrying HTTP request for ${connectionInfo.url} as it's not available now`);
+                return null;
+              } else if (response2.status === 408) {
+                utils_1.Logger.warn(`Retrying HTTP request for ${connectionInfo.url} as the previous connection was unused for some time`);
+                return null;
+              }
+              throw (0, http_errors_1.default)(response2.status, yield response2.text());
+            }
+            return response2;
+          } catch (error) {
+            if (error.toString().includes("FetchError") || error.toString().includes("Failed to fetch")) {
+              utils_1.Logger.warn(`Retrying HTTP request for ${connectionInfo.url} because of error: ${error}`);
+              return null;
+            }
+            throw error;
+          }
+        }));
+        if (!response) {
+          throw new types_1.TypedError(`Exceeded ${RETRY_NUMBER} attempts for ${connectionInfo.url}.`, "RetriesExceeded");
+        }
+        return yield response.json();
+      });
+    }
+    exports2.fetchJson = fetchJson;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/providers/lib/json-rpc-provider.js
+var require_json_rpc_provider3 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/providers/lib/json-rpc-provider.js"(exports2) {
+    "use strict";
+    var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __rest = exports2 && exports2.__rest || function(s, e) {
+      var t = {};
+      for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+      if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+          if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+            t[p[i]] = s[p[i]];
+        }
+      return t;
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.JsonRpcProvider = void 0;
+    var utils_1 = require_lib21();
+    var types_1 = require_lib();
+    var transactions_1 = require_lib23();
+    var exponential_backoff_1 = require_exponential_backoff2();
+    var provider_1 = require_provider8();
+    var fetch_json_1 = require_fetch_json2();
+    var REQUEST_RETRY_NUMBER = 12;
+    var REQUEST_RETRY_WAIT = 500;
+    var REQUEST_RETRY_WAIT_BACKOFF = 1.5;
+    var _nextId = 123;
+    var JsonRpcProvider = class extends provider_1.Provider {
+      /**
+       * @param connectionInfo Connection info
+       */
+      constructor(connectionInfo, options) {
+        super();
+        this.connection = connectionInfo || { url: "" };
+        const defaultOptions = {
+          retries: REQUEST_RETRY_NUMBER,
+          wait: REQUEST_RETRY_WAIT,
+          backoff: REQUEST_RETRY_WAIT_BACKOFF
+        };
+        this.options = Object.assign({}, defaultOptions, options);
+      }
+      /**
+       * Gets the RPC's status
+       * @see [https://docs.near.org/docs/develop/front-end/rpc#general-validator-status](https://docs.near.org/docs/develop/front-end/rpc#general-validator-status)
+       */
+      status() {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.sendJsonRpc("status", []);
+        });
+      }
+      /**
+       * Sends a signed transaction to the RPC
+       *
+       * @param signedTransaction The signed transaction being sent
+       * @param waitUntil
+       */
+      sendTransactionUntil(signedTransaction, waitUntil) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const bytes = (0, transactions_1.encodeTransaction)(signedTransaction);
+          return this.sendJsonRpc("send_tx", { signed_tx_base64: Buffer.from(bytes).toString("base64"), wait_until: waitUntil });
+        });
+      }
+      /**
+       * Sends a signed transaction to the RPC and waits until transaction is fully complete
+       * @see [https://docs.near.org/docs/develop/front-end/rpc#send-transaction-await](https://docs.near.org/docs/develop/front-end/rpc#general-validator-status)
+       *
+       * @param signedTransaction The signed transaction being sent
+       */
+      sendTransaction(signedTransaction) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.sendTransactionUntil(signedTransaction, "EXECUTED_OPTIMISTIC");
+        });
+      }
+      /**
+       * Sends a signed transaction to the RPC and immediately returns transaction hash
+       * See [docs for more info](https://docs.near.org/docs/develop/front-end/rpc#send-transaction-async)
+       * @param signedTransaction The signed transaction being sent
+       * @returns {Promise<FinalExecutionOutcome>}
+       */
+      sendTransactionAsync(signedTransaction) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.sendTransactionUntil(signedTransaction, "NONE");
+        });
+      }
+      /**
+       * Gets a transaction's status from the RPC
+       * @see [https://docs.near.org/docs/develop/front-end/rpc#transaction-status](https://docs.near.org/docs/develop/front-end/rpc#general-validator-status)
+       *
+       * @param txHash A transaction hash as either a Uint8Array or a base58 encoded string
+       * @param accountId The NEAR account that signed the transaction
+       * @param waitUntil
+       */
+      txStatus(txHash, accountId, waitUntil = "EXECUTED_OPTIMISTIC") {
+        return __awaiter(this, void 0, void 0, function* () {
+          if (typeof txHash === "string") {
+            return this.txStatusString(txHash, accountId, waitUntil);
+          } else {
+            return this.txStatusUint8Array(txHash, accountId, waitUntil);
+          }
+        });
+      }
+      txStatusUint8Array(txHash, accountId, waitUntil) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.sendJsonRpc("tx", { tx_hash: (0, utils_1.baseEncode)(txHash), sender_account_id: accountId, wait_until: waitUntil });
+        });
+      }
+      txStatusString(txHash, accountId, waitUntil) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.sendJsonRpc("tx", { tx_hash: txHash, sender_account_id: accountId, wait_until: waitUntil });
+        });
+      }
+      /**
+       * Gets a transaction's status from the RPC with receipts
+       * See [docs for more info](https://docs.near.org/docs/develop/front-end/rpc#transaction-status-with-receipts)
+       * @param txHash The hash of the transaction
+       * @param accountId The NEAR account that signed the transaction
+       * @param waitUntil
+       * @returns {Promise<FinalExecutionOutcome>}
+       */
+      txStatusReceipts(txHash, accountId, waitUntil = "EXECUTED_OPTIMISTIC") {
+        return __awaiter(this, void 0, void 0, function* () {
+          if (typeof txHash === "string") {
+            return this.sendJsonRpc("EXPERIMENTAL_tx_status", { tx_hash: txHash, sender_account_id: accountId, wait_until: waitUntil });
+          } else {
+            return this.sendJsonRpc("EXPERIMENTAL_tx_status", { tx_hash: (0, utils_1.baseEncode)(txHash), sender_account_id: accountId, wait_until: waitUntil });
+          }
+        });
+      }
+      /**
+       * Query the RPC by passing an {@link "@near-js/types".provider/request.RpcQueryRequest | RpcQueryRequest }
+       * @see [https://docs.near.org/api/rpc/contracts](https://docs.near.org/api/rpc/contracts)
+       *
+       * @typeParam T the shape of the returned query response
+       */
+      query(...args2) {
+        return __awaiter(this, void 0, void 0, function* () {
+          let result;
+          if (args2.length === 1) {
+            const _a = args2[0], { block_id, blockId } = _a, otherParams = __rest(_a, ["block_id", "blockId"]);
+            result = yield this.sendJsonRpc("query", Object.assign(Object.assign({}, otherParams), { block_id: block_id || blockId }));
+          } else {
+            const [path, data] = args2;
+            result = yield this.sendJsonRpc("query", [path, data]);
+          }
+          if (result && result.error) {
+            throw new types_1.TypedError(`Querying failed: ${result.error}.
+${JSON.stringify(result, null, 2)}`, (0, utils_1.getErrorTypeFromErrorMessage)(result.error, result.error.name));
+          }
+          return result;
+        });
+      }
+      /**
+       * Query for block info from the RPC
+       * pass block_id OR finality as blockQuery, not both
+       * @see [https://docs.near.org/api/rpc/block-chunk](https://docs.near.org/api/rpc/block-chunk)
+       *
+       * @param blockQuery {@link BlockReference} (passing a {@link BlockId} is deprecated)
+       */
+      block(blockQuery) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const { finality } = blockQuery;
+          const { blockId } = blockQuery;
+          return this.sendJsonRpc("block", { block_id: blockId, finality });
+        });
+      }
+      /**
+       * Query changes in block from the RPC
+       * pass block_id OR finality as blockQuery, not both
+       * @see [https://docs.near.org/api/rpc/block-chunk](https://docs.near.org/api/rpc/block-chunk)
+       */
+      blockChanges(blockQuery) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const { finality } = blockQuery;
+          const { blockId } = blockQuery;
+          return this.sendJsonRpc("EXPERIMENTAL_changes_in_block", { block_id: blockId, finality });
+        });
+      }
+      /**
+       * Queries for details about a specific chunk appending details of receipts and transactions to the same chunk data provided by a block
+       * @see [https://docs.near.org/api/rpc/block-chunk](https://docs.near.org/api/rpc/block-chunk)
+       *
+       * @param chunkId Hash of a chunk ID or shard ID
+       */
+      chunk(chunkId) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.sendJsonRpc("chunk", [chunkId]);
+        });
+      }
+      /**
+       * Query validators of the epoch defined by the given block id.
+       * @see [https://docs.near.org/api/rpc/network#validation-status](https://docs.near.org/api/rpc/network#validation-status)
+       *
+       * @param blockId Block hash or height, or null for latest.
+       */
+      validators(blockId) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.sendJsonRpc("validators", [blockId]);
+        });
+      }
+      /**
+       * Gets the protocol config at a block from RPC
+       *
+       * @param blockReference specifies the block to get the protocol config for
+       */
+      experimental_protocolConfig(blockReference) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const _a = blockReference, { blockId } = _a, otherParams = __rest(_a, ["blockId"]);
+          return yield this.sendJsonRpc("EXPERIMENTAL_protocol_config", Object.assign(Object.assign({}, otherParams), { block_id: blockId }));
+        });
+      }
+      /**
+       * Gets a light client execution proof for verifying execution outcomes
+       * @see [https://github.com/nearprotocol/NEPs/blob/master/specs/ChainSpec/LightClient.md#light-client-proof](https://github.com/nearprotocol/NEPs/blob/master/specs/ChainSpec/LightClient.md#light-client-proof)
+       */
+      lightClientProof(request) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return yield this.sendJsonRpc("EXPERIMENTAL_light_client_proof", request);
+        });
+      }
+      /**
+       * Returns the next light client block as far in the future as possible from the last known hash
+       * to still be able to validate from that hash. This will either return the last block of the
+       * next epoch, or the last final known block.
+       *
+       * @see [https://github.com/near/NEPs/blob/master/specs/ChainSpec/LightClient.md#light-client-block](https://github.com/near/NEPs/blob/master/specs/ChainSpec/LightClient.md#light-client-block)
+       */
+      nextLightClientBlock(request) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return yield this.sendJsonRpc("next_light_client_block", request);
+        });
+      }
+      /**
+       * Gets access key changes for a given array of accountIds
+       * See [docs for more info](https://docs.near.org/docs/develop/front-end/rpc#view-access-key-changes-all)
+       * @returns {Promise<ChangeResult>}
+       */
+      accessKeyChanges(accountIdArray, blockQuery) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const { finality } = blockQuery;
+          const { blockId } = blockQuery;
+          return this.sendJsonRpc("EXPERIMENTAL_changes", {
+            changes_type: "all_access_key_changes",
+            account_ids: accountIdArray,
+            block_id: blockId,
+            finality
+          });
+        });
+      }
+      /**
+       * Gets single access key changes for a given array of access keys
+       * pass block_id OR finality as blockQuery, not both
+       * See [docs for more info](https://docs.near.org/docs/develop/front-end/rpc#view-access-key-changes-single)
+       * @returns {Promise<ChangeResult>}
+       */
+      singleAccessKeyChanges(accessKeyArray, blockQuery) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const { finality } = blockQuery;
+          const { blockId } = blockQuery;
+          return this.sendJsonRpc("EXPERIMENTAL_changes", {
+            changes_type: "single_access_key_changes",
+            keys: accessKeyArray,
+            block_id: blockId,
+            finality
+          });
+        });
+      }
+      /**
+       * Gets account changes for a given array of accountIds
+       * pass block_id OR finality as blockQuery, not both
+       * See [docs for more info](https://docs.near.org/docs/develop/front-end/rpc#view-account-changes)
+       * @returns {Promise<ChangeResult>}
+       */
+      accountChanges(accountIdArray, blockQuery) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const { finality } = blockQuery;
+          const { blockId } = blockQuery;
+          return this.sendJsonRpc("EXPERIMENTAL_changes", {
+            changes_type: "account_changes",
+            account_ids: accountIdArray,
+            block_id: blockId,
+            finality
+          });
+        });
+      }
+      /**
+       * Gets contract state changes for a given array of accountIds
+       * pass block_id OR finality as blockQuery, not both
+       * Note: If you pass a keyPrefix it must be base64 encoded
+       * See [docs for more info](https://docs.near.org/docs/develop/front-end/rpc#view-contract-state-changes)
+       * @returns {Promise<ChangeResult>}
+       */
+      contractStateChanges(accountIdArray, blockQuery, keyPrefix = "") {
+        return __awaiter(this, void 0, void 0, function* () {
+          const { finality } = blockQuery;
+          const { blockId } = blockQuery;
+          return this.sendJsonRpc("EXPERIMENTAL_changes", {
+            changes_type: "data_changes",
+            account_ids: accountIdArray,
+            key_prefix_base64: keyPrefix,
+            block_id: blockId,
+            finality
+          });
+        });
+      }
+      /**
+       * Gets contract code changes for a given array of accountIds
+       * pass block_id OR finality as blockQuery, not both
+       * Note: Change is returned in a base64 encoded WASM file
+       * See [docs for more info](https://docs.near.org/docs/develop/front-end/rpc#view-contract-code-changes)
+       * @returns {Promise<ChangeResult>}
+       */
+      contractCodeChanges(accountIdArray, blockQuery) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const { finality } = blockQuery;
+          const { blockId } = blockQuery;
+          return this.sendJsonRpc("EXPERIMENTAL_changes", {
+            changes_type: "contract_code_changes",
+            account_ids: accountIdArray,
+            block_id: blockId,
+            finality
+          });
+        });
+      }
+      /**
+       * Returns gas price for a specific block_height or block_hash.
+       * @see [https://docs.near.org/api/rpc/gas](https://docs.near.org/api/rpc/gas)
+       *
+       * @param blockId Block hash or height, or null for latest.
+       */
+      gasPrice(blockId) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return yield this.sendJsonRpc("gas_price", [blockId]);
+        });
+      }
+      /**
+       * Directly call the RPC specifying the method and params
+       *
+       * @param method RPC method
+       * @param params Parameters to the method
+       */
+      sendJsonRpc(method, params) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const response = yield (0, exponential_backoff_1.exponentialBackoff)(this.options.wait, this.options.retries, this.options.backoff, () => __awaiter(this, void 0, void 0, function* () {
+            var _a;
+            try {
+              const request = {
+                method,
+                params,
+                id: _nextId++,
+                jsonrpc: "2.0"
+              };
+              const response2 = yield (0, fetch_json_1.fetchJson)(this.connection, JSON.stringify(request));
+              if (response2.error) {
+                if (typeof response2.error.data === "object") {
+                  if (typeof response2.error.data.error_message === "string" && typeof response2.error.data.error_type === "string") {
+                    throw new types_1.TypedError(response2.error.data.error_message, response2.error.data.error_type);
+                  }
+                  throw (0, utils_1.parseRpcError)(response2.error.data);
+                } else {
+                  const errorMessage = `[${response2.error.code}] ${response2.error.message}: ${response2.error.data}`;
+                  if (response2.error.data === "Timeout" || errorMessage.includes("Timeout error") || errorMessage.includes("query has timed out")) {
+                    throw new types_1.TypedError(errorMessage, "TimeoutError");
+                  }
+                  const errorType = (0, utils_1.getErrorTypeFromErrorMessage)(response2.error.data, "");
+                  if (errorType) {
+                    throw new types_1.TypedError((0, utils_1.formatError)(errorType, params), errorType);
+                  }
+                  throw new types_1.TypedError(errorMessage, response2.error.name);
+                }
+              } else if (typeof ((_a = response2.result) === null || _a === void 0 ? void 0 : _a.error) === "string") {
+                const errorType = (0, utils_1.getErrorTypeFromErrorMessage)(response2.result.error, "");
+                if (errorType) {
+                  throw new utils_1.ServerError((0, utils_1.formatError)(errorType, params), errorType);
+                }
+              }
+              return response2;
+            } catch (error) {
+              if (error.type === "TimeoutError") {
+                utils_1.Logger.warn(`Retrying request to ${method} as it has timed out`, params);
+                return null;
+              }
+              throw error;
+            }
+          }));
+          const { result } = response;
+          if (typeof result === "undefined") {
+            throw new types_1.TypedError(`Exceeded ${this.options.retries} attempts for request to ${method}.`, "RetriesExceeded");
+          }
+          return result;
+        });
+      }
+    };
+    exports2.JsonRpcProvider = JsonRpcProvider;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/providers/lib/failover-rpc-provider.js
+var require_failover_rpc_provider3 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/providers/lib/failover-rpc-provider.js"(exports2) {
+    "use strict";
+    var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.FailoverRpcProvider = void 0;
+    var utils_1 = require_lib21();
+    var types_1 = require_lib();
+    var provider_1 = require_provider8();
+    var FailoverRpcProvider = class extends provider_1.Provider {
+      /**
+       * @param providers list of providers
+       */
+      constructor(providers) {
+        super();
+        if (providers.length === 0) {
+          throw new Error("At least one provider must be specified");
+        }
+        this.providers = providers;
+        this.currentProviderIndex = 0;
+      }
+      switchToNextProvider() {
+        if (this.providers.length === 1)
+          return;
+        if (this.providers.length - 1 <= this.currentProviderIndex) {
+          this.currentProviderIndex = 0;
+        } else {
+          this.currentProviderIndex += 1;
+        }
+        utils_1.Logger.debug(`Switched to provider at the index ${this.currentProviderIndex}`);
+      }
+      get currentProvider() {
+        const provider = this.providers[this.currentProviderIndex];
+        if (!provider)
+          throw new Error(`Provider wasn't found at index ${this.currentProviderIndex}`);
+        return provider;
+      }
+      withBackoff(getResult) {
+        return __awaiter(this, void 0, void 0, function* () {
+          for (let i = 0; i < this.providers.length; i++) {
+            try {
+              const result = yield getResult(this.currentProvider);
+              if (result)
+                return result;
+            } catch (_a) {
+              this.switchToNextProvider();
+            }
+          }
+          throw new types_1.TypedError(`Exceeded ${this.providers.length} providers to execute request`, "RetriesExceeded");
+        });
+      }
+      /**
+       * Gets the RPC's status
+       * @see [https://docs.near.org/docs/develop/front-end/rpc#general-validator-status](https://docs.near.org/docs/develop/front-end/rpc#general-validator-status)
+       */
+      status() {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.withBackoff((currentProvider) => currentProvider.status());
+        });
+      }
+      sendTransactionUntil(signedTransaction, waitUntil) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.withBackoff((currentProvider) => currentProvider.sendTransactionUntil(signedTransaction, waitUntil));
+        });
+      }
+      /**
+       * Sends a signed transaction to the RPC and waits until transaction is fully complete
+       * @see [https://docs.near.org/docs/develop/front-end/rpc#send-transaction-await](https://docs.near.org/docs/develop/front-end/rpc#general-validator-status)
+       *
+       * @param signedTransaction The signed transaction being sent
+       */
+      sendTransaction(signedTransaction) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.withBackoff((currentProvider) => currentProvider.sendTransaction(signedTransaction));
+        });
+      }
+      /**
+       * Sends a signed transaction to the RPC and immediately returns transaction hash
+       * See [docs for more info](https://docs.near.org/docs/develop/front-end/rpc#send-transaction-async)
+       * @param signedTransaction The signed transaction being sent
+       * @returns {Promise<FinalExecutionOutcome>}
+       */
+      sendTransactionAsync(signedTransaction) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.withBackoff((currentProvider) => currentProvider.sendTransactionAsync(signedTransaction));
+        });
+      }
+      /**
+       * Gets a transaction's status from the RPC
+       * @see [https://docs.near.org/docs/develop/front-end/rpc#transaction-status](https://docs.near.org/docs/develop/front-end/rpc#general-validator-status)
+       *
+       * @param txHash A transaction hash as either a Uint8Array or a base58 encoded string
+       * @param accountId The NEAR account that signed the transaction
+       */
+      txStatus(txHash, accountId, waitUntil) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.withBackoff((currentProvider) => currentProvider.txStatus(txHash, accountId, waitUntil));
+        });
+      }
+      /**
+       * Gets a transaction's status from the RPC with receipts
+       * See [docs for more info](https://docs.near.org/docs/develop/front-end/rpc#transaction-status-with-receipts)
+       * @param txHash The hash of the transaction
+       * @param accountId The NEAR account that signed the transaction
+       * @returns {Promise<FinalExecutionOutcome>}
+       */
+      txStatusReceipts(txHash, accountId, waitUntil) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.withBackoff((currentProvider) => currentProvider.txStatusReceipts(txHash, accountId, waitUntil));
+        });
+      }
+      query(paramsOrPath, data) {
+        return __awaiter(this, void 0, void 0, function* () {
+          if (data) {
+            return this.withBackoff((currentProvider) => currentProvider.query(paramsOrPath, data));
+          }
+          return this.withBackoff((currentProvider) => currentProvider.query(paramsOrPath));
+        });
+      }
+      /**
+       * Query for block info from the RPC
+       * pass block_id OR finality as blockQuery, not both
+       * @see [https://docs.near.org/api/rpc/block-chunk](https://docs.near.org/api/rpc/block-chunk)
+       *
+       * @param blockQuery {@link BlockReference} (passing a {@link BlockId} is deprecated)
+       */
+      block(blockQuery) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.withBackoff((currentProvider) => currentProvider.block(blockQuery));
+        });
+      }
+      /**
+       * Query changes in block from the RPC
+       * pass block_id OR finality as blockQuery, not both
+       * @see [https://docs.near.org/api/rpc/block-chunk](https://docs.near.org/api/rpc/block-chunk)
+       */
+      blockChanges(blockQuery) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.withBackoff((currentProvider) => currentProvider.blockChanges(blockQuery));
+        });
+      }
+      /**
+       * Queries for details about a specific chunk appending details of receipts and transactions to the same chunk data provided by a block
+       * @see [https://docs.near.org/api/rpc/block-chunk](https://docs.near.org/api/rpc/block-chunk)
+       *
+       * @param chunkId Hash of a chunk ID or shard ID
+       */
+      chunk(chunkId) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.withBackoff((currentProvider) => currentProvider.chunk(chunkId));
+        });
+      }
+      /**
+       * Query validators of the epoch defined by the given block id.
+       * @see [https://docs.near.org/api/rpc/network#validation-status](https://docs.near.org/api/rpc/network#validation-status)
+       *
+       * @param blockId Block hash or height, or null for latest.
+       */
+      validators(blockId) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.withBackoff((currentProvider) => currentProvider.validators(blockId));
+        });
+      }
+      /**
+       * Gets the protocol config at a block from RPC
+       *
+       * @param blockReference specifies the block to get the protocol config for
+       */
+      experimental_protocolConfig(blockReference) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.withBackoff((currentProvider) => currentProvider.experimental_protocolConfig(blockReference));
+        });
+      }
+      /**
+       * Gets a light client execution proof for verifying execution outcomes
+       * @see [https://github.com/nearprotocol/NEPs/blob/master/specs/ChainSpec/LightClient.md#light-client-proof](https://github.com/nearprotocol/NEPs/blob/master/specs/ChainSpec/LightClient.md#light-client-proof)
+       */
+      lightClientProof(request) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.withBackoff((currentProvider) => currentProvider.lightClientProof(request));
+        });
+      }
+      /**
+       * Returns the next light client block as far in the future as possible from the last known hash
+       * to still be able to validate from that hash. This will either return the last block of the
+       * next epoch, or the last final known block.
+       *
+       * @see [https://github.com/near/NEPs/blob/master/specs/ChainSpec/LightClient.md#light-client-block](https://github.com/near/NEPs/blob/master/specs/ChainSpec/LightClient.md#light-client-block)
+       */
+      nextLightClientBlock(request) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.withBackoff((currentProvider) => currentProvider.nextLightClientBlock(request));
+        });
+      }
+      /**
+       * Gets access key changes for a given array of accountIds
+       * See [docs for more info](https://docs.near.org/docs/develop/front-end/rpc#view-access-key-changes-all)
+       * @returns {Promise<ChangeResult>}
+       */
+      accessKeyChanges(accountIdArray, blockQuery) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.withBackoff((currentProvider) => currentProvider.accessKeyChanges(accountIdArray, blockQuery));
+        });
+      }
+      /**
+       * Gets single access key changes for a given array of access keys
+       * pass block_id OR finality as blockQuery, not both
+       * See [docs for more info](https://docs.near.org/docs/develop/front-end/rpc#view-access-key-changes-single)
+       * @returns {Promise<ChangeResult>}
+       */
+      singleAccessKeyChanges(accessKeyArray, blockQuery) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.withBackoff((currentProvider) => currentProvider.singleAccessKeyChanges(accessKeyArray, blockQuery));
+        });
+      }
+      /**
+       * Gets account changes for a given array of accountIds
+       * pass block_id OR finality as blockQuery, not both
+       * See [docs for more info](https://docs.near.org/docs/develop/front-end/rpc#view-account-changes)
+       * @returns {Promise<ChangeResult>}
+       */
+      accountChanges(accountIdArray, blockQuery) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.withBackoff((currentProvider) => currentProvider.accountChanges(accountIdArray, blockQuery));
+        });
+      }
+      /**
+       * Gets contract state changes for a given array of accountIds
+       * pass block_id OR finality as blockQuery, not both
+       * Note: If you pass a keyPrefix it must be base64 encoded
+       * See [docs for more info](https://docs.near.org/docs/develop/front-end/rpc#view-contract-state-changes)
+       * @returns {Promise<ChangeResult>}
+       */
+      contractStateChanges(accountIdArray, blockQuery, keyPrefix = "") {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.withBackoff((currentProvider) => currentProvider.contractStateChanges(accountIdArray, blockQuery, keyPrefix));
+        });
+      }
+      /**
+       * Gets contract code changes for a given array of accountIds
+       * pass block_id OR finality as blockQuery, not both
+       * Note: Change is returned in a base64 encoded WASM file
+       * See [docs for more info](https://docs.near.org/docs/develop/front-end/rpc#view-contract-code-changes)
+       * @returns {Promise<ChangeResult>}
+       */
+      contractCodeChanges(accountIdArray, blockQuery) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.withBackoff((currentProvider) => currentProvider.contractCodeChanges(accountIdArray, blockQuery));
+        });
+      }
+      /**
+       * Returns gas price for a specific block_height or block_hash.
+       * @see [https://docs.near.org/api/rpc/gas](https://docs.near.org/api/rpc/gas)
+       *
+       * @param blockId Block hash or height, or null for latest.
+       */
+      gasPrice(blockId) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.withBackoff((currentProvider) => currentProvider.gasPrice(blockId));
+        });
+      }
+    };
+    exports2.FailoverRpcProvider = FailoverRpcProvider;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/providers/lib/index.js
+var require_lib24 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/providers/lib/index.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.fetchJson = exports2.Provider = exports2.FailoverRpcProvider = exports2.JsonRpcProvider = exports2.exponentialBackoff = void 0;
+    var exponential_backoff_1 = require_exponential_backoff2();
+    Object.defineProperty(exports2, "exponentialBackoff", { enumerable: true, get: function() {
+      return exponential_backoff_1.exponentialBackoff;
+    } });
+    var json_rpc_provider_1 = require_json_rpc_provider3();
+    Object.defineProperty(exports2, "JsonRpcProvider", { enumerable: true, get: function() {
+      return json_rpc_provider_1.JsonRpcProvider;
+    } });
+    var failover_rpc_provider_1 = require_failover_rpc_provider3();
+    Object.defineProperty(exports2, "FailoverRpcProvider", { enumerable: true, get: function() {
+      return failover_rpc_provider_1.FailoverRpcProvider;
+    } });
+    var provider_1 = require_provider8();
+    Object.defineProperty(exports2, "Provider", { enumerable: true, get: function() {
+      return provider_1.Provider;
+    } });
+    var fetch_json_1 = require_fetch_json2();
+    Object.defineProperty(exports2, "fetchJson", { enumerable: true, get: function() {
+      return fetch_json_1.fetchJson;
+    } });
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/accounts/lib/utils.js
+var require_utils17 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/accounts/lib/utils.js"(exports2) {
+    "use strict";
+    var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.viewFunction = exports2.viewState = exports2.encodeJSContractArgs = exports2.validateArgs = void 0;
+    var types_1 = require_lib();
+    var utils_1 = require_lib21();
+    function parseJsonFromRawResponse(response) {
+      return JSON.parse(Buffer.from(response).toString());
+    }
+    function bytesJsonStringify(input) {
+      return Buffer.from(JSON.stringify(input));
+    }
+    function validateArgs(args2) {
+      const isUint8Array = args2.byteLength !== void 0 && args2.byteLength === args2.length;
+      if (isUint8Array) {
+        return;
+      }
+      if (Array.isArray(args2) || typeof args2 !== "object") {
+        throw new types_1.PositionalArgsError();
+      }
+    }
+    exports2.validateArgs = validateArgs;
+    function encodeJSContractArgs(contractId, method, args2) {
+      return Buffer.concat([Buffer.from(contractId), Buffer.from([0]), Buffer.from(method), Buffer.from([0]), Buffer.from(args2)]);
+    }
+    exports2.encodeJSContractArgs = encodeJSContractArgs;
+    function viewState(connection, accountId, prefix, blockQuery = { finality: "optimistic" }) {
+      return __awaiter(this, void 0, void 0, function* () {
+        const { values } = yield connection.provider.query(Object.assign(Object.assign({ request_type: "view_state" }, blockQuery), { account_id: accountId, prefix_base64: Buffer.from(prefix).toString("base64") }));
+        return values.map(({ key, value }) => ({
+          key: Buffer.from(key, "base64"),
+          value: Buffer.from(value, "base64")
+        }));
+      });
+    }
+    exports2.viewState = viewState;
+    function viewFunction(connection, { contractId, methodName, args: args2 = {}, parse = parseJsonFromRawResponse, stringify = bytesJsonStringify, jsContract = false, blockQuery = { finality: "optimistic" } }) {
+      return __awaiter(this, void 0, void 0, function* () {
+        let encodedArgs;
+        validateArgs(args2);
+        if (jsContract) {
+          encodedArgs = encodeJSContractArgs(contractId, methodName, Object.keys(args2).length > 0 ? JSON.stringify(args2) : "");
+        } else {
+          encodedArgs = stringify(args2);
+        }
+        const result = yield connection.provider.query(Object.assign(Object.assign({ request_type: "call_function" }, blockQuery), { account_id: jsContract ? connection.jsvmAccountId : contractId, method_name: jsContract ? "view_js_contract" : methodName, args_base64: encodedArgs.toString("base64") }));
+        if (result.logs) {
+          (0, utils_1.printTxOutcomeLogs)({ contractId, logs: result.logs });
+        }
+        return result.result && result.result.length > 0 && parse(Buffer.from(result.result));
+      });
+    }
+    exports2.viewFunction = viewFunction;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/accounts/lib/account.js
+var require_account3 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/accounts/lib/account.js"(exports2) {
+    "use strict";
+    var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.Account = void 0;
+    var crypto_1 = require_lib22();
+    var providers_1 = require_lib24();
+    var transactions_1 = require_lib23();
+    var types_1 = require_lib();
+    var utils_1 = require_lib21();
+    var utils_2 = require_utils17();
+    var { addKey, createAccount, deleteAccount, deleteKey, deployContract, fullAccessKey, functionCall, functionCallAccessKey, stake, transfer } = transactions_1.actionCreators;
+    var TX_NONCE_RETRY_NUMBER = 12;
+    var TX_NONCE_RETRY_WAIT = 500;
+    var TX_NONCE_RETRY_WAIT_BACKOFF = 1.5;
+    var Account2 = class _Account {
+      constructor(connection, accountId) {
+        this.accessKeyByPublicKeyCache = {};
+        this.connection = connection;
+        this.accountId = accountId;
+      }
+      getConnection() {
+        return this.connection;
+      }
+      /**
+       * Returns basic NEAR account information via the `view_account` RPC query method
+       * @see [https://docs.near.org/api/rpc/contracts#view-account](https://docs.near.org/api/rpc/contracts#view-account)
+       */
+      state() {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.connection.provider.query({
+            request_type: "view_account",
+            account_id: this.accountId,
+            finality: "optimistic"
+          });
+        });
+      }
+      /**
+       * Create a signed transaction which can be broadcast to the network
+       * @param receiverId NEAR account receiving the transaction
+       * @param actions list of actions to perform as part of the transaction
+       * @see {@link "@near-js/providers".json-rpc-provider.JsonRpcProvider.sendTransaction | JsonRpcProvider.sendTransaction}
+       */
+      signTransaction(receiverId, actions) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const accessKeyInfo = yield this.findAccessKey(receiverId, actions);
+          if (!accessKeyInfo) {
+            throw new types_1.TypedError(`Can not sign transactions for account ${this.accountId} on network ${this.connection.networkId}, no matching key pair exists for this account`, "KeyNotFound");
+          }
+          const { accessKey } = accessKeyInfo;
+          const block = yield this.connection.provider.block({ finality: "final" });
+          const blockHash = block.header.hash;
+          const nonce = accessKey.nonce + BigInt(1);
+          return yield (0, transactions_1.signTransaction)(receiverId, nonce, actions, (0, utils_1.baseDecode)(blockHash), this.connection.signer, this.accountId, this.connection.networkId);
+        });
+      }
+      /**
+       * Sign a transaction to perform a list of actions and broadcast it using the RPC API.
+       * @see {@link "@near-js/providers".json-rpc-provider.JsonRpcProvider | JsonRpcProvider }
+       *
+       * @param options The options for signing and sending the transaction.
+       * @param options.receiverId The NEAR account ID of the transaction receiver.
+       * @param options.actions The list of actions to be performed in the transaction.
+       * @param options.returnError Whether to return an error if the transaction fails.
+       * @returns {Promise<FinalExecutionOutcome>} A promise that resolves to the final execution outcome of the transaction.
+       */
+      signAndSendTransaction({ receiverId, actions, returnError }) {
+        return __awaiter(this, void 0, void 0, function* () {
+          let txHash, signedTx;
+          const result = yield (0, providers_1.exponentialBackoff)(TX_NONCE_RETRY_WAIT, TX_NONCE_RETRY_NUMBER, TX_NONCE_RETRY_WAIT_BACKOFF, () => __awaiter(this, void 0, void 0, function* () {
+            [txHash, signedTx] = yield this.signTransaction(receiverId, actions);
+            const publicKey = signedTx.transaction.publicKey;
+            try {
+              return yield this.connection.provider.sendTransaction(signedTx);
+            } catch (error) {
+              if (error.type === "InvalidNonce") {
+                utils_1.Logger.warn(`Retrying transaction ${receiverId}:${(0, utils_1.baseEncode)(txHash)} with new nonce.`);
+                delete this.accessKeyByPublicKeyCache[publicKey.toString()];
+                return null;
+              }
+              if (error.type === "Expired") {
+                utils_1.Logger.warn(`Retrying transaction ${receiverId}:${(0, utils_1.baseEncode)(txHash)} due to expired block hash`);
+                return null;
+              }
+              error.context = new types_1.ErrorContext((0, utils_1.baseEncode)(txHash));
+              throw error;
+            }
+          }));
+          if (!result) {
+            throw new types_1.TypedError("nonce retries exceeded for transaction. This usually means there are too many parallel requests with the same access key.", "RetriesExceeded");
+          }
+          (0, utils_1.printTxOutcomeLogsAndFailures)({ contractId: signedTx.transaction.receiverId, outcome: result });
+          if (!returnError && typeof result.status === "object" && typeof result.status.Failure === "object" && result.status.Failure !== null) {
+            if (result.status.Failure.error_message && result.status.Failure.error_type) {
+              throw new types_1.TypedError(`Transaction ${result.transaction_outcome.id} failed. ${result.status.Failure.error_message}`, result.status.Failure.error_type);
+            } else {
+              throw (0, utils_1.parseResultError)(result);
+            }
+          }
+          return result;
+        });
+      }
+      /**
+       * Finds the {@link AccessKeyView} associated with the accounts {@link PublicKey} stored in the {@link "@near-js/keystores".keystore.KeyStore | Keystore}.
+       *
+       * @todo Find matching access key based on transaction (i.e. receiverId and actions)
+       *
+       * @param receiverId currently unused (see todo)
+       * @param actions currently unused (see todo)
+       * @returns `{ publicKey PublicKey; accessKey: AccessKeyView }`
+       */
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      findAccessKey(receiverId, actions) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const publicKey = yield this.connection.signer.getPublicKey(this.accountId, this.connection.networkId);
+          if (!publicKey) {
+            throw new types_1.TypedError(`no matching key pair found in ${this.connection.signer}`, "PublicKeyNotFound");
+          }
+          const cachedAccessKey = this.accessKeyByPublicKeyCache[publicKey.toString()];
+          if (cachedAccessKey !== void 0) {
+            return { publicKey, accessKey: cachedAccessKey };
+          }
+          try {
+            const rawAccessKey = yield this.connection.provider.query({
+              request_type: "view_access_key",
+              account_id: this.accountId,
+              public_key: publicKey.toString(),
+              finality: "optimistic"
+            });
+            const accessKey = Object.assign(Object.assign({}, rawAccessKey), { nonce: BigInt(rawAccessKey.nonce || 0) });
+            if (this.accessKeyByPublicKeyCache[publicKey.toString()]) {
+              return { publicKey, accessKey: this.accessKeyByPublicKeyCache[publicKey.toString()] };
+            }
+            this.accessKeyByPublicKeyCache[publicKey.toString()] = accessKey;
+            return { publicKey, accessKey };
+          } catch (e) {
+            if (e.type == "AccessKeyDoesNotExist") {
+              return null;
+            }
+            throw e;
+          }
+        });
+      }
+      /**
+       * Create a new account and deploy a contract to it
+       *
+       * @param contractId NEAR account where the contract is deployed
+       * @param publicKey The public key to add to the created contract account
+       * @param data The compiled contract code
+       * @param amount of NEAR to transfer to the created contract account. Transfer enough to pay for storage https://docs.near.org/docs/concepts/storage-staking
+       */
+      createAndDeployContract(contractId, publicKey, data, amount) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const accessKey = fullAccessKey();
+          yield this.signAndSendTransaction({
+            receiverId: contractId,
+            actions: [createAccount(), transfer(amount), addKey(crypto_1.PublicKey.from(publicKey), accessKey), deployContract(data)]
+          });
+          const contractAccount = new _Account(this.connection, contractId);
+          return contractAccount;
+        });
+      }
+      /**
+       * @param receiverId NEAR account receiving Ⓝ
+       * @param amount Amount to send in yoctoⓃ
+       */
+      sendMoney(receiverId, amount) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.signAndSendTransaction({
+            receiverId,
+            actions: [transfer(amount)]
+          });
+        });
+      }
+      /**
+       * @param newAccountId NEAR account name to be created
+       * @param publicKey A public key created from the masterAccount
+       */
+      createAccount(newAccountId, publicKey, amount) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const accessKey = fullAccessKey();
+          return this.signAndSendTransaction({
+            receiverId: newAccountId,
+            actions: [createAccount(), transfer(amount), addKey(crypto_1.PublicKey.from(publicKey), accessKey)]
+          });
+        });
+      }
+      /**
+       * @param beneficiaryId The NEAR account that will receive the remaining Ⓝ balance from the account being deleted
+       */
+      deleteAccount(beneficiaryId) {
+        return __awaiter(this, void 0, void 0, function* () {
+          utils_1.Logger.log("Deleting an account does not automatically transfer NFTs and FTs to the beneficiary address. Ensure to transfer assets before deleting.");
+          return this.signAndSendTransaction({
+            receiverId: this.accountId,
+            actions: [deleteAccount(beneficiaryId)]
+          });
+        });
+      }
+      /**
+       * @param data The compiled contract code
+       */
+      deployContract(data) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.signAndSendTransaction({
+            receiverId: this.accountId,
+            actions: [deployContract(data)]
+          });
+        });
+      }
+      /** @hidden */
+      encodeJSContractArgs(contractId, method, args2) {
+        return Buffer.concat([Buffer.from(contractId), Buffer.from([0]), Buffer.from(method), Buffer.from([0]), Buffer.from(args2)]);
+      }
+      /**
+        * Execute a function call.
+        * @param options The options for the function call.
+        * @param options.contractId The NEAR account ID of the smart contract.
+        * @param options.methodName The name of the method to be called on the smart contract.
+        * @param options.args The arguments to be passed to the method.
+        * @param options.gas The maximum amount of gas to be used for the function call.
+        * @param options.attachedDeposit The amount of NEAR tokens to be attached to the function call.
+        * @param options.walletMeta Metadata for wallet integration.
+        * @param options.walletCallbackUrl The callback URL for wallet integration.
+        * @param options.stringify A function to convert input arguments into bytes array
+        * @param options.jsContract Whether the contract is from JS SDK, automatically encodes args from JS SDK to binary.
+        * @returns {Promise<FinalExecutionOutcome>} A promise that resolves to the final execution outcome of the function call.
+        */
+      functionCall({ contractId, methodName, args: args2 = {}, gas = utils_1.DEFAULT_FUNCTION_CALL_GAS, attachedDeposit, walletMeta, walletCallbackUrl, stringify, jsContract }) {
+        return __awaiter(this, void 0, void 0, function* () {
+          this.validateArgs(args2);
+          let functionCallArgs;
+          if (jsContract) {
+            const encodedArgs = this.encodeJSContractArgs(contractId, methodName, JSON.stringify(args2));
+            functionCallArgs = ["call_js_contract", encodedArgs, gas, attachedDeposit, null, true];
+          } else {
+            const stringifyArg = stringify === void 0 ? transactions_1.stringifyJsonOrBytes : stringify;
+            functionCallArgs = [methodName, args2, gas, attachedDeposit, stringifyArg, false];
+          }
+          return this.signAndSendTransaction({
+            receiverId: jsContract ? this.connection.jsvmAccountId : contractId,
+            // eslint-disable-next-line prefer-spread
+            actions: [functionCall.apply(void 0, functionCallArgs)],
+            walletMeta,
+            walletCallbackUrl
+          });
+        });
+      }
+      /**
+       * @see [https://docs.near.org/concepts/basics/accounts/access-keys](https://docs.near.org/concepts/basics/accounts/access-keys)
+       * @todo expand this API to support more options.
+       * @param publicKey A public key to be associated with the contract
+       * @param contractId NEAR account where the contract is deployed
+       * @param methodNames The method names on the contract that should be allowed to be called. Pass null for no method names and '' or [] for any method names.
+       * @param amount Payment in yoctoⓃ that is sent to the contract during this function call
+       */
+      addKey(publicKey, contractId, methodNames, amount) {
+        return __awaiter(this, void 0, void 0, function* () {
+          if (!methodNames) {
+            methodNames = [];
+          }
+          if (!Array.isArray(methodNames)) {
+            methodNames = [methodNames];
+          }
+          let accessKey;
+          if (!contractId) {
+            accessKey = fullAccessKey();
+          } else {
+            accessKey = functionCallAccessKey(contractId, methodNames, amount);
+          }
+          return this.signAndSendTransaction({
+            receiverId: this.accountId,
+            actions: [addKey(crypto_1.PublicKey.from(publicKey), accessKey)]
+          });
+        });
+      }
+      /**
+       * @param publicKey The public key to be deleted
+       * @returns {Promise<FinalExecutionOutcome>}
+       */
+      deleteKey(publicKey) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.signAndSendTransaction({
+            receiverId: this.accountId,
+            actions: [deleteKey(crypto_1.PublicKey.from(publicKey))]
+          });
+        });
+      }
+      /**
+       * @see [https://near-nodes.io/validator/staking-and-delegation](https://near-nodes.io/validator/staking-and-delegation)
+       *
+       * @param publicKey The public key for the account that's staking
+       * @param amount The account to stake in yoctoⓃ
+       */
+      stake(publicKey, amount) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.signAndSendTransaction({
+            receiverId: this.accountId,
+            actions: [stake(amount, crypto_1.PublicKey.from(publicKey))]
+          });
+        });
+      }
+      /**
+       * Compose and sign a SignedDelegate action to be executed in a transaction on behalf of this Account instance
+       *
+       * @param options Options for the transaction.
+       * @param options.actions Actions to be included in the meta transaction
+       * @param options.blockHeightTtl Number of blocks past the current block height for which the SignedDelegate action may be included in a meta transaction
+       * @param options.receiverId Receiver account of the meta transaction
+       */
+      signedDelegate({ actions, blockHeightTtl, receiverId }) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const { provider, signer } = this.connection;
+          const { header } = yield provider.block({ finality: "final" });
+          const { accessKey, publicKey } = yield this.findAccessKey(null, null);
+          const delegateAction = (0, transactions_1.buildDelegateAction)({
+            actions,
+            maxBlockHeight: BigInt(header.height) + BigInt(blockHeightTtl),
+            nonce: BigInt(accessKey.nonce) + BigInt(1),
+            publicKey,
+            receiverId,
+            senderId: this.accountId
+          });
+          const { signedDelegateAction } = yield (0, transactions_1.signDelegateAction)({
+            delegateAction,
+            signer: {
+              sign: (message2) => __awaiter(this, void 0, void 0, function* () {
+                const { signature } = yield signer.signMessage(message2, delegateAction.senderId, this.connection.networkId);
+                return signature;
+              })
+            }
+          });
+          return signedDelegateAction;
+        });
+      }
+      /** @hidden */
+      validateArgs(args2) {
+        const isUint8Array = args2.byteLength !== void 0 && args2.byteLength === args2.length;
+        if (isUint8Array) {
+          return;
+        }
+        if (Array.isArray(args2) || typeof args2 !== "object") {
+          throw new types_1.PositionalArgsError();
+        }
+      }
+      /**
+       * Invoke a contract view function using the RPC API.
+       * @see [https://docs.near.org/api/rpc/contracts#call-a-contract-function](https://docs.near.org/api/rpc/contracts#call-a-contract-function)
+       *
+       * @param options Function call options.
+       * @param options.contractId NEAR account where the contract is deployed
+       * @param options.methodName The view-only method (no state mutations) name on the contract as it is written in the contract code
+       * @param options.args Any arguments to the view contract method, wrapped in JSON
+       * @param options.parse Parse the result of the call. Receives a Buffer (bytes array) and converts it to any object. By default result will be treated as json.
+       * @param options.stringify Convert input arguments into a bytes array. By default the input is treated as a JSON.
+       * @param options.jsContract Is contract from JS SDK, automatically encodes args from JS SDK to binary.
+       * @param options.blockQuery specifies which block to query state at. By default returns last "optimistic" block (i.e. not necessarily finalized).
+       * @returns {Promise<any>}
+       */
+      viewFunction(options) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return yield (0, utils_2.viewFunction)(this.connection, options);
+        });
+      }
+      /**
+       * Returns the state (key value pairs) of this account's contract based on the key prefix.
+       * Pass an empty string for prefix if you would like to return the entire state.
+       * @see [https://docs.near.org/api/rpc/contracts#view-contract-state](https://docs.near.org/api/rpc/contracts#view-contract-state)
+       *
+       * @param prefix allows to filter which keys should be returned. Empty prefix means all keys. String prefix is utf-8 encoded.
+       * @param blockQuery specifies which block to query state at. By default returns last "optimistic" block (i.e. not necessarily finalized).
+       */
+      viewState(prefix, blockQuery = { finality: "optimistic" }) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return yield (0, utils_2.viewState)(this.connection, this.accountId, prefix, blockQuery);
+        });
+      }
+      /**
+       * Get all access keys for the account
+       * @see [https://docs.near.org/api/rpc/access-keys#view-access-key-list](https://docs.near.org/api/rpc/access-keys#view-access-key-list)
+       */
+      getAccessKeys() {
+        var _a;
+        return __awaiter(this, void 0, void 0, function* () {
+          const response = yield this.connection.provider.query({
+            request_type: "view_access_key_list",
+            account_id: this.accountId,
+            finality: "optimistic"
+          });
+          return (_a = response === null || response === void 0 ? void 0 : response.keys) === null || _a === void 0 ? void 0 : _a.map((key) => Object.assign(Object.assign({}, key), { access_key: Object.assign(Object.assign({}, key.access_key), { nonce: BigInt(key.access_key.nonce) }) }));
+        });
+      }
+      /**
+       * Returns a list of authorized apps
+       * @todo update the response value to return all the different keys, not just app keys.
+       */
+      getAccountDetails() {
+        return __awaiter(this, void 0, void 0, function* () {
+          const accessKeys = yield this.getAccessKeys();
+          const authorizedApps = accessKeys.filter((item) => item.access_key.permission !== "FullAccess").map((item) => {
+            const perm = item.access_key.permission;
+            return {
+              contractId: perm.FunctionCall.receiver_id,
+              amount: perm.FunctionCall.allowance,
+              publicKey: item.public_key
+            };
+          });
+          return { authorizedApps };
+        });
+      }
+      /**
+       * Returns calculated account balance
+       */
+      getAccountBalance() {
+        return __awaiter(this, void 0, void 0, function* () {
+          const protocolConfig = yield this.connection.provider.experimental_protocolConfig({ finality: "final" });
+          const state = yield this.state();
+          const costPerByte = BigInt(protocolConfig.runtime_config.storage_amount_per_byte);
+          const stateStaked = BigInt(state.storage_usage) * costPerByte;
+          const staked = BigInt(state.locked);
+          const totalBalance = BigInt(state.amount) + staked;
+          const availableBalance = totalBalance - (staked > stateStaked ? staked : stateStaked);
+          return {
+            total: totalBalance.toString(),
+            stateStaked: stateStaked.toString(),
+            staked: staked.toString(),
+            available: availableBalance.toString()
+          };
+        });
+      }
+      /**
+       * Returns the NEAR tokens balance and validators of a given account that is delegated to the staking pools that are part of the validators set in the current epoch.
+       *
+       * NOTE: If the tokens are delegated to a staking pool that is currently on pause or does not have enough tokens to participate in validation, they won't be accounted for.
+       * @returns {Promise<ActiveDelegatedStakeBalance>}
+       */
+      getActiveDelegatedStakeBalance() {
+        return __awaiter(this, void 0, void 0, function* () {
+          const block = yield this.connection.provider.block({ finality: "final" });
+          const blockHash = block.header.hash;
+          const epochId = block.header.epoch_id;
+          const { current_validators, next_validators, current_proposals } = yield this.connection.provider.validators(epochId);
+          const pools = /* @__PURE__ */ new Set();
+          [...current_validators, ...next_validators, ...current_proposals].forEach((validator) => pools.add(validator.account_id));
+          const uniquePools = [...pools];
+          const promises = uniquePools.map((validator) => this.viewFunction({
+            contractId: validator,
+            methodName: "get_account_total_balance",
+            args: { account_id: this.accountId },
+            blockQuery: { blockId: blockHash }
+          }));
+          const results = yield Promise.allSettled(promises);
+          const hasTimeoutError = results.some((result) => {
+            if (result.status === "rejected" && result.reason.type === "TimeoutError") {
+              return true;
+            }
+            return false;
+          });
+          if (hasTimeoutError) {
+            throw new Error("Failed to get delegated stake balance");
+          }
+          const summary = results.reduce((result, state, index) => {
+            const validatorId = uniquePools[index];
+            if (state.status === "fulfilled") {
+              const currentBN = BigInt(state.value);
+              if (currentBN !== BigInt(0)) {
+                return Object.assign(Object.assign({}, result), { stakedValidators: [...result.stakedValidators, { validatorId, amount: currentBN.toString() }], total: result.total + currentBN });
+              }
+            }
+            if (state.status === "rejected") {
+              return Object.assign(Object.assign({}, result), { failedValidators: [...result.failedValidators, { validatorId, error: state.reason }] });
+            }
+            return result;
+          }, { stakedValidators: [], failedValidators: [], total: BigInt(0) });
+          return Object.assign(Object.assign({}, summary), { total: summary.total.toString() });
+        });
+      }
+    };
+    exports2.Account = Account2;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/accounts/lib/constants.js
+var require_constants11 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/accounts/lib/constants.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.MULTISIG_CONFIRM_METHODS = exports2.MULTISIG_CHANGE_METHODS = exports2.MULTISIG_DEPOSIT = exports2.MULTISIG_GAS = exports2.MULTISIG_ALLOWANCE = exports2.MULTISIG_STORAGE_KEY = void 0;
+    var utils_1 = require_lib21();
+    exports2.MULTISIG_STORAGE_KEY = "__multisigRequest";
+    exports2.MULTISIG_ALLOWANCE = BigInt((0, utils_1.parseNearAmount)("1"));
+    exports2.MULTISIG_GAS = BigInt("100000000000000");
+    exports2.MULTISIG_DEPOSIT = BigInt("0");
+    exports2.MULTISIG_CHANGE_METHODS = ["add_request", "add_request_and_confirm", "delete_request", "confirm"];
+    exports2.MULTISIG_CONFIRM_METHODS = ["confirm"];
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/accounts/lib/types.js
+var require_types5 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/accounts/lib/types.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.MultisigStateStatus = exports2.MultisigDeleteRequestRejectionError = void 0;
+    var MultisigDeleteRequestRejectionError;
+    (function(MultisigDeleteRequestRejectionError2) {
+      MultisigDeleteRequestRejectionError2["CANNOT_DESERIALIZE_STATE"] = "Cannot deserialize the contract state";
+      MultisigDeleteRequestRejectionError2["MULTISIG_NOT_INITIALIZED"] = "Smart contract panicked: Multisig contract should be initialized before usage";
+      MultisigDeleteRequestRejectionError2["NO_SUCH_REQUEST"] = "Smart contract panicked: panicked at 'No such request: either wrong number or already confirmed'";
+      MultisigDeleteRequestRejectionError2["REQUEST_COOLDOWN_ERROR"] = "Request cannot be deleted immediately after creation.";
+      MultisigDeleteRequestRejectionError2["METHOD_NOT_FOUND"] = "Contract method is not found";
+    })(MultisigDeleteRequestRejectionError = exports2.MultisigDeleteRequestRejectionError || (exports2.MultisigDeleteRequestRejectionError = {}));
+    var MultisigStateStatus;
+    (function(MultisigStateStatus2) {
+      MultisigStateStatus2[MultisigStateStatus2["INVALID_STATE"] = 0] = "INVALID_STATE";
+      MultisigStateStatus2[MultisigStateStatus2["STATE_NOT_INITIALIZED"] = 1] = "STATE_NOT_INITIALIZED";
+      MultisigStateStatus2[MultisigStateStatus2["VALID_STATE"] = 2] = "VALID_STATE";
+      MultisigStateStatus2[MultisigStateStatus2["UNKNOWN_STATE"] = 3] = "UNKNOWN_STATE";
+    })(MultisigStateStatus = exports2.MultisigStateStatus || (exports2.MultisigStateStatus = {}));
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/accounts/lib/account_multisig.js
+var require_account_multisig3 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/accounts/lib/account_multisig.js"(exports2) {
+    "use strict";
+    var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.AccountMultisig = void 0;
+    var transactions_1 = require_lib23();
+    var utils_1 = require_lib21();
+    var account_1 = require_account3();
+    var constants_1 = require_constants11();
+    var types_1 = require_types5();
+    var { deployContract, functionCall } = transactions_1.actionCreators;
+    var MultisigCodeStatus;
+    (function(MultisigCodeStatus2) {
+      MultisigCodeStatus2[MultisigCodeStatus2["INVALID_CODE"] = 0] = "INVALID_CODE";
+      MultisigCodeStatus2[MultisigCodeStatus2["VALID_CODE"] = 1] = "VALID_CODE";
+      MultisigCodeStatus2[MultisigCodeStatus2["UNKNOWN_CODE"] = 2] = "UNKNOWN_CODE";
+    })(MultisigCodeStatus || (MultisigCodeStatus = {}));
+    var storageFallback = {
+      [constants_1.MULTISIG_STORAGE_KEY]: null
+    };
+    var AccountMultisig = class extends account_1.Account {
+      /**
+       * Constructs an instance of the `AccountMultisig` class.
+       * @param connection The NEAR connection object.
+       * @param accountId The NEAR account ID.
+       * @param options Additional options for the multisig account.
+       * @param options.storage Storage to store data related to multisig operations.
+       * @param options.onAddRequestResult Callback function to handle the result of adding a request.
+       */
+      constructor(connection, accountId, options) {
+        super(connection, accountId);
+        this.storage = options.storage;
+        this.onAddRequestResult = options.onAddRequestResult;
+      }
+      /**
+       * Sign and send a transaction with the multisig account as the sender.
+       * @param receiverId - The NEAR account ID of the transaction receiver.
+       * @param actions - The list of actions to be included in the transaction.
+       * @returns {Promise<FinalExecutionOutcome>} A promise that resolves to the final execution outcome of the transaction.
+       */
+      signAndSendTransactionWithAccount(receiverId, actions) {
+        const _super = Object.create(null, {
+          signAndSendTransaction: { get: () => super.signAndSendTransaction }
+        });
+        return __awaiter(this, void 0, void 0, function* () {
+          return _super.signAndSendTransaction.call(this, { receiverId, actions });
+        });
+      }
+      /**
+       * Sign and send a multisig transaction to add a request and confirm it.
+       * @param options Options for the multisig transaction.
+       * @param options.receiverId The NEAR account ID of the transaction receiver.
+       * @param options.actions The list of actions to be included in the transaction.
+       * @returns {Promise<FinalExecutionOutcome>} A promise that resolves to the final execution outcome of the transaction.
+       */
+      signAndSendTransaction({ receiverId, actions }) {
+        const _super = Object.create(null, {
+          signAndSendTransaction: { get: () => super.signAndSendTransaction }
+        });
+        return __awaiter(this, void 0, void 0, function* () {
+          const { accountId } = this;
+          const args2 = Buffer.from(JSON.stringify({
+            request: {
+              receiver_id: receiverId,
+              actions: convertActions(actions, accountId, receiverId)
+            }
+          }));
+          let result;
+          try {
+            result = yield _super.signAndSendTransaction.call(this, {
+              receiverId: accountId,
+              actions: [
+                functionCall("add_request_and_confirm", args2, constants_1.MULTISIG_GAS, constants_1.MULTISIG_DEPOSIT)
+              ]
+            });
+          } catch (e) {
+            if (e.toString().includes("Account has too many active requests. Confirm or delete some")) {
+              yield this.deleteUnconfirmedRequests();
+              return yield this.signAndSendTransaction({ receiverId, actions });
+            }
+            throw e;
+          }
+          if (!result.status) {
+            throw new Error("Request failed");
+          }
+          const status = Object.assign({}, result.status);
+          if (!status.SuccessValue || typeof status.SuccessValue !== "string") {
+            throw new Error("Request failed");
+          }
+          this.setRequest({
+            accountId,
+            actions,
+            requestId: parseInt(Buffer.from(status.SuccessValue, "base64").toString("ascii"), 10)
+          });
+          if (this.onAddRequestResult) {
+            yield this.onAddRequestResult(result);
+          }
+          this.deleteUnconfirmedRequests();
+          return result;
+        });
+      }
+      /**
+       * This method submits a canary transaction that is expected to always fail in order to determine whether the contract currently has valid multisig state
+       * and whether it is initialized. The canary transaction attempts to delete a request at index u32_max and will go through if a request exists at that index.
+       * a u32_max + 1 and -1 value cannot be used for the canary due to expected u32 error thrown before deserialization attempt.
+       * @param contractBytes The bytecode of the multisig contract.
+       * @returns {Promise<{ codeStatus: MultisigCodeStatus; stateStatus: MultisigStateStatus }>} A promise that resolves to the status of the code and state.
+       */
+      checkMultisigCodeAndStateStatus(contractBytes) {
+        const _super = Object.create(null, {
+          signAndSendTransaction: { get: () => super.signAndSendTransaction }
+        });
+        return __awaiter(this, void 0, void 0, function* () {
+          const u32_max = 4294967295;
+          const validCodeStatusIfNoDeploy = contractBytes ? MultisigCodeStatus.UNKNOWN_CODE : MultisigCodeStatus.VALID_CODE;
+          try {
+            if (contractBytes) {
+              yield _super.signAndSendTransaction.call(this, {
+                receiverId: this.accountId,
+                actions: [
+                  deployContract(contractBytes),
+                  functionCall("delete_request", { request_id: u32_max }, constants_1.MULTISIG_GAS, constants_1.MULTISIG_DEPOSIT)
+                ]
+              });
+            } else {
+              yield this.deleteRequest(u32_max);
+            }
+            return { codeStatus: MultisigCodeStatus.VALID_CODE, stateStatus: types_1.MultisigStateStatus.VALID_STATE };
+          } catch (e) {
+            if (new RegExp(types_1.MultisigDeleteRequestRejectionError.CANNOT_DESERIALIZE_STATE).test(e && e.kind && e.kind.ExecutionError)) {
+              return { codeStatus: validCodeStatusIfNoDeploy, stateStatus: types_1.MultisigStateStatus.INVALID_STATE };
+            } else if (new RegExp(types_1.MultisigDeleteRequestRejectionError.MULTISIG_NOT_INITIALIZED).test(e && e.kind && e.kind.ExecutionError)) {
+              return { codeStatus: validCodeStatusIfNoDeploy, stateStatus: types_1.MultisigStateStatus.STATE_NOT_INITIALIZED };
+            } else if (new RegExp(types_1.MultisigDeleteRequestRejectionError.NO_SUCH_REQUEST).test(e && e.kind && e.kind.ExecutionError)) {
+              return { codeStatus: validCodeStatusIfNoDeploy, stateStatus: types_1.MultisigStateStatus.VALID_STATE };
+            } else if (new RegExp(types_1.MultisigDeleteRequestRejectionError.METHOD_NOT_FOUND).test(e && e.message)) {
+              return { codeStatus: MultisigCodeStatus.INVALID_CODE, stateStatus: types_1.MultisigStateStatus.UNKNOWN_STATE };
+            }
+            throw e;
+          }
+        });
+      }
+      /**
+       * Delete a multisig request by its ID.
+       * @param request_id The ID of the multisig request to be deleted.
+       * @returns {Promise<FinalExecutionOutcome>} A promise that resolves to the final execution outcome of the deletion.
+       */
+      deleteRequest(request_id) {
+        return super.signAndSendTransaction({
+          receiverId: this.accountId,
+          actions: [functionCall("delete_request", { request_id }, constants_1.MULTISIG_GAS, constants_1.MULTISIG_DEPOSIT)]
+        });
+      }
+      /**
+       * Delete all multisig requests associated with the account.
+       * @returns {Promise<void>} A promise that resolves when all requests are deleted.
+       */
+      deleteAllRequests() {
+        return __awaiter(this, void 0, void 0, function* () {
+          const request_ids = yield this.getRequestIds();
+          if (request_ids.length) {
+            yield Promise.all(request_ids.map((id) => this.deleteRequest(id)));
+          }
+        });
+      }
+      /**
+       * Delete unconfirmed multisig requests associated with the account.
+       * @returns {Promise<void>} A promise that resolves when unconfirmed requests are deleted.
+       */
+      deleteUnconfirmedRequests() {
+        const _super = Object.create(null, {
+          signAndSendTransaction: { get: () => super.signAndSendTransaction }
+        });
+        return __awaiter(this, void 0, void 0, function* () {
+          const request_ids = yield this.getRequestIds();
+          const { requestId } = this.getRequest();
+          for (const requestIdToDelete of request_ids) {
+            if (requestIdToDelete == requestId) {
+              continue;
+            }
+            try {
+              yield _super.signAndSendTransaction.call(this, {
+                receiverId: this.accountId,
+                actions: [functionCall("delete_request", { request_id: requestIdToDelete }, constants_1.MULTISIG_GAS, constants_1.MULTISIG_DEPOSIT)]
+              });
+            } catch (e) {
+              utils_1.Logger.warn("Attempt to delete an earlier request before 15 minutes failed. Will try again.");
+            }
+          }
+        });
+      }
+      // helpers
+      getRequestIds() {
+        return __awaiter(this, void 0, void 0, function* () {
+          return this.viewFunction({
+            contractId: this.accountId,
+            methodName: "list_request_ids"
+          });
+        });
+      }
+      getRequest() {
+        if (this.storage) {
+          return JSON.parse(this.storage.getItem(constants_1.MULTISIG_STORAGE_KEY) || "{}");
+        }
+        return storageFallback[constants_1.MULTISIG_STORAGE_KEY];
+      }
+      setRequest(data) {
+        if (this.storage) {
+          return this.storage.setItem(constants_1.MULTISIG_STORAGE_KEY, JSON.stringify(data));
+        }
+        storageFallback[constants_1.MULTISIG_STORAGE_KEY] = data;
+      }
+    };
+    exports2.AccountMultisig = AccountMultisig;
+    var convertPKForContract = (pk) => pk.toString().replace("ed25519:", "");
+    var convertActions = (actions, accountId, receiverId) => actions.map((a) => {
+      const type = a.enum;
+      const { gas, publicKey, methodName, args: args2, deposit, accessKey, code } = a[type];
+      const action = {
+        type: type[0].toUpperCase() + type.substr(1),
+        gas: gas && gas.toString() || void 0,
+        public_key: publicKey && convertPKForContract(publicKey) || void 0,
+        method_name: methodName,
+        args: args2 && Buffer.from(args2).toString("base64") || void 0,
+        code: code && Buffer.from(code).toString("base64") || void 0,
+        amount: deposit && deposit.toString() || void 0,
+        deposit: deposit && deposit.toString() || "0",
+        permission: void 0
+      };
+      if (accessKey) {
+        if (receiverId === accountId && accessKey.permission.enum !== "fullAccess") {
+          action.permission = {
+            receiver_id: accountId,
+            allowance: constants_1.MULTISIG_ALLOWANCE.toString(),
+            method_names: constants_1.MULTISIG_CHANGE_METHODS
+          };
+        }
+        if (accessKey.permission.enum === "functionCall") {
+          const { receiverId: receiver_id, methodNames: method_names, allowance } = accessKey.permission.functionCall;
+          action.permission = {
+            receiver_id,
+            allowance: allowance && allowance.toString() || void 0,
+            method_names
+          };
+        }
+      }
+      return action;
+    });
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/accounts/lib/account_2fa.js
+var require_account_2fa2 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/accounts/lib/account_2fa.js"(exports2) {
+    "use strict";
+    var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.Account2FA = void 0;
+    var crypto_1 = require_lib22();
+    var types_1 = require_lib();
+    var providers_1 = require_lib24();
+    var transactions_1 = require_lib23();
+    var utils_1 = require_lib21();
+    var account_multisig_1 = require_account_multisig3();
+    var constants_1 = require_constants11();
+    var types_2 = require_types5();
+    var { addKey, deleteKey, deployContract, fullAccessKey, functionCall, functionCallAccessKey } = transactions_1.actionCreators;
+    var Account2FA = class extends account_multisig_1.AccountMultisig {
+      constructor(connection, accountId, options) {
+        super(connection, accountId, options);
+        this.helperUrl = "https://helper.testnet.near.org";
+        this.helperUrl = options.helperUrl || this.helperUrl;
+        this.storage = options.storage;
+        this.sendCode = options.sendCode || this.sendCodeDefault;
+        this.getCode = options.getCode || this.getCodeDefault;
+        this.verifyCode = options.verifyCode || this.verifyCodeDefault;
+        this.onConfirmResult = options.onConfirmResult;
+      }
+      /**
+       * Sign a transaction to preform a list of actions and broadcast it using the RPC API.
+       * @see {@link "@near-js/providers".json-rpc-provider.JsonRpcProvider.sendTransaction | JsonRpcProvider.sendTransaction}
+       *
+       * @param options Options for the transaction.
+       * @param options.receiverId The NEAR account ID of the transaction receiver.
+       * @param options.actions The list of actions to be included in the transaction.
+       * @returns {Promise<FinalExecutionOutcome>} A promise that resolves to the final execution outcome of the transaction.
+       */
+      signAndSendTransaction({ receiverId, actions }) {
+        const _super = Object.create(null, {
+          signAndSendTransaction: { get: () => super.signAndSendTransaction }
+        });
+        return __awaiter(this, void 0, void 0, function* () {
+          yield _super.signAndSendTransaction.call(this, { receiverId, actions });
+          yield this.sendCode();
+          const result = yield this.promptAndVerify();
+          if (this.onConfirmResult) {
+            yield this.onConfirmResult(result);
+          }
+          return result;
+        });
+      }
+      // default helpers for CH deployments of multisig
+      /**
+       * Deploy a multisig contract with 2FA and handle the deployment process.
+       * @param contractBytes - The bytecode of the multisig contract.
+       * @returns {Promise<FinalExecutionOutcome>} A promise that resolves to the final execution outcome of the deployment.
+       */
+      deployMultisig(contractBytes) {
+        const _super = Object.create(null, {
+          signAndSendTransactionWithAccount: { get: () => super.signAndSendTransactionWithAccount }
+        });
+        return __awaiter(this, void 0, void 0, function* () {
+          const { accountId } = this;
+          const seedOrLedgerKey = (yield this.getRecoveryMethods()).data.filter(({ kind, publicKey }) => (kind === "phrase" || kind === "ledger") && publicKey !== null).map((rm) => rm.publicKey);
+          const fak2lak = (yield this.getAccessKeys()).filter(({ public_key, access_key: { permission } }) => permission === "FullAccess" && !seedOrLedgerKey.includes(public_key)).map((ak) => ak.public_key).map(toPK);
+          const confirmOnlyKey = toPK((yield this.postSignedJson("/2fa/getAccessKey", { accountId })).publicKey);
+          const newArgs = Buffer.from(JSON.stringify({ "num_confirmations": 2 }));
+          const actions = [
+            ...fak2lak.map((pk) => deleteKey(pk)),
+            ...fak2lak.map((pk) => addKey(pk, functionCallAccessKey(accountId, constants_1.MULTISIG_CHANGE_METHODS, null))),
+            addKey(confirmOnlyKey, functionCallAccessKey(accountId, constants_1.MULTISIG_CONFIRM_METHODS, null)),
+            deployContract(contractBytes)
+          ];
+          const newFunctionCallActionBatch = actions.concat(functionCall("new", newArgs, constants_1.MULTISIG_GAS, constants_1.MULTISIG_DEPOSIT));
+          utils_1.Logger.log("deploying multisig contract for", accountId);
+          const { stateStatus: multisigStateStatus } = yield this.checkMultisigCodeAndStateStatus(contractBytes);
+          switch (multisigStateStatus) {
+            case types_2.MultisigStateStatus.STATE_NOT_INITIALIZED:
+              return yield _super.signAndSendTransactionWithAccount.call(this, accountId, newFunctionCallActionBatch);
+            case types_2.MultisigStateStatus.VALID_STATE:
+              return yield _super.signAndSendTransactionWithAccount.call(this, accountId, actions);
+            case types_2.MultisigStateStatus.INVALID_STATE:
+              throw new types_1.TypedError(`Can not deploy a contract to account ${this.accountId} on network ${this.connection.networkId}, the account has existing state.`, "ContractHasExistingState");
+            default:
+              throw new types_1.TypedError(`Can not deploy a contract to account ${this.accountId} on network ${this.connection.networkId}, the account state could not be verified.`, "ContractStateUnknown");
+          }
+        });
+      }
+      /**
+       * Disable 2FA with the option to clean up contract state.
+       * @param options Options for disabling 2FA.
+       * @param options.contractBytes The bytecode of the contract to deploy.
+       * @param options.cleanupContractBytes The bytecode of the cleanup contract (optional).
+       * @returns {Promise<FinalExecutionOutcome>} A promise that resolves to the final execution outcome of the operation.
+       */
+      disableWithFAK({ contractBytes, cleanupContractBytes }) {
+        return __awaiter(this, void 0, void 0, function* () {
+          let cleanupActions = [];
+          if (cleanupContractBytes) {
+            yield this.deleteAllRequests().catch((e) => e);
+            cleanupActions = yield this.get2faDisableCleanupActions(cleanupContractBytes);
+          }
+          const keyConversionActions = yield this.get2faDisableKeyConversionActions();
+          const actions = [
+            ...cleanupActions,
+            ...keyConversionActions,
+            deployContract(contractBytes)
+          ];
+          const accessKeyInfo = yield this.findAccessKey(this.accountId, actions);
+          if (accessKeyInfo && accessKeyInfo.accessKey && accessKeyInfo.accessKey.permission !== "FullAccess") {
+            throw new types_1.TypedError("No full access key found in keystore. Unable to bypass multisig", "NoFAKFound");
+          }
+          return this.signAndSendTransactionWithAccount(this.accountId, actions);
+        });
+      }
+      /**
+       * Retrieves cleanup actions for disabling 2FA.
+       * @param cleanupContractBytes - The bytecode of the cleanup contract.
+       * @returns {Promise<Action[]>} - A promise that resolves to an array of cleanup actions.
+       */
+      get2faDisableCleanupActions(cleanupContractBytes) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const currentAccountState = yield this.viewState("").catch((error) => {
+            const cause = error.cause && error.cause.name;
+            if (cause == "NO_CONTRACT_CODE") {
+              return [];
+            }
+            throw cause == "TOO_LARGE_CONTRACT_STATE" ? new types_1.TypedError(`Can not deploy a contract to account ${this.accountId} on network ${this.connection.networkId}, the account has existing state.`, "ContractHasExistingState") : error;
+          });
+          const currentAccountStateKeys = currentAccountState.map(({ key }) => key.toString("base64"));
+          return currentAccountState.length ? [
+            deployContract(cleanupContractBytes),
+            functionCall("clean", { keys: currentAccountStateKeys }, constants_1.MULTISIG_GAS, BigInt("0"))
+          ] : [];
+        });
+      }
+      /**
+       * Retrieves key conversion actions for disabling 2FA.
+       * @returns {Promise<Action[]>} - A promise that resolves to an array of key conversion actions.
+       */
+      get2faDisableKeyConversionActions() {
+        return __awaiter(this, void 0, void 0, function* () {
+          const { accountId } = this;
+          const accessKeys = yield this.getAccessKeys();
+          const lak2fak = accessKeys.filter(({ access_key }) => access_key.permission !== "FullAccess").filter(({ access_key }) => {
+            const perm = access_key.permission.FunctionCall;
+            return perm.receiver_id === accountId && perm.method_names.length === 4 && perm.method_names.includes("add_request_and_confirm");
+          });
+          const confirmOnlyKey = crypto_1.PublicKey.from((yield this.postSignedJson("/2fa/getAccessKey", { accountId })).publicKey);
+          return [
+            deleteKey(confirmOnlyKey),
+            ...lak2fak.map(({ public_key }) => deleteKey(crypto_1.PublicKey.from(public_key))),
+            ...lak2fak.map(({ public_key }) => addKey(crypto_1.PublicKey.from(public_key), fullAccessKey()))
+          ];
+        });
+      }
+      /**
+       * This method converts LAKs back to FAKs, clears state and deploys an 'empty' contract (contractBytes param)
+       * @param [contractBytes]{@link https://github.com/near/near-wallet/blob/master/packages/frontend/src/wasm/main.wasm?raw=true}
+       * @param [cleanupContractBytes]{@link https://github.com/near/core-contracts/blob/master/state-manipulation/res/state_cleanup.wasm?raw=true}
+       * @returns {Promise<FinalExecutionOutcome>} A promise that resolves to the final execution outcome of the operation.
+       */
+      disable(contractBytes, cleanupContractBytes) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const { stateStatus } = yield this.checkMultisigCodeAndStateStatus();
+          if (stateStatus !== types_2.MultisigStateStatus.VALID_STATE && stateStatus !== types_2.MultisigStateStatus.STATE_NOT_INITIALIZED) {
+            throw new types_1.TypedError(`Can not deploy a contract to account ${this.accountId} on network ${this.connection.networkId}, the account state could not be verified.`, "ContractStateUnknown");
+          }
+          let deleteAllRequestsError;
+          yield this.deleteAllRequests().catch((e) => deleteAllRequestsError = e);
+          const cleanupActions = yield this.get2faDisableCleanupActions(cleanupContractBytes).catch((e) => {
+            if (e.type === "ContractHasExistingState") {
+              throw deleteAllRequestsError || e;
+            }
+            throw e;
+          });
+          const actions = [
+            ...cleanupActions,
+            ...yield this.get2faDisableKeyConversionActions(),
+            deployContract(contractBytes)
+          ];
+          utils_1.Logger.log("disabling 2fa for", this.accountId);
+          return yield this.signAndSendTransaction({
+            receiverId: this.accountId,
+            actions
+          });
+        });
+      }
+      /**
+       * Default implementation for sending the 2FA code.
+       * @returns {Promise<string>} - A promise that resolves to the request ID.
+       */
+      sendCodeDefault() {
+        return __awaiter(this, void 0, void 0, function* () {
+          const { accountId } = this;
+          const { requestId } = this.getRequest();
+          const method = yield this.get2faMethod();
+          yield this.postSignedJson("/2fa/send", {
+            accountId,
+            method,
+            requestId
+          });
+          return requestId;
+        });
+      }
+      getCodeDefault() {
+        return __awaiter(this, void 0, void 0, function* () {
+          throw new Error('There is no getCode callback provided. Please provide your own in AccountMultisig constructor options. It has a parameter method where method.kind is "email" or "phone".');
+        });
+      }
+      /**
+       * Prompts the user to enter and verify the 2FA code.
+       * @returns {Promise<any>} - A promise that resolves to the verification result.
+       */
+      promptAndVerify() {
+        return __awaiter(this, void 0, void 0, function* () {
+          const method = yield this.get2faMethod();
+          const securityCode = yield this.getCode(method);
+          try {
+            const result = yield this.verifyCode(securityCode);
+            return result;
+          } catch (e) {
+            utils_1.Logger.warn("Error validating security code:", e);
+            if (e.toString().includes("invalid 2fa code provided") || e.toString().includes("2fa code not valid")) {
+              return yield this.promptAndVerify();
+            }
+            throw e;
+          }
+        });
+      }
+      /**
+       * Verify the 2FA code using the default method.
+       * @param securityCode - The security code to verify.
+       * @returns {Promise<any>} A promise that resolves to the verification result.
+       */
+      verifyCodeDefault(securityCode) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const { accountId } = this;
+          const request = this.getRequest();
+          if (!request) {
+            throw new Error("no request pending");
+          }
+          const { requestId } = request;
+          return yield this.postSignedJson("/2fa/verify", {
+            accountId,
+            securityCode,
+            requestId
+          });
+        });
+      }
+      /**
+       * Retrieves recovery methods for the account.
+       * @returns {Promise<{ accountId: string, data: any }>} - A promise that resolves to recovery methods data.
+       */
+      getRecoveryMethods() {
+        return __awaiter(this, void 0, void 0, function* () {
+          const { accountId } = this;
+          return {
+            accountId,
+            data: yield this.postSignedJson("/account/recoveryMethods", { accountId })
+          };
+        });
+      }
+      /**
+       * Gets the 2FA method (kind and detail).
+       * @returns {Promise<{ kind: string, detail: string }>} A promise that resolves to the 2FA method.
+       */
+      get2faMethod() {
+        return __awaiter(this, void 0, void 0, function* () {
+          let { data } = yield this.getRecoveryMethods();
+          if (data && data.length) {
+            data = data.find((m) => m.kind.indexOf("2fa-") === 0);
+          }
+          if (!data)
+            return null;
+          const { kind, detail } = data;
+          return { kind, detail };
+        });
+      }
+      /**
+      * Generates a signature for the latest finalized block.
+      * @returns {Promise<{ blockNumber: string, blockNumberSignature: string }>} - A promise that resolves to the signature information.
+      */
+      signatureFor() {
+        return __awaiter(this, void 0, void 0, function* () {
+          const { accountId } = this;
+          const block = yield this.connection.provider.block({ finality: "final" });
+          const blockNumber = block.header.height.toString();
+          const signed = yield this.connection.signer.signMessage(Buffer.from(blockNumber), accountId, this.connection.networkId);
+          const blockNumberSignature = Buffer.from(signed.signature).toString("base64");
+          return { blockNumber, blockNumberSignature };
+        });
+      }
+      /**
+      * Sends a signed JSON request to a specified path.
+      * @param path - The path for the request.
+      * @param body - The request body.
+      * @returns {Promise<any>} - A promise that resolves to the response from the helper.
+      */
+      postSignedJson(path, body) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return yield (0, providers_1.fetchJson)(this.helperUrl + path, JSON.stringify(Object.assign(Object.assign({}, body), yield this.signatureFor())));
+        });
+      }
+    };
+    exports2.Account2FA = Account2FA;
+    var toPK = (pk) => crypto_1.PublicKey.from(pk);
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/accounts/lib/account_creator.js
+var require_account_creator3 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/accounts/lib/account_creator.js"(exports2) {
+    "use strict";
+    var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.UrlAccountCreator = exports2.LocalAccountCreator = exports2.AccountCreator = void 0;
+    var providers_1 = require_lib24();
+    var AccountCreator = class {
+    };
+    exports2.AccountCreator = AccountCreator;
+    var LocalAccountCreator = class extends AccountCreator {
+      constructor(masterAccount, initialBalance) {
+        super();
+        this.masterAccount = masterAccount;
+        this.initialBalance = initialBalance;
+      }
+      /**
+       * Creates an account using a masterAccount, meaning the new account is created from an existing account
+       * @param newAccountId The name of the NEAR account to be created
+       * @param publicKey The public key from the masterAccount used to create this account
+       * @returns {Promise<void>}
+       */
+      createAccount(newAccountId, publicKey) {
+        return __awaiter(this, void 0, void 0, function* () {
+          yield this.masterAccount.createAccount(newAccountId, publicKey, this.initialBalance);
+        });
+      }
+    };
+    exports2.LocalAccountCreator = LocalAccountCreator;
+    var UrlAccountCreator = class extends AccountCreator {
+      constructor(connection, helperUrl) {
+        super();
+        this.connection = connection;
+        this.helperUrl = helperUrl;
+      }
+      /**
+       * Creates an account using a helperUrl
+       * This is [hosted here](https://helper.nearprotocol.com) or set up locally with the [near-contract-helper](https://github.com/nearprotocol/near-contract-helper) repository
+       * @param newAccountId The name of the NEAR account to be created
+       * @param publicKey The public key from the masterAccount used to create this account
+       * @returns {Promise<void>}
+       */
+      createAccount(newAccountId, publicKey) {
+        return __awaiter(this, void 0, void 0, function* () {
+          yield (0, providers_1.fetchJson)(`${this.helperUrl}/account`, JSON.stringify({ newAccountId, newAccountPublicKey: publicKey.toString() }));
+        });
+      }
+    };
+    exports2.UrlAccountCreator = UrlAccountCreator;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/keystores/lib/keystore.js
+var require_keystore5 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/keystores/lib/keystore.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.KeyStore = void 0;
+    var KeyStore = class {
+    };
+    exports2.KeyStore = KeyStore;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/keystores/lib/in_memory_key_store.js
+var require_in_memory_key_store5 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/keystores/lib/in_memory_key_store.js"(exports2) {
+    "use strict";
+    var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.InMemoryKeyStore = void 0;
+    var crypto_1 = require_lib22();
+    var keystore_1 = require_keystore5();
+    var InMemoryKeyStore = class extends keystore_1.KeyStore {
+      constructor() {
+        super();
+        this.keys = {};
+      }
+      /**
+       * Stores a {@link KeyPair} in in-memory storage item
+       * @param networkId The targeted network. (ex. default, betanet, etc…)
+       * @param accountId The NEAR account tied to the key pair
+       * @param keyPair The key pair to store in local storage
+       */
+      setKey(networkId, accountId, keyPair) {
+        return __awaiter(this, void 0, void 0, function* () {
+          this.keys[`${accountId}:${networkId}`] = keyPair.toString();
+        });
+      }
+      /**
+       * Gets a {@link KeyPair} from in-memory storage
+       * @param networkId The targeted network. (ex. default, betanet, etc…)
+       * @param accountId The NEAR account tied to the key pair
+       * @returns {Promise<KeyPair>}
+       */
+      getKey(networkId, accountId) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const value = this.keys[`${accountId}:${networkId}`];
+          if (!value) {
+            return null;
+          }
+          return crypto_1.KeyPair.fromString(value);
+        });
+      }
+      /**
+       * Removes a {@link KeyPair} from in-memory storage
+       * @param networkId The targeted network. (ex. default, betanet, etc…)
+       * @param accountId The NEAR account tied to the key pair
+       */
+      removeKey(networkId, accountId) {
+        return __awaiter(this, void 0, void 0, function* () {
+          delete this.keys[`${accountId}:${networkId}`];
+        });
+      }
+      /**
+       * Removes all {@link KeyPair} from in-memory storage
+       */
+      clear() {
+        return __awaiter(this, void 0, void 0, function* () {
+          this.keys = {};
+        });
+      }
+      /**
+       * Get the network(s) from in-memory storage
+       * @returns {Promise<string[]>}
+       */
+      getNetworks() {
+        return __awaiter(this, void 0, void 0, function* () {
+          const result = /* @__PURE__ */ new Set();
+          Object.keys(this.keys).forEach((key) => {
+            const parts = key.split(":");
+            result.add(parts[1]);
+          });
+          return Array.from(result.values());
+        });
+      }
+      /**
+       * Gets the account(s) from in-memory storage
+       * @param networkId The targeted network. (ex. default, betanet, etc…)
+       */
+      getAccounts(networkId) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const result = new Array();
+          Object.keys(this.keys).forEach((key) => {
+            const parts = key.split(":");
+            if (parts[parts.length - 1] === networkId) {
+              result.push(parts.slice(0, parts.length - 1).join(":"));
+            }
+          });
+          return result;
+        });
+      }
+      /** @hidden */
+      toString() {
+        return "InMemoryKeyStore";
+      }
+    };
+    exports2.InMemoryKeyStore = InMemoryKeyStore;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/keystores/lib/merge_key_store.js
+var require_merge_key_store5 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/keystores/lib/merge_key_store.js"(exports2) {
+    "use strict";
+    var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.MergeKeyStore = void 0;
+    var keystore_1 = require_keystore5();
+    var MergeKeyStore = class extends keystore_1.KeyStore {
+      /**
+       * @param keyStores read calls are attempted from start to end of array
+       * @param options KeyStore options
+       * @param options.writeKeyStoreIndex the keystore index that will receive all write calls
+       */
+      constructor(keyStores, options = { writeKeyStoreIndex: 0 }) {
+        super();
+        this.options = options;
+        this.keyStores = keyStores;
+      }
+      /**
+       * Store a {@link KeyPair} to the first index of a key store array
+       * @param networkId The targeted network. (ex. default, betanet, etc…)
+       * @param accountId The NEAR account tied to the key pair
+       * @param keyPair The key pair to store in local storage
+       */
+      setKey(networkId, accountId, keyPair) {
+        return __awaiter(this, void 0, void 0, function* () {
+          yield this.keyStores[this.options.writeKeyStoreIndex].setKey(networkId, accountId, keyPair);
+        });
+      }
+      /**
+       * Gets a {@link KeyPair} from the array of key stores
+       * @param networkId The targeted network. (ex. default, betanet, etc…)
+       * @param accountId The NEAR account tied to the key pair
+       * @returns {Promise<KeyPair>}
+       */
+      getKey(networkId, accountId) {
+        return __awaiter(this, void 0, void 0, function* () {
+          for (const keyStore of this.keyStores) {
+            const keyPair = yield keyStore.getKey(networkId, accountId);
+            if (keyPair) {
+              return keyPair;
+            }
+          }
+          return null;
+        });
+      }
+      /**
+       * Removes a {@link KeyPair} from the array of key stores
+       * @param networkId The targeted network. (ex. default, betanet, etc…)
+       * @param accountId The NEAR account tied to the key pair
+       */
+      removeKey(networkId, accountId) {
+        return __awaiter(this, void 0, void 0, function* () {
+          for (const keyStore of this.keyStores) {
+            yield keyStore.removeKey(networkId, accountId);
+          }
+        });
+      }
+      /**
+       * Removes all items from each key store
+       */
+      clear() {
+        return __awaiter(this, void 0, void 0, function* () {
+          for (const keyStore of this.keyStores) {
+            yield keyStore.clear();
+          }
+        });
+      }
+      /**
+       * Get the network(s) from the array of key stores
+       * @returns {Promise<string[]>}
+       */
+      getNetworks() {
+        return __awaiter(this, void 0, void 0, function* () {
+          const result = /* @__PURE__ */ new Set();
+          for (const keyStore of this.keyStores) {
+            for (const network of yield keyStore.getNetworks()) {
+              result.add(network);
+            }
+          }
+          return Array.from(result);
+        });
+      }
+      /**
+       * Gets the account(s) from the array of key stores
+       * @param networkId The targeted network. (ex. default, betanet, etc…)
+       */
+      getAccounts(networkId) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const result = /* @__PURE__ */ new Set();
+          for (const keyStore of this.keyStores) {
+            for (const account of yield keyStore.getAccounts(networkId)) {
+              result.add(account);
+            }
+          }
+          return Array.from(result);
+        });
+      }
+      /** @hidden */
+      toString() {
+        return `MergeKeyStore(${this.keyStores.join(", ")})`;
+      }
+    };
+    exports2.MergeKeyStore = MergeKeyStore;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/keystores/lib/multi_contract_keystore.js
+var require_multi_contract_keystore4 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/keystores/lib/multi_contract_keystore.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.MultiContractKeyStore = void 0;
+    var MultiContractKeyStore = class {
+    };
+    exports2.MultiContractKeyStore = MultiContractKeyStore;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/keystores/lib/index.js
+var require_lib25 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/keystores/lib/index.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.MultiContractKeyStore = exports2.MergeKeyStore = exports2.KeyStore = exports2.InMemoryKeyStore = void 0;
+    var in_memory_key_store_1 = require_in_memory_key_store5();
+    Object.defineProperty(exports2, "InMemoryKeyStore", { enumerable: true, get: function() {
+      return in_memory_key_store_1.InMemoryKeyStore;
+    } });
+    var keystore_1 = require_keystore5();
+    Object.defineProperty(exports2, "KeyStore", { enumerable: true, get: function() {
+      return keystore_1.KeyStore;
+    } });
+    var merge_key_store_1 = require_merge_key_store5();
+    Object.defineProperty(exports2, "MergeKeyStore", { enumerable: true, get: function() {
+      return merge_key_store_1.MergeKeyStore;
+    } });
+    var multi_contract_keystore_1 = require_multi_contract_keystore4();
+    Object.defineProperty(exports2, "MultiContractKeyStore", { enumerable: true, get: function() {
+      return multi_contract_keystore_1.MultiContractKeyStore;
+    } });
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/signers/lib/signer.js
+var require_signer3 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/signers/lib/signer.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.Signer = void 0;
+    var Signer = class {
+    };
+    exports2.Signer = Signer;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/signers/lib/in_memory_signer.js
+var require_in_memory_signer2 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/signers/lib/in_memory_signer.js"(exports2) {
+    "use strict";
+    var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.InMemorySigner = void 0;
+    var crypto_1 = require_lib22();
+    var keystores_1 = require_lib25();
+    var sha256_1 = require_sha256();
+    var signer_1 = require_signer3();
+    var InMemorySigner = class _InMemorySigner extends signer_1.Signer {
+      constructor(keyStore) {
+        super();
+        this.keyStore = keyStore;
+      }
+      /**
+       * Creates a single account Signer instance with account, network and keyPair provided.
+       *
+       * Intended to be useful for temporary keys (e.g. claiming a Linkdrop).
+       *
+       * @param networkId The targeted network. (ex. default, betanet, etc…)
+       * @param accountId The NEAR account to assign the key pair to
+       * @param keyPair The keyPair to use for signing
+       */
+      static fromKeyPair(networkId, accountId, keyPair) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const keyStore = new keystores_1.InMemoryKeyStore();
+          yield keyStore.setKey(networkId, accountId, keyPair);
+          return new _InMemorySigner(keyStore);
+        });
+      }
+      /**
+       * Creates a public key for the account given
+       * @param accountId The NEAR account to assign a public key to
+       * @param networkId The targeted network. (ex. default, betanet, etc…)
+       * @returns {Promise<PublicKey>}
+       */
+      createKey(accountId, networkId, keyType) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const keyPair = keyType === crypto_1.KeyType.SECP256K1 ? crypto_1.KeyPair.fromRandom("secp256k1") : crypto_1.KeyPair.fromRandom("ed25519");
+          yield this.keyStore.setKey(networkId, accountId, keyPair);
+          return keyPair.getPublicKey();
+        });
+      }
+      /**
+       * Gets the existing public key for a given account
+       * @param accountId The NEAR account to assign a public key to
+       * @param networkId The targeted network. (ex. default, betanet, etc…)
+       * @returns {Promise<PublicKey>} Returns the public key or null if not found
+       */
+      getPublicKey(accountId, networkId) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const keyPair = yield this.keyStore.getKey(networkId, accountId);
+          if (keyPair === null) {
+            return null;
+          }
+          return keyPair.getPublicKey();
+        });
+      }
+      /**
+       * @param message A message to be signed, typically a serialized transaction
+       * @param accountId the NEAR account signing the message
+       * @param networkId The targeted network. (ex. default, betanet, etc…)
+       * @returns {Promise<Signature>}
+       */
+      signMessage(message2, accountId, networkId) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const hash = new Uint8Array((0, sha256_1.sha256)(message2));
+          if (!accountId) {
+            throw new Error("InMemorySigner requires provided account id");
+          }
+          const keyPair = yield this.keyStore.getKey(networkId, accountId);
+          if (keyPair === null) {
+            throw new Error(`Key for ${accountId} not found in ${networkId}`);
+          }
+          return keyPair.sign(hash);
+        });
+      }
+      toString() {
+        return `InMemorySigner(${this.keyStore})`;
+      }
+    };
+    exports2.InMemorySigner = InMemorySigner;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/signers/lib/index.js
+var require_lib26 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/signers/lib/index.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.Signer = exports2.InMemorySigner = void 0;
+    var in_memory_signer_1 = require_in_memory_signer2();
+    Object.defineProperty(exports2, "InMemorySigner", { enumerable: true, get: function() {
+      return in_memory_signer_1.InMemorySigner;
+    } });
+    var signer_1 = require_signer3();
+    Object.defineProperty(exports2, "Signer", { enumerable: true, get: function() {
+      return signer_1.Signer;
+    } });
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/accounts/lib/connection.js
+var require_connection3 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/accounts/lib/connection.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.Connection = void 0;
+    var signers_1 = require_lib26();
+    var providers_1 = require_lib24();
+    function getProvider(config2) {
+      switch (config2.type) {
+        case void 0:
+          return config2;
+        case "JsonRpcProvider":
+          return new providers_1.JsonRpcProvider(Object.assign({}, config2.args));
+        case "FailoverRpcProvider": {
+          const providers = ((config2 === null || config2 === void 0 ? void 0 : config2.args) || []).map((arg) => new providers_1.JsonRpcProvider(arg));
+          return new providers_1.FailoverRpcProvider(providers);
+        }
+        default:
+          throw new Error(`Unknown provider type ${config2.type}`);
+      }
+    }
+    function getSigner(config2) {
+      switch (config2.type) {
+        case void 0:
+          return config2;
+        case "InMemorySigner": {
+          return new signers_1.InMemorySigner(config2.keyStore);
+        }
+        default:
+          throw new Error(`Unknown signer type ${config2.type}`);
+      }
+    }
+    var Connection = class _Connection {
+      constructor(networkId, provider, signer, jsvmAccountId) {
+        this.networkId = networkId;
+        this.provider = provider;
+        this.signer = signer;
+        this.jsvmAccountId = jsvmAccountId;
+      }
+      getConnection() {
+        return this;
+      }
+      /**
+       * @param config Contains connection info details
+       */
+      static fromConfig(config2) {
+        const provider = getProvider(config2.provider);
+        const signer = getSigner(config2.signer);
+        return new _Connection(config2.networkId, provider, signer, config2.jsvmAccountId);
+      }
+    };
+    exports2.Connection = Connection;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/accounts/lib/local-view-execution/storage.js
+var require_storage2 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/accounts/lib/local-view-execution/storage.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.Storage = void 0;
+    var lru_map_1 = require_lru();
+    var Storage = class _Storage {
+      constructor(options = { max: _Storage.MAX_ELEMENTS }) {
+        this.cache = new lru_map_1.LRUMap(options.max);
+        this.blockHeights = /* @__PURE__ */ new Map();
+      }
+      load(blockRef) {
+        const noBlockId = !("blockId" in blockRef);
+        if (noBlockId)
+          return void 0;
+        let blockId = blockRef.blockId;
+        if (blockId.toString().length == 44) {
+          blockId = this.blockHeights.get(blockId.toString());
+        }
+        return this.cache.get(blockId);
+      }
+      save(blockHash, { blockHeight, blockTimestamp, contractCode, contractState }) {
+        this.blockHeights.set(blockHash, blockHeight);
+        this.cache.set(blockHeight, { blockHeight, blockTimestamp, contractCode, contractState });
+      }
+    };
+    exports2.Storage = Storage;
+    Storage.MAX_ELEMENTS = 100;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/accounts/lib/local-view-execution/runtime.js
+var require_runtime2 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/accounts/lib/local-view-execution/runtime.js"(exports2) {
+    "use strict";
+    var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __rest = exports2 && exports2.__rest || function(s, e) {
+      var t = {};
+      for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+      if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+          if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+            t[p[i]] = s[p[i]];
+        }
+      return t;
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.Runtime = void 0;
+    var crypto_1 = require("crypto");
+    var notImplemented = (name) => () => {
+      throw new Error("method not implemented: " + name);
+    };
+    var prohibitedInView = (name) => () => {
+      throw new Error("method not available for view calls: " + name);
+    };
+    var Runtime = class {
+      constructor(_a) {
+        var { contractCode } = _a, context2 = __rest(_a, ["contractCode"]);
+        this.context = context2;
+        this.wasm = this.prepareWASM(Buffer.from(contractCode, "base64"));
+        this.memory = new WebAssembly.Memory({ initial: 1024, maximum: 2048 });
+        this.registers = {};
+        this.logs = [];
+        this.result = Buffer.from([]);
+      }
+      readUTF16CStr(ptr) {
+        const arr = [];
+        const mem = new Uint16Array(this.memory.buffer);
+        let key = Number(ptr) / 2;
+        while (mem[key] != 0) {
+          arr.push(mem[key]);
+          key++;
+        }
+        return Buffer.from(Uint16Array.from(arr).buffer).toString("ucs2");
+      }
+      readUTF8CStr(len, ptr) {
+        const arr = [];
+        const mem = new Uint8Array(this.memory.buffer);
+        let key = Number(ptr);
+        for (let i = 0; i < len && mem[key] != 0; i++) {
+          arr.push(mem[key]);
+          key++;
+        }
+        return Buffer.from(arr).toString("utf8");
+      }
+      storageRead(keyLen, keyPtr) {
+        const storageKey = Buffer.from(new Uint8Array(this.memory.buffer, Number(keyPtr), Number(keyLen)));
+        const stateVal = this.context.contractState.filter((obj) => Buffer.compare(obj.key, storageKey) === 0).map((obj) => obj.value);
+        if (stateVal.length === 0)
+          return null;
+        return stateVal.length > 1 ? stateVal : stateVal[0];
+      }
+      prepareWASM(input) {
+        const parts = [];
+        const magic = input.subarray(0, 4);
+        if (magic.toString("utf8") !== "\0asm") {
+          throw new Error("Invalid magic number");
+        }
+        const version = input.readUInt32LE(4);
+        if (version != 1) {
+          throw new Error("Invalid version: " + version);
+        }
+        let offset = 8;
+        parts.push(input.subarray(0, offset));
+        function decodeLEB128() {
+          let result = 0;
+          let shift = 0;
+          let byte;
+          do {
+            byte = input[offset++];
+            result |= (byte & 127) << shift;
+            shift += 7;
+          } while (byte & 128);
+          return result;
+        }
+        function decodeLimits() {
+          const flags = input[offset++];
+          const hasMax = flags & 1;
+          const initial = decodeLEB128();
+          const max = hasMax ? decodeLEB128() : null;
+          return { initial, max };
+        }
+        function decodeString() {
+          const length = decodeLEB128();
+          const result = input.subarray(offset, offset + length);
+          offset += length;
+          return result.toString("utf8");
+        }
+        function encodeLEB128(value) {
+          const result = [];
+          do {
+            let byte = value & 127;
+            value >>= 7;
+            if (value !== 0) {
+              byte |= 128;
+            }
+            result.push(byte);
+          } while (value !== 0);
+          return Buffer.from(result);
+        }
+        function encodeString(value) {
+          const result = Buffer.from(value, "utf8");
+          return Buffer.concat([encodeLEB128(result.length), result]);
+        }
+        do {
+          const sectionStart = offset;
+          const sectionId = input.readUInt8(offset);
+          offset++;
+          const sectionSize = decodeLEB128();
+          const sectionEnd = offset + sectionSize;
+          if (sectionId == 5) {
+            parts.push(Buffer.from([5, 1, 0]));
+          } else if (sectionId == 2) {
+            const sectionParts = [];
+            const numImports = decodeLEB128();
+            for (let i = 0; i < numImports; i++) {
+              const importStart = offset;
+              decodeString();
+              decodeString();
+              const kind = input.readUInt8(offset);
+              offset++;
+              let skipImport = false;
+              switch (kind) {
+                case 0:
+                  decodeLEB128();
+                  break;
+                case 1:
+                  offset++;
+                  decodeLimits();
+                  break;
+                case 2:
+                  decodeLimits();
+                  skipImport = true;
+                  break;
+                case 3:
+                  offset++;
+                  offset++;
+                  break;
+                default:
+                  throw new Error("Invalid import kind: " + kind);
+              }
+              if (!skipImport) {
+                sectionParts.push(input.subarray(importStart, offset));
+              }
+            }
+            const importMemory = Buffer.concat([
+              encodeString("env"),
+              encodeString("memory"),
+              Buffer.from([2]),
+              Buffer.from([0]),
+              encodeLEB128(1)
+            ]);
+            sectionParts.push(importMemory);
+            const sectionData = Buffer.concat([
+              encodeLEB128(sectionParts.length),
+              ...sectionParts
+            ]);
+            parts.push(Buffer.concat([
+              Buffer.from([2]),
+              encodeLEB128(sectionData.length),
+              sectionData
+            ]));
+          } else if (sectionId == 7) {
+            const sectionParts = [];
+            const numExports = decodeLEB128();
+            for (let i = 0; i < numExports; i++) {
+              const exportStart = offset;
+              decodeString();
+              const kind = input.readUInt8(offset);
+              offset++;
+              decodeLEB128();
+              if (kind !== 2) {
+                sectionParts.push(input.subarray(exportStart, offset));
+              }
+            }
+            const sectionData = Buffer.concat([
+              encodeLEB128(sectionParts.length),
+              ...sectionParts
+            ]);
+            parts.push(Buffer.concat([
+              Buffer.from([7]),
+              encodeLEB128(sectionData.length),
+              sectionData
+            ]));
+          } else {
+            parts.push(input.subarray(sectionStart, sectionEnd));
+          }
+          offset = sectionEnd;
+        } while (offset < input.length);
+        return Buffer.concat(parts);
+      }
+      // Host functions
+      getRegisterLength(registerId) {
+        return BigInt(this.registers[registerId.toString()] ? this.registers[registerId.toString()].length : Number.MAX_SAFE_INTEGER);
+      }
+      readFromRegister(registerId, ptr) {
+        const mem = new Uint8Array(this.memory.buffer);
+        mem.set(this.registers[registerId.toString()] || Buffer.from([]), Number(ptr));
+      }
+      getCurrentAccountId(registerId) {
+        this.registers[registerId.toString()] = Buffer.from(this.context.contractId);
+      }
+      inputMethodArgs(registerId) {
+        this.registers[registerId.toString()] = Buffer.from(this.context.methodArgs);
+      }
+      getBlockHeight() {
+        return BigInt(this.context.blockHeight);
+      }
+      getBlockTimestamp() {
+        return BigInt(this.context.blockTimestamp);
+      }
+      sha256(valueLen, valuePtr, registerId) {
+        const value = new Uint8Array(this.memory.buffer, Number(valuePtr), Number(valueLen));
+        const hash = (0, crypto_1.createHash)("sha256");
+        hash.update(value);
+        this.registers[registerId.toString()] = hash.digest();
+      }
+      returnValue(valueLen, valuePtr) {
+        this.result = Buffer.from(new Uint8Array(this.memory.buffer, Number(valuePtr), Number(valueLen)));
+      }
+      panic(message2) {
+        throw new Error("panic: " + message2);
+      }
+      abort(msg_ptr, filename_ptr, line, col) {
+        const msg = this.readUTF16CStr(msg_ptr);
+        const filename = this.readUTF16CStr(filename_ptr);
+        const message2 = `${msg} ${filename}:${line}:${col}`;
+        if (!msg || !filename) {
+          throw new Error("abort: String encoding is bad UTF-16 sequence.");
+        }
+        throw new Error("abort: " + message2);
+      }
+      appendToLog(len, ptr) {
+        this.logs.push(this.readUTF8CStr(len, ptr));
+      }
+      readStorage(key_len, key_ptr, register_id) {
+        const result = this.storageRead(key_len, key_ptr);
+        if (result == null) {
+          return BigInt(0);
+        }
+        this.registers[register_id] = result;
+        return BigInt(1);
+      }
+      hasStorageKey(key_len, key_ptr) {
+        const result = this.storageRead(key_len, key_ptr);
+        if (result == null) {
+          return BigInt(0);
+        }
+        return BigInt(1);
+      }
+      getHostImports() {
+        return {
+          register_len: this.getRegisterLength.bind(this),
+          read_register: this.readFromRegister.bind(this),
+          current_account_id: this.getCurrentAccountId.bind(this),
+          input: this.inputMethodArgs.bind(this),
+          block_index: this.getBlockHeight.bind(this),
+          block_timestamp: this.getBlockTimestamp.bind(this),
+          sha256: this.sha256.bind(this),
+          value_return: this.returnValue.bind(this),
+          abort: this.abort.bind(this),
+          log_utf8: this.appendToLog.bind(this),
+          log_utf16: this.appendToLog.bind(this),
+          storage_read: this.readStorage.bind(this),
+          storage_has_key: this.hasStorageKey.bind(this),
+          panic: () => this.panic("explicit guest panic"),
+          panic_utf8: (len, ptr) => this.panic(this.readUTF8CStr(len, ptr)),
+          // Not implemented
+          epoch_height: notImplemented("epoch_height"),
+          storage_usage: notImplemented("storage_usage"),
+          account_balance: notImplemented("account_balance"),
+          account_locked_balance: notImplemented("account_locked_balance"),
+          random_seed: notImplemented("random_seed"),
+          ripemd160: notImplemented("ripemd160"),
+          keccak256: notImplemented("keccak256"),
+          keccak512: notImplemented("keccak512"),
+          ecrecover: notImplemented("ecrecover"),
+          validator_stake: notImplemented("validator_stake"),
+          validator_total_stake: notImplemented("validator_total_stake"),
+          // Prohibited
+          write_register: prohibitedInView("write_register"),
+          signer_account_id: prohibitedInView("signer_account_id"),
+          signer_account_pk: prohibitedInView("signer_account_pk"),
+          predecessor_account_id: prohibitedInView("predecessor_account_id"),
+          attached_deposit: prohibitedInView("attached_deposit"),
+          prepaid_gas: prohibitedInView("prepaid_gas"),
+          used_gas: prohibitedInView("used_gas"),
+          promise_create: prohibitedInView("promise_create"),
+          promise_then: prohibitedInView("promise_then"),
+          promise_and: prohibitedInView("promise_and"),
+          promise_batch_create: prohibitedInView("promise_batch_create"),
+          promise_batch_then: prohibitedInView("promise_batch_then"),
+          promise_batch_action_create_account: prohibitedInView("promise_batch_action_create_account"),
+          promise_batch_action_deploy_contract: prohibitedInView("promise_batch_action_deploy_contract"),
+          promise_batch_action_function_call: prohibitedInView("promise_batch_action_function_call"),
+          promise_batch_action_function_call_weight: prohibitedInView("promise_batch_action_function_call_weight"),
+          promise_batch_action_transfer: prohibitedInView("promise_batch_action_transfer"),
+          promise_batch_action_stake: prohibitedInView("promise_batch_action_stake"),
+          promise_batch_action_add_key_with_full_access: prohibitedInView("promise_batch_action_add_key_with_full_access"),
+          promise_batch_action_add_key_with_function_call: prohibitedInView("promise_batch_action_add_key_with_function_call"),
+          promise_batch_action_delete_key: prohibitedInView("promise_batch_action_delete_key"),
+          promise_batch_action_delete_account: prohibitedInView("promise_batch_action_delete_account"),
+          promise_results_count: prohibitedInView("promise_results_count"),
+          promise_result: prohibitedInView("promise_result"),
+          promise_return: prohibitedInView("promise_return"),
+          storage_write: prohibitedInView("storage_write"),
+          storage_remove: prohibitedInView("storage_remove")
+        };
+      }
+      execute(methodName) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const module3 = yield WebAssembly.compile(this.wasm);
+          const instance = yield WebAssembly.instantiate(module3, { env: Object.assign(Object.assign({}, this.getHostImports()), { memory: this.memory }) });
+          const callMethod = instance.exports[methodName];
+          if (callMethod == void 0) {
+            throw new Error(`Contract method '${methodName}' does not exists in contract ${this.context.contractId} for block id ${this.context.blockHeight}`);
+          }
+          callMethod();
+          return {
+            result: this.result,
+            logs: this.logs
+          };
+        });
+      }
+    };
+    exports2.Runtime = Runtime;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/accounts/lib/local-view-execution/index.js
+var require_local_view_execution2 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/accounts/lib/local-view-execution/index.js"(exports2) {
+    "use strict";
+    var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __rest = exports2 && exports2.__rest || function(s, e) {
+      var t = {};
+      for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+      if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+          if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+            t[p[i]] = s[p[i]];
+        }
+      return t;
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.LocalViewExecution = void 0;
+    var utils_1 = require_lib21();
+    var storage_1 = require_storage2();
+    var runtime_1 = require_runtime2();
+    var utils_2 = require_utils17();
+    var LocalViewExecution = class {
+      constructor(connection) {
+        this.connection = connection.getConnection();
+        this.storage = new storage_1.Storage();
+      }
+      fetchContractCode(contractId, blockQuery) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const result = yield this.connection.provider.query(Object.assign({ request_type: "view_code", account_id: contractId }, blockQuery));
+          return result.code_base64;
+        });
+      }
+      fetchContractState(contractId, blockQuery) {
+        return __awaiter(this, void 0, void 0, function* () {
+          return (0, utils_2.viewState)(this.connection, contractId, "", blockQuery);
+        });
+      }
+      fetch(contractId, blockQuery) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const block = yield this.connection.provider.block(blockQuery);
+          const blockHash = block.header.hash;
+          const blockHeight = block.header.height;
+          const blockTimestamp = block.header.timestamp;
+          const contractCode = yield this.fetchContractCode(contractId, blockQuery);
+          const contractState = yield this.fetchContractState(contractId, blockQuery);
+          return {
+            blockHash,
+            blockHeight,
+            blockTimestamp,
+            contractCode,
+            contractState
+          };
+        });
+      }
+      loadOrFetch(contractId, blockQuery) {
+        return __awaiter(this, void 0, void 0, function* () {
+          const stored = this.storage.load(blockQuery);
+          if (stored) {
+            return stored;
+          }
+          const _a = yield this.fetch(contractId, blockQuery), { blockHash } = _a, fetched = __rest(_a, ["blockHash"]);
+          this.storage.save(blockHash, fetched);
+          return fetched;
+        });
+      }
+      /**
+       * Calls a view function on a contract, fetching the contract code and state if needed.
+       * @param options Options for calling the view function.
+       * @param options.contractId The contract account ID.
+       * @param options.methodName The name of the view function to call.
+       * @param options.args The arguments to pass to the view function.
+       * @param options.blockQuery The block query options.
+       * @returns {Promise<any>} - A promise that resolves to the result of the view function.
+       */
+      viewFunction(_a) {
+        var { contractId, methodName, args: args2 = {}, blockQuery = { finality: "optimistic" } } = _a, ignored = __rest(_a, ["contractId", "methodName", "args", "blockQuery"]);
+        return __awaiter(this, void 0, void 0, function* () {
+          const methodArgs = JSON.stringify(args2);
+          const { contractCode, contractState, blockHeight, blockTimestamp } = yield this.loadOrFetch(contractId, blockQuery);
+          const runtime = new runtime_1.Runtime({ contractId, contractCode, contractState, blockHeight, blockTimestamp, methodArgs });
+          const { result, logs } = yield runtime.execute(methodName);
+          if (logs) {
+            (0, utils_1.printTxOutcomeLogs)({ contractId, logs });
+          }
+          return JSON.parse(Buffer.from(result).toString());
+        });
+      }
+    };
+    exports2.LocalViewExecution = LocalViewExecution;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/accounts/lib/errors.js
+var require_errors13 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/accounts/lib/errors.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.ConflictingOptions = exports2.ArgumentSchemaError = exports2.UnknownArgumentError = exports2.UnsupportedSerializationError = void 0;
+    var UnsupportedSerializationError = class extends Error {
+      constructor(methodName, serializationType) {
+        super(`Contract method '${methodName}' is using an unsupported serialization type ${serializationType}`);
+      }
+    };
+    exports2.UnsupportedSerializationError = UnsupportedSerializationError;
+    var UnknownArgumentError = class extends Error {
+      constructor(actualArgName, expectedArgNames) {
+        super(`Unrecognized argument '${actualArgName}', expected '${JSON.stringify(expectedArgNames)}'`);
+      }
+    };
+    exports2.UnknownArgumentError = UnknownArgumentError;
+    var ArgumentSchemaError = class extends Error {
+      constructor(argName, errors) {
+        super(`Argument '${argName}' does not conform to the specified ABI schema: '${JSON.stringify(errors)}'`);
+      }
+    };
+    exports2.ArgumentSchemaError = ArgumentSchemaError;
+    var ConflictingOptions = class extends Error {
+      constructor() {
+        super("Conflicting contract method options have been passed. You can either specify ABI or a list of view/call methods.");
+      }
+    };
+    exports2.ConflictingOptions = ConflictingOptions;
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/accounts/lib/contract.js
+var require_contract3 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/accounts/lib/contract.js"(exports2) {
+    "use strict";
+    var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
+      function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+          resolve(value);
+        });
+      }
+      return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+          try {
+            step(generator.next(value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function rejected(value) {
+          try {
+            step(generator["throw"](value));
+          } catch (e) {
+            reject(e);
+          }
+        }
+        function step(result) {
+          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+      });
+    };
+    var __importDefault = exports2 && exports2.__importDefault || function(mod) {
+      return mod && mod.__esModule ? mod : { "default": mod };
+    };
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.Contract = void 0;
+    var utils_1 = require_lib21();
+    var types_1 = require_lib();
+    var local_view_execution_1 = require_local_view_execution2();
+    var is_my_json_valid_1 = __importDefault(require_is_my_json_valid());
+    var depd_1 = __importDefault(require_depd());
+    var near_abi_1 = require_lib19();
+    var account_1 = require_account3();
+    var errors_1 = require_errors13();
+    var utils_2 = require_utils17();
+    function nameFunction(name, body) {
+      return {
+        [name](...args2) {
+          return body(...args2);
+        }
+      }[name];
+    }
+    function validateArguments(args2, abiFunction, abiRoot) {
+      var _a;
+      if (!isObject(args2))
+        return;
+      if (abiFunction.params && abiFunction.params.serialization_type !== near_abi_1.AbiSerializationType.Json) {
+        throw new errors_1.UnsupportedSerializationError(abiFunction.name, abiFunction.params.serialization_type);
+      }
+      if (abiFunction.result && abiFunction.result.serialization_type !== near_abi_1.AbiSerializationType.Json) {
+        throw new errors_1.UnsupportedSerializationError(abiFunction.name, abiFunction.result.serialization_type);
+      }
+      const params = ((_a = abiFunction.params) === null || _a === void 0 ? void 0 : _a.args) || [];
+      for (const p of params) {
+        const arg = args2[p.name];
+        const typeSchema = p.type_schema;
+        typeSchema.definitions = abiRoot.body.root_schema.definitions;
+        const validate = (0, is_my_json_valid_1.default)(typeSchema);
+        const valid = validate(arg);
+        if (!valid) {
+          throw new errors_1.ArgumentSchemaError(p.name, validate.errors);
+        }
+      }
+      for (const argName of Object.keys(args2)) {
+        const param = params.find((p) => p.name === argName);
+        if (!param) {
+          throw new errors_1.UnknownArgumentError(argName, params.map((p) => p.name));
+        }
+      }
+    }
+    var isUint8Array = (x) => x && x.byteLength !== void 0 && x.byteLength === x.length;
+    var isObject = (x) => Object.prototype.toString.call(x) === "[object Object]";
+    var Contract = class {
+      /**
+       * @param account NEAR account to sign change method transactions
+       * @param contractId NEAR account id where the contract is deployed
+       * @param options NEAR smart contract methods that your application will use. These will be available as `contract.methodName`
+       */
+      constructor(connection, contractId, options) {
+        this.connection = connection.getConnection();
+        if (connection instanceof account_1.Account) {
+          const deprecate2 = (0, depd_1.default)("new Contract(account, contractId, options)");
+          deprecate2("use `new Contract(connection, contractId, options)` instead");
+          this.account = connection;
+        }
+        this.contractId = contractId;
+        this.lve = new local_view_execution_1.LocalViewExecution(connection);
+        const { viewMethods = [], changeMethods = [], abi: abiRoot, useLocalViewExecution } = options;
+        let viewMethodsWithAbi = viewMethods.map((name) => ({
+          name,
+          abi: null
+        }));
+        let changeMethodsWithAbi = changeMethods.map((name) => ({
+          name,
+          abi: null
+        }));
+        if (abiRoot) {
+          if (viewMethodsWithAbi.length > 0 || changeMethodsWithAbi.length > 0) {
+            throw new errors_1.ConflictingOptions();
+          }
+          viewMethodsWithAbi = abiRoot.body.functions.filter((m) => m.kind === near_abi_1.AbiFunctionKind.View).map((m) => ({ name: m.name, abi: m }));
+          changeMethodsWithAbi = abiRoot.body.functions.filter((methodAbi) => methodAbi.kind === near_abi_1.AbiFunctionKind.Call).map((methodAbi) => ({ name: methodAbi.name, abi: methodAbi }));
+        }
+        viewMethodsWithAbi.forEach(({ name, abi }) => {
+          Object.defineProperty(this, name, {
+            writable: false,
+            enumerable: true,
+            value: nameFunction(name, (args2 = {}, options2 = {}, ...ignored) => __awaiter(this, void 0, void 0, function* () {
+              if (ignored.length || !(isObject(args2) || isUint8Array(args2)) || !isObject(options2)) {
+                throw new types_1.PositionalArgsError();
+              }
+              if (abi) {
+                validateArguments(args2, abi, abiRoot);
+              }
+              if (useLocalViewExecution) {
+                try {
+                  return yield this.lve.viewFunction(Object.assign({ contractId: this.contractId, methodName: name, args: args2 }, options2));
+                } catch (error) {
+                  utils_1.Logger.warn(`Local view execution failed with: "${error.message}"`);
+                  utils_1.Logger.warn(`Fallback to normal RPC call`);
+                }
+              }
+              if (this.account) {
+                return this.account.viewFunction(Object.assign({ contractId: this.contractId, methodName: name, args: args2 }, options2));
+              }
+              return (0, utils_2.viewFunction)(this.connection, Object.assign({ contractId: this.contractId, methodName: name, args: args2 }, options2));
+            }))
+          });
+        });
+        changeMethodsWithAbi.forEach(({ name, abi }) => {
+          Object.defineProperty(this, name, {
+            writable: false,
+            enumerable: true,
+            value: nameFunction(name, (...args2) => __awaiter(this, void 0, void 0, function* () {
+              if (args2.length && (args2.length > 3 || !(isObject(args2[0]) || isUint8Array(args2[0])))) {
+                throw new types_1.PositionalArgsError();
+              }
+              if (args2.length > 1 || !(args2[0] && args2[0].args)) {
+                const deprecate2 = (0, depd_1.default)("contract.methodName(args, gas, amount)");
+                deprecate2("use `contract.methodName({ signerAccount, args, gas?, amount?, callbackUrl?, meta? })` instead");
+                args2[0] = {
+                  args: args2[0],
+                  gas: args2[1],
+                  amount: args2[2]
+                };
+              }
+              if (abi) {
+                validateArguments(args2[0].args, abi, abiRoot);
+              }
+              return this._changeMethod(Object.assign({ methodName: name }, args2[0]));
+            }))
+          });
+        });
+      }
+      _changeMethod({ signerAccount, args: args2, methodName, gas, amount, meta, callbackUrl }) {
+        return __awaiter(this, void 0, void 0, function* () {
+          validateBNLike({ gas, amount });
+          const account = this.account || signerAccount;
+          if (!account)
+            throw new Error(`signerAccount must be specified`);
+          const rawResult = yield account.functionCall({
+            contractId: this.contractId,
+            methodName,
+            args: args2,
+            gas,
+            attachedDeposit: amount,
+            walletMeta: meta,
+            walletCallbackUrl: callbackUrl
+          });
+          return (0, utils_1.getTransactionLastResult)(rawResult);
+        });
+      }
+    };
+    exports2.Contract = Contract;
+    function validateBNLike(argMap) {
+      const bnLike = "number, decimal string or BigInt";
+      for (const argName of Object.keys(argMap)) {
+        const argValue = argMap[argName];
+        if (argValue && typeof argValue !== "bigint" && isNaN(argValue)) {
+          throw new types_1.ArgumentTypeError(argName, bnLike, argValue);
+        }
+      }
+    }
+  }
+});
+
+// node_modules/@near-js/wallet-account/node_modules/@near-js/accounts/lib/index.js
+var require_lib27 = __commonJS({
+  "node_modules/@near-js/wallet-account/node_modules/@near-js/accounts/lib/index.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    exports2.MultisigStateStatus = exports2.MultisigDeleteRequestRejectionError = exports2.UnsupportedSerializationError = exports2.UnknownArgumentError = exports2.ConflictingOptions = exports2.ArgumentSchemaError = exports2.Contract = exports2.MULTISIG_CONFIRM_METHODS = exports2.MULTISIG_CHANGE_METHODS = exports2.MULTISIG_DEPOSIT = exports2.MULTISIG_GAS = exports2.MULTISIG_ALLOWANCE = exports2.MULTISIG_STORAGE_KEY = exports2.Connection = exports2.AccountMultisig = exports2.UrlAccountCreator = exports2.LocalAccountCreator = exports2.AccountCreator = exports2.Account2FA = exports2.Account = void 0;
+    var account_1 = require_account3();
+    Object.defineProperty(exports2, "Account", { enumerable: true, get: function() {
+      return account_1.Account;
+    } });
+    var account_2fa_1 = require_account_2fa2();
+    Object.defineProperty(exports2, "Account2FA", { enumerable: true, get: function() {
+      return account_2fa_1.Account2FA;
+    } });
+    var account_creator_1 = require_account_creator3();
+    Object.defineProperty(exports2, "AccountCreator", { enumerable: true, get: function() {
+      return account_creator_1.AccountCreator;
+    } });
+    Object.defineProperty(exports2, "LocalAccountCreator", { enumerable: true, get: function() {
+      return account_creator_1.LocalAccountCreator;
+    } });
+    Object.defineProperty(exports2, "UrlAccountCreator", { enumerable: true, get: function() {
+      return account_creator_1.UrlAccountCreator;
+    } });
+    var account_multisig_1 = require_account_multisig3();
+    Object.defineProperty(exports2, "AccountMultisig", { enumerable: true, get: function() {
+      return account_multisig_1.AccountMultisig;
+    } });
+    var connection_1 = require_connection3();
+    Object.defineProperty(exports2, "Connection", { enumerable: true, get: function() {
+      return connection_1.Connection;
+    } });
+    var constants_1 = require_constants11();
+    Object.defineProperty(exports2, "MULTISIG_STORAGE_KEY", { enumerable: true, get: function() {
+      return constants_1.MULTISIG_STORAGE_KEY;
+    } });
+    Object.defineProperty(exports2, "MULTISIG_ALLOWANCE", { enumerable: true, get: function() {
+      return constants_1.MULTISIG_ALLOWANCE;
+    } });
+    Object.defineProperty(exports2, "MULTISIG_GAS", { enumerable: true, get: function() {
+      return constants_1.MULTISIG_GAS;
+    } });
+    Object.defineProperty(exports2, "MULTISIG_DEPOSIT", { enumerable: true, get: function() {
+      return constants_1.MULTISIG_DEPOSIT;
+    } });
+    Object.defineProperty(exports2, "MULTISIG_CHANGE_METHODS", { enumerable: true, get: function() {
+      return constants_1.MULTISIG_CHANGE_METHODS;
+    } });
+    Object.defineProperty(exports2, "MULTISIG_CONFIRM_METHODS", { enumerable: true, get: function() {
+      return constants_1.MULTISIG_CONFIRM_METHODS;
+    } });
+    var contract_1 = require_contract3();
+    Object.defineProperty(exports2, "Contract", { enumerable: true, get: function() {
+      return contract_1.Contract;
+    } });
+    var errors_1 = require_errors13();
+    Object.defineProperty(exports2, "ArgumentSchemaError", { enumerable: true, get: function() {
+      return errors_1.ArgumentSchemaError;
+    } });
+    Object.defineProperty(exports2, "ConflictingOptions", { enumerable: true, get: function() {
+      return errors_1.ConflictingOptions;
+    } });
+    Object.defineProperty(exports2, "UnknownArgumentError", { enumerable: true, get: function() {
+      return errors_1.UnknownArgumentError;
+    } });
+    Object.defineProperty(exports2, "UnsupportedSerializationError", { enumerable: true, get: function() {
+      return errors_1.UnsupportedSerializationError;
+    } });
+    var types_1 = require_types5();
+    Object.defineProperty(exports2, "MultisigDeleteRequestRejectionError", { enumerable: true, get: function() {
+      return types_1.MultisigDeleteRequestRejectionError;
+    } });
+    Object.defineProperty(exports2, "MultisigStateStatus", { enumerable: true, get: function() {
+      return types_1.MultisigStateStatus;
+    } });
+  }
+});
+
+// node_modules/@near-js/wallet-account/lib/near.js
 var require_near = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/wallet-account/lib/near.js"(exports2) {
+  "node_modules/@near-js/wallet-account/lib/near.js"(exports2) {
     "use strict";
     var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
       function adopt(value) {
@@ -33461,7 +44898,7 @@ var require_near = __commonJS({
     };
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.Near = void 0;
-    var accounts_1 = require_lib14();
+    var accounts_1 = require_lib27();
     var Near = class {
       constructor(config2) {
         var _a;
@@ -33513,9 +44950,9 @@ var require_near = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/wallet-account/lib/wallet_account.js
+// node_modules/@near-js/wallet-account/lib/wallet_account.js
 var require_wallet_account = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/wallet-account/lib/wallet_account.js"(exports2) {
+  "node_modules/@near-js/wallet-account/lib/wallet_account.js"(exports2) {
     "use strict";
     var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
       function adopt(value) {
@@ -33546,11 +44983,11 @@ var require_wallet_account = __commonJS({
     };
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.ConnectedWalletAccount = exports2.WalletConnection = void 0;
-    var accounts_1 = require_lib14();
-    var crypto_1 = require_lib4();
-    var utils_1 = require_lib2();
-    var transactions_1 = require_lib8();
-    var borsh_1 = require_cjs();
+    var accounts_1 = require_lib27();
+    var crypto_1 = require_lib22();
+    var utils_1 = require_lib21();
+    var transactions_1 = require_lib23();
+    var borsh_1 = require_cjs2();
     var LOGIN_WALLET_URL_SUFFIX = "/login/";
     var MULTISIG_HAS_METHOD = "add_request_and_confirm";
     var LOCAL_STORAGE_KEY_SUFFIX = "_wallet_auth_key";
@@ -33891,9 +45328,9 @@ var require_wallet_account = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/@near-js/wallet-account/lib/index.js
-var require_lib15 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/@near-js/wallet-account/lib/index.js"(exports2) {
+// node_modules/@near-js/wallet-account/lib/index.js
+var require_lib28 = __commonJS({
+  "node_modules/@near-js/wallet-account/lib/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.WalletConnection = exports2.ConnectedWalletAccount = exports2.Near = void 0;
@@ -33911,26 +45348,26 @@ var require_lib15 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/near.js
+// node_modules/near-api-js/lib/near.js
 var require_near2 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/near.js"(exports2) {
+  "node_modules/near-api-js/lib/near.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.Near = void 0;
-    var wallet_account_1 = require_lib15();
+    var wallet_account_1 = require_lib28();
     Object.defineProperty(exports2, "Near", { enumerable: true, get: function() {
       return wallet_account_1.Near;
     } });
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/wallet-account.js
+// node_modules/near-api-js/lib/wallet-account.js
 var require_wallet_account2 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/wallet-account.js"(exports2) {
+  "node_modules/near-api-js/lib/wallet-account.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.WalletConnection = exports2.ConnectedWalletAccount = void 0;
-    var wallet_account_1 = require_lib15();
+    var wallet_account_1 = require_lib28();
     Object.defineProperty(exports2, "ConnectedWalletAccount", { enumerable: true, get: function() {
       return wallet_account_1.ConnectedWalletAccount;
     } });
@@ -33940,9 +45377,9 @@ var require_wallet_account2 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/common-index.js
+// node_modules/near-api-js/lib/common-index.js
 var require_common_index = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/common-index.js"(exports2) {
+  "node_modules/near-api-js/lib/common-index.js"(exports2) {
     "use strict";
     var __createBinding = exports2 && exports2.__createBinding || (Object.create ? function(o, m, k, k2) {
       if (k2 === void 0) k2 = k;
@@ -33975,11 +45412,11 @@ var require_common_index = __commonJS({
     exports2.WalletConnection = exports2.ConnectedWalletAccount = exports2.Near = exports2.KeyPair = exports2.Signer = exports2.InMemorySigner = exports2.Contract = exports2.Connection = exports2.Account = exports2.multisig = exports2.validators = exports2.transactions = exports2.utils = exports2.providers = exports2.accountCreator = void 0;
     var providers = __importStar(require_providers());
     exports2.providers = providers;
-    var utils = __importStar(require_utils12());
+    var utils = __importStar(require_utils14());
     exports2.utils = utils;
     var transactions = __importStar(require_transaction());
     exports2.transactions = transactions;
-    var validators = __importStar(require_validators2());
+    var validators = __importStar(require_validators4());
     exports2.validators = validators;
     var account_1 = require_account2();
     Object.defineProperty(exports2, "Account", { enumerable: true, get: function() {
@@ -34004,7 +45441,7 @@ var require_common_index = __commonJS({
     Object.defineProperty(exports2, "Contract", { enumerable: true, get: function() {
       return contract_1.Contract;
     } });
-    var key_pair_1 = require_key_pair2();
+    var key_pair_1 = require_key_pair4();
     Object.defineProperty(exports2, "KeyPair", { enumerable: true, get: function() {
       return key_pair_1.KeyPair;
     } });
@@ -34022,9 +45459,9 @@ var require_common_index = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/connect.js
+// node_modules/near-api-js/lib/connect.js
 var require_connect = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/connect.js"(exports2) {
+  "node_modules/near-api-js/lib/connect.js"(exports2) {
     "use strict";
     var __awaiter = exports2 && exports2.__awaiter || function(thisArg, _arguments, P, generator) {
       function adopt(value) {
@@ -34094,9 +45531,9 @@ var require_connect = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/constants.js
-var require_constants5 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/constants.js"(exports2) {
+// node_modules/near-api-js/lib/constants.js
+var require_constants12 = __commonJS({
+  "node_modules/near-api-js/lib/constants.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.DEFAULT_FUNCTION_CALL_GAS = void 0;
@@ -34107,9 +45544,9 @@ var require_constants5 = __commonJS({
   }
 });
 
-// node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/index.js
-var require_lib16 = __commonJS({
-  "node_modules/@mintbase-js/sdk/node_modules/near-api-js/lib/index.js"(exports2) {
+// node_modules/near-api-js/lib/index.js
+var require_lib29 = __commonJS({
+  "node_modules/near-api-js/lib/index.js"(exports2) {
     "use strict";
     var __createBinding = exports2 && exports2.__createBinding || (Object.create ? function(o, m, k, k2) {
       if (k2 === void 0) k2 = k;
@@ -34146,7 +45583,7 @@ var require_lib16 = __commonJS({
     exports2.keyStores = __importStar(require_key_stores());
     __exportStar(require_common_index(), exports2);
     __exportStar(require_connect(), exports2);
-    __exportStar(require_constants5(), exports2);
+    __exportStar(require_constants12(), exports2);
   }
 });
 
@@ -34156,7 +45593,7 @@ var require_depositStorage = __commonJS({
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.depositStorage = void 0;
-    var near_api_js_1 = require_lib16();
+    var near_api_js_1 = require_lib29();
     var config_1 = require_config();
     var constants_1 = require_constants();
     var types_1 = require_types();
@@ -34485,7 +45922,7 @@ var require_ftDepositStorage = __commonJS({
 });
 
 // node_modules/@mintbase-js/sdk/lib/index.js
-var require_lib17 = __commonJS({
+var require_lib30 = __commonJS({
   "node_modules/@mintbase-js/sdk/lib/index.js"(exports2) {
     "use strict";
     var __createBinding = exports2 && exports2.__createBinding || (Object.create ? function(o, m, k, k2) {
@@ -34540,14 +45977,14 @@ var require_lib17 = __commonJS({
 // src/index.ts
 var index_exports = {};
 __export(index_exports, {
-  Account: () => import_core3.Account,
+  Account: () => import_core2.Account,
   BitteWalletContext: () => BitteWalletContext,
   BitteWalletContextProvider: () => BitteWalletContextProvider,
-  BrowserWallet: () => import_core3.BrowserWallet,
-  Wallet: () => import_core3.Wallet,
-  WalletBehaviourFactory: () => import_core3.WalletBehaviourFactory,
-  WalletModule: () => import_core3.WalletModule,
-  WalletModuleFactory: () => import_core3.WalletModuleFactory,
+  BrowserWallet: () => import_core2.BrowserWallet,
+  Wallet: () => import_core2.Wallet,
+  WalletBehaviourFactory: () => import_core2.WalletBehaviourFactory,
+  WalletModule: () => import_core2.WalletModule,
+  WalletModuleFactory: () => import_core2.WalletModuleFactory,
   useBitteWallet: () => useBitteWallet,
   useNearPrice: () => useNearPrice
 });
@@ -34557,8 +45994,8 @@ module.exports = __toCommonJS(index_exports);
 var import_react = __toESM(require("react"));
 
 // src/wallet/bitte-wallet.ts
-var import_core2 = require("@near-wallet-selector/core");
-var import_modal_ui2 = require("@near-wallet-selector/modal-ui");
+var import_core = require("@near-wallet-selector/core");
+var import_modal_ui = require("@near-wallet-selector/modal-ui");
 
 // node_modules/tslib/tslib.es6.mjs
 var extendStatics = function(d, b) {
@@ -35134,16 +46571,11 @@ var WALLET_CONNECTION_POLL_INTERVAL = 1e3;
 var WALLET_CONNECTION_TIMEOUT = 3e4;
 
 // src/wallet/bitte-wallet.ts
-var import_sdk = __toESM(require_lib17());
-var import_wallet2 = require("@mintbase-js/wallet");
-
-// src/wallet/wallet.ts
-var import_core = require("@near-wallet-selector/core");
-var import_modal_ui = require("@near-wallet-selector/modal-ui");
-var import_here_wallet = require("@near-wallet-selector/here-wallet");
+var import_sdk = __toESM(require_lib30());
+var import_wallet = require("@bitte-ai/wallet");
 var import_meteor_wallet = require("@near-wallet-selector/meteor-wallet");
+var import_here_wallet = require("@near-wallet-selector/here-wallet");
 var import_my_near_wallet = require("@near-wallet-selector/my-near-wallet");
-var import_wallet = require("@mintbase-js/wallet");
 var SUPPORT = "- further help available on our telegram channel: https://t.me/mintdev";
 var ERROR_MESSAGES = {
   WALLET_SETUP_NOT_CALLED_ERROR: `Call and await setupWalletSelectorComponents() before registering a subscriber - ${SUPPORT}`,
@@ -35153,23 +46585,6 @@ var SUPPORTED_NEAR_WALLETS = [
   (0, import_meteor_wallet.setupMeteorWallet)(),
   (0, import_my_near_wallet.setupMyNearWallet)(),
   (0, import_here_wallet.setupHereWallet)()
-];
-var ConnectionTimeoutError = class extends Error {
-};
-
-// src/wallet/bitte-wallet.ts
-var import_meteor_wallet2 = require("@near-wallet-selector/meteor-wallet");
-var import_here_wallet2 = require("@near-wallet-selector/here-wallet");
-var import_my_near_wallet2 = require("@near-wallet-selector/my-near-wallet");
-var SUPPORT2 = "- further help available on our telegram channel: https://t.me/mintdev";
-var ERROR_MESSAGES2 = {
-  WALLET_SETUP_NOT_CALLED_ERROR: `Call and await setupWalletSelectorComponents() before registering a subscriber - ${SUPPORT2}`,
-  WALLET_CONNECTION_NOT_FOUND: `Wallet connection not received after ${WALLET_CONNECTION_TIMEOUT}ms - ${SUPPORT2}`
-};
-var SUPPORTED_NEAR_WALLETS2 = [
-  (0, import_meteor_wallet2.setupMeteorWallet)(),
-  (0, import_my_near_wallet2.setupMyNearWallet)(),
-  (0, import_here_wallet2.setupHereWallet)()
 ];
 var walletUrls = {
   testnet: "https://testnet.wallet.bitte.ai/",
@@ -35182,10 +46597,10 @@ var BitteWalletAuth = {
   },
   setupBitteWalletSelector: (callbackUrl, onlyBitteWallet = false, network, contractAddress, options, successUrl, failureUrl) => __async(void 0, null, function* () {
     if (onlyBitteWallet === false) {
-      BitteWalletAuth.walletSelectorComponents.selector = yield (0, import_core2.setupWalletSelector)({
+      BitteWalletAuth.walletSelectorComponents.selector = yield (0, import_core.setupWalletSelector)({
         network,
         modules: [
-          (0, import_wallet2.setupBitteWallet)({
+          (0, import_wallet.setupBitteWallet)({
             walletUrl: walletUrls[network],
             callbackUrl,
             successUrl: successUrl || window.location.href,
@@ -35193,14 +46608,14 @@ var BitteWalletAuth = {
             contractId: contractAddress
           }),
           ...(options == null ? void 0 : options.additionalWallets) || [],
-          ...SUPPORTED_NEAR_WALLETS2
+          ...SUPPORTED_NEAR_WALLETS
         ]
       });
     } else {
-      BitteWalletAuth.walletSelectorComponents.selector = yield (0, import_core2.setupWalletSelector)({
+      BitteWalletAuth.walletSelectorComponents.selector = yield (0, import_core.setupWalletSelector)({
         network,
         modules: [
-          (0, import_wallet2.setupBitteWallet)({
+          (0, import_wallet.setupBitteWallet)({
             walletUrl: walletUrls[network],
             callbackUrl,
             contractId: contractAddress
@@ -35209,21 +46624,21 @@ var BitteWalletAuth = {
         ]
       });
     }
-    BitteWalletAuth.walletSelectorComponents.modal = (0, import_modal_ui2.setupModal)(BitteWalletAuth.walletSelectorComponents.selector, {
+    BitteWalletAuth.walletSelectorComponents.modal = (0, import_modal_ui.setupModal)(BitteWalletAuth.walletSelectorComponents.selector, {
       contractId: contractAddress
     });
     return BitteWalletAuth.walletSelectorComponents;
   }),
   setupWalletSelectorComponents: (network, contractAddress, options) => __async(void 0, null, function* () {
-    const selector = yield (0, import_core2.setupWalletSelector)({
+    const selector = yield (0, import_core.setupWalletSelector)({
       network,
       debug: import_sdk.mbjs.keys.debugMode,
       modules: [
-        ...SUPPORTED_NEAR_WALLETS2,
+        ...SUPPORTED_NEAR_WALLETS,
         ...(options == null ? void 0 : options.additionalWallets) || []
       ]
     });
-    const modal = (0, import_modal_ui2.setupModal)(selector, {
+    const modal = (0, import_modal_ui.setupModal)(selector, {
       contractId: contractAddress
     });
     BitteWalletAuth.walletSelectorComponents = {
@@ -35242,7 +46657,7 @@ var BitteWalletAuth = {
   },
   validateWalletComponentsAreSetup: () => {
     if (!BitteWalletAuth.walletSelectorComponents.selector) {
-      throw new BitteWalletAuth.SetupNotCalledError(ERROR_MESSAGES2.WALLET_SETUP_NOT_CALLED_ERROR);
+      throw new BitteWalletAuth.SetupNotCalledError(ERROR_MESSAGES.WALLET_SETUP_NOT_CALLED_ERROR);
     }
   },
   registerWalletAccountsSubscriber: (callback) => {
@@ -35263,7 +46678,7 @@ var BitteWalletAuth = {
       }
       if (elapsed > WALLET_CONNECTION_TIMEOUT) {
         reject(
-          new ConnectionTimeoutError(ERROR_MESSAGES2.WALLET_CONNECTION_NOT_FOUND)
+          new ConnectionTimeoutError(ERROR_MESSAGES.WALLET_CONNECTION_NOT_FOUND)
         );
       }
       clearTimeout(BitteWalletAuth.timerReference);
@@ -35332,7 +46747,7 @@ var BitteWalletContextProvider = ({
   const selectedNetwork = network;
   const selectedContract = contractAddress;
   const { setupBitteWalletSelector, registerWalletAccountsSubscriber, connectWalletSelector, pollForWalletConnection, disconnectFromWalletSelector, signMessage } = BitteWalletAuth;
-  const setupBitteWallet3 = () => __async(void 0, null, function* () {
+  const setupBitteWallet2 = () => __async(void 0, null, function* () {
     const isOnlyBitteWallet = !!onlyBitteWallet || !!(additionalWallets && additionalWallets.length > 0);
     return yield setupBitteWalletSelector(
       callbackUrl,
@@ -35345,7 +46760,7 @@ var BitteWalletContextProvider = ({
     );
   });
   const setup = (0, import_react.useCallback)(() => __async(void 0, null, function* () {
-    const components2 = yield setupBitteWallet3();
+    const components2 = yield setupBitteWallet2();
     setIsWalletSelectorSetup(true);
     setComponents(components2);
   }), []);
@@ -35353,7 +46768,7 @@ var BitteWalletContextProvider = ({
     setIsWaitingForConnection(false);
   };
   const setupWallet = () => __async(void 0, null, function* () {
-    const components2 = yield setupBitteWallet3();
+    const components2 = yield setupBitteWallet2();
     return components2;
   });
   (0, import_react.useEffect)(() => {
@@ -35454,7 +46869,7 @@ var useNearPrice = () => {
 };
 
 // src/index.ts
-var import_core3 = require("@near-wallet-selector/core");
+var import_core2 = require("@near-wallet-selector/core");
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Account,

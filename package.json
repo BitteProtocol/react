@@ -1,0 +1,42 @@
+{
+  "name": "@bitte-ai/react",
+  "version": "0.6.6-beta-prerelease.3",
+  "description": "React app tools for Bitte Wallet",
+  "scripts": {
+    "watch": "tsc && tsc --watch & jest --watch --coverage",
+    "lint": "eslint . --fix --ext ts --ext tsx",
+    "build": "tsup src/index.ts --format cjs,esm --dts --sourcemap --clean --external fsevents",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [],
+  "author": "Bitte Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@mintbase-js/data": "0.6.2",
+    "@mintbase-js/wallet": "0.6.2",
+    "@near-wallet-selector/core": "^8.9.12",
+    "@near-wallet-selector/here-wallet": "8.9.12",
+    "@near-wallet-selector/meteor-wallet": "8.9.12",
+    "@near-wallet-selector/modal-ui": "8.9.12",
+    "@near-wallet-selector/my-near-wallet": "8.9.12",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

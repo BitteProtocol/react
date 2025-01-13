@@ -1,14 +1,12 @@
-[//]: # `{ "title": "@mintbase-js/react", "order": "3" }`
+# @bitte-ai/react
 
-# @mintbase-js/react
-
-This package contains React helpers for interacting with Mintbase JS.
+This package contains React helpers for interacting with Bitte Wallet.
 
 <p align="center">
 
-<img  src='https://img.shields.io/npm/dw/@mintbase-js/react'  />
+<img  src='https://img.shields.io/npm/dw/@bitte-ai/react'  />
 
-<img  src='https://img.shields.io/bundlephobia/min/@mintbase-js/react'>
+<img  src='https://img.shields.io/bundlephobia/min/@bitte-ai/react'>
 
 </p>
 
@@ -29,26 +27,26 @@ You can check a [quick example of Simple Login](https://github.com/Mintbase/exam
 
 # Installing
 
-`@mintbase-js/react relies on React and React Dom version v18.2.0 due to @near-wallet-selector/modal-ui`
+`@bitte-ai/react relies on React and React Dom version v18.2.0 due to @near-wallet-selector/modal-ui`
 
 ### NPM:
 
 ```
-npm install @mintbase-js/react
+npm install @bitte-ai/react
 npm install @near-wallet-selector/modal-ui
 ```
 
 ### Yarn:
 
 ```
-yarn add @mintbase-js/react
+yarn add @bitte-ai/react
 yarn add @near-wallet-selector/modal-ui
 ```
 
 ### PNPM:
 
 ```
-pnpm install @mintbase-js/react
+pnpm install @bitte-ai/react
 pnpm install @near-wallet-selector/modal-ui
 ```
 
@@ -72,7 +70,7 @@ the default way of interacting with Mintbase Wallet is using the BitteWalletCont
 
 ```typescript
 import "@near-wallet-selector/modal-ui/styles.css";
-import { BitteWalletContextProvider } from  '@mintbase-js/react'
+import { BitteWalletContextProvider } from  '@bitte-ai/react'
 
 <BitteWalletContextProvider
   contractAddress="mycontract.mintbase1.near"

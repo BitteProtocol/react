@@ -5,11 +5,9 @@ import React, {
   useEffect,
   useMemo,
   useState,
-} from 'react';
-import {
-  BitteWalletAuth,
-} from './wallet/bitte-wallet';
-import type { WalletSelectorComponents } from './wallet/bitte-wallet';
+} from "react";
+import { BitteWalletAuth } from "./wallet/bitte-wallet";
+import type { WalletSelectorComponents } from "./wallet/bitte-wallet";
 
 import type {
   WalletSelector,
@@ -17,11 +15,11 @@ import type {
   VerifiedOwner,
   VerifyOwnerParams,
   WalletModuleFactory,
-} from '@near-wallet-selector/core';
-import type { WalletSelectorModal } from '@near-wallet-selector/modal-ui';
+} from "@near-wallet-selector/core";
+import type { WalletSelectorModal } from "@near-wallet-selector/modal-ui";
 
 export type BitteWalletContext = {
-  selector: WalletSelector | undefined;
+  selector: WalletSelector;
   modal: WalletSelectorModal | undefined;
   accounts: AccountState[];
   activeAccountId: string | null;
@@ -32,21 +30,23 @@ export type BitteWalletContext = {
   connect: () => Promise<void>;
   disconnect: () => Promise<void>;
   signMessage: (params: VerifyOwnerParams) => Promise<VerifiedOwner>;
-}
+};
 
 interface ContextProviderType {
   children: React.ReactNode;
   callbackUrl?: string;
-  network?: string; onlyMbWallet?: boolean;
+  network?: string;
+  onlyMbWallet?: boolean;
   contractAddress?: string;
   additionalWallets?: Array<WalletModuleFactory>;
   successUrl?: string;
   failureUrl?: string;
-  onlyBitteWallet?: boolean
+  onlyBitteWallet?: boolean;
 }
 
-
-export const BitteWalletContext = createContext<BitteWalletContext | null>(null);
+export const BitteWalletContext = createContext<BitteWalletContext | null>(
+  null
+);
 
 export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
   children,
@@ -59,8 +59,8 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
   failureUrl,
 }): JSX.Element => {
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
-    const [components, setComponents] = useState<WalletSelectorComponents | null>(
-    null,
+  const [components, setComponents] = useState<WalletSelectorComponents | null>(
+    null
   );
   const [accounts, setAccounts] = useState<AccountState[]>([]);
   const [isWaitingForConnection, setIsWaitingForConnection] =
@@ -68,14 +68,22 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
   const [isWalletSelectorSetup, setIsWalletSelectorSetup] =
     useState<boolean>(false);
 
-
-  const selectedNetwork =  network;
+  const selectedNetwork = network;
   const selectedContract = contractAddress;
 
-  const { setupBitteWalletSelector, registerWalletAccountsSubscriber, connectWalletSelector, pollForWalletConnection, disconnectFromWalletSelector, signMessage } = BitteWalletAuth;
+  const {
+    setupBitteWalletSelector,
+    registerWalletAccountsSubscriber,
+    connectWalletSelector,
+    pollForWalletConnection,
+    disconnectFromWalletSelector,
+    signMessage,
+  } = BitteWalletAuth;
 
   const setupBitteWallet = async (): Promise<WalletSelectorComponents> => {
-    const isOnlyBitteWallet = !!onlyBitteWallet || !!(additionalWallets && additionalWallets.length > 0);
+    const isOnlyBitteWallet =
+      !!onlyBitteWallet ||
+      !!(additionalWallets && additionalWallets.length > 0);
 
     return await setupBitteWalletSelector(
       callbackUrl,
@@ -83,7 +91,8 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
       selectedNetwork,
       selectedContract,
       isOnlyBitteWallet ? { additionalWallets } : undefined,
-      successUrl, failureUrl,
+      successUrl,
+      failureUrl
     );
   };
 
@@ -106,7 +115,6 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
 
   // call setup on wallet selector
 
-
   useEffect(() => {
     setupWallet();
 
@@ -117,12 +125,12 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
     });
 
     // Add the event listener here
-    const closeButton = document?.getElementsByClassName('close-button')[0];
-    closeButton?.addEventListener('click', onCloseModal);
+    const closeButton = document?.getElementsByClassName("close-button")[0];
+    closeButton?.addEventListener("click", onCloseModal);
 
     // Cleanup the event listener on unmount
     return (): void => {
-      closeButton?.removeEventListener('click', onCloseModal);
+      closeButton?.removeEventListener("click", onCloseModal);
     };
   }, [setup]);
 
@@ -135,7 +143,7 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
     const subscription = registerWalletAccountsSubscriber(
       (accounts: AccountState[]) => {
         setAccounts(accounts);
-      },
+      }
     );
 
     return (): void => {
@@ -144,6 +152,11 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
   }, [components]);
 
   const { selector, modal } = components || {};
+
+  // Ensure selector is always defined
+  if (!selector) {
+    throw new Error("Selector must be initialized before use.");
+  }
 
   const connect = async (): Promise<void> => {
     setIsWaitingForConnection(true);
@@ -182,7 +195,7 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
       disconnect,
       signMessage,
     }),
-    [selector, modal, accounts],
+    [selector, modal, accounts]
   );
 
   return (
@@ -195,7 +208,9 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
 export const useBitteWallet = (): BitteWalletContext => {
   const context = useContext(BitteWalletContext);
   if (!context) {
-    throw new Error("useBitteWallet must be used within a BitteWalletContextProvider");
+    throw new Error(
+      "useBitteWallet must be used within a BitteWalletContextProvider"
+    );
   }
   return context;
 };

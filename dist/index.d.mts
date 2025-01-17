@@ -15,7 +15,7 @@ interface ContextProviderType {
     onlyBitteWallet?: boolean;
 }
 type BitteWalletContext = {
-    selector: WalletSelector | undefined;
+    selector: WalletSelector;
     modal: WalletSelectorModal | undefined;
     accounts: AccountState[];
     activeAccountId: string | null;

@@ -1,12 +1,19 @@
 {
   "name": "@bitte-ai/react",
-  "version": "0.6.6-beta-prerelease.33",
+  "version": "0.6.6-beta-prerelease.35",
   "description": "React app tools for Bitte Wallet",
   "scripts": {
     "watch": "tsc && tsc --watch & jest --watch --coverage",
     "lint": "eslint . --fix --ext ts --ext tsx",
-    "build": "tsup src/index.ts --format cjs,esm --dts --sourcemap --clean --external fsevents",
+    "build": "tsup --config tsup.config.ts --external fsevents",
     "prepare": "npm run build"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
   },
   "files": [
     "dist"
@@ -28,9 +35,15 @@
     "tsup": "^8.3.5",
     "typescript": "^5.7.3"
   },
+  "optionalDependencies": {
+    "fsevents": "*"
+  },
+  "browser": {
+    "fsevents": false
+  },
   "dependencies": {
     "@mintbase-js/data": "0.6.2",
-    "@bitte-ai/wallet": "0.6.6-beta-prerelease.4",
+    "@bitte-ai/wallet": "0.6.6-beta-prerelease.5",
     "@near-wallet-selector/core": "^8.9.12",
     "@near-wallet-selector/here-wallet": "8.9.12",
     "@near-wallet-selector/meteor-wallet": "8.9.12",

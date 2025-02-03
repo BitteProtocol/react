@@ -1,6 +1,6 @@
 {
   "name": "@bitte-ai/react",
-  "version": "0.6.6-beta-prerelease.39",
+  "version": "0.6.6-beta-prerelease.40",
   "description": "React app tools for Bitte Wallet",
   "scripts": {
     "watch": "tsc && tsc --watch & jest --watch --coverage",

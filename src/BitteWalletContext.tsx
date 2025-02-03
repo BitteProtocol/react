@@ -154,10 +154,7 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
 
   const { selector, modal } = components || {};
 
-  // Ensure selector is always defined
-  if (!selector) {
-    throw new Error("Selector must be initialized before use.");
-  }
+
 
   const connect = async (): Promise<void> => {
     setIsWaitingForConnection(true);
@@ -183,7 +180,7 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
 
   const contextVal = useMemo<BitteWalletContext>(
     () => ({
-      selector: selector,
+      selector: selector as WalletSelector,
       modal: modal,
       accounts: accounts,
       activeAccountId:

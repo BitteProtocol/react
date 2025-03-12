@@ -43,7 +43,7 @@
     "fsevents": false
   },
   "dependencies": {
-    "@bitte-ai/wallet": "latest",
+    "@bitte-ai/wallet": "0.1.0-add-branch-release-and-injected-wallet-4e5c763",
     "@mintbase-js/data": "latest",
     "@mintbase-js/sdk": "latest",
     "@near-wallet-selector/core": "latest",

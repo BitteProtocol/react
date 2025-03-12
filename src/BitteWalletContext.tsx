@@ -43,6 +43,7 @@ interface ContextProviderType {
   successUrl?: string;
   failureUrl?: string;
   onlyBitteWallet?: boolean;
+  walletUrl?:string
 }
 
 export const BitteWalletContext = createContext<BitteWalletContext | null>(
@@ -57,7 +58,7 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
   onlyBitteWallet,
   callbackUrl,
   successUrl,
-  failureUrl,
+  walletUrl,
 }): JSX.Element => {
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [components, setComponents] = useState<WalletSelectorComponents | null>(
@@ -86,14 +87,14 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
       !!onlyBitteWallet ||
       !!(additionalWallets && additionalWallets.length > 0);
 
+
     return await setupBitteWalletSelector(
-      callbackUrl,
       isOnlyBitteWallet,
       selectedNetwork,
       selectedContract,
-      isOnlyBitteWallet ? { additionalWallets } : undefined,
+     {additionalWallets: additionalWallets },
       successUrl,
-      failureUrl
+      walletUrl
     );
   };
 

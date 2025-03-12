@@ -13,6 +13,7 @@ interface ContextProviderType {
     successUrl?: string;
     failureUrl?: string;
     onlyBitteWallet?: boolean;
+    walletUrl?: string;
 }
 type BitteWalletContext = {
     selector: WalletSelector;

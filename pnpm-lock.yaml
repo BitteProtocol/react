@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@bitte-ai/wallet':
-        specifier: 0.1.0-add-branch-release-and-injected-wallet-4e5c763
-        version: 0.1.0-add-branch-release-and-injected-wallet-4e5c763
+        specifier: 0.1.0-add-branch-release-and-injected-wallet-d4d511e
+        version: 0.1.0-add-branch-release-and-injected-wallet-d4d511e
       '@mintbase-js/data':
         specifier: latest
         version: 0.6.5(graphql@16.10.0)
@@ -82,8 +82,8 @@ packages:
     resolution: {integrity: sha512-AOPI3D+a8dXnja+iwsUqGRjr1BbZIe771sXdapOtYI531gSqpi92vXivKcq2asu/DFpdl1ceFAKZyRzK2PCVcQ==}
     engines: {node: '>=6.9.0'}
 
-  '@bitte-ai/wallet@0.1.0-add-branch-release-and-injected-wallet-4e5c763':
-    resolution: {integrity: sha512-Ca98Cps0XMpyDi5w8OvenFWkgrXc3Opq9IIHa3e/Wya5r2NYGdRjo2vG9vXk7Thd2xiO33bkz5rNUNMpnJuSXA==}
+  '@bitte-ai/wallet@0.1.0-add-branch-release-and-injected-wallet-d4d511e':
+    resolution: {integrity: sha512-f3bQTDyOZxYHxiFUcoXVkfHrJgjzi5NVg9wIgusPrwjRyvIHKPiJpNJxIPzUti8e7xXMrf3wVhJ7dp9v33gy6w==}
 
   '@esbuild/aix-ppc64@0.24.2':
     resolution: {integrity: sha512-thpVCb/rhxE/BnMLQ7GReQLLN8q9qbHmI55F4489/ByVg2aQaQ6kbcLb6FHkocZzQhxc4gx0sCk0tJkKBFzDhA==}
@@ -1362,7 +1362,7 @@ snapshots:
     dependencies:
       regenerator-runtime: 0.14.1
 
-  '@bitte-ai/wallet@0.1.0-add-branch-release-and-injected-wallet-4e5c763':
+  '@bitte-ai/wallet@0.1.0-add-branch-release-and-injected-wallet-d4d511e':
     dependencies:
       '@near-wallet-selector/core': 8.10.1(near-api-js@5.1.0)
       '@near-wallet-selector/wallet-utils': 8.10.1(near-api-js@5.1.0)

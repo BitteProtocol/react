@@ -1,6 +1,6 @@
 {
   "name": "@bitte-ai/react",
-  "version": "0.6.6-beta-prerelease.40",
+  "version": "0.6.6-popup-wallet.1",
   "description": "React app tools for Bitte Wallet",
   "scripts": {
     "watch": "tsc && tsc --watch & jest --watch --coverage",
@@ -43,7 +43,7 @@
     "fsevents": false
   },
   "dependencies": {
-    "@bitte-ai/wallet": "0.1.0-add-branch-release-and-injected-wallet-4e5c763",
+    "@bitte-ai/wallet": "0.1.0-add-branch-release-and-injected-wallet-d4d511e",
     "@mintbase-js/data": "latest",
     "@mintbase-js/sdk": "latest",
     "@near-wallet-selector/core": "latest",

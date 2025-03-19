@@ -26,6 +26,7 @@ import { setupMeteorWallet } from '@near-wallet-selector/meteor-wallet';
 import { setupHereWallet } from '@near-wallet-selector/here-wallet';
 import { setupMyNearWallet } from '@near-wallet-selector/my-near-wallet';
 
+
 const SUPPORT = '- further help available on our telegram channel: https://t.me/mintdev';
 
 export const ERROR_MESSAGES =  {
@@ -59,26 +60,18 @@ export const BitteWalletAuth = {
     modal: null,
   },
   setupBitteWalletSelector: async (
-    callbackUrl,
     onlyBitteWallet = false,
-    network?,
-    contractAddress?,
+    network?: 'testnet' | 'mainnet',
     options?: { additionalWallets?: Array<WalletModuleFactory> },
-    successUrl?: string,
-    failureUrl?: string,
+    contractAddress?: string,
+    walletUrl?: string
   ): Promise<WalletSelectorComponents> => {
 
     if (onlyBitteWallet === false) {
       BitteWalletAuth.walletSelectorComponents.selector = await setupWalletSelector({
-        network: network,
+        network: network || 'mainnet',
         modules: [
-          setupBitteWallet({
-            walletUrl: walletUrls[network],
-            callbackUrl: callbackUrl,
-            successUrl: successUrl || window.location.href,
-            failureUrl: successUrl || window.location.href,
-            contractId: contractAddress,
-          }),
+          setupBitteWallet() as WalletModuleFactory<Wallet>,
           ...(options?.additionalWallets || []),
           ...SUPPORTED_NEAR_WALLETS,
         ],
@@ -86,13 +79,11 @@ export const BitteWalletAuth = {
     } else {
       BitteWalletAuth.walletSelectorComponents.selector = await setupWalletSelector({
 
-        network: network,
+        network: network || 'mainnet',
         modules: [
           setupBitteWallet({
-            walletUrl: walletUrls[network],
-            callbackUrl: callbackUrl,
-            contractId: contractAddress,
-          }),
+            walletUrl: walletUrl || walletUrls[network as 'mainnet' | 'testnet'],
+          }) as WalletModuleFactory<Wallet>,
           ...(options?.additionalWallets || []),
         ],
       });

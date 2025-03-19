@@ -1,5 +1,6 @@
 import React, {
   createContext,
+  JSX,
   useCallback,
   useContext,
   useEffect,
@@ -34,14 +35,12 @@ export type BitteWalletContext = {
 
 interface ContextProviderType {
   children: React.ReactNode;
-  callbackUrl?: string;
-  network?: string;
+  network?:  'testnet' | 'mainnet';
   onlyMbWallet?: boolean;
   contractAddress?: string;
   additionalWallets?: Array<WalletModuleFactory>;
-  successUrl?: string;
-  failureUrl?: string;
   onlyBitteWallet?: boolean;
+  walletUrl?:string
 }
 
 export const BitteWalletContext = createContext<BitteWalletContext | null>(
@@ -54,9 +53,7 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
   contractAddress,
   additionalWallets,
   onlyBitteWallet,
-  callbackUrl,
-  successUrl,
-  failureUrl,
+  walletUrl,
 }): JSX.Element => {
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [components, setComponents] = useState<WalletSelectorComponents | null>(
@@ -85,14 +82,12 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
       !!onlyBitteWallet ||
       !!(additionalWallets && additionalWallets.length > 0);
 
+
     return await setupBitteWalletSelector(
-      callbackUrl,
       isOnlyBitteWallet,
       selectedNetwork,
-      selectedContract,
-      isOnlyBitteWallet ? { additionalWallets } : undefined,
-      successUrl,
-      failureUrl
+     {additionalWallets: additionalWallets },
+      walletUrl
     );
   };
 
@@ -153,10 +148,7 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
 
   const { selector, modal } = components || {};
 
-  // Ensure selector is always defined
-  if (!selector) {
-    throw new Error("Selector must be initialized before use.");
-  }
+
 
   const connect = async (): Promise<void> => {
     setIsWaitingForConnection(true);
@@ -182,7 +174,7 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
 
   const contextVal = useMemo<BitteWalletContext>(
     () => ({
-      selector: selector,
+      selector: selector as WalletSelector,
       modal: modal,
       accounts: accounts,
       activeAccountId:

@@ -5,14 +5,12 @@ import { WalletSelectorModal } from '@near-wallet-selector/modal-ui';
 
 interface ContextProviderType {
     children: React.ReactNode;
-    callbackUrl?: string;
-    network?: string;
+    network?: 'testnet' | 'mainnet';
     onlyMbWallet?: boolean;
     contractAddress?: string;
     additionalWallets?: Array<WalletModuleFactory>;
-    successUrl?: string;
-    failureUrl?: string;
     onlyBitteWallet?: boolean;
+    walletUrl?: string;
 }
 type BitteWalletContext = {
     selector: WalletSelector;

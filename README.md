@@ -6,8 +6,6 @@ This package contains React helpers for interacting with Bitte Wallet.
 
 <img  src='https://img.shields.io/npm/dw/@bitte-ai/react'  />
 
-<img  src='https://img.shields.io/bundlephobia/min/@bitte-ai/react'>
-
 </p>
 
 

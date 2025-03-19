@@ -28,13 +28,13 @@
   "author": "Bitte Team",
   "license": "MIT",
   "devDependencies": {
-    "@testing-library/react": "latest",
-    "@testing-library/user-event": "latest",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "tsup": "latest",
-    "typescript": "latest",
-     "rxjs": "latest"
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "rxjs": "^7.8.1",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3"
   },
   "optionalDependencies": {
     "fsevents": "*"
@@ -43,16 +43,16 @@
     "fsevents": false
   },
   "dependencies": {
-    "@bitte-ai/wallet": "0.1.0-add-branch-release-and-injected-wallet-d4d511e",
-    "@mintbase-js/data": "latest",
-    "@mintbase-js/sdk": "latest",
-    "@near-wallet-selector/core": "latest",
-    "@near-wallet-selector/here-wallet": "latest",
-    "@near-wallet-selector/meteor-wallet": "latest",
-    "@near-wallet-selector/modal-ui": "latest",
-    "@near-wallet-selector/my-near-wallet": "latest",
-    "buffer": "latest",
-    "react": "latest",
-    "react-dom": "latest"
+    "@bitte-ai/wallet": "0.7.2",
+    "@mintbase-js/data": "^0.6.5",
+    "@mintbase-js/sdk": "^0.6.5",
+    "@near-wallet-selector/core": "^8.9.16",
+    "@near-wallet-selector/here-wallet": "^8.9.16",
+    "@near-wallet-selector/meteor-wallet": "^8.9.16",
+    "@near-wallet-selector/modal-ui": "^8.9.16",
+    "@near-wallet-selector/my-near-wallet": "^8.9.16",
+    "buffer": "^6.0.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   }
 }

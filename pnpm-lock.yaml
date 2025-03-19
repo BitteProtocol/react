@@ -9,59 +9,59 @@ importers:
   .:
     dependencies:
       '@bitte-ai/wallet':
-        specifier: 0.1.0-add-branch-release-and-injected-wallet-d4d511e
-        version: 0.1.0-add-branch-release-and-injected-wallet-d4d511e
+        specifier: 0.7.2
+        version: 0.7.2
       '@mintbase-js/data':
-        specifier: latest
+        specifier: ^0.6.5
         version: 0.6.5(graphql@16.10.0)
       '@mintbase-js/sdk':
-        specifier: latest
+        specifier: ^0.6.5
         version: 0.6.5
       '@near-wallet-selector/core':
-        specifier: latest
+        specifier: ^8.9.16
         version: 8.9.16(near-api-js@4.0.3)
       '@near-wallet-selector/here-wallet':
-        specifier: latest
+        specifier: ^8.9.16
         version: 8.9.16(bn.js@5.2.1)(borsh@1.0.0)(near-api-js@4.0.3)
       '@near-wallet-selector/meteor-wallet':
-        specifier: latest
+        specifier: ^8.9.16
         version: 8.9.16
       '@near-wallet-selector/modal-ui':
-        specifier: latest
+        specifier: ^8.9.16
         version: 8.9.16(near-api-js@4.0.3)
       '@near-wallet-selector/my-near-wallet':
-        specifier: latest
+        specifier: ^8.9.16
         version: 8.9.16
       buffer:
-        specifier: latest
+        specifier: ^6.0.3
         version: 6.0.3
       react:
-        specifier: latest
+        specifier: ^19.0.0
         version: 19.0.0
       react-dom:
-        specifier: latest
+        specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
     devDependencies:
       '@testing-library/react':
-        specifier: latest
+        specifier: ^16.2.0
         version: 16.2.0(@testing-library/dom@10.4.0)(@types/react-dom@19.0.3(@types/react@19.0.8))(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@testing-library/user-event':
-        specifier: latest
+        specifier: ^14.6.1
         version: 14.6.1(@testing-library/dom@10.4.0)
       '@types/react':
-        specifier: latest
+        specifier: ^19.0.8
         version: 19.0.8
       '@types/react-dom':
-        specifier: latest
+        specifier: ^19.0.3
         version: 19.0.3(@types/react@19.0.8)
       rxjs:
-        specifier: latest
+        specifier: ^7.8.1
         version: 7.8.1
       tsup:
-        specifier: latest
+        specifier: ^8.3.6
         version: 8.3.6(typescript@5.7.3)
       typescript:
-        specifier: latest
+        specifier: ^5.7.3
         version: 5.7.3
     optionalDependencies:
       fsevents:
@@ -82,8 +82,8 @@ packages:
     resolution: {integrity: sha512-AOPI3D+a8dXnja+iwsUqGRjr1BbZIe771sXdapOtYI531gSqpi92vXivKcq2asu/DFpdl1ceFAKZyRzK2PCVcQ==}
     engines: {node: '>=6.9.0'}
 
-  '@bitte-ai/wallet@0.1.0-add-branch-release-and-injected-wallet-d4d511e':
-    resolution: {integrity: sha512-f3bQTDyOZxYHxiFUcoXVkfHrJgjzi5NVg9wIgusPrwjRyvIHKPiJpNJxIPzUti8e7xXMrf3wVhJ7dp9v33gy6w==}
+  '@bitte-ai/wallet@0.7.2':
+    resolution: {integrity: sha512-zKInm2j7ULU8OSDGAhGhMllokL0hgdTxFB1CtN73ZiccEo0FWzjIQh34KUZ/6LhHvIkZgLq6H0V6u27jMdD/EQ==}
 
   '@esbuild/aix-ppc64@0.24.2':
     resolution: {integrity: sha512-thpVCb/rhxE/BnMLQ7GReQLLN8q9qbHmI55F4489/ByVg2aQaQ6kbcLb6FHkocZzQhxc4gx0sCk0tJkKBFzDhA==}
@@ -1362,7 +1362,7 @@ snapshots:
     dependencies:
       regenerator-runtime: 0.14.1
 
-  '@bitte-ai/wallet@0.1.0-add-branch-release-and-injected-wallet-d4d511e':
+  '@bitte-ai/wallet@0.7.2':
     dependencies:
       '@near-wallet-selector/core': 8.10.1(near-api-js@5.1.0)
       '@near-wallet-selector/wallet-utils': 8.10.1(near-api-js@5.1.0)

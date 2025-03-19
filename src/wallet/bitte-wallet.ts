@@ -61,22 +61,17 @@ export const BitteWalletAuth = {
   },
   setupBitteWalletSelector: async (
     onlyBitteWallet = false,
-    network?,
-    contractAddress?,
+    network?: 'testnet' | 'mainnet',
     options?: { additionalWallets?: Array<WalletModuleFactory> },
-    successUrl?: string,
+    contractAddress?: string,
     walletUrl?: string
   ): Promise<WalletSelectorComponents> => {
 
     if (onlyBitteWallet === false) {
       BitteWalletAuth.walletSelectorComponents.selector = await setupWalletSelector({
-        network: network,
+        network: network || 'mainnet',
         modules: [
-          setupBitteWallet({
-            walletUrl: walletUrl || walletUrls[network],
-            successUrl: successUrl || window.location.href,
-            failureUrl: successUrl || window.location.href,
-          }),
+          setupBitteWallet() as WalletModuleFactory<Wallet>,
           ...(options?.additionalWallets || []),
           ...SUPPORTED_NEAR_WALLETS,
         ],
@@ -84,11 +79,11 @@ export const BitteWalletAuth = {
     } else {
       BitteWalletAuth.walletSelectorComponents.selector = await setupWalletSelector({
 
-        network: network,
+        network: network || 'mainnet',
         modules: [
           setupBitteWallet({
-            walletUrl: walletUrl || walletUrls[network],
-          }),
+            walletUrl: walletUrl || walletUrls[network as 'mainnet' | 'testnet'],
+          }) as WalletModuleFactory<Wallet>,
           ...(options?.additionalWallets || []),
         ],
       });

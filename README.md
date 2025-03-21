@@ -43,7 +43,6 @@ pnpm install @near-wallet-selector/modal-ui
 
 the default way of interacting with Bitte Wallet is using the BitteWalletContextProvider
 
-{% code title="app.tsx" overflow="wrap" lineNumbers="true" %}
 
 ## properties:
 

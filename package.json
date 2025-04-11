@@ -43,7 +43,7 @@
     "fsevents": false
   },
   "dependencies": {
-    "@bitte-ai/wallet": "0.8.1",
+    "@bitte-ai/wallet": "0.8.2",
     "@mintbase-js/data": "^0.6.5",
     "@mintbase-js/sdk": "^0.6.5",
     "@near-wallet-selector/core": "^8.10.1",

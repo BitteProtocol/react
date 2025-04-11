@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@bitte-ai/wallet':
-        specifier: 0.8.1
-        version: 0.8.1
+        specifier: 0.8.2
+        version: 0.8.2
       '@mintbase-js/data':
         specifier: ^0.6.5
         version: 0.6.5(graphql@16.10.0)
@@ -82,8 +82,8 @@ packages:
     resolution: {integrity: sha512-AOPI3D+a8dXnja+iwsUqGRjr1BbZIe771sXdapOtYI531gSqpi92vXivKcq2asu/DFpdl1ceFAKZyRzK2PCVcQ==}
     engines: {node: '>=6.9.0'}
 
-  '@bitte-ai/wallet@0.8.1':
-    resolution: {integrity: sha512-od6yJPHZb0OzZO/0VvWHkS5bNbh+jChsg/THXlMxj21p6JF2c1Sr97LpyHIf8NaztIkxb5afp9a2jitHnN9cjA==}
+  '@bitte-ai/wallet@0.8.2':
+    resolution: {integrity: sha512-F3r8wlGPzO36cY/CTUUAvRVffrqIvPOWJOOgKQgfNjeFdwih/xSv9OUN2m3oOlXAl7BZ5g99mBFuYK+s00OQMQ==}
 
   '@esbuild/aix-ppc64@0.24.2':
     resolution: {integrity: sha512-thpVCb/rhxE/BnMLQ7GReQLLN8q9qbHmI55F4489/ByVg2aQaQ6kbcLb6FHkocZzQhxc4gx0sCk0tJkKBFzDhA==}
@@ -1325,7 +1325,7 @@ snapshots:
     dependencies:
       regenerator-runtime: 0.14.1
 
-  '@bitte-ai/wallet@0.8.1':
+  '@bitte-ai/wallet@0.8.2':
     dependencies:
       '@near-wallet-selector/core': 8.10.1(near-api-js@5.1.1)
       '@near-wallet-selector/wallet-utils': 8.10.1(near-api-js@5.1.1)

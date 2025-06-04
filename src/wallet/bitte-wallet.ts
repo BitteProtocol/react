@@ -81,7 +81,8 @@ export const BitteWalletAuth = {
 
         network: network || 'mainnet',
         modules: [
-          setupIntearWallet()
+          setupIntearWallet(),
+          ...SUPPORTED_NEAR_WALLETS,
         ],
       });
     }
@@ -103,6 +104,7 @@ export const BitteWalletAuth = {
       modules: [
         ...SUPPORTED_NEAR_WALLETS,
         ...(options?.additionalWallets || []),
+        setupIntearWallet(),
       ],
     });
 

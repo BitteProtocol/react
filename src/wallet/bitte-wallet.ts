@@ -6,6 +6,7 @@ import {
 } from '@near-wallet-selector/core';
 import { setupModal } from '@near-wallet-selector/modal-ui';
 import { map, distinctUntilChanged, Subscription } from 'rxjs';
+import { setupIntearWallet } from "@near-wallet-selector/intear-wallet";
 
 import {
   WALLET_CONNECTION_POLL_INTERVAL,
@@ -20,11 +21,8 @@ import type {
 import type { WalletSelectorModal } from '@near-wallet-selector/modal-ui';
 
 import { mbjs } from '@mintbase-js/sdk';
-import { setupBitteWallet } from '@bitte-ai/wallet';
 
 import { setupMeteorWallet } from '@near-wallet-selector/meteor-wallet';
-import { setupHereWallet } from '@near-wallet-selector/here-wallet';
-import { setupMyNearWallet } from '@near-wallet-selector/my-near-wallet';
 
 
 const SUPPORT = '- further help available on our telegram channel: https://t.me/mintdev';
@@ -36,8 +34,9 @@ export const ERROR_MESSAGES =  {
 
 export const SUPPORTED_NEAR_WALLETS: Array<WalletModuleFactory> =[
   setupMeteorWallet(),
-  setupMyNearWallet(),
-  setupHereWallet(),
+  // setupMyNearWallet(),
+  // setupHereWallet(),
+  setupIntearWallet(),
 ];
 
 export type WalletSelectorComponents = {
@@ -71,7 +70,6 @@ export const BitteWalletAuth = {
       BitteWalletAuth.walletSelectorComponents.selector = await setupWalletSelector({
         network: network || 'mainnet',
         modules: [
-          setupBitteWallet() as WalletModuleFactory<Wallet>,
           ...(options?.additionalWallets || []),
           ...SUPPORTED_NEAR_WALLETS,
         ],
@@ -81,10 +79,7 @@ export const BitteWalletAuth = {
 
         network: network || 'mainnet',
         modules: [
-          setupBitteWallet({
-            walletUrl: walletUrl || walletUrls[network as 'mainnet' | 'testnet'],
-          }) as WalletModuleFactory<Wallet>,
-          ...(options?.additionalWallets || []),
+          ...SUPPORTED_NEAR_WALLETS,
         ],
       });
     }

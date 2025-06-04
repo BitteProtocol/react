@@ -23,8 +23,6 @@ import type { WalletSelectorModal } from '@near-wallet-selector/modal-ui';
 import { mbjs } from '@mintbase-js/sdk';
 
 import { setupMeteorWallet } from '@near-wallet-selector/meteor-wallet';
-import { setupHereWallet } from '@near-wallet-selector/here-wallet';
-import { setupMyNearWallet } from '@near-wallet-selector/my-near-wallet';
 
 
 const SUPPORT = '- further help available on our telegram channel: https://t.me/mintdev';
@@ -36,8 +34,9 @@ export const ERROR_MESSAGES =  {
 
 export const SUPPORTED_NEAR_WALLETS: Array<WalletModuleFactory> =[
   setupMeteorWallet(),
-  setupMyNearWallet(),
-  setupHereWallet(),
+  // setupMyNearWallet(),
+  // setupHereWallet(),
+  setupIntearWallet(),
 ];
 
 export type WalletSelectorComponents = {
@@ -71,7 +70,6 @@ export const BitteWalletAuth = {
       BitteWalletAuth.walletSelectorComponents.selector = await setupWalletSelector({
         network: network || 'mainnet',
         modules: [
-          setupIntearWallet(),
           ...(options?.additionalWallets || []),
           ...SUPPORTED_NEAR_WALLETS,
         ],
@@ -81,7 +79,6 @@ export const BitteWalletAuth = {
 
         network: network || 'mainnet',
         modules: [
-          setupIntearWallet(),
           ...SUPPORTED_NEAR_WALLETS,
         ],
       });
@@ -104,7 +101,6 @@ export const BitteWalletAuth = {
       modules: [
         ...SUPPORTED_NEAR_WALLETS,
         ...(options?.additionalWallets || []),
-        setupIntearWallet(),
       ],
     });
 

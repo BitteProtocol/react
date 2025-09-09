@@ -2,6 +2,7 @@
   "name": "@bitte-ai/react",
   "version": "0.0.0",
   "description": "React app tools for Bitte Wallet",
+  "packageManager": "pnpm@10.15.1",
   "scripts": {
     "watch": "tsc && tsc --watch & jest --watch --coverage",
     "lint": "biome check",

@@ -30,11 +30,11 @@
   "devDependencies": {
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
-    "@types/react": "^19.1.6",
-    "@types/react-dom": "^19.1.5",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
     "rxjs": "^7.8.2",
     "tsup": "^8.5.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.9.2"
   },
   "optionalDependencies": {
     "fsevents": "^2.3.3"
@@ -44,15 +44,19 @@
   },
   "dependencies": {
     "@bitte-ai/wallet": "0.8.2",
-    "@mintbase-js/data": "^0.6.6",
-    "@mintbase-js/sdk": "^0.6.6",
-    "@near-wallet-selector/core": "^9.0.2",
-    "@near-wallet-selector/here-wallet": "^9.0.2",
-    "@near-wallet-selector/meteor-wallet": "^9.0.2",
-    "@near-wallet-selector/modal-ui": "^9.0.2",
-    "@near-wallet-selector/my-near-wallet": "^9.0.2",
+    "@near-wallet-selector/core": "^9.5.1",
+    "@near-wallet-selector/here-wallet": "^9.5.1",
+    "@near-wallet-selector/meteor-wallet": "^9.5.1",
+    "@near-wallet-selector/modal-ui": "^9.5.1",
+    "@near-wallet-selector/my-near-wallet": "^9.5.1",
     "buffer": "^6.0.3",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "pnpm": {
+    "overrides": {
+      "secp256k1": "^5.0.1",
+      "base-x": "^3.0.11"
+    }
   }
 }

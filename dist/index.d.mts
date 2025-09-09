@@ -34,5 +34,18 @@ type UseNearPriceReturn = {
     error: string | null;
 };
 declare const useNearPrice: () => UseNearPriceReturn;
+interface ParsedDataReturn<T> {
+    error?: null | string;
+    data?: T | null;
+}
+interface NearPriceData {
+    price?: string;
+}
+interface CoinGeckoNearPriceData {
+    near?: {
+        usd: string;
+    };
+}
+declare const nearPrice: () => Promise<ParsedDataReturn<string>>;
 
-export { BitteWalletContext, BitteWalletContextProvider, useBitteWallet, useNearPrice };
+export { BitteWalletContext, BitteWalletContextProvider, type CoinGeckoNearPriceData, type NearPriceData, type ParsedDataReturn, nearPrice, useBitteWallet, useNearPrice };

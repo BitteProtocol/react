@@ -5,8 +5,8 @@
   "packageManager": "pnpm@10.15.1",
   "scripts": {
     "watch": "tsc && tsc --watch & jest --watch --coverage",
-    "lint": "biome check",
-    "fmt": "biome check --write",
+    "lint": "prettier --check src/.",
+    "fmt": "prettier --write src/.",
     "build": "tsup --config tsup.config.ts --external fsevents",
     "prepare": "pnpm run build"
   },
@@ -34,7 +34,7 @@
     "@testing-library/user-event": "^14.6.1",
     "@types/react": "^19.1.12",
     "@types/react-dom": "^19.1.9",
-    "biome": "^0.3.3",
+    "prettier": "^3.6.2",
     "rxjs": "^7.8.2",
     "tsup": "^8.5.0",
     "typescript": "^5.9.2"

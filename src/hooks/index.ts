@@ -1,1 +1,1 @@
-export * from './useNearPrice';
+export * from "./useNearPrice";

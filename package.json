@@ -1,10 +1,11 @@
 {
   "name": "@bitte-ai/react",
-  "version": "0.6.6-popup-wallet.1",
+  "version": "0.0.0",
   "description": "React app tools for Bitte Wallet",
   "scripts": {
     "watch": "tsc && tsc --watch & jest --watch --coverage",
-    "lint": "eslint . --fix --ext ts --ext tsx",
+    "lint": "biome check",
+    "fmt": "biome check --write",
     "build": "tsup --config tsup.config.ts --external fsevents",
     "prepare": "pnpm run build"
   },
@@ -32,6 +33,7 @@
     "@testing-library/user-event": "^14.6.1",
     "@types/react": "^19.1.12",
     "@types/react-dom": "^19.1.9",
+    "biome": "^0.3.3",
     "rxjs": "^7.8.2",
     "tsup": "^8.5.0",
     "typescript": "^5.9.2"

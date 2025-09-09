@@ -19,7 +19,6 @@ import type {
 } from '@near-wallet-selector/core';
 import type { WalletSelectorModal } from '@near-wallet-selector/modal-ui';
 
-import { mbjs } from '@mintbase-js/sdk';
 import { setupBitteWallet } from '@bitte-ai/wallet';
 
 import { setupMeteorWallet } from '@near-wallet-selector/meteor-wallet';
@@ -102,7 +101,6 @@ export const BitteWalletAuth = {
   ): Promise<WalletSelectorComponents> => {
     const selector = await setupWalletSelector({
       network: network,
-      debug: mbjs.keys.debugMode,
       modules: [
         ...SUPPORTED_NEAR_WALLETS,
         ...(options?.additionalWallets || []),

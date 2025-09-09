@@ -44,8 +44,6 @@
   },
   "dependencies": {
     "@bitte-ai/wallet": "0.8.2",
-    "@mintbase-js/data": "^0.6.6",
-    "@mintbase-js/sdk": "^0.6.6",
     "@near-wallet-selector/core": "^9.5.1",
     "@near-wallet-selector/here-wallet": "^9.5.1",
     "@near-wallet-selector/meteor-wallet": "^9.5.1",

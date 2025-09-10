@@ -9,7 +9,7 @@ export default defineConfig({
   external: ['react', 'react-dom', 'fsevents'],
   minify: true,
   outDir: 'dist',
-  target: 'node20',
+  target: 'node22',
   sourcemap: true,
   splitting: false,
   treeshake: true,

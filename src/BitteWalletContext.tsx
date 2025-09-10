@@ -35,16 +35,16 @@ export type BitteWalletContext = {
 
 interface ContextProviderType {
   children: React.ReactNode;
-  network?:  'testnet' | 'mainnet';
+  network?: "testnet" | "mainnet";
   onlyMbWallet?: boolean;
   contractAddress?: string;
   additionalWallets?: Array<WalletModuleFactory>;
   onlyBitteWallet?: boolean;
-  walletUrl?:string
+  walletUrl?: string;
 }
 
 export const BitteWalletContext = createContext<BitteWalletContext | null>(
-  null
+  null,
 );
 
 export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
@@ -57,7 +57,7 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
 }): JSX.Element => {
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [components, setComponents] = useState<WalletSelectorComponents | null>(
-    null
+    null,
   );
   const [accounts, setAccounts] = useState<AccountState[]>([]);
   const [isWaitingForConnection, setIsWaitingForConnection] =
@@ -83,8 +83,8 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
     return await setupBitteWalletSelector(
       isOnlyBitteWallet,
       selectedNetwork,
-     {additionalWallets: additionalWallets },
-      walletUrl
+      { additionalWallets: additionalWallets },
+      walletUrl,
     );
   };
 
@@ -135,7 +135,7 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
     const subscription = registerWalletAccountsSubscriber(
       (accounts: AccountState[]) => {
         setAccounts(accounts);
-      }
+      },
     );
 
     return (): void => {
@@ -144,8 +144,6 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
   }, [components]);
 
   const { selector, modal } = components || {};
-
-
 
   const connect = async (): Promise<void> => {
     setIsWaitingForConnection(true);
@@ -184,7 +182,7 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
       disconnect,
       signMessage,
     }),
-    [selector, modal, accounts]
+    [selector, modal, accounts],
   );
 
   return (
@@ -198,7 +196,7 @@ export const useBitteWallet = (): BitteWalletContext => {
   const context = useContext(BitteWalletContext);
   if (!context) {
     throw new Error(
-      "useBitteWallet must be used within a BitteWalletContextProvider"
+      "useBitteWallet must be used within a BitteWalletContextProvider",
     );
   }
   return context;

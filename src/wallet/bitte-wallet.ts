@@ -83,14 +83,14 @@ export const BitteWalletAuth = {
           ...(filterBitteWallet || []).map((wallet) => {
             return SUPPORTED_NEAR_WALLETS[wallet];
           }),
-          ...(bitteWallet
+          /*           ...(bitteWallet
             ? [
                 setupBitteWallet({
                   walletUrl:
                     walletUrl || walletUrls[network as "mainnet" | "testnet"],
                 }) as WalletModuleFactory<Wallet>,
               ]
-            : []),
+            : []), */
         ],
       })) as WalletSelector;
 

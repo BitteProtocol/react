@@ -45,9 +45,7 @@ export type WalletName =
 interface ContextProviderType {
   children: React.ReactNode;
   network?: "testnet" | "mainnet";
-  onlyMbWallet?: boolean;
   contractAddress?: string;
-  onlyBitteWallet?: boolean;
   walletUrl?: string;
   wallets?: WalletName[];
 }
@@ -60,7 +58,6 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
   children,
   network,
   contractAddress,
-  onlyBitteWallet,
   walletUrl,
   wallets,
 }): JSX.Element => {
@@ -87,13 +84,10 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
   } = BitteWalletAuth;
 
   const setupBitteWallet = async (): Promise<WalletSelectorComponents> => {
-    const isOnlyBitteWallet =
-      !!onlyBitteWallet || !!(wallets && wallets.length > 0);
-
     return await setupBitteWalletSelector(
-      isOnlyBitteWallet,
       selectedNetwork,
       { wallets },
+      selectedContract,
       walletUrl,
     );
   };

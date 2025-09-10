@@ -44,7 +44,6 @@ export const SUPPORTED_NEAR_WALLETS: Record<string, WalletModuleFactory> = {
   hot: setupHotWallet(),
   okx: setupOKXWallet(),
   intear: setupIntearWallet(),
-  bitte: setupBitteWallet() as WalletModuleFactory<Wallet>,
 };
 
 export type WalletSelectorComponents = {
@@ -67,34 +66,33 @@ export const BitteWalletAuth = {
     modal: null,
   },
   setupBitteWalletSelector: async (
-    onlyBitteWallet = false,
     network?: "testnet" | "mainnet",
     options?: { wallets?: WalletName[] },
     contractAddress?: string,
     walletUrl?: string,
   ): Promise<WalletSelectorComponents> => {
-    if (!onlyBitteWallet) {
-      BitteWalletAuth.walletSelectorComponents.selector =
-        (await setupWalletSelector({
-          network: network || "mainnet",
-          modules: [
-            ...(options?.wallets || []).map((wallet) => {
-              return SUPPORTED_NEAR_WALLETS[wallet];
-            }),
-          ],
-        })) as WalletSelector;
-    } else {
-      BitteWalletAuth.walletSelectorComponents.selector =
-        await setupWalletSelector({
-          network: network || "mainnet",
-          modules: [
-            setupBitteWallet({
-              walletUrl:
-                walletUrl || walletUrls[network as "mainnet" | "testnet"],
-            }) as WalletModuleFactory<Wallet>,
-          ],
-        });
-    }
+    const filterBitteWallet = options?.wallets?.filter(
+      (wallet) => wallet !== "bitte",
+    );
+    const bitteWallet = options?.wallets?.includes("bitte");
+
+    BitteWalletAuth.walletSelectorComponents.selector =
+      (await setupWalletSelector({
+        network: network || "mainnet",
+        modules: [
+          ...(filterBitteWallet || []).map((wallet) => {
+            return SUPPORTED_NEAR_WALLETS[wallet];
+          }),
+          ...(bitteWallet
+            ? [
+                setupBitteWallet({
+                  walletUrl:
+                    walletUrl || walletUrls[network as "mainnet" | "testnet"],
+                }) as WalletModuleFactory<Wallet>,
+              ]
+            : []),
+        ],
+      })) as WalletSelector;
 
     BitteWalletAuth.walletSelectorComponents.modal = setupModal(
       BitteWalletAuth.walletSelectorComponents.selector,
@@ -106,15 +104,16 @@ export const BitteWalletAuth = {
     return BitteWalletAuth.walletSelectorComponents;
   },
   setupWalletSelectorComponents: async (
-    network?,
-    contractAddress?,
-    options?: { additionalWallets?: Array<WalletModuleFactory> },
+    network?: "testnet" | "mainnet",
+    contractAddress?: string,
+    options?: { wallets?: WalletName[] },
   ): Promise<WalletSelectorComponents> => {
     const selector = await setupWalletSelector({
-      network: network,
+      network: network || "mainnet",
       modules: [
-        ...SUPPORTED_NEAR_WALLETS,
-        ...(options?.additionalWallets || []),
+        ...(options?.wallets || []).map((wallet) => {
+          return SUPPORTED_NEAR_WALLETS[wallet];
+        }),
       ],
     });
 

@@ -78,9 +78,7 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
   } = BitteWalletAuth;
 
   const setupBitteWallet = async (): Promise<WalletSelectorComponents> => {
-    const isOnlyBitteWallet =
-      !!onlyBitteWallet ||
-      !!(additionalWallets && additionalWallets.length > 0);
+    const isOnlyBitteWallet = !!onlyBitteWallet;
 
     return await setupBitteWalletSelector(
       isOnlyBitteWallet,

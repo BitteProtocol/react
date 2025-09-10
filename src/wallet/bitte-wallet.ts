@@ -4,8 +4,9 @@ import {
   VerifyOwnerParams,
   Wallet,
 } from "@near-wallet-selector/core";
+import { setupIntearWallet } from "@near-wallet-selector/intear-wallet";
 import { setupModal } from "@near-wallet-selector/modal-ui";
-import { map, distinctUntilChanged, Subscription } from "rxjs";
+import { distinctUntilChanged, map, Subscription } from "rxjs";
 
 import {
   WALLET_CONNECTION_POLL_INTERVAL,
@@ -13,17 +14,15 @@ import {
 } from "./constants";
 
 import type {
-  WalletSelector,
   AccountState,
   WalletModuleFactory,
+  WalletSelector,
 } from "@near-wallet-selector/core";
 import type { WalletSelectorModal } from "@near-wallet-selector/modal-ui";
 
-import { setupBitteWallet } from "@bitte-ai/wallet";
-
 import { setupMeteorWallet } from "@near-wallet-selector/meteor-wallet";
-import { setupHereWallet } from "@near-wallet-selector/here-wallet";
-import { setupMyNearWallet } from "@near-wallet-selector/my-near-wallet";
+import { setupOKXWallet } from "@near-wallet-selector/okx-wallet";
+import { setupHotWallet } from "@near-wallet-selector/hot-wallet";
 
 const SUPPORT =
   "- further help available on our telegram channel: https://t.me/mintdev";
@@ -35,8 +34,11 @@ export const ERROR_MESSAGES = {
 
 export const SUPPORTED_NEAR_WALLETS: Array<WalletModuleFactory> = [
   setupMeteorWallet(),
-  setupMyNearWallet(),
-  setupHereWallet(),
+  // setupMyNearWallet(),
+  // setupHereWallet(),
+  setupIntearWallet(),
+  setupOKXWallet(),
+  setupHotWallet(),
 ];
 
 export type WalletSelectorComponents = {
@@ -70,7 +72,6 @@ export const BitteWalletAuth = {
         await setupWalletSelector({
           network: network || "mainnet",
           modules: [
-            setupBitteWallet() as WalletModuleFactory<Wallet>,
             ...(options?.additionalWallets || []),
             ...SUPPORTED_NEAR_WALLETS,
           ],
@@ -79,13 +80,7 @@ export const BitteWalletAuth = {
       BitteWalletAuth.walletSelectorComponents.selector =
         await setupWalletSelector({
           network: network || "mainnet",
-          modules: [
-            setupBitteWallet({
-              walletUrl:
-                walletUrl || walletUrls[network as "mainnet" | "testnet"],
-            }) as WalletModuleFactory<Wallet>,
-            ...(options?.additionalWallets || []),
-          ],
+          modules: [...SUPPORTED_NEAR_WALLETS],
         });
     }
 

@@ -33,14 +33,23 @@ export type BitteWalletContext = {
   signMessage: (params: VerifyOwnerParams) => Promise<VerifiedOwner>;
 };
 
+export type WalletName =
+  | "bitte"
+  | "intear"
+  | "hot"
+  | "okx"
+  | "meteor"
+  | "mynear"
+  | "here";
+
 interface ContextProviderType {
   children: React.ReactNode;
   network?: "testnet" | "mainnet";
   onlyMbWallet?: boolean;
   contractAddress?: string;
-  additionalWallets?: Array<WalletModuleFactory>;
   onlyBitteWallet?: boolean;
   walletUrl?: string;
+  wallets?: WalletName[];
 }
 
 export const BitteWalletContext = createContext<BitteWalletContext | null>(
@@ -51,9 +60,9 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
   children,
   network,
   contractAddress,
-  additionalWallets,
   onlyBitteWallet,
   walletUrl,
+  wallets,
 }): JSX.Element => {
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [components, setComponents] = useState<WalletSelectorComponents | null>(
@@ -79,13 +88,12 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
 
   const setupBitteWallet = async (): Promise<WalletSelectorComponents> => {
     const isOnlyBitteWallet =
-      !!onlyBitteWallet ||
-      !!(additionalWallets && additionalWallets.length > 0);
+      !!onlyBitteWallet || !!(wallets && wallets.length > 0);
 
     return await setupBitteWalletSelector(
       isOnlyBitteWallet,
       selectedNetwork,
-      { additionalWallets: additionalWallets },
+      { wallets },
       walletUrl,
     );
   };

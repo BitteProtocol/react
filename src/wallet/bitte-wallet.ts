@@ -5,7 +5,7 @@ import {
   Wallet,
 } from "@near-wallet-selector/core";
 import { setupModal } from "@near-wallet-selector/modal-ui";
-import { map, distinctUntilChanged, Subscription } from "rxjs";
+import { distinctUntilChanged, map, Subscription } from "rxjs";
 
 import {
   WALLET_CONNECTION_POLL_INTERVAL,
@@ -13,9 +13,9 @@ import {
 } from "./constants";
 
 import type {
-  WalletSelector,
   AccountState,
   WalletModuleFactory,
+  WalletSelector,
 } from "@near-wallet-selector/core";
 import type { WalletSelectorModal } from "@near-wallet-selector/modal-ui";
 
@@ -24,11 +24,10 @@ import { setupBitteWallet } from "@bitte-ai/wallet";
 // Wallet imports now handled by wallet-registry
 
 import {
-  SupportedWalletType,
-  WalletSetupOptions,
   createWalletModules,
   DEFAULT_SUPPORTED_WALLETS,
-  DEFAULT_BITTE_WALLETS,
+  SupportedWalletType,
+  WalletSetupOptions,
 } from "./wallet-registry";
 
 const SUPPORT =

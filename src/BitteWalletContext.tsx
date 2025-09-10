@@ -9,6 +9,10 @@ import React, {
 } from "react";
 import { BitteWalletAuth } from "./wallet/bitte-wallet";
 import type { WalletSelectorComponents } from "./wallet/bitte-wallet";
+import type {
+  SupportedWalletType,
+  WalletSetupOptions,
+} from "./wallet/wallet-registry";
 
 import type {
   WalletSelector,
@@ -36,10 +40,20 @@ export type BitteWalletContext = {
 interface ContextProviderType {
   children: React.ReactNode;
   network?: "testnet" | "mainnet";
-  onlyMbWallet?: boolean;
   contractAddress?: string;
+
+  // New customizable wallet configuration
+  wallets?: SupportedWalletType[];
+  walletOptions?: Record<SupportedWalletType, WalletSetupOptions>;
+
+  // Backward compatibility props (deprecated)
+  /** @deprecated Use `wallets` prop instead */
+  onlyMbWallet?: boolean;
+  /** @deprecated Use `wallets` prop instead */
   additionalWallets?: Array<WalletModuleFactory>;
+  /** @deprecated Use `wallets` prop instead */
   onlyBitteWallet?: boolean;
+  /** @deprecated Use `walletOptions.bitte.walletUrl` instead */
   walletUrl?: string;
 }
 
@@ -51,8 +65,13 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
   children,
   network,
   contractAddress,
+  // New props
+  wallets,
+  walletOptions,
+  // Legacy props (for backward compatibility)
   additionalWallets,
   onlyBitteWallet,
+  onlyMbWallet,
   walletUrl,
 }): JSX.Element => {
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
@@ -78,6 +97,18 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
   } = BitteWalletAuth;
 
   const setupBitteWallet = async (): Promise<WalletSelectorComponents> => {
+    // Handle new wallet configuration approach
+    if (wallets) {
+      return await setupBitteWalletSelector(
+        false, // Use new system
+        selectedNetwork,
+        { wallets, walletOptions },
+        selectedContract,
+        walletUrl,
+      );
+    }
+
+    // Backward compatibility for legacy props
     const isOnlyBitteWallet =
       !!onlyBitteWallet ||
       !!(additionalWallets && additionalWallets.length > 0);
@@ -86,6 +117,7 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
       isOnlyBitteWallet,
       selectedNetwork,
       { additionalWallets: additionalWallets },
+      selectedContract,
       walletUrl,
     );
   };

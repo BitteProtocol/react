@@ -21,9 +21,15 @@ import type { WalletSelectorModal } from "@near-wallet-selector/modal-ui";
 
 import { setupBitteWallet } from "@bitte-ai/wallet";
 
-import { setupMeteorWallet } from "@near-wallet-selector/meteor-wallet";
-import { setupHereWallet } from "@near-wallet-selector/here-wallet";
-import { setupMyNearWallet } from "@near-wallet-selector/my-near-wallet";
+// Wallet imports now handled by wallet-registry
+
+import {
+  SupportedWalletType,
+  WalletSetupOptions,
+  createWalletModules,
+  DEFAULT_SUPPORTED_WALLETS,
+  DEFAULT_BITTE_WALLETS,
+} from "./wallet-registry";
 
 const SUPPORT =
   "- further help available on our telegram channel: https://t.me/mintdev";
@@ -33,15 +39,17 @@ export const ERROR_MESSAGES = {
   WALLET_CONNECTION_NOT_FOUND: `Wallet connection not received after ${WALLET_CONNECTION_TIMEOUT}ms - ${SUPPORT}`,
 };
 
-export const SUPPORTED_NEAR_WALLETS: Array<WalletModuleFactory> = [
-  setupMeteorWallet(),
-  setupMyNearWallet(),
-  setupHereWallet(),
-];
+// Legacy support - use wallet registry instead
+export const SUPPORTED_NEAR_WALLETS: Array<WalletModuleFactory> = createWalletModules(DEFAULT_SUPPORTED_WALLETS);
 
 export type WalletSelectorComponents = {
   selector: WalletSelector;
   modal: WalletSelectorModal;
+};
+
+type InternalWalletSelectorComponents = {
+  selector: WalletSelector | null;
+  modal: WalletSelectorModal | null;
 };
 
 interface ConnectionTimeoutError extends Error {
@@ -57,15 +65,32 @@ export const BitteWalletAuth = {
   walletSelectorComponents: {
     selector: null,
     modal: null,
-  },
+  } as InternalWalletSelectorComponents,
   setupBitteWalletSelector: async (
     onlyBitteWallet = false,
     network?: "testnet" | "mainnet",
-    options?: { additionalWallets?: Array<WalletModuleFactory> },
+    options?: {
+      additionalWallets?: Array<WalletModuleFactory>;
+      wallets?: SupportedWalletType[];
+      walletOptions?: Record<SupportedWalletType, WalletSetupOptions>;
+    },
     contractAddress?: string,
     walletUrl?: string,
   ): Promise<WalletSelectorComponents> => {
-    if (onlyBitteWallet === false) {
+    // Handle new wallet configuration system
+    if (options?.wallets) {
+      const walletModules = createWalletModules(
+        options.wallets,
+        options.walletOptions,
+      );
+
+      BitteWalletAuth.walletSelectorComponents.selector =
+        await setupWalletSelector({
+          network: network || "mainnet",
+          modules: walletModules,
+        });
+    } else if (onlyBitteWallet === false) {
+      // Legacy behavior: include all supported wallets
       BitteWalletAuth.walletSelectorComponents.selector =
         await setupWalletSelector({
           network: network || "mainnet",
@@ -76,6 +101,7 @@ export const BitteWalletAuth = {
           ],
         });
     } else {
+      // Legacy behavior: only Bitte wallet
       BitteWalletAuth.walletSelectorComponents.selector =
         await setupWalletSelector({
           network: network || "mainnet",
@@ -96,15 +122,15 @@ export const BitteWalletAuth = {
       },
     );
 
-    return BitteWalletAuth.walletSelectorComponents;
+    return BitteWalletAuth.walletSelectorComponents as WalletSelectorComponents;
   },
   setupWalletSelectorComponents: async (
-    network?,
-    contractAddress?,
+    network?: "testnet" | "mainnet",
+    contractAddress?: string,
     options?: { additionalWallets?: Array<WalletModuleFactory> },
   ): Promise<WalletSelectorComponents> => {
     const selector = await setupWalletSelector({
-      network: network,
+      network: network || "mainnet",
       modules: [
         ...SUPPORTED_NEAR_WALLETS,
         ...(options?.additionalWallets || []),
@@ -119,7 +145,7 @@ export const BitteWalletAuth = {
       selector,
       modal,
     };
-    return BitteWalletAuth.walletSelectorComponents;
+    return BitteWalletAuth.walletSelectorComponents as WalletSelectorComponents;
   },
   SetupNotCalledError: class extends Error {
     constructor(message?: string) {
@@ -129,6 +155,11 @@ export const BitteWalletAuth = {
   },
   ConnectionTimeoutError: class extends Error {
     message: string;
+    constructor(message: string) {
+      super(message);
+      this.message = message;
+      this.name = "ConnectionTimeoutError";
+    }
   },
   validateWalletComponentsAreSetup: (): void => {
     if (!BitteWalletAuth.walletSelectorComponents.selector) {
@@ -142,18 +173,20 @@ export const BitteWalletAuth = {
   ): Subscription => {
     BitteWalletAuth.validateWalletComponentsAreSetup();
 
-    return BitteWalletAuth.walletSelectorComponents.selector.store.observable
+    return (BitteWalletAuth.walletSelectorComponents.selector!.store.observable as any)
       .pipe(
         map((state: any) => state.accounts),
         distinctUntilChanged(),
       )
       .subscribe(callback);
   },
-  timerReference: null,
+  timerReference: null as NodeJS.Timeout | null,
   pollForWalletConnection: async (): Promise<AccountState[]> => {
     BitteWalletAuth.validateWalletComponentsAreSetup();
     // clear any existing timer
-    clearTimeout(BitteWalletAuth.timerReference);
+    if (BitteWalletAuth.timerReference) {
+      clearTimeout(BitteWalletAuth.timerReference);
+    }
 
     const tryToResolveAccountsFromState = (
       resolve: (value: AccountState[]) => void,
@@ -161,7 +194,7 @@ export const BitteWalletAuth = {
       elapsed = 0,
     ): void => {
       const { accounts } =
-        BitteWalletAuth.walletSelectorComponents.selector.store.getState() ||
+        BitteWalletAuth.walletSelectorComponents.selector!.store.getState() ||
         {};
 
       // accounts present in state
@@ -172,14 +205,16 @@ export const BitteWalletAuth = {
       // timed out
       if (elapsed > WALLET_CONNECTION_TIMEOUT) {
         reject(
-          new ConnectionTimeoutError(
+          new BitteWalletAuth.ConnectionTimeoutError(
             ERROR_MESSAGES.WALLET_CONNECTION_NOT_FOUND,
           ),
         );
       }
 
       // try again
-      clearTimeout(BitteWalletAuth.timerReference);
+      if (BitteWalletAuth.timerReference) {
+        clearTimeout(BitteWalletAuth.timerReference);
+      }
       BitteWalletAuth.timerReference = setTimeout(
         () =>
           tryToResolveAccountsFromState(
@@ -198,18 +233,18 @@ export const BitteWalletAuth = {
   getWallet: async (): Promise<Wallet> => {
     BitteWalletAuth.validateWalletComponentsAreSetup();
 
-    return await BitteWalletAuth.walletSelectorComponents.selector.wallet();
+    return await BitteWalletAuth.walletSelectorComponents.selector!.wallet();
   },
   connectWalletSelector: (): void => {
     BitteWalletAuth.validateWalletComponentsAreSetup();
 
-    BitteWalletAuth.walletSelectorComponents.modal.show();
+    BitteWalletAuth.walletSelectorComponents.modal!.show();
   },
   disconnectFromWalletSelector: async (): Promise<void> => {
     BitteWalletAuth.validateWalletComponentsAreSetup();
 
     const wallet =
-      await BitteWalletAuth.walletSelectorComponents.selector.wallet();
+      await BitteWalletAuth.walletSelectorComponents.selector!.wallet();
     wallet.signOut();
   },
   getVerifiedOwner: async (
@@ -220,7 +255,7 @@ export const BitteWalletAuth = {
     const { message, callbackUrl, meta } = params;
 
     const wallet =
-      await BitteWalletAuth.walletSelectorComponents.selector.wallet();
+      await BitteWalletAuth.walletSelectorComponents.selector!.wallet();
 
     const owner = (await wallet.verifyOwner({
       message: message,
@@ -232,7 +267,9 @@ export const BitteWalletAuth = {
   },
   signMessage: async (params: VerifyOwnerParams): Promise<VerifiedOwner> => {
     const owner = await BitteWalletAuth.getVerifiedOwner(params);
-
+    if (!owner) {
+      throw new Error("Failed to get verified owner");
+    }
     return owner;
   },
 };

@@ -44,23 +44,93 @@ pnpm install @near-wallet-selector/modal-ui
 the default way of interacting with Bitte Wallet is using the BitteWalletContextProvider
 
 
-## properties:
+## Properties:
 
-**network** : ` mainnet | testnet`
+### Core Properties
+**network** : `mainnet | testnet` - NEAR network to connect to
 
-**additionalWallets** : `WalletModuleFactory[] extra wallets setup`
+**contractAddress** : `string` - Contract address for the wallet modal
+
+### New Customizable Wallet Selection (Recommended)
+**wallets** : `SupportedWalletType[]` - Array of wallet keywords you want to include
+
+**walletOptions** : `Record<SupportedWalletType, WalletSetupOptions>` - Configuration options for each wallet
+
+### Legacy Properties (Deprecated)
+**additionalWallets** : `WalletModuleFactory[]` - Extra wallets setup
+
+**onlyBitteWallet** : `boolean` - Only show Bitte wallet
+
+**walletUrl** : `string` - Custom Bitte wallet URL
+
+## Basic Usage
+
+### New Customizable Approach (Recommended)
 
 ```typescript
 import "@near-wallet-selector/modal-ui/styles.css";
-import { BitteWalletContextProvider } from  '@bitte-ai/react'
+import { BitteWalletContextProvider, SupportedWalletType } from '@bitte-ai/react'
+
+// Choose exactly which wallets you want
+const wallets: SupportedWalletType[] = ["bitte", "intear", "meteor", "okx", "hot"];
+
+<BitteWalletContextProvider
+  network="mainnet"
+  wallets={wallets}
+>
+   <Component {...pageProps} />
+</BitteWalletContextProvider>
+```
+
+### Legacy Usage (Still Supported)
+
+```typescript
+import "@near-wallet-selector/modal-ui/styles.css";
+import { BitteWalletContextProvider } from '@bitte-ai/react'
 
 <BitteWalletContextProvider
   network="mainnet"
 >
    <Component {...pageProps} />
 </BitteWalletContextProvider>
-
 ```
+
+## Supported Wallets
+
+- `"bitte"` - Bitte Wallet
+- `"meteor"` - Meteor Wallet  
+- `"here"` - HERE Wallet
+- `"mynear"` - MyNearWallet
+- `"intear"` - Intear Wallet
+- `"okx"` - OKX Wallet
+- `"hot"` - HOT Wallet
+
+## Examples
+
+### Only Bitte Wallet
+```typescript
+<BitteWalletContextProvider
+  network="mainnet"
+  wallets={["bitte"]}
+>
+   <YourApp />
+</BitteWalletContextProvider>
+```
+
+### Multiple Wallets with Options
+```typescript
+<BitteWalletContextProvider
+  network="mainnet"
+  wallets={["bitte", "meteor", "intear", "okx", "hot"]}
+  walletOptions={{
+    bitte: { walletUrl: "https://custom.wallet.url" }
+  }}
+>
+   <YourApp />
+</BitteWalletContextProvider>
+```
+
+For more detailed examples and migration guide, see [WALLET_CUSTOMIZATION.md](./WALLET_CUSTOMIZATION.md).
 
 # Troubleshooting
 The wallet runs only on client-side.

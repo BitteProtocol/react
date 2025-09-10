@@ -1,5 +1,6 @@
 export * from "./BitteWalletContext";
 export * from "./hooks/useNearPrice";
+export * from "./wallet/wallet-registry";
 export type {
   Wallet,
   WalletModuleFactory,

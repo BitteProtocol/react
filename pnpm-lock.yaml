@@ -25,7 +25,7 @@ importers:
         specifier: ^9.5.1
         version: 9.5.1(@near-js/crypto@2.2.5(@near-js/types@2.2.5)(@near-js/utils@1.1.0))(@near-js/keystores@2.2.5(@near-js/crypto@2.2.5(@near-js/types@2.2.5)(@near-js/utils@1.1.0))(@near-js/types@2.2.5))(@near-js/transactions@2.2.5(@near-js/crypto@2.2.5(@near-js/types@2.2.5)(@near-js/utils@1.1.0))(@near-js/types@2.2.5)(@near-js/utils@1.1.0))(bufferutil@4.0.9)(near-api-js@5.1.1)(typescript@5.9.2)(utf-8-validate@5.0.10)
       '@near-wallet-selector/intear-wallet':
-        specifier: ^9.0.2
+        specifier: ^9.5.1
         version: 9.5.1(@near-js/crypto@2.2.5(@near-js/types@2.2.5)(@near-js/utils@1.1.0))(@near-js/keystores@2.2.5(@near-js/crypto@2.2.5(@near-js/types@2.2.5)(@near-js/utils@1.1.0))(@near-js/types@2.2.5))(@near-js/transactions@2.2.5(@near-js/crypto@2.2.5(@near-js/types@2.2.5)(@near-js/utils@1.1.0))(@near-js/types@2.2.5)(@near-js/utils@1.1.0))
       '@near-wallet-selector/meteor-wallet':
         specifier: ^9.5.1
@@ -2599,7 +2599,7 @@ snapshots:
 
   isomorphic-unfetch@3.1.0:
     dependencies:
-      node-fetch: 2.6.7
+      node-fetch: 2.7.0
       unfetch: 4.2.0
     transitivePeerDependencies:
       - encoding

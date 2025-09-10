@@ -21,6 +21,8 @@ import type {
 import type { WalletSelectorModal } from "@near-wallet-selector/modal-ui";
 
 import { setupMeteorWallet } from "@near-wallet-selector/meteor-wallet";
+import { setupOKXWallet } from "@near-wallet-selector/okx-wallet";
+import { setupHotWallet } from "@near-wallet-selector/hot-wallet";
 
 const SUPPORT =
   "- further help available on our telegram channel: https://t.me/mintdev";
@@ -35,6 +37,8 @@ export const SUPPORTED_NEAR_WALLETS: Array<WalletModuleFactory> = [
   // setupMyNearWallet(),
   // setupHereWallet(),
   setupIntearWallet(),
+  setupOKXWallet(),
+  setupHotWallet(),
 ];
 
 export type WalletSelectorComponents = {

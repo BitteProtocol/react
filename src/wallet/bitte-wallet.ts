@@ -3,10 +3,10 @@ import {
   VerifiedOwner,
   VerifyOwnerParams,
   Wallet,
-} from '@near-wallet-selector/core';
+} from "@near-wallet-selector/core";
 import { setupIntearWallet } from "@near-wallet-selector/intear-wallet";
-import { setupModal } from '@near-wallet-selector/modal-ui';
-import { distinctUntilChanged, map, Subscription } from 'rxjs';
+import { setupModal } from "@near-wallet-selector/modal-ui";
+import { distinctUntilChanged, map, Subscription } from "rxjs";
 
 import {
   WALLET_CONNECTION_POLL_INTERVAL,
@@ -20,7 +20,7 @@ import type {
 } from "@near-wallet-selector/core";
 import type { WalletSelectorModal } from "@near-wallet-selector/modal-ui";
 
-import { setupMeteorWallet } from '@near-wallet-selector/meteor-wallet';
+import { setupMeteorWallet } from "@near-wallet-selector/meteor-wallet";
 
 const SUPPORT =
   "- further help available on our telegram channel: https://t.me/mintdev";
@@ -64,21 +64,20 @@ export const BitteWalletAuth = {
     walletUrl?: string,
   ): Promise<WalletSelectorComponents> => {
     if (onlyBitteWallet === false) {
-      BitteWalletAuth.walletSelectorComponents.selector = await setupWalletSelector({
-        network: network || 'mainnet',
-        modules: [
-          ...(options?.additionalWallets || []),
-          ...SUPPORTED_NEAR_WALLETS,
-        ],
-      });
+      BitteWalletAuth.walletSelectorComponents.selector =
+        await setupWalletSelector({
+          network: network || "mainnet",
+          modules: [
+            ...(options?.additionalWallets || []),
+            ...SUPPORTED_NEAR_WALLETS,
+          ],
+        });
     } else {
-      BitteWalletAuth.walletSelectorComponents.selector = await setupWalletSelector({
-
-        network: network || 'mainnet',
-        modules: [
-          ...SUPPORTED_NEAR_WALLETS,
-        ],
-      });
+      BitteWalletAuth.walletSelectorComponents.selector =
+        await setupWalletSelector({
+          network: network || "mainnet",
+          modules: [...SUPPORTED_NEAR_WALLETS],
+        });
     }
 
     BitteWalletAuth.walletSelectorComponents.modal = setupModal(

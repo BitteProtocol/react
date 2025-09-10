@@ -40,7 +40,8 @@ export const ERROR_MESSAGES = {
 };
 
 // Legacy support - use wallet registry instead
-export const SUPPORTED_NEAR_WALLETS: Array<WalletModuleFactory> = createWalletModules(DEFAULT_SUPPORTED_WALLETS);
+export const SUPPORTED_NEAR_WALLETS: Array<WalletModuleFactory> =
+  createWalletModules(DEFAULT_SUPPORTED_WALLETS);
 
 export type WalletSelectorComponents = {
   selector: WalletSelector;
@@ -173,7 +174,9 @@ export const BitteWalletAuth = {
   ): Subscription => {
     BitteWalletAuth.validateWalletComponentsAreSetup();
 
-    return (BitteWalletAuth.walletSelectorComponents.selector!.store.observable as any)
+    return (
+      BitteWalletAuth.walletSelectorComponents.selector!.store.observable as any
+    )
       .pipe(
         map((state: any) => state.accounts),
         distinctUntilChanged(),

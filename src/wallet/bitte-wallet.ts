@@ -24,6 +24,10 @@ import { setupBitteWallet } from "@bitte-ai/wallet";
 import { setupMeteorWallet } from "@near-wallet-selector/meteor-wallet";
 import { setupHereWallet } from "@near-wallet-selector/here-wallet";
 import { setupMyNearWallet } from "@near-wallet-selector/my-near-wallet";
+import { setupIntearWallet } from "@near-wallet-selector/intear-wallet";
+import { setupHotWallet } from "@near-wallet-selector/hot-wallet";
+import { setupOKXWallet } from "@near-wallet-selector/okx-wallet";
+import { WalletName } from "../BitteWalletContext";
 
 const SUPPORT =
   "- further help available on our telegram channel: https://t.me/mintdev";
@@ -33,11 +37,14 @@ export const ERROR_MESSAGES = {
   WALLET_CONNECTION_NOT_FOUND: `Wallet connection not received after ${WALLET_CONNECTION_TIMEOUT}ms - ${SUPPORT}`,
 };
 
-export const SUPPORTED_NEAR_WALLETS: Array<WalletModuleFactory> = [
-  setupMeteorWallet(),
-  setupMyNearWallet(),
-  setupHereWallet(),
-];
+export const SUPPORTED_NEAR_WALLETS: Record<string, WalletModuleFactory> = {
+  meteor: setupMeteorWallet(),
+  mynear: setupMyNearWallet(),
+  here: setupHereWallet(),
+  hot: setupHotWallet(),
+  okx: setupOKXWallet(),
+  intear: setupIntearWallet(),
+};
 
 export type WalletSelectorComponents = {
   selector: WalletSelector;
@@ -59,35 +66,33 @@ export const BitteWalletAuth = {
     modal: null,
   },
   setupBitteWalletSelector: async (
-    onlyBitteWallet = false,
     network?: "testnet" | "mainnet",
-    options?: { additionalWallets?: Array<WalletModuleFactory> },
+    options?: { wallets?: WalletName[] },
     contractAddress?: string,
     walletUrl?: string,
   ): Promise<WalletSelectorComponents> => {
-    if (onlyBitteWallet === false) {
-      BitteWalletAuth.walletSelectorComponents.selector =
-        await setupWalletSelector({
-          network: network || "mainnet",
-          modules: [
-            setupBitteWallet() as WalletModuleFactory<Wallet>,
-            ...(options?.additionalWallets || []),
-            ...SUPPORTED_NEAR_WALLETS,
-          ],
-        });
-    } else {
-      BitteWalletAuth.walletSelectorComponents.selector =
-        await setupWalletSelector({
-          network: network || "mainnet",
-          modules: [
-            setupBitteWallet({
-              walletUrl:
-                walletUrl || walletUrls[network as "mainnet" | "testnet"],
-            }) as WalletModuleFactory<Wallet>,
-            ...(options?.additionalWallets || []),
-          ],
-        });
-    }
+    const filterBitteWallet = options?.wallets?.filter(
+      (wallet) => wallet !== "bitte",
+    );
+    const bitteWallet = options?.wallets?.includes("bitte");
+
+    BitteWalletAuth.walletSelectorComponents.selector =
+      (await setupWalletSelector({
+        network: network || "mainnet",
+        modules: [
+          ...(filterBitteWallet || []).map((wallet) => {
+            return SUPPORTED_NEAR_WALLETS[wallet];
+          }),
+          /*           ...(bitteWallet
+            ? [
+                setupBitteWallet({
+                  walletUrl:
+                    walletUrl || walletUrls[network as "mainnet" | "testnet"],
+                }) as WalletModuleFactory<Wallet>,
+              ]
+            : []), */
+        ],
+      })) as WalletSelector;
 
     BitteWalletAuth.walletSelectorComponents.modal = setupModal(
       BitteWalletAuth.walletSelectorComponents.selector,
@@ -99,15 +104,16 @@ export const BitteWalletAuth = {
     return BitteWalletAuth.walletSelectorComponents;
   },
   setupWalletSelectorComponents: async (
-    network?,
-    contractAddress?,
-    options?: { additionalWallets?: Array<WalletModuleFactory> },
+    network?: "testnet" | "mainnet",
+    contractAddress?: string,
+    options?: { wallets?: WalletName[] },
   ): Promise<WalletSelectorComponents> => {
     const selector = await setupWalletSelector({
-      network: network,
+      network: network || "mainnet",
       modules: [
-        ...SUPPORTED_NEAR_WALLETS,
-        ...(options?.additionalWallets || []),
+        ...(options?.wallets || []).map((wallet) => {
+          return SUPPORTED_NEAR_WALLETS[wallet];
+        }),
       ],
     });
 

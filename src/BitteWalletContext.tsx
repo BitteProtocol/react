@@ -8,7 +8,10 @@ import React, {
   useState,
 } from "react";
 import { BitteWalletAuth } from "./wallet/bitte-wallet";
-import type { WalletSelectorComponents } from "./wallet/bitte-wallet";
+import type {
+  WalletSelectorComponents,
+  WalletName,
+} from "./wallet/bitte-wallet";
 
 import type {
   WalletSelector,
@@ -41,6 +44,7 @@ interface ContextProviderType {
   additionalWallets?: Array<WalletModuleFactory>;
   onlyBitteWallet?: boolean;
   walletUrl?: string;
+  enabledWallets?: WalletName[];
 }
 
 export const BitteWalletContext = createContext<BitteWalletContext | null>(
@@ -54,6 +58,7 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
   additionalWallets,
   onlyBitteWallet,
   walletUrl,
+  enabledWallets,
 }): JSX.Element => {
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [components, setComponents] = useState<WalletSelectorComponents | null>(
@@ -85,7 +90,11 @@ export const BitteWalletContextProvider: React.FC<ContextProviderType> = ({
     return await setupBitteWalletSelector(
       isOnlyBitteWallet,
       selectedNetwork,
-      { additionalWallets: additionalWallets },
+      {
+        additionalWallets: additionalWallets,
+        enabledWallets: enabledWallets,
+      },
+      selectedContract,
       walletUrl,
     );
   };

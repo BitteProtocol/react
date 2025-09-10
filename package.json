@@ -46,8 +46,6 @@
     "fsevents": false
   },
   "dependencies": {
-    "@mintbase-js/data": "^0.6.6",
-    "@mintbase-js/sdk": "^0.6.6",
     "@near-wallet-selector/intear-wallet": "^9.5.1",
     "@near-wallet-selector/core": "^9.5.1",
     "@near-wallet-selector/here-wallet": "^9.5.1",
